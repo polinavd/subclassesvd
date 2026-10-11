@@ -2,11 +2,11 @@
   "_id": "7dbc749dc0b8f1fe",
   "name": "Pack Leader",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-direwolf.svg",
   "system": {
     "identifier": "grimnir-wolf-rider-pack-leader",
     "description": {
-      "value": "<p><b>Wolf Rider · уровень 7</b></p><p>Improved Bonded Commands. Your coordination with your wolf deepens, granting additional benefits to your<br>Bonded Commands:<br>Ambush: When your wolf takes the Hide action and you are riding it, if it succeeds, you also have the Invisible condition as if you succeeded the check with the wolf’s total.<br>Aggressive Help: In addition to the Bonded Command benefits of commanding your wolf to use the Help action, if your attack hits the creature, the wolf can use its<br>Reaction to make one Bite attack against that creature.<br>Near Shot. You don’t have Disadvantage on ranged weapon attacks made within 5 feet of a creature, as long as your wolf is within 10 feet of the target.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Спутник и масштабирование — макрос управления. Условные совместные атаки, Help/Dodge, защита рядом и перехват смерти — вручную.</li></ul>"
+      "value": "<p><strong>Improved Bonded Commands.</strong> Your coordination with your wolf deepens, granting additional benefits to your</p><p><strong>Bonded Commands:</strong> </p><p><strong>Ambush:</strong> When your wolf takes the Hide action and you are riding it, if it succeeds, you also have the Invisible condition as if you succeeded the check with the wolf’s total.</p><p><strong>Aggressive Help:</strong> In addition to the Bonded Command benefits of commanding your wolf to use the Help action, if your attack hits the creature, the wolf can use its Reaction to make one Bite attack against that creature.</p><p><strong>Near Shot.</strong> You don’t have Disadvantage on ranged weapon attacks made within 5 feet of a creature, as long as your wolf is within 10 feet of the target.</p>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -22,7 +22,8 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": []
   },
   "effects": [],
   "flags": {
@@ -32,9 +33,8 @@
       "feature": "Pack Leader",
       "class": "ranger",
       "level": 7,
-      "notes": [
-        "Спутник и масштабирование — макрос управления. Условные совместные атаки, Help/Dodge, защита рядом и перехват смерти — вручную."
-      ]
+      "version": "0.2.0",
+      "children": []
     }
   },
   "ownership": {

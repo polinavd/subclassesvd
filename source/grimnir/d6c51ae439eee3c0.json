@@ -1,0 +1,55 @@
+{
+  "_id": "d6c51ae439eee3c0",
+  "name": "Arcane Intentions",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-third-eye.svg",
+  "folder": "ff1c1188f5b8ad9f",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-cohesion-of-the-primal-arcane-intentions-arcane-intentions",
+    "description": {
+      "value": "<p>Choose one intention: Dreamer or</p><p><strong>Seeker.</strong> Dreamers glimpse fragments of possible futures, while Seekers hunt those who wield magic. The intention that you choose determines the features that are available to you from this subclass. You may change your intention at levels 6, 10, and 14. You gain proficiency with Light Armor.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Cohesion of the Primal 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "0b10dcc6e65145b2": {
+        "_id": "0b10dcc6e65145b2",
+        "name": "Arcane Intentions",
+        "type": "utility",
+        "activation": {
+          "type": "",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-third-eye.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Cohesion of the Primal",
+      "parentFeature": "4157c176c8de1871",
+      "parentIdentifier": "grimnir-cohesion-of-the-primal-arcane-intentions",
+      "level": 3,
+      "version": "0.2.0",
+      "execute": "intention"
+    }
+  },
+  "_key": "!items!d6c51ae439eee3c0"
+}

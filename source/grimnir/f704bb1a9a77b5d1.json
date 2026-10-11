@@ -1,0 +1,66 @@
+{
+  "_id": "f704bb1a9a77b5d1",
+  "name": "Thrash: команда",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-soul.svg",
+  "folder": "5e7aabf373dadf67",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-misplaced-soul-soul-bound-commands-thrash",
+    "description": {
+      "value": "<p>You gain the ability to spend Sorcery Points to have your Misplaced Soul perform specific actions.</p><p><strong>Metamagic: Thrash (1 Sorcery Point).</strong> You may use a Bonus Action to have your Misplaced Soul use its Thrash attack. This can also be done as part of the Bonus Action you use to summon a Misplaced Soul.</p><p><strong>Metamagic: Reduce Harm (2 Sorcery Points).</strong> You may have your Misplaced Soul use its Reduce Harm as a Reaction when a creature within 5 feet of it is hit by an attack.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Misplaced Soul 6",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "2b50f0835c7c21aa": {
+        "_id": "2b50f0835c7c21aa",
+        "type": "utility",
+        "name": "Thrash: команда",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:font-of-magic",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/delapouite-soul.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Misplaced Soul",
+      "parentFeature": "2451b9d2ef380a10",
+      "parentIdentifier": "grimnir-misplaced-soul-soul-bound-commands",
+      "level": 6,
+      "version": "0.2.0",
+      "execute": "companionCommand",
+      "companionActivity": "Thrash",
+      "companionCost": 1
+    }
+  },
+  "_key": "!items!f704bb1a9a77b5d1"
+}

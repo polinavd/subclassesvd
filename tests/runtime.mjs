@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
 const hooks={};const once={};const results=[];const id='grimnir-lyonesse';
-const context={console,setTimeout,clearTimeout,structuredClone,fetch:async()=>({json:async()=>[]}),Hooks:{on:(k,v)=>hooks[k]=v,once:(k,v)=>once[k]=v},foundry:{utils:{deepClone:structuredClone},applications:{api:{DialogV2:{wait:async()=>null}}}},game:{modules:new Map([[id,{}]]),settings:{register(){},get(){return{};}},user:{id:'gm',isGM:true},users:{activeGM:{id:'gm'}},release:{generation:13},time:{worldTime:0},actors:[],i18n:{localize:s=>s}},ui:{notifications:{error:e=>{throw Error(e)},warn(){},info(){}}},CONFIG:{DND5E:{skills:{},damageTypes:{acid:1,force:1,psychic:1}},statusEffects:[]},ChatMessage:{getSpeaker:()=>({}),create:async()=>{}},canvas:{tokens:{controlled:[]}},Roll:class{},Actor:{},fromUuid:async()=>null};
+const context={console:{...console,error:()=>{}},setTimeout,clearTimeout,structuredClone,fetch:async()=>({json:async()=>[]}),Hooks:{on:(k,v)=>hooks[k]=v,once:(k,v)=>once[k]=v},foundry:{utils:{deepClone:structuredClone},applications:{api:{DialogV2:{wait:async()=>null}}}},game:{modules:new Map([[id,{}]]),settings:{register(){},get(){return{};}},user:{id:'gm',isGM:true},users:{activeGM:{id:'gm'}},release:{generation:13},time:{worldTime:0},actors:[],i18n:{localize:s=>s}},ui:{notifications:{error:e=>{throw Error(e)},warn(){},info(){}}},CONFIG:{DND5E:{skills:{},damageTypes:{acid:1,force:1,psychic:1}},statusEffects:[]},ChatMessage:{getSpeaker:()=>({}),create:async()=>{}},canvas:{tokens:{controlled:[]}},Roll:class{},Actor:{},fromUuid:async()=>null};
 vm.createContext(context);vm.runInContext(fs.readFileSync(new URL('../scripts/main.mjs', import.meta.url),'utf8'),context);once.init();
 assert.equal(typeof context.game.modules.get(id).api.manage,'function');results.push('API registration');
 function actor(lv,n){return{system:{attributes:{movement:{walk:30}}},classes:{barbarian:{system:{levels:lv}}},getFlag:(_id,k)=>k==='nearbyEnemies'?n:null,items:[{getFlag:(_id,k)=>k==='feature'?'Strength of One':null}],effects:[]};}
@@ -16,7 +16,7 @@ const ignore={};hooks.applyActiveEffect(actor(3,0),{key:'system.attributes.movem
 // Test actual menu -> resource spending -> effect creation with cancellation and insufficient resource.
 let chosen='slip';context.foundry.applications.api.DialogV2.wait=async()=>chosen;
 let created=[],spent=0;
-const slip={system:{uses:{value:2,spent:0}},getFlag:(_id,k)=>k==='feature'?'Slip the Skin':null,update:async u=>{spent=u['system.uses.spent'];slip.system.uses.spent=spent;slip.system.uses.value=2-spent;}};
+const slip={name:'Slip the Skin',system:{uses:{value:2,spent:0}},getFlag:(_id,k)=>k==='feature'?'Slip the Skin':null,update:async u=>{spent=u['system.uses.spent'];slip.system.uses.spent=spent;slip.system.uses.value=2-spent;}};
 const a={uuid:'Actor.test',name:'Test',isOwner:true,items:[slip],effects:[],system:{abilities:{wis:{mod:2}}},getFlag:()=>null,deleteEmbeddedDocuments:async()=>{},createEmbeddedDocuments:async(_t,ds)=>{created.push(...ds);return ds.map(x=>({...x,id:'new'}));}};
 context.canvas.tokens.controlled=[{actor:a}];await context.game.modules.get(id).api.manage();assert.equal(spent,1);assert.equal(created.length,1);assert.equal(created[0].duration.seconds,60);results.push('Slip the Skin consumes exactly once and creates timed effect');
 chosen=null;await context.game.modules.get(id).api.manage();assert.equal(spent,1);assert.equal(created.length,1);results.push('Cancelled dialog is read-only');

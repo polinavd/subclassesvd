@@ -1,0 +1,76 @@
+{
+  "_id": "3c96ce6477783416",
+  "name": "End the Threat",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-rally-the-troops.svg",
+  "folder": "5992503abbb58a4b",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-marauder-end-the-threat-end-the-threat",
+    "description": {
+      "value": "<p>As a Bonus Action, you may spend one use of your Second Wind to command your allies to focus their assault on a single foe. Choose one creature you can see. Each ally within 30 feet of you who can hear you can use its Reaction to move up to half its Speed and make one attack against the chosen target.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Marauder 18",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "08df542045b78a6c": {
+        "_id": "08df542045b78a6c",
+        "type": "utility",
+        "name": "End the Threat",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:second-wind",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "range": {
+          "value": "30",
+          "units": "ft"
+        },
+        "target": {
+          "affects": {
+            "type": "creature",
+            "count": "1"
+          },
+          "template": {
+            "type": ""
+          }
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-rally-the-troops.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Marauder",
+      "parentFeature": "0f22cd97a9005b2e",
+      "parentIdentifier": "lyonesse-marauder-end-the-threat",
+      "level": 18,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!3c96ce6477783416"
+}

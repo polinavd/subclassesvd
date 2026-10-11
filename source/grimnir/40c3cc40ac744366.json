@@ -1,0 +1,55 @@
+{
+  "_id": "40c3cc40ac744366",
+  "name": "Path of Fate",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-lotus.svg",
+  "folder": "6b194b9e5a9172f5",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-way-of-the-wanderer-path-of-fate-path-of-fate",
+    "description": {
+      "value": "<p>Your choices tug at the strands of destiny, shaping each battle toward order or mayhem. When you roll Initiative, choose one of three styles: Order, Balance, or</p><p><strong>Mayhem.</strong> You gain that style’s benefits for the duration of the combat. Every time you roll Initiative in the future, you follow the following restrictions:</p><ul><li>If your previous style was Balance, you may choose Order or</li></ul><p><strong>Mayhem.</strong> </p><ul><li>If your previous style was Order or Mayhem, you must choose that same style or</li></ul><p><strong>Balance.</strong> </p><p><strong>Order.</strong> You can choose to have your Unarmed Strikes deal Cold damage. Creatures of your choice within 30 feet using Unarmed Strikes or weapons with the Finesse property (including yourself) score a Critical Hit on a roll of 18, 19, or 20 on the d20.</p><p><strong>Balance.</strong> You can reroll one D20 Test that you make. You must use the new roll. You can use this feature a number of times equal to your Wisdom modifier, regaining all uses when you finish a Long Rest.</p><p><strong>Mayhem.</strong> You can choose to have your Unarmed Strikes deal Thunder damage. When using your Deflect Attacks and you spend 1 Focus Point to redirect the damage, you add one Martial Arts die in Thunder damage to the damage dealt. You can use this feature a number of times equal to your Wisdom modifier, regaining all uses when you finish a Long Rest.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Way of the Wanderer 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "432e0854fcb0f4a4": {
+        "_id": "432e0854fcb0f4a4",
+        "name": "Path of Fate",
+        "type": "utility",
+        "activation": {
+          "type": "",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-lotus.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Way of the Wanderer",
+      "parentFeature": "b873bf13945a4033",
+      "parentIdentifier": "grimnir-way-of-the-wanderer-path-of-fate",
+      "level": 3,
+      "version": "0.2.0",
+      "execute": "fate"
+    }
+  },
+  "_key": "!items!40c3cc40ac744366"
+}

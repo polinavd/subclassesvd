@@ -1,0 +1,63 @@
+{
+  "_id": "5f044132751934ff",
+  "name": "Три предсказания",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-crystal-ball.svg",
+  "folder": "b7ea24026d36df87",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-wyrd-sorcery-glimpse-the-future-",
+    "description": {
+      "value": "<p>When you roll Initiative, roll three d20s and record the numbers rolled. You can replace the Initiative roll of a creature with one of these rolls. A creature can’t be affected more than once, and a creature can make a Charisma saving throw to resist this effect. On a success, the die is not applied and is wasted. Each die can only be used once and all dice are lost when you are no longer in Initiative.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Wyrd Sorcery 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "1ecf639196fd0a31": {
+        "_id": "1ecf639196fd0a31",
+        "type": "utility",
+        "name": "Три предсказания",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "roll": {
+          "formula": "3d20",
+          "name": "Три предсказания",
+          "visible": true,
+          "prompt": false
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-crystal-ball.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Wyrd Sorcery",
+      "parentFeature": "1ab6d21c2af0d4a9",
+      "parentIdentifier": "lyonesse-wyrd-sorcery-glimpse-the-future",
+      "level": 3,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!5f044132751934ff"
+}

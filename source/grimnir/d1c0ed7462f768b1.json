@@ -2,11 +2,11 @@
   "_id": "d1c0ed7462f768b1",
   "name": "Withdraw",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/willdabeast-round-shield.svg",
   "system": {
     "identifier": "grimnir-marauder-withdraw",
     "description": {
-      "value": "<p><b>Marauder · уровень 3</b></p><p>While wielding a Shield, you can take a Reaction to reduce the damage of an attack by half your Fighter level<br>(rounded down) plus your Constitution modifier (minimum of 1).</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Вычесть результат из одного урона при надетом щите.</li></ul>"
+      "value": "<p>While wielding a Shield, you can take a Reaction to reduce the damage of an attack by half your Fighter level (rounded down) plus your Constitution modifier (minimum of 1).</p><ul><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.3b061106b8f9ea71]{Withdraw}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -22,31 +22,26 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {
-      "4ba3ebea8daa777d": {
-        "_id": "4ba3ebea8daa777d",
-        "type": "utility",
-        "name": "Снижение урона",
-        "activation": {
-          "type": "reaction",
-          "value": 1
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "09526674062c18a1",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Actions",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.3b061106b8f9ea71",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
         },
-        "consumption": {
-          "spellSlot": false,
-          "targets": []
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "roll": {
-          "formula": "max(1, floor(@classes.fighter.levels / 2) + @abilities.con.mod)",
-          "name": "Снижение урона",
-          "visible": true,
-          "prompt": false
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -56,8 +51,12 @@
       "feature": "Withdraw",
       "class": "fighter",
       "level": 3,
-      "notes": [
-        "Вычесть результат из одного урона при надетом щите."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.3b061106b8f9ea71",
+          "level": 3
+        }
       ]
     }
   },

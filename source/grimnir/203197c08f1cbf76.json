@@ -2,11 +2,11 @@
   "_id": "203197c08f1cbf76",
   "name": "Primal Ink",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-quill-ink.svg",
   "system": {
     "identifier": "grimnir-cohesion-of-the-primal-primal-ink",
     "description": {
-      "value": "<p><b>Cohesion of the Primal · уровень 3</b></p><p>Your body is your spellbook. You are proficient with<br>Calligrapher’s Supplies and inscribe your spells as shifting tattoos across your skin. Copying a spell into your tattoos takes twice as long but costs half as much gold as copying into a spellbook. Your tattoo-spellbook cannot be destroyed while you live. Your tattoos do not count as a spellcasting focus.<br>During a Long Rest, your tattoos rearrange, allowing you to choose which spells to prepare. You can surface unprepared tattoos visibly to allow copying or transcription.<br>You must have an Arcane Focus to prepare spells.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+      "value": "<p>Your body is your spellbook. You are proficient with Calligrapher’s Supplies and inscribe your spells as shifting tattoos across your skin. Copying a spell into your tattoos takes twice as long but costs half as much gold as copying into a spellbook. Your tattoo-spellbook cannot be destroyed while you live. Your tattoos do not count as a spellcasting focus. During a Long Rest, your tattoos rearrange, allowing you to choose which spells to prepare. You can surface unprepared tattoos visibly to allow copying or transcription. You must have an Arcane Focus to prepare spells.</p>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -22,7 +22,8 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": []
   },
   "effects": [],
   "flags": {
@@ -32,9 +33,8 @@
       "feature": "Primal Ink",
       "class": "wizard",
       "level": 3,
-      "notes": [
-        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
-      ]
+      "version": "0.2.0",
+      "children": []
     }
   },
   "ownership": {

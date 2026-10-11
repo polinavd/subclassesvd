@@ -1,0 +1,63 @@
+{
+  "_id": "0780716918f8a307",
+  "name": "Dreamer: сохранить заклинание на 4",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-hourglass.svg",
+  "folder": "ff1c1188f5b8ad9f",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-cohesion-of-the-primal-turn-of-fate-dreamer-4",
+    "description": {
+      "value": "<p><strong>Dreamer:</strong> Master Foresayer. When you activate your Stored Foresight spell as a Bonus Action, you can roll 1d4. On a 4, the stored spell is not expended.</p><p><strong>Seeker:</strong> Advanced Disruption. When a spell with a single target affects you or an ally within 10 feet, you may use your Reaction and expend a spell slot equal to or higher than the spell’s level. If you do, the spell fails. Once you use this feature, you cannot do so again until you finish a Short or Long Rest.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Cohesion of the Primal 10",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "03dff1e7a8b28645": {
+        "_id": "03dff1e7a8b28645",
+        "type": "utility",
+        "name": "Dreamer: сохранить заклинание на 4",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "roll": {
+          "formula": "1d4",
+          "name": "Dreamer: сохранить заклинание на 4",
+          "visible": true,
+          "prompt": false
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-hourglass.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Cohesion of the Primal",
+      "parentFeature": "71e8e8310afbd0bb",
+      "parentIdentifier": "grimnir-cohesion-of-the-primal-turn-of-fate",
+      "level": 10,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!0780716918f8a307"
+}

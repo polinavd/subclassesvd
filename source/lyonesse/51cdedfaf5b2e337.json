@@ -2,11 +2,11 @@
   "_id": "51cdedfaf5b2e337",
   "name": "Selkie Warden Spells",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-wave-crest.svg",
   "system": {
     "identifier": "lyonesse-selkie-warden-selkie-warden-spells",
     "description": {
-      "value": "<p><b>Selkie Warden · уровень 3</b></p><p>When you reach a Ranger level specified in the Selkie<br>Warden Spells table, you thereafter always have the listed spells prepared.<br>Selkie Warden Spells<br>Ranger Level<br>Spells<br>3<br>Create or Destroy Water<br>5<br>Hold Person<br>9<br>Water Breathing<br>13<br>Control Water<br>17<br>Cone of Cold</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+      "value": "<p>When you reach a Ranger level specified in the Selkie Warden Spells table, you thereafter always have the listed spells prepared.</p><table><thead><tr><th>Ranger Level</th><th>Spells</th></tr></thead><tbody><tr><td>3</td><td>Create or Destroy Water</td></tr><tr><td>5</td><td>Hold Person</td></tr><tr><td>9</td><td>Water Breathing</td></tr><tr><td>13</td><td>Control Water</td></tr><tr><td>17</td><td>Cone of Cold</td></tr></tbody></table><ul><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.49e929dc28c909a3]{Create or Destroy Water}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.8d072dbefa1df04f]{Hold Person}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.ea5833cb8cc1466d]{Water Breathing}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.4b835b23214f414b]{Control Water}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.bc69d16716d68800]{Cone of Cold}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,7 +22,94 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "8f91f3fb34366bd9",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.49e929dc28c909a3",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "9274eb3e80f29758",
+        "type": "ItemGrant",
+        "level": 5,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.8d072dbefa1df04f",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "41fcace2b2eb4ad9",
+        "type": "ItemGrant",
+        "level": 9,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.ea5833cb8cc1466d",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "a48792d590ea222c",
+        "type": "ItemGrant",
+        "level": 13,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.4b835b23214f414b",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "59c1c1aa9717d957",
+        "type": "ItemGrant",
+        "level": 17,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.bc69d16716d68800",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ]
   },
   "effects": [],
   "flags": {
@@ -32,8 +119,28 @@
       "feature": "Selkie Warden Spells",
       "class": "ranger",
       "level": 3,
-      "notes": [
-        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.49e929dc28c909a3",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.8d072dbefa1df04f",
+          "level": 5
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.ea5833cb8cc1466d",
+          "level": 9
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.4b835b23214f414b",
+          "level": 13
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.bc69d16716d68800",
+          "level": 17
+        }
       ]
     }
   },

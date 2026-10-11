@@ -2,11 +2,11 @@
   "_id": "fe912d43e27ee53b",
   "name": "Enhanced Senses",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-all-seeing-eye.svg",
   "system": {
     "identifier": "grimnir-circle-of-the-devourer-enhanced-senses",
     "description": {
-      "value": "<p><b>Circle of the Devourer · уровень 10</b></p><p>You may use a Bonus Action to gain an additional sense.<br>You may only have one of the following active at one time:<br>• You gain Darkvision out to a range of 120 feet.<br>• You gain Blindsight out to a range of 10 feet.<br>• You gain Tremorsense out to a range of 30 feet.<br>This feature ends if you have the Unconscious condition.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Выбор одного чувства, замена и снятие при Unconscious — макрос управления.</li></ul>"
+      "value": "<p>You may use a Bonus Action to gain an additional sense. You may only have one of the following active at one time:</p><ul><li>You gain Darkvision out to a range of 120 feet.</li><li>You gain Blindsight out to a range of 10 feet.</li><li>You gain Tremorsense out to a range of 30 feet. This feature ends if you have the Unconscious condition.</li></ul><ul><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.072826a308a7698f]{Enhanced Senses}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -22,7 +22,26 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "a321c58c85ba927a",
+        "type": "ItemGrant",
+        "level": 10,
+        "title": "Actions",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.072826a308a7698f",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ]
   },
   "effects": [],
   "flags": {
@@ -32,8 +51,12 @@
       "feature": "Enhanced Senses",
       "class": "druid",
       "level": 10,
-      "notes": [
-        "Выбор одного чувства, замена и снятие при Unconscious — макрос управления."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.072826a308a7698f",
+          "level": 10
+        }
       ]
     }
   },

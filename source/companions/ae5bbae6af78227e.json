@@ -2,7 +2,7 @@
   "_id": "ae5bbae6af78227e",
   "name": "Grimnir Wolf",
   "type": "npc",
-  "img": "icons/svg/mystery-man.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-wolf-head.svg",
   "system": {
     "abilities": {
       "str": {
@@ -54,7 +54,7 @@
       },
       "cr": 1,
       "biography": {
-        "value": "<p>Базовая карточка. Макрос «Управление подклассом» рассчитывает AC, HP, бонус атаки и Primal Bond по владельцу. В книге Passive Perception 14 при Perception +3: расхождение сохранено в примечании, система рассчитывает пассивное значение из навыка.</p>"
+        "value": ""
       }
     },
     "traits": {
@@ -74,7 +74,7 @@
       "_id": "ce4cf8892ea501d8",
       "name": "Pack Tactics",
       "type": "feat",
-      "img": "icons/svg/sword.svg",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-wolf-head.svg",
       "flags": {
         "grimnir-lyonesse": {
           "templateItem": true
@@ -96,7 +96,7 @@
       "_id": "d0ab40ebac6985eb",
       "name": "Primal Bond",
       "type": "feat",
-      "img": "icons/svg/sword.svg",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-wolf-head.svg",
       "flags": {
         "grimnir-lyonesse": {
           "templateItem": true
@@ -104,7 +104,7 @@
       },
       "system": {
         "description": {
-          "value": "<p>Add the rider’s proficiency bonus to every ability check and saving throw. Configured by companion macro.</p>"
+          "value": "<p>Add the rider’s proficiency bonus to ability checks and saving throws.</p>"
         },
         "type": {
           "value": "monster"
@@ -118,7 +118,7 @@
       "_id": "a12fd109b65739e4",
       "name": "Bite",
       "type": "feat",
-      "img": "icons/svg/sword.svg",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-claw-slashes.svg",
       "flags": {
         "grimnir-lyonesse": {
           "templateItem": true
@@ -176,7 +176,8 @@
                 "value": "melee",
                 "classification": "weapon"
               }
-            }
+            },
+            "img": "modules/grimnir-lyonesse/assets/icons/lorc-claw-slashes.svg"
           }
         }
       },
@@ -196,7 +197,7 @@
     "width": 2,
     "height": 2,
     "texture": {
-      "src": "icons/svg/mystery-man.svg"
+      "src": "modules/grimnir-lyonesse/assets/icons/lorc-wolf-head.svg"
     }
   },
   "ownership": {

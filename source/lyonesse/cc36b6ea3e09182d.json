@@ -1,0 +1,55 @@
+{
+  "_id": "cc36b6ea3e09182d",
+  "name": "Master of Chains — Fiend",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-crossed-chains.svg",
+  "folder": "07dd67ea748f54e0",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-spellbinder-master-of-chains-master-of-chains-fiend",
+    "description": {
+      "value": "<p>Your ability to bind otherworldly creatures to your will reaches its apex. When you cast a Summon spell using a level 7+ spell slot, you can choose to replace the Spirit stat block with one of the following fiends: Bone Devil or Chain Devil.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Spellbinder 14",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "80aac22529dc7b11": {
+        "_id": "80aac22529dc7b11",
+        "name": "Master of Chains — Fiend",
+        "type": "utility",
+        "activation": {
+          "type": "",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-crossed-chains.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Spellbinder",
+      "parentFeature": "2f97b2f2ceea41ea",
+      "parentIdentifier": "lyonesse-spellbinder-master-of-chains",
+      "level": 14,
+      "version": "0.2.0",
+      "execute": "masterChains"
+    }
+  },
+  "_key": "!items!cc36b6ea3e09182d"
+}

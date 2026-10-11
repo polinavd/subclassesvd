@@ -2,11 +2,11 @@
   "_id": "49c86b5efd030e97",
   "name": "Lingering Word",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/skoll-sound-waves.svg",
   "system": {
     "identifier": "lyonesse-knight-of-the-sacred-word-lingering-word",
     "description": {
-      "value": "<p><b>Knight of the Sacred Word · уровень 11</b></p><p>Your mastery allows your voice to persist within the mind, compelling obedience beyond the moment of command.<br>When a creature fails its saving throw against your<br>Voice of Authority, you can spend 1 Focus Point at the start of your next turn to extend the command’s duration to 1 minute. You must choose the same effect you imposed with Voice of Authority. After the end of your next turn, the target can repeat the save at the end of each of its turns, ending the effect on a success.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Продлить исходный эффект до минуты; повторные спасброски после конца следующего хода — вручную.</li></ul>"
+      "value": "<p>Your mastery allows your voice to persist within the mind, compelling obedience beyond the moment of command. When a creature fails its saving throw against your Voice of Authority, you can spend 1 Focus Point at the start of your next turn to extend the command’s duration to 1 minute. You must choose the same effect you imposed with Voice of Authority. After the end of your next turn, the target can repeat the save at the end of each of its turns, ending the effect on a success.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.367bafb0d37e755a]{Продлить команду}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,31 +22,26 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {
-      "a7676e5717b2e3c8": {
-        "_id": "a7676e5717b2e3c8",
-        "type": "utility",
-        "name": "Продлить команду",
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "01c41f6dcddb7d28",
+        "type": "ItemGrant",
+        "level": 11,
+        "title": "Actions",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "feat:monks-focus",
-              "value": "1"
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.367bafb0d37e755a",
+              "optional": false
             }
-          ]
+          ],
+          "optional": false,
+          "spell": null
         },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -56,8 +51,12 @@
       "feature": "Lingering Word",
       "class": "monk",
       "level": 11,
-      "notes": [
-        "Продлить исходный эффект до минуты; повторные спасброски после конца следующего хода — вручную."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.367bafb0d37e755a",
+          "level": 11
+        }
       ]
     }
   },

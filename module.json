@@ -1,8 +1,8 @@
 {
   "id": "grimnir-lyonesse",
   "title": "Grimnir & Lyonesse — Subclasses (2024)",
-  "description": "24 subclass entries with level advancement, activities, resources, effects and companion helpers. English rules; Russian setup and automation notes. Target: Foundry 13 / D&D5e 5.2.3. Experimental on Foundry 14.",
-  "version": "0.1.0",
+  "description": "Grimnir and Lyonesse subclasses, features, attacks, spells and companions for D&D5e (2024).",
+  "version": "0.2.0",
   "compatibility": {
     "minimum": "13",
     "verified": "13.351",
@@ -14,7 +14,8 @@
     }
   ],
   "esmodules": [
-    "scripts/main.mjs"
+    "scripts/main.mjs",
+    "scripts/cards.mjs"
   ],
   "relationships": {
     "systems": [
@@ -67,6 +68,17 @@
       "label": "Гримнир / Лайонисс — управление и проверка",
       "path": "packs/macros",
       "type": "Macro",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "spells",
+      "label": "Гримнир / Лайонисс — заклинания",
+      "path": "packs/spells",
+      "type": "Item",
       "system": "dnd5e",
       "ownership": {
         "PLAYER": "OBSERVER",

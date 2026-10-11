@@ -2,7 +2,7 @@
   "_id": "000063343cec1e0e",
   "name": "Misplaced Soul",
   "type": "npc",
-  "img": "icons/svg/mystery-man.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-soul.svg",
   "system": {
     "abilities": {
       "str": {
@@ -55,7 +55,7 @@
       },
       "cr": 0.5,
       "biography": {
-        "value": "<p>Companion lasts 10 minutes; ends when summoner or soul reaches 0 HP, or dismissed as Bonus Action. Create through the subclass management macro. Invisibility, duration and commands require GM tracking. Grapple escape DC equals summoner spell save DC.</p>"
+        "value": ""
       }
     },
     "traits": {
@@ -92,7 +92,7 @@
       "_id": "3bbcd67e54f8eabc",
       "name": "Invisibility",
       "type": "feat",
-      "img": "icons/svg/sword.svg",
+      "img": "modules/grimnir-lyonesse/assets/icons/delapouite-soul.svg",
       "flags": {
         "grimnir-lyonesse": {
           "templateItem": true
@@ -114,7 +114,7 @@
       "_id": "405ac8c0b9208e0b",
       "name": "Interfere",
       "type": "feat",
-      "img": "icons/svg/sword.svg",
+      "img": "modules/grimnir-lyonesse/assets/icons/delapouite-soul.svg",
       "flags": {
         "grimnir-lyonesse": {
           "templateItem": true
@@ -172,7 +172,8 @@
                 "value": "melee",
                 "classification": "weapon"
               }
-            }
+            },
+            "img": "modules/grimnir-lyonesse/assets/icons/delapouite-soul.svg"
           }
         }
       },
@@ -183,7 +184,7 @@
       "_id": "27d74abe610c7905",
       "name": "Thrash",
       "type": "feat",
-      "img": "icons/svg/sword.svg",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-claw-slashes.svg",
       "flags": {
         "grimnir-lyonesse": {
           "templateItem": true
@@ -241,7 +242,8 @@
                 "value": "ranged",
                 "classification": "weapon"
               }
-            }
+            },
+            "img": "modules/grimnir-lyonesse/assets/icons/lorc-claw-slashes.svg"
           }
         }
       },
@@ -252,7 +254,7 @@
       "_id": "381237ec63da92c8",
       "name": "Reduce Harm",
       "type": "feat",
-      "img": "icons/svg/sword.svg",
+      "img": "modules/grimnir-lyonesse/assets/icons/delapouite-soul.svg",
       "flags": {
         "grimnir-lyonesse": {
           "templateItem": true
@@ -283,7 +285,7 @@
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "icons/svg/mystery-man.svg"
+      "src": "modules/grimnir-lyonesse/assets/icons/delapouite-soul.svg"
     }
   },
   "ownership": {

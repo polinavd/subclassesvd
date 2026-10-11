@@ -2,11 +2,11 @@
   "_id": "3a02396d49ee18ab",
   "name": "Rampage",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-bloody-sword.svg",
   "system": {
     "identifier": "lyonesse-marauder-rampage",
     "description": {
-      "value": "<p><b>Marauder · уровень 10</b></p><p>Whenever you or an ally within 10 feet of you reduces a creature to 0 Hit Points with an attack, that creature can take a Bonus Action before the end of the current turn to move up to half its Speed and make one attack.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>После подходящего убийства вручную переместить получателя и бросить его оружие.</li></ul>"
+      "value": "<p>Whenever you or an ally within 10 feet of you reduces a creature to 0 Hit Points with an attack, that creature can take a Bonus Action before the end of the current turn to move up to half its Speed and make one attack.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.6c5e865bd42fbc56]{Rampage}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,25 +22,26 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {
-      "75966b268cbc65ec": {
-        "_id": "75966b268cbc65ec",
-        "type": "utility",
-        "name": "Rampage",
-        "activation": {
-          "type": "bonus",
-          "value": 1
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "7814531fc405a386",
+        "type": "ItemGrant",
+        "level": 10,
+        "title": "Actions",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.6c5e865bd42fbc56",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
         },
-        "consumption": {
-          "spellSlot": false,
-          "targets": []
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -50,8 +51,12 @@
       "feature": "Rampage",
       "class": "fighter",
       "level": 10,
-      "notes": [
-        "После подходящего убийства вручную переместить получателя и бросить его оружие."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.6c5e865bd42fbc56",
+          "level": 10
+        }
       ]
     }
   },

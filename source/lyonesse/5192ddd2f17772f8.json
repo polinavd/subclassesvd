@@ -1,0 +1,58 @@
+{
+  "_id": "5192ddd2f17772f8",
+  "name": "Twinned Shot",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-bow-arrow.svg",
+  "folder": "6548f4d360a0e760",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-outlaw-trick-shot-twinned-shot",
+    "description": {
+      "value": "<p>You gain the following Cunning Strike options.</p><p><strong>Bullseye (Cost: 2d6).</strong> Immediately after the attack, you can make a ranged attack against the same target with Advantage.</p><p><strong>Twinned Shot (Cost: 2d6).</strong> Immediately after the attack, you can make a ranged attack against a different target.</p><p><strong>Mark (Cost: 4d6).</strong> Until the start of your next turn, all attacks from your allies have Advantage on attack rolls against the target.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Outlaw 13",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "0cbc826b7c2f62b3": {
+        "_id": "0cbc826b7c2f62b3",
+        "name": "Twinned Shot",
+        "type": "utility",
+        "activation": {
+          "type": "",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/delapouite-bow-arrow.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Outlaw",
+      "parentFeature": "b7616a3fc3a13646",
+      "parentIdentifier": "lyonesse-outlaw-trick-shot",
+      "level": 13,
+      "version": "0.2.0",
+      "execute": "weaponAttack",
+      "weaponKind": "ranged",
+      "advantage": false,
+      "spendParent": false
+    }
+  },
+  "_key": "!items!5192ddd2f17772f8"
+}

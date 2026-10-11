@@ -1,0 +1,77 @@
+{
+  "_id": "5b3d43c17ea4b446",
+  "name": "Extra Force damage",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/cathelineau-tree-face.svg",
+  "folder": "d64d34d188a6eeab",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-the-ironwood-colossus-of-the-ironwood-extra-force-damage",
+    "description": {
+      "value": "<p>While wearing your Ironwood Armor, you can use a Bonus Action to transform into a Large size, bark-covered humanoid if you are in a space large enough. This transformation lasts for 10 minutes, or until you end it early as a Bonus Action, or if you die. You have the following benefits while transformed:</p><ul><li>You gain Temporary Hit Points equal to five times your Warlock level.</li><li>You have Advantage on attack rolls that you make with Simple and Martial weapons.</li><li>When you hit a creature with a weapon attack, that attack deals an extra 3d6 Force damage. You can deal this extra damage no more than once on each turn. You must finish a Long Rest to use this feature again. You may also regain its use by expending the use of one of your Mystic Arcanum (no action required).</li></ul>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "The Ironwood 14",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "a161968d11f7229c": {
+        "_id": "a161968d11f7229c",
+        "type": "damage",
+        "name": "Extra Force damage",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "3d6"
+              },
+              "types": [
+                "force"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ],
+          "onSave": "none",
+          "includeBase": false
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/cathelineau-tree-face.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "The Ironwood",
+      "parentFeature": "c7bb5f78a3dc29d9",
+      "parentIdentifier": "grimnir-the-ironwood-colossus-of-the-ironwood",
+      "level": 14,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!5b3d43c17ea4b446"
+}

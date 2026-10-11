@@ -2,11 +2,11 @@
   "_id": "e2634260a51266df",
   "name": "World-Thread Mastery",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-spider-web.svg",
   "system": {
     "identifier": "grimnir-way-of-the-wanderer-world-thread-mastery",
     "description": {
-      "value": "<p><b>Way of the Wanderer · уровень 17</b></p><p>While you are in the Balance style, you can spend 1 Focus<br>Point as a Bonus Action to change to either the Order or<br>Mayhem style.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>После траты сменить стиль через макрос.</li></ul>"
+      "value": "<p>While you are in the Balance style, you can spend 1 Focus Point as a Bonus Action to change to either the Order or Mayhem style.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.bf9f2e5b77e46ea8]{Изменить Balance на Order / Mayhem}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -22,31 +22,26 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {
-      "2658e000ce3a6b4c": {
-        "_id": "2658e000ce3a6b4c",
-        "type": "utility",
-        "name": "Изменить Balance на Order / Mayhem",
-        "activation": {
-          "type": "bonus",
-          "value": 1
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "262e4376020ea5e2",
+        "type": "ItemGrant",
+        "level": 17,
+        "title": "Actions",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "feat:monks-focus",
-              "value": "1"
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.bf9f2e5b77e46ea8",
+              "optional": false
             }
-          ]
+          ],
+          "optional": false,
+          "spell": null
         },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -56,8 +51,12 @@
       "feature": "World-Thread Mastery",
       "class": "monk",
       "level": 17,
-      "notes": [
-        "После траты сменить стиль через макрос."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.bf9f2e5b77e46ea8",
+          "level": 17
+        }
       ]
     }
   },

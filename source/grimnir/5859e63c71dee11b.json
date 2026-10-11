@@ -1,0 +1,95 @@
+{
+  "_id": "5859e63c71dee11b",
+  "name": "Bulbous Shell",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-spiked-armor.svg",
+  "folder": "cdafd80b70bcfbb0",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-circle-of-the-devourer-primal-protection-bulbous-shell",
+    "description": {
+      "value": "<p>The primal spirits exert their powers to protect you. If you are hit by an attack, you may use a Reaction to roll on the Primal Protection table to determine a defensive effect. You can use this feature a number of times equal to your Wisdom Modifier, and you regain all expended uses when you finish a Short or Long Rest.</p><table><thead><tr><th>1d6</th><th>Effect</th></tr></thead><tbody><tr><td>1–2</td><td>Protruding Spines: creatures within 5 feet take 2d4 + Wisdom modifier Piercing damage and are pushed 5 feet.</td></tr><tr><td>3–4</td><td>Bulbous Shell: +3 AC until the end of your next turn; the triggering attack can miss.</td></tr><tr><td>5</td><td>Abyssal Glare: until the end of your next turn, a creature that damages you takes Psychic damage equal to twice your Wisdom modifier.</td></tr><tr><td>6</td><td>Aberrant Flesh: regain 2d4 + Wisdom modifier Hit Points after the triggering damage.</td></tr></tbody></table>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Circle of the Devourer 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "3759837027237bfa": {
+        "_id": "3759837027237bfa",
+        "type": "utility",
+        "name": "Bulbous Shell",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [
+          {
+            "_id": "d9efa4398db2100b"
+          }
+        ],
+        "description": {
+          "chatFlavor": ""
+        },
+        "target": {
+          "affects": {
+            "type": "self"
+          },
+          "template": {
+            "type": ""
+          }
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-spiked-armor.svg"
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "d9efa4398db2100b",
+      "name": "Bulbous Shell: +3 AC",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-spiked-armor.svg",
+      "transfer": false,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.attributes.ac.bonus",
+          "mode": 2,
+          "value": "3",
+          "priority": 20
+        }
+      ],
+      "statuses": [],
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true
+        }
+      },
+      "duration": {
+        "seconds": 12
+      },
+      "_key": "!items.effects!5859e63c71dee11b.d9efa4398db2100b"
+    }
+  ],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Circle of the Devourer",
+      "parentFeature": "ed13daffd640d09a",
+      "parentIdentifier": "grimnir-circle-of-the-devourer-primal-protection",
+      "level": 3,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!5859e63c71dee11b"
+}

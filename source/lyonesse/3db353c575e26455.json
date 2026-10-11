@@ -2,11 +2,11 @@
   "_id": "3db353c575e26455",
   "name": "Sevenfold Path",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-holy-grail.svg",
   "system": {
     "identifier": "lyonesse-oath-of-saints-sevenfold-path",
     "description": {
-      "value": "<p><b>Oath of Saints · уровень 15</b></p><p>Consecrated Plate. When you finish a Long Rest, you can consecrate Half Plate Armor or Plate Armor. While wearing this Consecrated Plate, you gain Resistance to<br>Necrotic damage and your choice of either Bludgeoning,<br>Piercing, or Slashing damage and can change your choice when you finish another Long Rest.<br>Shield of the Seven Virtues. At the end of a Long or<br>Short Rest, choose up to three traits from the list below.<br>You and your allies gain these traits while in your Aura of<br>Protection.<br>Charity: Hostile creatures have Disadvantage on attack rolls against any ally in your aura who is Bloodied.<br>Faith: Advantage on Concentration checks.<br>Honor: When a creature in your aura is targeted by an attack, an ally adjacent to them can use their Reaction to impose Disadvantage on that attack.<br>Hope: Allies in your aura who are Bloodied gain +2 AC.<br>Humility: Advantage on Charisma saving throws.<br>Prudence: Advantage on Wisdom saving throws.<br>You retain the chosen traits until you finish another Long or Short Rest and choose new ones.<br>Squire<br>A Knight of Saints is expected to choose a squire when they reach level 7. This squire is to be trained as a possible successor. They are expected to maintain your armor, care for your mount, assist in daily life and train in martial skills.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Consecrated Plate и выбор трёх добродетелей — макрос управления. Условные Charity/Hope/Honor отслеживает ведущая.</li></ul>"
+      "value": "<p><strong>Consecrated Plate.</strong> When you finish a Long Rest, you can consecrate Half Plate Armor or Plate Armor. While wearing this Consecrated Plate, you gain Resistance to Necrotic damage and your choice of either Bludgeoning, Piercing, or Slashing damage and can change your choice when you finish another Long Rest.</p><p><strong>Shield of the Seven Virtues.</strong> At the end of a Long or Short Rest, choose up to three traits from the list below. You and your allies gain these traits while in your Aura of Protection.</p><p><strong>Charity:</strong> Hostile creatures have Disadvantage on attack rolls against any ally in your aura who is Bloodied.</p><p><strong>Faith:</strong> Advantage on Concentration checks.</p><p><strong>Honor:</strong> When a creature in your aura is targeted by an attack, an ally adjacent to them can use their Reaction to impose Disadvantage on that attack.</p><p><strong>Hope:</strong> Allies in your aura who are Bloodied gain +2 AC.</p><p><strong>Humility:</strong> Advantage on Charisma saving throws.</p><p><strong>Prudence:</strong> Advantage on Wisdom saving throws. You retain the chosen traits until you finish another Long or Short Rest and choose new ones.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.7ba347201b3b54be]{Consecrated Plate}</li><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.740865f8f5d96f13]{Shield of the Seven Virtues}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,7 +22,30 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "bdf26115bca4c572",
+        "type": "ItemGrant",
+        "level": 15,
+        "title": "Actions",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.7ba347201b3b54be",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.740865f8f5d96f13",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ]
   },
   "effects": [],
   "flags": {
@@ -32,8 +55,16 @@
       "feature": "Sevenfold Path",
       "class": "paladin",
       "level": 15,
-      "notes": [
-        "Consecrated Plate и выбор трёх добродетелей — макрос управления. Условные Charity/Hope/Honor отслеживает ведущая."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.7ba347201b3b54be",
+          "level": 15
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.740865f8f5d96f13",
+          "level": 15
+        }
       ]
     }
   },

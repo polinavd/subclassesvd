@@ -1,0 +1,63 @@
+{
+  "_id": "a1defbb3dba39009",
+  "name": "Withdraw",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/willdabeast-round-shield.svg",
+  "folder": "5992503abbb58a4b",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-marauder-withdraw-withdraw",
+    "description": {
+      "value": "<p>While wielding a Shield, you can take a Reaction to reduce the damage of an attack by half your Fighter level (rounded down) plus your Constitution modifier (minimum of 1). Every dent upon my shield was struck for the warrior beside me. That is the glory of the wall. —Cranhath Antonsson, Grimfolk Jarl</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Marauder 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "3eeb246a66dee835": {
+        "_id": "3eeb246a66dee835",
+        "type": "utility",
+        "name": "Withdraw",
+        "activation": {
+          "type": "reaction",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "roll": {
+          "formula": "max(1, floor(@classes.fighter.levels / 2) + @abilities.con.mod)",
+          "name": "Снижение урона",
+          "visible": true,
+          "prompt": false
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/willdabeast-round-shield.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Marauder",
+      "parentFeature": "fff534d2ac2028cd",
+      "parentIdentifier": "lyonesse-marauder-withdraw",
+      "level": 3,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!a1defbb3dba39009"
+}

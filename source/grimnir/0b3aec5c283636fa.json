@@ -2,11 +2,11 @@
   "_id": "0b3aec5c283636fa",
   "name": "Breaker’s Charge",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-charging-bull.svg",
   "system": {
     "identifier": "grimnir-marauder-breaker-s-charge",
     "description": {
-      "value": "<p><b>Marauder · уровень 7</b></p><p>As a Bonus Action, you may spend one use of your<br>Second Wind to move in a straight line up to a distance equal to your Speed. Each creature whose size is one category larger than yours or smaller, and whose space you enter during this movement, must make a Strength saving throw. The DC equals 8 plus your Proficiency Bonus plus your Strength modifier.<br>On a failed save, the creature takes Bludgeoning damage equal to your Strength Modifier and the creature has the Prone condition and is pushed 5 feet to the side of your path. On a successful save, your movement for this action immediately ends.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Маршрут, размер целей, отталкивание и остановка на успешном спасброске — вручную; Second Wind тратится один раз за рывок.</li></ul>"
+      "value": "<p>As a Bonus Action, you may spend one use of your Second Wind to move in a straight line up to a distance equal to your Speed. Each creature whose size is one category larger than yours or smaller, and whose space you enter during this movement, must make a Strength saving throw. The DC equals 8 plus your Proficiency Bonus plus your Strength modifier. On a failed save, the creature takes Bludgeoning damage equal to your Strength Modifier and the creature has the Prone condition and is pushed 5 feet to the side of your path. On a successful save, your movement for this action immediately ends.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.0495ad17895b0406]{Breaker’s Charge}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -22,70 +22,32 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {
-      "24e4a2b571fe8588": {
-        "_id": "24e4a2b571fe8588",
-        "type": "save",
-        "name": "Breaker’s Charge",
-        "activation": {
-          "type": "bonus",
-          "value": 1
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "400d360a30177e9e",
+        "type": "ItemGrant",
+        "level": 7,
+        "title": "Actions",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "feat:second-wind",
-              "value": "1"
-            }
-          ]
-        },
-        "effects": [
-          {
-            "_id": "4fa34172ce72d7fd"
-          }
-        ],
-        "description": {
-          "chatFlavor": ""
-        },
-        "damage": {
-          "parts": [
-            {
-              "custom": {
-                "enabled": true,
-                "formula": "@abilities.str.mod"
-              },
-              "types": [
-                "bludgeoning"
-              ],
-              "scaling": {
-                "mode": "",
-                "number": null,
-                "formula": ""
-              }
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.0495ad17895b0406",
+              "optional": false
             }
           ],
-          "onSave": "none",
-          "includeBase": false
+          "optional": false,
+          "spell": null
         },
-        "save": {
-          "ability": [
-            "str"
-          ],
-          "dc": {
-            "calculation": "str",
-            "formula": ""
-          }
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [
     {
       "_id": "4fa34172ce72d7fd",
       "name": "Breaker’s Charge: Prone",
-      "img": "icons/svg/book.svg",
+      "img": "modules/grimnir-lyonesse/assets/icons/delapouite-charging-bull.svg",
       "transfer": false,
       "disabled": false,
       "changes": [],
@@ -108,8 +70,12 @@
       "feature": "Breaker’s Charge",
       "class": "fighter",
       "level": 7,
-      "notes": [
-        "Маршрут, размер целей, отталкивание и остановка на успешном спасброске — вручную; Second Wind тратится один раз за рывок."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.0495ad17895b0406",
+          "level": 7
+        }
       ]
     }
   },

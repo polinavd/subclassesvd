@@ -1,0 +1,55 @@
+{
+  "_id": "20b8ab9a4094bdf7",
+  "name": "Spellcasting Ability",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-spell-book.svg",
+  "folder": "4abb7a3dcaaf0cac",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-true-believer-spellcasting-spellcasting-ability",
+    "description": {
+      "value": "<p>You gain the ability to cast spells from the Cleric list.</p><p><strong>Cantrips.</strong> You know three cantrips of your choice from the Cleric spell list.</p><p><strong>Spell Slots.</strong> The True Believer Spellcasting table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.</p><p><strong>Prepared Spells of Level 1+.</strong> You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose three level 1 spells from the Cleric spell list. The number of spells on your list increases as you gain Rogue levels, as shown in the Prepared Spells column of the True Believer Spellcasting table. Whenever that number increases, choose additional spells from the Cleric spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots.</p><p><strong>Changing Your Prepared Spells.</strong> Whenever you gain a Rogue level, you can replace one spell on your list with another Cleric spells for which you have spell slots.</p><p><strong>Spellcasting Ability.</strong> Intelligence or Wisdom (your choice) is your spellcasting ability for your Cleric spells.</p><p><strong>Spellcasting Focus.</strong> You can use a Holy Symbol as a Spellcasting Focus for your Cleric spells.</p><table><thead><tr><th>Rogue Level</th><th>Prepared Spells</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th></tr></thead><tbody><tr><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr><tr><td>4</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr><tr><td>5</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr><tr><td>6</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr><tr><td>7</td><td>5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr><tr><td>8</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr><tr><td>9</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr><tr><td>10</td><td>7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr><tr><td>11</td><td>8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr><tr><td>12</td><td>8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr><tr><td>13</td><td>9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr><tr><td>14</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr><tr><td>15</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr><tr><td>16</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr><tr><td>17</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr><tr><td>18</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr><tr><td>19</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr><tr><td>20</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr></tbody></table>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "True Believer 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "9f28c0b4b41a1084": {
+        "_id": "9f28c0b4b41a1084",
+        "name": "Spellcasting Ability",
+        "type": "utility",
+        "activation": {
+          "type": "",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/delapouite-spell-book.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "True Believer",
+      "parentFeature": "3c2687db4d6acb14",
+      "parentIdentifier": "grimnir-true-believer-spellcasting",
+      "level": 3,
+      "version": "0.2.0",
+      "execute": "ability"
+    }
+  },
+  "_key": "!items!20b8ab9a4094bdf7"
+}

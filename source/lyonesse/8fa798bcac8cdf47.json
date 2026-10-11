@@ -1,0 +1,58 @@
+{
+  "_id": "8fa798bcac8cdf47",
+  "name": "Saint’s Reprieve — Attack",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-winged-sword.svg",
+  "folder": "7a918a48d1938fb1",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-oath-of-saints-judgment-of-the-anointed-saint-s-reprieve-attack",
+    "description": {
+      "value": "<p><strong>Burning Edict.</strong> When you cast Compelled Duel on a creature and it fails its saving throw, you ignore all of that creature’s damage Resistances when you deal damage to it, in addition to the spell’s normal effects.</p><p><strong>Saint’s Reprieve.</strong> When you must make a Death Saving Throw, you may expend a use of your Channel Divinity. If you do so, you regain Hit Points equal to your Paladin level + the roll of your Death Saving Throw. Until the start of your next turn, you can use a Bonus action to make an attack with Advantage on the roll.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Oath of Saints 7",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "38d8925f214014c4": {
+        "_id": "38d8925f214014c4",
+        "name": "Saint’s Reprieve — Attack",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-winged-sword.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Oath of Saints",
+      "parentFeature": "7c735f276e6ffaea",
+      "parentIdentifier": "lyonesse-oath-of-saints-judgment-of-the-anointed",
+      "level": 7,
+      "version": "0.2.0",
+      "execute": "weaponAttack",
+      "weaponKind": "any",
+      "advantage": true,
+      "spendParent": false
+    }
+  },
+  "_key": "!items!8fa798bcac8cdf47"
+}

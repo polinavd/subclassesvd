@@ -2,11 +2,11 @@
   "_id": "47bac1ec2d481b2f",
   "name": "Tree Passage",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-tree-door.svg",
   "system": {
     "identifier": "grimnir-the-ironwood-tree-passage",
     "description": {
-      "value": "<p><b>The Ironwood · уровень 10</b></p><p>You gain the ability to enter a tree and move from inside it to inside another tree within 500 feet. Both trees must be at least the same size as you. You must use 5 feet of movement to enter a tree. You instantly know the location of all other trees within 500 feet and, as part of the move used to enter the tree, can either pass into one of those trees or step out of the tree you’re in. You appear in a spot of your choice within 5 feet of the destination tree, using another 5 feet of movement. If you have no movement left, you appear within 5 feet of the tree you entered.<br>When you exit one of two things happen:<br>Intelligent Tree. If the tree has an Intelligence score, roll a number of d6 equal to your Charisma Modifier. You regain Hit Points equal to the total.<br>Nonintelligent Tree. If the tree has no Intelligence score, it explodes. All creatures of your choice within 15 feet must make a Dexterity saving throw (using your Warlock spell save DC). Failure: 5d6 Piercing damage.<br>Success: Half damage<br>You can use Tree Passage a number of times equal to your Charisma Modifier, regaining all uses on a Short or<br>Long Rest.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Выбирать только один выход; перемещение до 500 ft через деревья — вручную.</li></ul>"
+      "value": "<p>You gain the ability to enter a tree and move from inside it to inside another tree within 500 feet. Both trees must be at least the same size as you. You must use 5 feet of movement to enter a tree. You instantly know the location of all other trees within 500 feet and, as part of the move used to enter the tree, can either pass into one of those trees or step out of the tree you’re in. You appear in a spot of your choice within 5 feet of the destination tree, using another 5 feet of movement. If you have no movement left, you appear within 5 feet of the tree you entered. When you exit one of two things happen:</p><p><strong>Intelligent Tree.</strong> If the tree has an Intelligence score, roll a number of d6 equal to your Charisma Modifier. You regain Hit Points equal to the total.</p><p><strong>Nonintelligent Tree.</strong> If the tree has no Intelligence score, it explodes. All creatures of your choice within 15 feet must make a Dexterity saving throw (using your Warlock spell save DC). Failure: 5d6 Piercing damage. Success: Half damage You can use Tree Passage a number of times equal to your Charisma Modifier, regaining all uses on a Short or Long Rest.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.ce1624e77f45bd36]{Intelligent Tree}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.01fff7e207c7fdf7]{Nonintelligent Tree}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -27,118 +27,30 @@
         }
       ]
     },
-    "activities": {
-      "058229f48349e2f0": {
-        "_id": "058229f48349e2f0",
-        "type": "heal",
-        "name": "Intelligent Tree",
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "531b16ccfec46ea8",
+        "type": "ItemGrant",
+        "level": 10,
+        "title": "Actions",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "",
-              "value": "1"
-            }
-          ]
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "healing": {
-          "custom": {
-            "enabled": true,
-            "formula": "(@abilities.cha.mod)d6"
-          },
-          "types": [
-            "healing"
-          ],
-          "scaling": {
-            "mode": "",
-            "number": null,
-            "formula": ""
-          }
-        },
-        "target": {
-          "affects": {
-            "type": "self"
-          },
-          "template": {
-            "type": ""
-          }
-        }
-      },
-      "406fcd827c28ad98": {
-        "_id": "406fcd827c28ad98",
-        "type": "save",
-        "name": "Nonintelligent Tree",
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.ce1624e77f45bd36",
+              "optional": false
+            },
             {
-              "type": "itemUses",
-              "target": "",
-              "value": "1"
-            }
-          ]
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "range": {
-          "value": "15",
-          "units": "ft"
-        },
-        "target": {
-          "affects": {
-            "type": "creature",
-            "count": ""
-          },
-          "template": {
-            "type": ""
-          }
-        },
-        "damage": {
-          "parts": [
-            {
-              "custom": {
-                "enabled": true,
-                "formula": "5d6"
-              },
-              "types": [
-                "piercing"
-              ],
-              "scaling": {
-                "mode": "",
-                "number": null,
-                "formula": ""
-              }
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.01fff7e207c7fdf7",
+              "optional": false
             }
           ],
-          "onSave": "half",
-          "includeBase": false
+          "optional": false,
+          "spell": null
         },
-        "save": {
-          "ability": [
-            "dex"
-          ],
-          "dc": {
-            "calculation": "cha",
-            "formula": ""
-          }
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -148,8 +60,16 @@
       "feature": "Tree Passage",
       "class": "warlock",
       "level": 10,
-      "notes": [
-        "Выбирать только один выход; перемещение до 500 ft через деревья — вручную."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.ce1624e77f45bd36",
+          "level": 10
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.01fff7e207c7fdf7",
+          "level": 10
+        }
       ]
     }
   },

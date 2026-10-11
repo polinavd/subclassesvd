@@ -2,11 +2,11 @@
   "_id": "aba918ded4029687",
   "name": "Scholar of the Wyrd",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-open-book.svg",
   "system": {
     "identifier": "lyonesse-wyrd-sorcery-scholar-of-the-wyrd",
     "description": {
-      "value": "<p><b>Wyrd Sorcery · уровень 3</b></p><p>You also gain proficiency in History and Insight. When you make an ability check using either skill, you can add your Charisma modifier to the roll. You can use this feature a number of times equal to your Charisma modifier<br>(minimum of once), and you regain all expended uses when you finish a Long Rest.</p>"
+      "value": "<p>You also gain proficiency in History and Insight. When you make an ability check using either skill, you can add your Charisma modifier to the roll. You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.c370d282d985cceb]{Scholar of the Wyrd — Bonus}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -27,37 +27,26 @@
         }
       ]
     },
-    "activities": {
-      "90aec1682e2303fc": {
-        "_id": "90aec1682e2303fc",
-        "type": "utility",
-        "name": "Бонус к History / Insight",
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "fb5a1b2b6eaf76c8",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Actions",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "",
-              "value": "1"
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.c370d282d985cceb",
+              "optional": false
             }
-          ]
+          ],
+          "optional": false,
+          "spell": null
         },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "roll": {
-          "formula": "@abilities.cha.mod",
-          "name": "Бонус к History / Insight",
-          "visible": true,
-          "prompt": false
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -67,7 +56,13 @@
       "feature": "Scholar of the Wyrd",
       "class": "sorcerer",
       "level": 3,
-      "notes": []
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.c370d282d985cceb",
+          "level": 3
+        }
+      ]
     }
   },
   "ownership": {

@@ -2,11 +2,11 @@
   "_id": "3c2687db4d6acb14",
   "name": "Spellcasting",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-spell-book.svg",
   "system": {
     "identifier": "grimnir-true-believer-spellcasting",
     "description": {
-      "value": "<p><b>True Believer · уровень 3</b></p><p>You gain the ability to cast spells from the Cleric list.<br>Cantrips. You know three cantrips of your choice from the Cleric spell list.<br>Spell Slots. The True Believer Spellcasting table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a<br>Long Rest.<br>Prepared Spells of Level 1+. You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose three level 1 spells from the Cleric spell list. The number of spells on your list increases as you gain Rogue levels, as shown in the<br>Prepared Spells column of the True Believer Spellcasting table. Whenever that number increases, choose additional spells from the Cleric spell list until the number of spells on your list matches the number on the table.<br>The chosen spells must be of a level for which you have spell slots.<br>Changing Your Prepared Spells. Whenever you gain a Rogue level, you can replace one spell on your list with another Cleric spells for which you have spell slots.<br>Spellcasting Ability. Intelligence or Wisdom (your choice) is your spellcasting ability for your Cleric spells.<br>Spellcasting Focus. You can use a Holy Symbol as a<br>Spellcasting Focus for your Cleric spells.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Прогрессия слотов third включена; по умолчанию Wisdom. Intelligence можно выбрать макросом. 3 кантрипа и подготовленные Cleric spells выбираются вручную.</li></ul>"
+      "value": "<p>You gain the ability to cast spells from the Cleric list.</p><p><strong>Cantrips.</strong> You know three cantrips of your choice from the Cleric spell list.</p><p><strong>Spell Slots.</strong> The True Believer Spellcasting table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.</p><p><strong>Prepared Spells of Level 1+.</strong> You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose three level 1 spells from the Cleric spell list. The number of spells on your list increases as you gain Rogue levels, as shown in the Prepared Spells column of the True Believer Spellcasting table. Whenever that number increases, choose additional spells from the Cleric spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots.</p><p><strong>Changing Your Prepared Spells.</strong> Whenever you gain a Rogue level, you can replace one spell on your list with another Cleric spells for which you have spell slots.</p><p><strong>Spellcasting Ability.</strong> Intelligence or Wisdom (your choice) is your spellcasting ability for your Cleric spells.</p><p><strong>Spellcasting Focus.</strong> You can use a Holy Symbol as a Spellcasting Focus for your Cleric spells.</p><table><thead><tr><th>Rogue Level</th><th>Prepared Spells</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th></tr></thead><tbody><tr><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr><tr><td>4</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr><tr><td>5</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr><tr><td>6</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr><tr><td>7</td><td>5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr><tr><td>8</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr><tr><td>9</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr><tr><td>10</td><td>7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr><tr><td>11</td><td>8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr><tr><td>12</td><td>8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr><tr><td>13</td><td>9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr><tr><td>14</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr><tr><td>15</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr><tr><td>16</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr><tr><td>17</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr><tr><td>18</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr><tr><td>19</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr><tr><td>20</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr></tbody></table><ul><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.20b8ab9a4094bdf7]{Spellcasting Ability}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -22,7 +22,172 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "0f4b89860fee1422",
+        "type": "ItemChoice",
+        "level": 3,
+        "title": "Cleric Cantrips",
+        "configuration": {
+          "allowDrops": true,
+          "choices": {
+            "3": {
+              "count": 3,
+              "replacement": false
+            }
+          },
+          "pool": [],
+          "restriction": {
+            "level": "0",
+            "list": [
+              "cleric"
+            ],
+            "subtype": "",
+            "type": "spell"
+          },
+          "spell": {
+            "ability": [
+              "int",
+              "wis"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "type": "spell"
+        },
+        "value": {}
+      },
+      {
+        "_id": "51789cdcbc50e6c2",
+        "type": "ItemChoice",
+        "level": 3,
+        "title": "Cleric Prepared Spells",
+        "configuration": {
+          "allowDrops": true,
+          "choices": {
+            "3": {
+              "count": 3,
+              "replacement": false
+            },
+            "4": {
+              "count": 1,
+              "replacement": true
+            },
+            "5": {
+              "count": 0,
+              "replacement": true
+            },
+            "6": {
+              "count": 0,
+              "replacement": true
+            },
+            "7": {
+              "count": 1,
+              "replacement": true
+            },
+            "8": {
+              "count": 1,
+              "replacement": true
+            },
+            "9": {
+              "count": 0,
+              "replacement": true
+            },
+            "10": {
+              "count": 1,
+              "replacement": true
+            },
+            "11": {
+              "count": 1,
+              "replacement": true
+            },
+            "12": {
+              "count": 0,
+              "replacement": true
+            },
+            "13": {
+              "count": 1,
+              "replacement": true
+            },
+            "14": {
+              "count": 1,
+              "replacement": true
+            },
+            "15": {
+              "count": 0,
+              "replacement": true
+            },
+            "16": {
+              "count": 1,
+              "replacement": true
+            },
+            "17": {
+              "count": 0,
+              "replacement": true
+            },
+            "18": {
+              "count": 0,
+              "replacement": true
+            },
+            "19": {
+              "count": 1,
+              "replacement": true
+            },
+            "20": {
+              "count": 1,
+              "replacement": true
+            }
+          },
+          "pool": [],
+          "restriction": {
+            "level": "available",
+            "list": [
+              "cleric"
+            ],
+            "subtype": "",
+            "type": "spell"
+          },
+          "spell": {
+            "ability": [
+              "int",
+              "wis"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "type": "spell"
+        },
+        "value": {}
+      },
+      {
+        "_id": "2b58e7c0a7f73992",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Actions",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.20b8ab9a4094bdf7",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ]
   },
   "effects": [],
   "flags": {
@@ -32,8 +197,12 @@
       "feature": "Spellcasting",
       "class": "rogue",
       "level": 3,
-      "notes": [
-        "Прогрессия слотов third включена; по умолчанию Wisdom. Intelligence можно выбрать макросом. 3 кантрипа и подготовленные Cleric spells выбираются вручную."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.20b8ab9a4094bdf7",
+          "level": 3
+        }
       ]
     }
   },

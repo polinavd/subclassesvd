@@ -2,11 +2,11 @@
   "_id": "e3da596a5c8b5b49",
   "name": "Saintly Challenge",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-sword-clash.svg",
   "system": {
     "identifier": "lyonesse-oath-of-saints-saintly-challenge",
     "description": {
-      "value": "<p><b>Oath of Saints · уровень 3</b></p><p>Challenge Without Hesitation. You can cast Compelled<br>Duel a number of times equal to your Strength Modifier without expending a spell slot. You regain all expended uses of this ability when you finish a Long Rest.<br>Unbroken Vow. Taking damage from the target of<br>Compelled Duel can’t break your Concentration on Compelled Duel.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Нажать заклинание без расхода слота после этой кнопки. Сохранение концентрации от цели — вручную.</li></ul>"
+      "value": "<p><strong>Challenge Without Hesitation.</strong> You can cast Compelled Duel a number of times equal to your Strength Modifier without expending a spell slot. You regain all expended uses of this ability when you finish a Long Rest.</p><p><strong>Unbroken Vow.</strong> Taking damage from the target of Compelled Duel can’t break your Concentration on Compelled Duel.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.3063ccbf2a047aeb]{Compelled Duel — Saintly Challenge}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -27,31 +27,26 @@
         }
       ]
     },
-    "activities": {
-      "417b08eb09c59759": {
-        "_id": "417b08eb09c59759",
-        "type": "utility",
-        "name": "Compelled Duel без слота",
-        "activation": {
-          "type": "bonus",
-          "value": 1
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "ecfa1a9d9fed8441",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Spells",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "",
-              "value": "1"
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.3063ccbf2a047aeb",
+              "optional": false
             }
-          ]
+          ],
+          "optional": false,
+          "spell": null
         },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -61,8 +56,12 @@
       "feature": "Saintly Challenge",
       "class": "paladin",
       "level": 3,
-      "notes": [
-        "Нажать заклинание без расхода слота после этой кнопки. Сохранение концентрации от цели — вручную."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.3063ccbf2a047aeb",
+          "level": 3
+        }
       ]
     }
   },

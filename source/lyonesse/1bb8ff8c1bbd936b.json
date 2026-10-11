@@ -2,11 +2,11 @@
   "_id": "1bb8ff8c1bbd936b",
   "name": "Archimandrite",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-pope-crown.svg",
   "system": {
     "identifier": "lyonesse-college-of-the-voice-archimandrite",
     "description": {
-      "value": "<p><b>College of the Voice · уровень 14</b></p><p>As an Archimandrite it is your duty to safeguard doctrine and liturgical life. You have mastered all aspects of training within the College.<br>Ancient Memory. After a Long Rest you can choose one skill and gain Expertise with it. You do not need to be proficient with this skill. You retain this expertise until you finish another Long Rest.<br>Voice Beyond Flesh. You can expend one of your Bardic Inspiration dice to end one of the following conditions on yourself: Incapacitated, Paralyzed, Stunned.<br>Voice That Binds. When you cast Geas, the casting time is 1 round. While a creature is affected by your Geas, it has Disadvantage on saving throws against your spells.<br>If it takes damage for defying your command, add your<br>Bard level to that damage.<br>Voice that Humbles. A creature Charmed by your<br>Compulsion spell falls Prone at the end of any movement it takes on its turn, unless you choose for it to remain standing (no action required).</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Voice Beyond Flesh и выбор Expertise — макрос управления; изменения Geas/Compulsion — вручную.</li></ul>"
+      "value": "<p>As an Archimandrite it is your duty to safeguard doctrine and liturgical life. You have mastered all aspects of training within the College.</p><p><strong>Ancient Memory.</strong> After a Long Rest you can choose one skill and gain Expertise with it. You do not need to be proficient with this skill. You retain this expertise until you finish another Long Rest.</p><p><strong>Voice Beyond Flesh.</strong> You can expend one of your Bardic Inspiration dice to end one of the following conditions on yourself: Incapacitated, Paralyzed, Stunned.</p><p><strong>Voice That Binds.</strong> When you cast Geas, the casting time is 1 round. While a creature is affected by your Geas, it has Disadvantage on saving throws against your spells. If it takes damage for defying your command, add your Bard level to that damage.</p><p><strong>Voice that Humbles.</strong> A creature Charmed by your Compulsion spell falls Prone at the end of any movement it takes on its turn, unless you choose for it to remain standing (no action required).</p><ul><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.e79992dd83beeb63]{Ancient Memory}</li><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.fed5633c468b0bde]{Voice Beyond Flesh}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,7 +22,30 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "22d48d336e45b143",
+        "type": "ItemGrant",
+        "level": 14,
+        "title": "Actions",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.e79992dd83beeb63",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.fed5633c468b0bde",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ]
   },
   "effects": [],
   "flags": {
@@ -32,8 +55,16 @@
       "feature": "Archimandrite",
       "class": "bard",
       "level": 14,
-      "notes": [
-        "Voice Beyond Flesh и выбор Expertise — макрос управления; изменения Geas/Compulsion — вручную."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.e79992dd83beeb63",
+          "level": 14
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.fed5633c468b0bde",
+          "level": 14
+        }
       ]
     }
   },

@@ -1,0 +1,102 @@
+{
+  "_id": "c3261cf0e1fedb3f",
+  "name": "Final Punch",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-lightning-tree.svg",
+  "folder": "6b194b9e5a9172f5",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-way-of-the-wanderer-forked-destiny-final-punch",
+    "description": {
+      "value": "<p>You can spend Focus Points on powers associated with either Order or</p><p><strong>Mayhem.</strong> Order Powers</p><p><strong>Final Punch.</strong> As a Bonus Action after hitting a creature with an attack, you can spend 3 Focus points to force it to make a Charisma saving throw or be transported to a harmless demiplane. While there, the target has the Incapacitated condition. At the end of its next turn, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. You can’t use this power again until you roll Initiative.</p><p><strong>Twist of Fate.</strong> When a creature within 5 feet takes damage from a melee attack, you can spend 2 Focus points and use your Reaction to reduce the damage by your Monk level plus your Wisdom modifier. Your Unarmed Strikes deal an extra 1d6 Radiant damage until the end of your next turn. Mayhem Powers</p><p><strong>Lightning Leap.</strong> As a Bonus Action, you can spend 2 Focus points to teleport up to 60 feet to a space you can see. Your Unarmed Strikes this turn deal an extra 1d6 Lightning damage.</p><p><strong>Steal Fate.</strong> As a Bonus Action, you can spend 4 Focus points to swap Initiative positions with a creature you can see within 60 feet. You can’t use this power again until you roll Initiative. A creature can’t take two turns in a round as a result of this effect, and if a creature would lose its turn this round as a result of this effect, it takes its turn immediately after your turn this round.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Way of the Wanderer 6",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "d7691bc7b79b8e8b": {
+        "_id": "d7691bc7b79b8e8b",
+        "type": "save",
+        "name": "Final Punch",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:monks-focus",
+              "value": "3"
+            }
+          ]
+        },
+        "effects": [
+          {
+            "_id": "22abd28c9b3e6282"
+          }
+        ],
+        "description": {
+          "chatFlavor": ""
+        },
+        "damage": {
+          "parts": [],
+          "onSave": "none",
+          "includeBase": false
+        },
+        "save": {
+          "ability": [
+            "cha"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-lightning-tree.svg"
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "22abd28c9b3e6282",
+      "name": "Final Punch: Incapacitated",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-lightning-tree.svg",
+      "transfer": false,
+      "disabled": false,
+      "changes": [],
+      "statuses": [
+        "incapacitated"
+      ],
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true
+        }
+      },
+      "duration": {
+        "seconds": 12
+      },
+      "_key": "!items.effects!c3261cf0e1fedb3f.22abd28c9b3e6282"
+    }
+  ],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Way of the Wanderer",
+      "parentFeature": "86f007c93ffff8ad",
+      "parentIdentifier": "grimnir-way-of-the-wanderer-forked-destiny",
+      "level": 6,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!c3261cf0e1fedb3f"
+}

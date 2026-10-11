@@ -2,11 +2,11 @@
   "_id": "9335d1f4bd27b423",
   "name": "Enduring Inspiration",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-linked-rings.svg",
   "system": {
     "identifier": "grimnir-college-of-the-seers-enduring-inspiration",
     "description": {
-      "value": "<p><b>College of the Seers · уровень 6</b></p><p>You learn two additional fates that you can apply with your Bestow Fate feature:<br>Bold. Add a roll of your Bardic Inspiration die to the first ability check the creature makes on each of its turns.<br>Sturdy. Add a roll of your Bardic Inspiration die to the first saving throw the creature makes on each of its turns.<br>In addition, you can bind the fate of multiple creatures.<br>When you take the Magic Action to use Bestow Fate, you can target 2 creatures instead of one and expend one use of Bardic Inspiration for each.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Bestow Fate: на 6 уровне доступны две цели; расходовать Inspiration за каждую. Bold / Sturdy — через макрос.</li></ul>"
+      "value": "<p>You learn two additional fates that you can apply with your Bestow Fate feature:</p><p><strong>Bold.</strong> Add a roll of your Bardic Inspiration die to the first ability check the creature makes on each of its turns.</p><p><strong>Sturdy.</strong> Add a roll of your Bardic Inspiration die to the first saving throw the creature makes on each of its turns. In addition, you can bind the fate of multiple creatures. When you take the Magic Action to use Bestow Fate, you can target 2 creatures instead of one and expend one use of Bardic Inspiration for each.</p>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -22,7 +22,8 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": []
   },
   "effects": [],
   "flags": {
@@ -32,9 +33,8 @@
       "feature": "Enduring Inspiration",
       "class": "bard",
       "level": 6,
-      "notes": [
-        "Bestow Fate: на 6 уровне доступны две цели; расходовать Inspiration за каждую. Bold / Sturdy — через макрос."
-      ]
+      "version": "0.2.0",
+      "children": []
     }
   },
   "ownership": {

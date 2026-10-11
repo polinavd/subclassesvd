@@ -2,11 +2,11 @@
   "_id": "8a3771927baca145",
   "name": "Awakened Legacy",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-dragon-spiral.svg",
   "system": {
     "identifier": "lyonesse-circle-of-the-wurm-awakened-legacy",
     "description": {
-      "value": "<p><b>Circle of the Wurm · уровень 10</b></p><p>Your shared draconic soul blooms.<br>Mature Form. When you assume a Wild Shape form, you can choose to take the form of a Juvenile Black<br>Dragon. Your Black Dragon form follows all the same rules as the Wild Shape form.<br>Enhanced Attacks. When you Wild Shape into a creature with “Black Dragon” in its name, you can use your spell save DC instead of the DC listed in the stat block and your spell attack modifier instead of the listed attack bonus.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+      "value": "<p>Your shared draconic soul blooms.</p><p><strong>Mature Form.</strong> When you assume a Wild Shape form, you can choose to take the form of a Juvenile Black Dragon. Your Black Dragon form follows all the same rules as the Wild Shape form.</p><p><strong>Enhanced Attacks.</strong> When you Wild Shape into a creature with “Black Dragon” in its name, you can use your spell save DC instead of the DC listed in the stat block and your spell attack modifier instead of the listed attack bonus.</p>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,7 +22,8 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": []
   },
   "effects": [],
   "flags": {
@@ -32,9 +33,8 @@
       "feature": "Awakened Legacy",
       "class": "druid",
       "level": 10,
-      "notes": [
-        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
-      ]
+      "version": "0.2.0",
+      "children": []
     }
   },
   "ownership": {

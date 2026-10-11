@@ -2,11 +2,11 @@
   "_id": "99dd572023d55d80",
   "name": "Oath Spells",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-spell-book.svg",
   "system": {
     "identifier": "grimnir-oath-of-the-slain-oath-spells",
     "description": {
-      "value": "<p><b>Oath of the Slain · уровень 3</b></p><p>You gain Oath Spells at the listed levels and always have them prepared.<br>Oath of the Slain Spells<br>Paladin Level<br>Spells<br>3<br>Hellish Rebuke, Heroism<br>5<br>Branding Smite, Hold Person<br>9<br>Dispel Magic, Fear<br>13<br>Death Ward, Guardian of Faith<br>17<br>Hold Monster, Wall of Force</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+      "value": "<p>You gain Oath Spells at the listed levels and always have them prepared.</p><table><thead><tr><th>Paladin Level</th><th>Spells</th></tr></thead><tbody><tr><td>3</td><td>Hellish Rebuke, Heroism</td></tr><tr><td>5</td><td>Branding Smite, Hold Person</td></tr><tr><td>9</td><td>Dispel Magic, Fear</td></tr><tr><td>13</td><td>Death Ward, Guardian of Faith</td></tr><tr><td>17</td><td>Hold Monster, Wall of Force</td></tr></tbody></table><ul><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.8729c6bfc6517180]{Hellish Rebuke}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.dc52ff4fb45e44b8]{Heroism}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.717e8e2ee450ad61]{Branding Smite}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.a93eb6974ae84184]{Hold Person}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.3e3098491e49b6e6]{Dispel Magic}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.3b5ebfd1c8a12e3b]{Fear}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.d9e873eb84930987]{Death Ward}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.d24c606613651085]{Guardian of Faith}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.8e74f42b4799710f]{Hold Monster}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.a690d91e678e5c20]{Wall of Force}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -22,7 +22,114 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "631529b0392d96c4",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.8729c6bfc6517180",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.dc52ff4fb45e44b8",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "bb8a35b09f5828cf",
+        "type": "ItemGrant",
+        "level": 5,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.717e8e2ee450ad61",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.a93eb6974ae84184",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "09b5939b87645623",
+        "type": "ItemGrant",
+        "level": 9,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.3e3098491e49b6e6",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.3b5ebfd1c8a12e3b",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "91a636caed5ecc6f",
+        "type": "ItemGrant",
+        "level": 13,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.d9e873eb84930987",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.d24c606613651085",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "ed0dbde3659a4b1d",
+        "type": "ItemGrant",
+        "level": 17,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.8e74f42b4799710f",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.a690d91e678e5c20",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ]
   },
   "effects": [],
   "flags": {
@@ -32,8 +139,48 @@
       "feature": "Oath Spells",
       "class": "paladin",
       "level": 3,
-      "notes": [
-        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.8729c6bfc6517180",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.dc52ff4fb45e44b8",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.717e8e2ee450ad61",
+          "level": 5
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.a93eb6974ae84184",
+          "level": 5
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.3e3098491e49b6e6",
+          "level": 9
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.3b5ebfd1c8a12e3b",
+          "level": 9
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.d9e873eb84930987",
+          "level": 13
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.d24c606613651085",
+          "level": 13
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.8e74f42b4799710f",
+          "level": 17
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.a690d91e678e5c20",
+          "level": 17
+        }
       ]
     }
   },

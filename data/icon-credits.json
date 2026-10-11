@@ -1,0 +1,452 @@
+{
+  "delapouite-enrage.svg": {
+    "author": "delapouite",
+    "icon": "enrage",
+    "url": "https://game-icons.net/1x1/delapouite/enrage.html"
+  },
+  "lorc-mailed-fist.svg": {
+    "author": "lorc",
+    "icon": "mailed-fist",
+    "url": "https://game-icons.net/1x1/lorc/mailed-fist.html"
+  },
+  "lorc-brain.svg": {
+    "author": "lorc",
+    "icon": "brain",
+    "url": "https://game-icons.net/1x1/lorc/brain.html"
+  },
+  "skoll-breaking-chain.svg": {
+    "author": "skoll",
+    "icon": "breaking-chain",
+    "url": "https://game-icons.net/1x1/skoll/breaking-chain.html"
+  },
+  "lorc-crossed-swords.svg": {
+    "author": "lorc",
+    "icon": "crossed-swords",
+    "url": "https://game-icons.net/1x1/lorc/crossed-swords.html"
+  },
+  "lorc-crystal-ball.svg": {
+    "author": "lorc",
+    "icon": "crystal-ball",
+    "url": "https://game-icons.net/1x1/lorc/crystal-ball.html"
+  },
+  "lorc-broadsword.svg": {
+    "author": "lorc",
+    "icon": "broadsword",
+    "url": "https://game-icons.net/1x1/lorc/broadsword.html"
+  },
+  "lorc-linked-rings.svg": {
+    "author": "lorc",
+    "icon": "linked-rings",
+    "url": "https://game-icons.net/1x1/lorc/linked-rings.html"
+  },
+  "lorc-third-eye.svg": {
+    "author": "lorc",
+    "icon": "third-eye",
+    "url": "https://game-icons.net/1x1/lorc/third-eye.html"
+  },
+  "lorc-compass.svg": {
+    "author": "lorc",
+    "icon": "compass",
+    "url": "https://game-icons.net/1x1/lorc/compass.html"
+  },
+  "delapouite-ship-bow.svg": {
+    "author": "delapouite",
+    "icon": "ship-bow",
+    "url": "https://game-icons.net/1x1/delapouite/ship-bow.html"
+  },
+  "delapouite-sinking-ship.svg": {
+    "author": "delapouite",
+    "icon": "sinking-ship",
+    "url": "https://game-icons.net/1x1/delapouite/sinking-ship.html"
+  },
+  "lorc-water-splash.svg": {
+    "author": "lorc",
+    "icon": "water-splash",
+    "url": "https://game-icons.net/1x1/lorc/water-splash.html"
+  },
+  "lorc-big-wave.svg": {
+    "author": "lorc",
+    "icon": "big-wave",
+    "url": "https://game-icons.net/1x1/lorc/big-wave.html"
+  },
+  "lorc-carnivore-mouth.svg": {
+    "author": "lorc",
+    "icon": "carnivore-mouth",
+    "url": "https://game-icons.net/1x1/lorc/carnivore-mouth.html"
+  },
+  "lorc-spiked-armor.svg": {
+    "author": "lorc",
+    "icon": "spiked-armor",
+    "url": "https://game-icons.net/1x1/lorc/spiked-armor.html"
+  },
+  "lorc-claw-slashes.svg": {
+    "author": "lorc",
+    "icon": "claw-slashes",
+    "url": "https://game-icons.net/1x1/lorc/claw-slashes.html"
+  },
+  "delapouite-all-seeing-eye.svg": {
+    "author": "delapouite",
+    "icon": "all-seeing-eye",
+    "url": "https://game-icons.net/1x1/delapouite/all-seeing-eye.html"
+  },
+  "lorc-beast-eye.svg": {
+    "author": "lorc",
+    "icon": "beast-eye",
+    "url": "https://game-icons.net/1x1/lorc/beast-eye.html"
+  },
+  "delapouite-shield-impact.svg": {
+    "author": "delapouite",
+    "icon": "shield-impact",
+    "url": "https://game-icons.net/1x1/delapouite/shield-impact.html"
+  },
+  "willdabeast-round-shield.svg": {
+    "author": "willdabeast",
+    "icon": "round-shield",
+    "url": "https://game-icons.net/1x1/willdabeast/round-shield.html"
+  },
+  "delapouite-charging-bull.svg": {
+    "author": "delapouite",
+    "icon": "charging-bull",
+    "url": "https://game-icons.net/1x1/delapouite/charging-bull.html"
+  },
+  "lorc-bloody-sword.svg": {
+    "author": "lorc",
+    "icon": "bloody-sword",
+    "url": "https://game-icons.net/1x1/lorc/bloody-sword.html"
+  },
+  "lorc-sword-clash.svg": {
+    "author": "lorc",
+    "icon": "sword-clash",
+    "url": "https://game-icons.net/1x1/lorc/sword-clash.html"
+  },
+  "lorc-rally-the-troops.svg": {
+    "author": "lorc",
+    "icon": "rally-the-troops",
+    "url": "https://game-icons.net/1x1/lorc/rally-the-troops.html"
+  },
+  "lorc-lotus.svg": {
+    "author": "lorc",
+    "icon": "lotus",
+    "url": "https://game-icons.net/1x1/lorc/lotus.html"
+  },
+  "lorc-walking-boot.svg": {
+    "author": "lorc",
+    "icon": "walking-boot",
+    "url": "https://game-icons.net/1x1/lorc/walking-boot.html"
+  },
+  "lorc-lightning-tree.svg": {
+    "author": "lorc",
+    "icon": "lightning-tree",
+    "url": "https://game-icons.net/1x1/lorc/lightning-tree.html"
+  },
+  "lorc-spider-web.svg": {
+    "author": "lorc",
+    "icon": "spider-web",
+    "url": "https://game-icons.net/1x1/lorc/spider-web.html"
+  },
+  "lorc-winged-sword.svg": {
+    "author": "lorc",
+    "icon": "winged-sword",
+    "url": "https://game-icons.net/1x1/lorc/winged-sword.html"
+  },
+  "delapouite-spell-book.svg": {
+    "author": "delapouite",
+    "icon": "spell-book",
+    "url": "https://game-icons.net/1x1/delapouite/spell-book.html"
+  },
+  "skoll-burning-skull.svg": {
+    "author": "skoll",
+    "icon": "burning-skull",
+    "url": "https://game-icons.net/1x1/skoll/burning-skull.html"
+  },
+  "lorc-sword-array.svg": {
+    "author": "lorc",
+    "icon": "sword-array",
+    "url": "https://game-icons.net/1x1/lorc/sword-array.html"
+  },
+  "lorc-heart-organ.svg": {
+    "author": "lorc",
+    "icon": "heart-organ",
+    "url": "https://game-icons.net/1x1/lorc/heart-organ.html"
+  },
+  "lorc-star-swirl.svg": {
+    "author": "lorc",
+    "icon": "star-swirl",
+    "url": "https://game-icons.net/1x1/lorc/star-swirl.html"
+  },
+  "lorc-wolf-head.svg": {
+    "author": "lorc",
+    "icon": "wolf-head",
+    "url": "https://game-icons.net/1x1/lorc/wolf-head.html"
+  },
+  "lorc-wolf-howl.svg": {
+    "author": "lorc",
+    "icon": "wolf-howl",
+    "url": "https://game-icons.net/1x1/lorc/wolf-howl.html"
+  },
+  "lorc-direwolf.svg": {
+    "author": "lorc",
+    "icon": "direwolf",
+    "url": "https://game-icons.net/1x1/lorc/direwolf.html"
+  },
+  "lorc-holy-symbol.svg": {
+    "author": "lorc",
+    "icon": "holy-symbol",
+    "url": "https://game-icons.net/1x1/lorc/holy-symbol.html"
+  },
+  "zeromancer-heart-plus.svg": {
+    "author": "zeromancer",
+    "icon": "heart-plus",
+    "url": "https://game-icons.net/1x1/zeromancer/heart-plus.html"
+  },
+  "lorc-shining-sword.svg": {
+    "author": "lorc",
+    "icon": "shining-sword",
+    "url": "https://game-icons.net/1x1/lorc/shining-sword.html"
+  },
+  "delapouite-perspective-dice-six-faces-random.svg": {
+    "author": "delapouite",
+    "icon": "perspective-dice-six-faces-random",
+    "url": "https://game-icons.net/1x1/delapouite/perspective-dice-six-faces-random.html"
+  },
+  "delapouite-soul.svg": {
+    "author": "delapouite",
+    "icon": "soul",
+    "url": "https://game-icons.net/1x1/delapouite/soul.html"
+  },
+  "delapouite-soul-vessel.svg": {
+    "author": "delapouite",
+    "icon": "soul-vessel",
+    "url": "https://game-icons.net/1x1/delapouite/soul-vessel.html"
+  },
+  "lorc-psychic-waves.svg": {
+    "author": "lorc",
+    "icon": "psychic-waves",
+    "url": "https://game-icons.net/1x1/lorc/psychic-waves.html"
+  },
+  "delapouite-brain-tentacle.svg": {
+    "author": "delapouite",
+    "icon": "brain-tentacle",
+    "url": "https://game-icons.net/1x1/delapouite/brain-tentacle.html"
+  },
+  "cathelineau-tree-face.svg": {
+    "author": "cathelineau",
+    "icon": "tree-face",
+    "url": "https://game-icons.net/1x1/cathelineau/tree-face.html"
+  },
+  "lorc-vine-leaf.svg": {
+    "author": "lorc",
+    "icon": "vine-leaf",
+    "url": "https://game-icons.net/1x1/lorc/vine-leaf.html"
+  },
+  "delapouite-tree-door.svg": {
+    "author": "delapouite",
+    "icon": "tree-door",
+    "url": "https://game-icons.net/1x1/delapouite/tree-door.html"
+  },
+  "lorc-quill-ink.svg": {
+    "author": "lorc",
+    "icon": "quill-ink",
+    "url": "https://game-icons.net/1x1/lorc/quill-ink.html"
+  },
+  "lorc-rune-stone.svg": {
+    "author": "lorc",
+    "icon": "rune-stone",
+    "url": "https://game-icons.net/1x1/lorc/rune-stone.html"
+  },
+  "lorc-hourglass.svg": {
+    "author": "lorc",
+    "icon": "hourglass",
+    "url": "https://game-icons.net/1x1/lorc/hourglass.html"
+  },
+  "lorc-crossed-chains.svg": {
+    "author": "lorc",
+    "icon": "crossed-chains",
+    "url": "https://game-icons.net/1x1/lorc/crossed-chains.html"
+  },
+  "skoll-sound-waves.svg": {
+    "author": "skoll",
+    "icon": "sound-waves",
+    "url": "https://game-icons.net/1x1/skoll/sound-waves.html"
+  },
+  "delapouite-musical-notes.svg": {
+    "author": "delapouite",
+    "icon": "musical-notes",
+    "url": "https://game-icons.net/1x1/delapouite/musical-notes.html"
+  },
+  "lorc-open-book.svg": {
+    "author": "lorc",
+    "icon": "open-book",
+    "url": "https://game-icons.net/1x1/lorc/open-book.html"
+  },
+  "delapouite-pope-crown.svg": {
+    "author": "delapouite",
+    "icon": "pope-crown",
+    "url": "https://game-icons.net/1x1/delapouite/pope-crown.html"
+  },
+  "faithtoken-dragon-head.svg": {
+    "author": "faithtoken",
+    "icon": "dragon-head",
+    "url": "https://game-icons.net/1x1/faithtoken/dragon-head.html"
+  },
+  "delapouite-dragon-orb.svg": {
+    "author": "delapouite",
+    "icon": "dragon-orb",
+    "url": "https://game-icons.net/1x1/delapouite/dragon-orb.html"
+  },
+  "lorc-dragon-breath.svg": {
+    "author": "lorc",
+    "icon": "dragon-breath",
+    "url": "https://game-icons.net/1x1/lorc/dragon-breath.html"
+  },
+  "lorc-dragon-spiral.svg": {
+    "author": "lorc",
+    "icon": "dragon-spiral",
+    "url": "https://game-icons.net/1x1/lorc/dragon-spiral.html"
+  },
+  "lorc-holy-grail.svg": {
+    "author": "lorc",
+    "icon": "holy-grail",
+    "url": "https://game-icons.net/1x1/lorc/holy-grail.html"
+  },
+  "lorc-angel-wings.svg": {
+    "author": "lorc",
+    "icon": "angel-wings",
+    "url": "https://game-icons.net/1x1/lorc/angel-wings.html"
+  },
+  "lorc-wave-crest.svg": {
+    "author": "lorc",
+    "icon": "wave-crest",
+    "url": "https://game-icons.net/1x1/lorc/wave-crest.html"
+  },
+  "sbed-water-drop.svg": {
+    "author": "sbed",
+    "icon": "water-drop",
+    "url": "https://game-icons.net/1x1/sbed/water-drop.html"
+  },
+  "lorc-bowman.svg": {
+    "author": "lorc",
+    "icon": "bowman",
+    "url": "https://game-icons.net/1x1/lorc/bowman.html"
+  },
+  "delapouite-bow-arrow.svg": {
+    "author": "delapouite",
+    "icon": "bow-arrow",
+    "url": "https://game-icons.net/1x1/delapouite/bow-arrow.html"
+  },
+  "lorc-wolf-trap.svg": {
+    "author": "lorc",
+    "icon": "wolf-trap",
+    "url": "https://game-icons.net/1x1/lorc/wolf-trap.html"
+  },
+  "skoll-bullseye.svg": {
+    "author": "skoll",
+    "icon": "bullseye",
+    "url": "https://game-icons.net/1x1/skoll/bullseye.html"
+  },
+  "lorc-empty-hourglass.svg": {
+    "author": "lorc",
+    "icon": "empty-hourglass",
+    "url": "https://game-icons.net/1x1/lorc/empty-hourglass.html"
+  },
+  "lorc-angel-outfit.svg": {
+    "author": "lorc",
+    "icon": "angel-outfit",
+    "url": "https://game-icons.net/1x1/lorc/angel-outfit.html"
+  },
+  "lorc-burning-eye.svg": {
+    "author": "lorc",
+    "icon": "burning-eye",
+    "url": "https://game-icons.net/1x1/lorc/burning-eye.html"
+  },
+  "lorc-gem-chain.svg": {
+    "author": "lorc",
+    "icon": "gem-chain",
+    "url": "https://game-icons.net/1x1/lorc/gem-chain.html"
+  },
+  "lorc-chained-heart.svg": {
+    "author": "lorc",
+    "icon": "chained-heart",
+    "url": "https://game-icons.net/1x1/lorc/chained-heart.html"
+  },
+  "lorc-circle-cage.svg": {
+    "author": "lorc",
+    "icon": "circle-cage",
+    "url": "https://game-icons.net/1x1/lorc/circle-cage.html"
+  },
+  "lorc-evil-book.svg": {
+    "author": "lorc",
+    "icon": "evil-book",
+    "url": "https://game-icons.net/1x1/lorc/evil-book.html"
+  },
+  "delapouite-bone-knife.svg": {
+    "author": "delapouite",
+    "icon": "bone-knife",
+    "url": "https://game-icons.net/1x1/delapouite/bone-knife.html"
+  },
+  "lorc-thorned-arrow.svg": {
+    "author": "lorc",
+    "icon": "thorned-arrow",
+    "url": "https://game-icons.net/1x1/lorc/thorned-arrow.html"
+  },
+  "lorc-vine-whip.svg": {
+    "author": "lorc",
+    "icon": "vine-whip",
+    "url": "https://game-icons.net/1x1/lorc/vine-whip.html"
+  },
+  "lorc-daemon-skull.svg": {
+    "author": "lorc",
+    "icon": "daemon-skull",
+    "url": "https://game-icons.net/1x1/lorc/daemon-skull.html"
+  },
+  "delapouite-eagle-head.svg": {
+    "author": "delapouite",
+    "icon": "eagle-head",
+    "url": "https://game-icons.net/1x1/delapouite/eagle-head.html"
+  },
+  "delapouite-fish-monster.svg": {
+    "author": "delapouite",
+    "icon": "fish-monster",
+    "url": "https://game-icons.net/1x1/delapouite/fish-monster.html"
+  },
+  "lorc-mirror-mirror.svg": {
+    "author": "lorc",
+    "icon": "mirror-mirror",
+    "url": "https://game-icons.net/1x1/lorc/mirror-mirror.html"
+  },
+  "lorc-wingfoot.svg": {
+    "author": "lorc",
+    "icon": "wingfoot",
+    "url": "https://game-icons.net/1x1/lorc/wingfoot.html"
+  },
+  "lorc-magic-swirl.svg": {
+    "author": "lorc",
+    "icon": "magic-swirl",
+    "url": "https://game-icons.net/1x1/lorc/magic-swirl.html"
+  },
+  "lorc-fire-zone.svg": {
+    "author": "lorc",
+    "icon": "fire-zone",
+    "url": "https://game-icons.net/1x1/lorc/fire-zone.html"
+  },
+  "lorc-imprisoned.svg": {
+    "author": "lorc",
+    "icon": "imprisoned",
+    "url": "https://game-icons.net/1x1/lorc/imprisoned.html"
+  },
+  "lorc-snail.svg": {
+    "author": "lorc",
+    "icon": "snail",
+    "url": "https://game-icons.net/1x1/lorc/snail.html"
+  },
+  "lorc-mountains.svg": {
+    "author": "lorc",
+    "icon": "mountains",
+    "url": "https://game-icons.net/1x1/lorc/mountains.html"
+  },
+  "lorc-cloud-ring.svg": {
+    "author": "lorc",
+    "icon": "cloud-ring",
+    "url": "https://game-icons.net/1x1/lorc/cloud-ring.html"
+  }
+}

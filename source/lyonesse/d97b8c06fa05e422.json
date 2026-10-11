@@ -1,0 +1,107 @@
+{
+  "_id": "d97b8c06fa05e422",
+  "name": "Yield",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/skoll-sound-waves.svg",
+  "folder": "47f143ead77b6269",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-knight-of-the-sacred-word-voice-of-authority-yield",
+    "description": {
+      "value": "<p>Your voice carries force that can command the body as surely as your strikes. Once per turn, when you hit a creature with a Monk weapon or an Unarmed Strike, you can expend 1 Focus Point to issue a single-word command as part of the attack. The target must succeed on a Wisdom saving throw or suffer one of the following effects of your choice until the start of your next turn:</p><p><strong>Halt.</strong> The creature’s Speed becomes 0.</p><p><strong>Silence.</strong> The creature cannot speak or cast spells with Verbal components.</p><p><strong>Yield.</strong> The creature has Disadvantage on attack rolls.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Knight of the Sacred Word 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "640394e128e4dd38": {
+        "_id": "640394e128e4dd38",
+        "type": "save",
+        "name": "Yield",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:monks-focus",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [
+          {
+            "_id": "640394e128e4dd38"
+          }
+        ],
+        "description": {
+          "chatFlavor": ""
+        },
+        "damage": {
+          "parts": [],
+          "onSave": "none",
+          "includeBase": false
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/skoll-sound-waves.svg"
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "640394e128e4dd38",
+      "name": "Yield",
+      "img": "modules/grimnir-lyonesse/assets/icons/skoll-sound-waves.svg",
+      "transfer": false,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "flags.midi-qol.disadvantage.attack.all",
+          "mode": 5,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "statuses": [],
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true
+        }
+      },
+      "duration": {
+        "seconds": 6
+      },
+      "_key": "!items.effects!d97b8c06fa05e422.640394e128e4dd38"
+    }
+  ],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Knight of the Sacred Word",
+      "parentFeature": "cb38221b214c11b2",
+      "parentIdentifier": "lyonesse-knight-of-the-sacred-word-voice-of-authority",
+      "level": 3,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!d97b8c06fa05e422"
+}

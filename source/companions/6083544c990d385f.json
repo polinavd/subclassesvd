@@ -1,0 +1,207 @@
+{
+  "_id": "6083544c990d385f",
+  "_key": "!actors!6083544c990d385f",
+  "name": "Bestial Spirit — Water",
+  "type": "npc",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-fish-monster.svg",
+  "flags": {
+    "grimnir-lyonesse": {
+      "template": "bestial-water"
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "c075bbc637723716",
+      "_key": "!actors.items!6083544c990d385f.c075bbc637723716",
+      "name": "Rend",
+      "type": "feat",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-claw-slashes.svg",
+      "effects": [],
+      "system": {
+        "type": {
+          "value": "monster"
+        },
+        "identifier": "rend",
+        "description": {
+          "value": "<p>A melee attack against one creature within 5 feet.</p>"
+        },
+        "activities": {
+          "6f791957a5641510": {
+            "_id": "6f791957a5641510",
+            "name": "Rend",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": 1
+            },
+            "attack": {
+              "flat": true,
+              "bonus": "6",
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "range": {
+              "value": "5",
+              "units": "ft"
+            },
+            "target": {
+              "affects": {
+                "type": "creature",
+                "count": "1"
+              }
+            },
+            "consumption": {
+              "spellSlot": false,
+              "targets": []
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "4",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false
+                  }
+                }
+              ]
+            },
+            "img": "modules/grimnir-lyonesse/assets/icons/lorc-claw-slashes.svg"
+          }
+        }
+      }
+    },
+    {
+      "_id": "690a084bc878000a",
+      "_key": "!actors.items!6083544c990d385f.690a084bc878000a",
+      "type": "feat",
+      "name": "Pack Tactics",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-rune-stone.svg",
+      "effects": [],
+      "system": {
+        "type": {
+          "value": "monster"
+        },
+        "activities": {},
+        "description": {
+          "value": "<p>Advantage on attacks when an ally without Incapacitated is within 5 feet of the target.</p>"
+        }
+      }
+    },
+    {
+      "_id": "8b6fc067f998b1eb",
+      "_key": "!actors.items!6083544c990d385f.8b6fc067f998b1eb",
+      "name": "Multiattack",
+      "type": "feat",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-rune-stone.svg",
+      "effects": [],
+      "system": {
+        "type": {
+          "value": "monster"
+        },
+        "activities": {},
+        "description": {
+          "value": "<p>Make a number of Rend attacks equal to half the spell level, rounded down.</p>"
+        }
+      }
+    },
+    {
+      "_id": "171424808f1812c4",
+      "_key": "!actors.items!6083544c990d385f.171424808f1812c4",
+      "name": "Water Breathing",
+      "type": "feat",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-dragon-breath.svg",
+      "system": {
+        "type": {
+          "value": "monster"
+        },
+        "description": {
+          "value": "<p>Breathes only underwater.</p>"
+        },
+        "activities": {}
+      },
+      "effects": []
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "name": "Bestial Spirit — Water",
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/grimnir-lyonesse/assets/icons/delapouite-fish-monster.svg"
+    }
+  },
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 18,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 11,
+        "proficient": 0
+      },
+      "con": {
+        "value": 16,
+        "proficient": 0
+      },
+      "int": {
+        "value": 4,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 14,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 5,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 11
+      },
+      "hp": {
+        "value": 30,
+        "max": 30,
+        "temp": 0
+      },
+      "movement": {
+        "walk": 30,
+        "fly": 0,
+        "climb": 0,
+        "swim": 30,
+        "units": "ft"
+      },
+      "senses": {
+        "darkvision": 60,
+        "units": "ft"
+      }
+    },
+    "details": {
+      "type": {
+        "value": "beast"
+      },
+      "cr": 0,
+      "biography": {
+        "value": "<p>A summoned ally. It acts just after its caster, follows verbal commands, and Dodges if no command is given.</p>"
+      }
+    },
+    "traits": {
+      "size": "sm"
+    }
+  }
+}

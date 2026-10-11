@@ -2,11 +2,11 @@
   "_id": "b13eae027f0f321a",
   "name": "Molt",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/sbed-water-drop.svg",
   "system": {
     "identifier": "lyonesse-selkie-warden-molt",
     "description": {
-      "value": "<p><b>Selkie Warden · уровень 7</b></p><p>You can use Slip the Skin as part of the same Bonus Action as casting or moving Hunter’s Mark.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+      "value": "<p>You can use Slip the Skin as part of the same Bonus Action as casting or moving Hunter’s Mark.</p>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,7 +22,8 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": []
   },
   "effects": [],
   "flags": {
@@ -32,9 +33,8 @@
       "feature": "Molt",
       "class": "ranger",
       "level": 7,
-      "notes": [
-        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
-      ]
+      "version": "0.2.0",
+      "children": []
     }
   },
   "ownership": {

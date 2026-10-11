@@ -1,0 +1,76 @@
+{
+  "_id": "c3c56c0ee907eee2",
+  "name": "Swap",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-linked-rings.svg",
+  "folder": "5e7aabf373dadf67",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-misplaced-soul-act-as-one-swap",
+    "description": {
+      "value": "<p>Your thoughts and the Misplaced Soul’s essence flow together.</p><p><strong>Telepathy.</strong> You and the Misplaced Soul can communicate telepathically while you are within 120 feet of each other.</p><p><strong>Shared Movement and Action.</strong> On your turn, you can use a Bonus Action to move the Misplaced Soul up to 30 feet. At the end of this movement, it can take one action of your choice from its stat block.</p><p><strong>Metamagic: Swap (1 Sorcery Point).</strong> As part of the same Bonus Action, you can spend 1 Sorcery Point to instantly swap positions with the Misplaced Soul if it is within 30 feet of you. This movement does not provoke Opportunity Attacks.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Misplaced Soul 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "6f980f95dcd9152d": {
+        "_id": "6f980f95dcd9152d",
+        "type": "utility",
+        "name": "Swap",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:font-of-magic",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "range": {
+          "value": "30",
+          "units": "ft"
+        },
+        "target": {
+          "affects": {
+            "type": "creature",
+            "count": "1"
+          },
+          "template": {
+            "type": ""
+          }
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-linked-rings.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Misplaced Soul",
+      "parentFeature": "3a16603e853f6f8f",
+      "parentIdentifier": "grimnir-misplaced-soul-act-as-one",
+      "level": 3,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!c3c56c0ee907eee2"
+}

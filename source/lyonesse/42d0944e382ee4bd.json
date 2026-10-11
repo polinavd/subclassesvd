@@ -2,11 +2,11 @@
   "_id": "42d0944e382ee4bd",
   "name": "Legend of the Weald",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-bowman.svg",
   "system": {
     "identifier": "lyonesse-outlaw-legend-of-the-weald",
     "description": {
-      "value": "<p><b>Outlaw · уровень 17</b></p><p>Your deeds inspire allies and terrify oppressors.<br>Quick Shot. If you take damage, you may use your<br>Reaction to make a ranged attack against the source of the damage. Once you do so, you can’t use this feature again until you finish a Short or Long Rest.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>После кнопки выполнить атаку своим дальнобойным оружием.</li></ul>"
+      "value": "<p>Your deeds inspire allies and terrify oppressors.</p><p><strong>Quick Shot.</strong> If you take damage, you may use your Reaction to make a ranged attack against the source of the damage. Once you do so, you can’t use this feature again until you finish a Short or Long Rest.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.7840a316de00de43]{Quick Shot}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -27,31 +27,26 @@
         }
       ]
     },
-    "activities": {
-      "37bfabeefb30fac0": {
-        "_id": "37bfabeefb30fac0",
-        "type": "utility",
-        "name": "Quick Shot",
-        "activation": {
-          "type": "reaction",
-          "value": 1
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "c7805d466da16546",
+        "type": "ItemGrant",
+        "level": 17,
+        "title": "Actions",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "",
-              "value": "1"
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.7840a316de00de43",
+              "optional": false
             }
-          ]
+          ],
+          "optional": false,
+          "spell": null
         },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -61,8 +56,12 @@
       "feature": "Legend of the Weald",
       "class": "rogue",
       "level": 17,
-      "notes": [
-        "После кнопки выполнить атаку своим дальнобойным оружием."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.7840a316de00de43",
+          "level": 17
+        }
       ]
     }
   },

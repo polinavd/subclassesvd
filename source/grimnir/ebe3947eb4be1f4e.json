@@ -2,11 +2,11 @@
   "_id": "ebe3947eb4be1f4e",
   "name": "Cord & Curse",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-crossed-chains.svg",
   "system": {
     "identifier": "grimnir-cohesion-of-the-primal-cord-curse",
     "description": {
-      "value": "<p><b>Cohesion of the Primal · уровень 14</b></p><p>You have gained expertise in trials of arcane combat.<br>Dreamer: Primeval Call. When you lose Concentration on a spell as a result of taking damage, you can take a Reaction to cast the Summon Beast spell at a level equal to the spell you lost Concentration on without expending a spell slot or requiring Concentration. Once you use this feature, you can’t use it again until you finish a Long Rest.<br>Seeker: Spell Immunity Tattoo. Choose 3 spells from your spellbook. You are Immune to these spells. You can change one of these spells for another spell from your spellbook when you finish a Long Rest or by taking a<br>Magic action and expending a spell slot equal to the level of the spell you wish to become Immune to.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Summon Beast и список трёх иммунитетов Seeker выбираются вручную; книга не задаёт поведение Summon Beast при утрате слота 1 уровня.</li></ul>"
+      "value": "<p>You have gained expertise in trials of arcane combat.</p><p><strong>Dreamer:</strong> Primeval Call. When you lose Concentration on a spell as a result of taking damage, you can take a Reaction to cast the Summon Beast spell at a level equal to the spell you lost Concentration on without expending a spell slot or requiring Concentration. Once you use this feature, you can’t use it again until you finish a Long Rest.</p><p><strong>Seeker:</strong> Spell Immunity Tattoo. Choose 3 spells from your spellbook. You are Immune to these spells. You can change one of these spells for another spell from your spellbook when you finish a Long Rest or by taking a Magic action and expending a spell slot equal to the level of the spell you wish to become Immune to.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.9bd724b17017af31]{Summon Beast — Primeval Call}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -27,31 +27,26 @@
         }
       ]
     },
-    "activities": {
-      "86aa5f9982e11b13": {
-        "_id": "86aa5f9982e11b13",
-        "type": "utility",
-        "name": "Dreamer: Primeval Call",
-        "activation": {
-          "type": "reaction",
-          "value": 1
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "a1cc8735e984310e",
+        "type": "ItemGrant",
+        "level": 14,
+        "title": "Spells",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "",
-              "value": "1"
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.9bd724b17017af31",
+              "optional": false
             }
-          ]
+          ],
+          "optional": false,
+          "spell": null
         },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -61,8 +56,12 @@
       "feature": "Cord & Curse",
       "class": "wizard",
       "level": 14,
-      "notes": [
-        "Summon Beast и список трёх иммунитетов Seeker выбираются вручную; книга не задаёт поведение Summon Beast при утрате слота 1 уровня."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.9bd724b17017af31",
+          "level": 14
+        }
       ]
     }
   },

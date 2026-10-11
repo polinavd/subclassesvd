@@ -2,10 +2,10 @@
   "_id": "6555b0d13daf8d00",
   "name": "Circle of the Wurm",
   "type": "subclass",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/faithtoken-dragon-head.svg",
   "system": {
     "description": {
-      "value": "<p><b>2024 · Lyonesse</b></p><p>Перетащите подкласс на персонажа с соответствующим базовым классом. Для форм и спутников используйте макрос «Управление подклассом». Ограничения указаны в каждой способности.</p><p>Druid<br>Circle of the Wurm<br>Deep within the wind-scoured moor called the Promise, where standing stones lean and black tarns mirror the sky, dwell the Druids of the Circle of the Wurm. These pools and circles are thresholds to the Otherworld, and here the<br>Druids keep watch, walking paths shared with both the<br>Fey and the black dragons that haunt the marsh.<br>Their bond with those dragons is ancient and unsettling. When a clutch yields a flawed egg, it is not destroyed but entrusted to the Circle. Through a secret rite, a chosen Druid receives the hatchling’s spirit at the moment of its birth.<br>The union is never perfect. The dragon’s flaws mark the<br>Druid’s body, twisting spine or limb, while its instincts coil within their mind. It is restless, hungry, and half-remembering a life never lived.<br>Some claim the ritual was gifted by the Fey, stolen from a distant land. Whatever its origin, those who bear the spirit of a wurm are creatures of awe and dread.<br>Level 3: Dragon Soul<br>You know the Draconic language. You have Resistance against Acid damage.<br>You can bring forth the dragon spirit within. When you assume a Wild Shape form, you can choose to take the form of a Hatchling Black Dragon. Your Black Dragon form follows all the same rules as the Wild Shape form with the following exceptions:<br>• Wyrmling. You have no Fly Speed. You do not have the<br>Multiattack action.<br>Level 3: Circle of the Wurm Spells<br>When you reach a Druid level specified in the Circle of the Wurm Spells table, you thereafter always have the listed spells prepared. In addition, you can cast the spells from this feature while you’re in a Wild Shape form.<br>Circle of the Wurm Spells<br>Druid Level<br>Spells<br>3<br>Acid Splash, Ray of Sickness, Acid Arrow<br>5<br>Stinking Cloud<br>7<br>Vitriolic Sphere<br>9<br>Contagion<br>The Circle speaks of ancient wyrms and forgotten wisdom. I speak of earthworms. Somehow we keep agreeing with each other.<br>—Clemsy, Otherling Pilgrim<br>Level 6: Draconic Influence<br>The spirit of the dragon takes root within you, its influence enduring whether you wear its form or your own.<br>Acidic Touch. Each of your attacks in a Wild Shape form can deal its normal damage type or Acid damage. You make this choice each time you hit with those attacks.<br>Water Dweller. You gain a Swim Speed equal to your<br>Speed.<br>Maturing Wyrm Spirit. You no longer have the Wyrmling exception in your Dragon Soul feature.<br>Level 10: Awakened Legacy<br>Your shared draconic soul blooms.<br>Mature Form. When you assume a Wild Shape form, you can choose to take the form of a Juvenile Black<br>Dragon. Your Black Dragon form follows all the same rules as the Wild Shape form.<br>Enhanced Attacks. When you Wild Shape into a creature with “Black Dragon” in its name, you can use your spell save DC instead of the DC listed in the stat block and your spell attack modifier instead of the listed attack bonus.<br>Level 14: Rekindled Breath<br>You can expend a level 4+ spell slot to restore all expended uses of your Acid Breath. This requires no action. When you use your Acid Breath, it deals extra Acid damage equal to your Druid level.<br>The Wurm and the Wyrm<br>The Circle of the Wurm is connected to a distant druidic order in the far-off lands of Thylea. Known as the Circle of the Wyrm, this ancient order was founded with the aid of Balmytria, the silver dragon.<br>The Corrupted Legacy<br>The Circle of the Wurm and the Circle of the Wyrm share a common ancestor. Their origins lie not in Thylea, but in the skyborne estates of House Huorath above Malborn.<br>There, centuries ago, druids and artificers devised a forbidden rite capable of anchoring a dragon soul within a mortal body. The ritual was never meant to honor dragons. It was created to master them.<br>When Balmytria encountered it, she somehow uncovered a missing truth hidden within its design.<br>The silver dragon rejected the rite’s original purpose and transformed it into an act of guardianship rather than domination.<br>The Lyonesse tradition preserves far more of the ancient ritual. Its practitioners still bear the scars, flaws, and burdens that the first creators intended, though they now regard them as sacred marks of service.<br>Hatchling Black Dragon<br>Medium Dragon, Chaotic Evil<br>AC 16<br>Initiative +2 (12)<br>HP 39 (6d8 + 12)<br>Speed 30 ft., Fly 40 ft., Swim 30 ft.<br>MOD SAVE<br>MOD SAVE<br>MOD SAVE<br>Str<br>15<br>+2<br>+2<br>Dex 14 +2<br>+4<br>Con 15 +2<br>+2<br>Int<br>12<br>+1<br>+1<br>Wis 11 +0<br>+2<br>Cha 13 +1<br>+1<br>Skills Perception +4, Stealth +4<br>Immunities Acid<br>Senses Blindsight 10 ft., Darkvision 60 ft.; Passive Perception 14<br>Languages Common, Draconic<br>Challenge 2 (450 XP; PB +2)<br>Traits<br>Amphibious. The dragon can breathe air and water.<br>Actions<br>Multiattack. The dragon makes one Bite attack and one<br>Pounce attack.<br>Bite. Melee Attack Roll: +4, reach 5 ft. Hit: 7 (1d10 + 2)<br>Piercing damage.<br>Pounce. Melee Attack Roll: +4, reach 5 ft. Hit: 6 (1d8 + 2)<br>Slashing damage and if the target is Medium size or smaller, it has the Prone condition.<br>Acid Breath (1/Day). Constitution Saving Throw: DC 12, each creature in a 15-foot-long, 5-foot-wide Line. Failure:<br>18 (4d8) Acid damage. Success: Half damage.<br>Juvenile Black Dragon<br>Large Dragon, Chaotic Evil<br>AC 15<br>Initiative +2 (12)<br>HP 68 (8d10 + 24)<br>Speed 30 ft., Fly 60 ft., Swim 30 ft.<br>MOD SAVE<br>MOD SAVE<br>MOD SAVE<br>Str<br>17<br>+3<br>+3<br>Dex 14 +2<br>+4<br>Con 17 +3<br>+3<br>Int<br>14<br>+2<br>+2<br>Wis 11 +0<br>+2<br>Cha 15 +2<br>+2<br>Skills Perception +4, Stealth +4<br>Damage Immunities Acid<br>Senses Blindsight 30 ft., Darkvision 90 ft.; Passive Perception 14<br>Languages Common, Draconic<br>Challenge 4 (1,100 XP; PB +2)<br>Traits<br>Amphibious. The dragon can breathe air and water.<br>Actions<br>Multiattack. The dragon makes one Bite attack and one<br>Pounce attack.<br>Bite. Melee Attack Roll: +5, reach 5 ft.. Hit: 12 (2d8 + 3)<br>Piercing damage.<br>Pounce. Melee Attack Roll: +5, reach 5 ft. Hit: 10 (2d6 + 3)<br>Slashing damage and if the target is Large size or smaller, it has the Prone condition.<br>Acid Breath (1/Day). Constitution Saving Throw: DC 13, each creature in a 15-foot-long, 5-foot-wide Line. Failure:<br>31 (7d8) Acid damage. Success: Half damage.</p>"
+      "value": "<p>Deep within the wind-scoured moor called the Promise, where standing stones lean and black tarns mirror the sky, dwell the Druids of the Circle of the Wurm. These pools and circles are thresholds to the Otherworld, and here the Druids keep watch, walking paths shared with both the Fey and the black dragons that haunt the marsh. Their bond with those dragons is ancient and unsettling. When a clutch yields a flawed egg, it is not destroyed but entrusted to the Circle. Through a secret rite, a chosen Druid receives the hatchling’s spirit at the moment of its birth. The union is never perfect. The dragon’s flaws mark the Druid’s body, twisting spine or limb, while its instincts coil within their mind. It is restless, hungry, and half-remembering a life never lived. Some claim the ritual was gifted by the Fey, stolen from a distant land. Whatever its origin, those who bear the spirit of a wurm are creatures of awe and dread.</p>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -102,122 +102,6 @@
           "spell": null
         },
         "value": {}
-      },
-      {
-        "_id": "a4d407c75365d83c",
-        "type": "ItemGrant",
-        "level": 3,
-        "title": "Заклинания",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplAcidSplash",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplRayofSickn",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMelfsAcidA",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": {
-            "ability": [
-              "wis"
-            ],
-            "method": "spell",
-            "prepared": 2,
-            "uses": {
-              "max": "",
-              "per": ""
-            }
-          }
-        },
-        "value": {}
-      },
-      {
-        "_id": "33fa61d1bc6f4527",
-        "type": "ItemGrant",
-        "level": 5,
-        "title": "Заклинания",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplStinkingCl",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": {
-            "ability": [
-              "wis"
-            ],
-            "method": "spell",
-            "prepared": 2,
-            "uses": {
-              "max": "",
-              "per": ""
-            }
-          }
-        },
-        "value": {}
-      },
-      {
-        "_id": "541524affb9bae73",
-        "type": "ItemGrant",
-        "level": 7,
-        "title": "Заклинания",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplVitriolicS",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": {
-            "ability": [
-              "wis"
-            ],
-            "method": "spell",
-            "prepared": 2,
-            "uses": {
-              "max": "",
-              "per": ""
-            }
-          }
-        },
-        "value": {}
-      },
-      {
-        "_id": "79157e391b544c57",
-        "type": "ItemGrant",
-        "level": 9,
-        "title": "Заклинания",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplContagion0",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": {
-            "ability": [
-              "wis"
-            ],
-            "method": "spell",
-            "prepared": 2,
-            "uses": {
-              "max": "",
-              "per": ""
-            }
-          }
-        },
-        "value": {}
       }
     ],
     "spellcasting": {
@@ -245,7 +129,8 @@
         "9": [
           "Contagion"
         ]
-      }
+      },
+      "version": "0.2.0"
     }
   },
   "ownership": {

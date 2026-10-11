@@ -2,11 +2,11 @@
   "_id": "1ab6d21c2af0d4a9",
   "name": "Glimpse the Future",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-crystal-ball.svg",
   "system": {
     "identifier": "lyonesse-wyrd-sorcery-glimpse-the-future",
     "description": {
-      "value": "<p><b>Wyrd Sorcery · уровень 3</b></p><p>When you roll Initiative, roll three d20s and record the numbers rolled. You can replace the Initiative roll of a creature with one of these rolls. A creature can’t be affected more than once, and a creature can make a Charisma saving throw to resist this effect. On a success, the die is not applied and is wasted. Each die can only be used once and all dice are lost when you are no longer in Initiative.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Макрос хранит три отдельных результата и показывает их; замену инициативы и Charisma save ведущая проводит вручную.</li></ul>"
+      "value": "<p>When you roll Initiative, roll three d20s and record the numbers rolled. You can replace the Initiative roll of a creature with one of these rolls. A creature can’t be affected more than once, and a creature can make a Charisma saving throw to resist this effect. On a success, the die is not applied and is wasted. Each die can only be used once and all dice are lost when you are no longer in Initiative.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.5f044132751934ff]{Три предсказания}</li><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.77da71f295013bbd]{Glimpse the Future}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,31 +22,30 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {
-      "1ecf639196fd0a31": {
-        "_id": "1ecf639196fd0a31",
-        "type": "utility",
-        "name": "Три предсказания",
-        "activation": {
-          "type": "",
-          "value": null
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "890a68558e087437",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Actions",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.5f044132751934ff",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.77da71f295013bbd",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
         },
-        "consumption": {
-          "spellSlot": false,
-          "targets": []
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "roll": {
-          "formula": "3d20",
-          "name": "Три предсказания",
-          "visible": true,
-          "prompt": false
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -56,8 +55,16 @@
       "feature": "Glimpse the Future",
       "class": "sorcerer",
       "level": 3,
-      "notes": [
-        "Макрос хранит три отдельных результата и показывает их; замену инициативы и Charisma save ведущая проводит вручную."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.5f044132751934ff",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.77da71f295013bbd",
+          "level": 3
+        }
       ]
     }
   },

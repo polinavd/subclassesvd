@@ -1,0 +1,55 @@
+{
+  "_id": "757643065d9e4e57",
+  "name": "Dragon Soul",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-dragon-orb.svg",
+  "folder": "7828b28733ff481e",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-circle-of-the-wurm-dragon-soul-dragon-soul",
+    "description": {
+      "value": "<p>You know the Draconic language. You have Resistance against Acid damage. You can bring forth the dragon spirit within. When you assume a Wild Shape form, you can choose to take the form of a Hatchling Black Dragon. Your Black Dragon form follows all the same rules as the Wild Shape form with the following exceptions:</p><ul><li>Wyrmling. You have no Fly Speed. You do not have the Multiattack action.</li></ul>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Circle of the Wurm 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "6e60aa80f86a076d": {
+        "_id": "6e60aa80f86a076d",
+        "name": "Dragon Soul",
+        "type": "utility",
+        "activation": {
+          "type": "",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/delapouite-dragon-orb.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Circle of the Wurm",
+      "parentFeature": "b66fed37f934f65f",
+      "parentIdentifier": "lyonesse-circle-of-the-wurm-dragon-soul",
+      "level": 3,
+      "version": "0.2.0",
+      "execute": "dragon"
+    }
+  },
+  "_key": "!items!757643065d9e4e57"
+}

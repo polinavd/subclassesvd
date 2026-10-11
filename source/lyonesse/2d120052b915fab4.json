@@ -1,0 +1,94 @@
+{
+  "_id": "2d120052b915fab4",
+  "name": "Спасбросок против проклятия",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-sinking-ship.svg",
+  "folder": "e5f4588df3b37105",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-discovery-domain-channel-divinity-drowned-breath-",
+    "description": {
+      "value": "<p>When you hit a creature with a melee attack, you can expend a use of your Channel Divinity. The target takes an additional 1d8 Necrotic damage and makes a Constitution saving throw against your spell save DC. On a failure, the target becomes cursed for 1 minute and cannot regain Hit Points unless it’s underwater, it can only breathe underwater, and takes 1d8 Necrotic damage at the start of each of its turns outside the water from suffocation. A creature that is Immune to the Exhaustion condition does not take this damage.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Discovery Domain 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "fbba0e1ecfd33911": {
+        "_id": "fbba0e1ecfd33911",
+        "type": "save",
+        "name": "Спасбросок против проклятия",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [
+          {
+            "_id": "a6db846a44e83728"
+          }
+        ],
+        "description": {
+          "chatFlavor": ""
+        },
+        "damage": {
+          "parts": [],
+          "onSave": "none",
+          "includeBase": false
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/delapouite-sinking-ship.svg"
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "a6db846a44e83728",
+      "name": "Drowned Breath — cursed",
+      "img": "modules/grimnir-lyonesse/assets/icons/delapouite-sinking-ship.svg",
+      "transfer": false,
+      "disabled": false,
+      "changes": [],
+      "statuses": [],
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true
+        }
+      },
+      "duration": {
+        "seconds": 60
+      },
+      "_key": "!items.effects!2d120052b915fab4.a6db846a44e83728"
+    }
+  ],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Discovery Domain",
+      "parentFeature": "c1b0d185208b6695",
+      "parentIdentifier": "lyonesse-discovery-domain-channel-divinity-drowned-breath",
+      "level": 3,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!2d120052b915fab4"
+}

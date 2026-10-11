@@ -2,11 +2,11 @@
   "_id": "a046fca9cd9ff9dd",
   "name": "Tidal Bond",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-big-wave.svg",
   "system": {
     "identifier": "lyonesse-selkie-warden-tidal-bond",
     "description": {
-      "value": "<p><b>Selkie Warden · уровень 11</b></p><p>Your bond tightens, improving your Slip the Skin. When your Slip the Skin is active, you gain the following additional benefits:<br>• You can move across any liquid surface as if it were solid ground and ignore any hazardous effects of such terrain while upon its surface. In addition, you ignore<br>Difficult Terrain caused by viscous liquid or currents.<br>• Creatures with the Prone condition can’t make Opportunity Attacks against you.<br>• When you move through a creature’s space that is one size larger than you or smaller, you can take 10 feet of your movement to force it to make a Strength saving throw. On a failure, it has the Prone condition. A creature makes this save only once per turn, and you can’t use this feature if you have 10 feet of movement or less remaining.<br>A selkie’s song has drowned more warriors than any storm.<br>—Cranhath Antonsson, Grimfolk Jarl</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Только при Slip the Skin; размер и расход движения проверить вручную.</li></ul>"
+      "value": "<p>Your bond tightens, improving your Slip the Skin. When your Slip the Skin is active, you gain the following additional benefits:</p><ul><li>You can move across any liquid surface as if it were solid ground and ignore any hazardous effects of such terrain while upon its surface. In addition, you ignore Difficult Terrain caused by viscous liquid or currents.</li><li>Creatures with the Prone condition can’t make Opportunity Attacks against you.</li><li>When you move through a creature’s space that is one size larger than you or smaller, you can take 10 feet of your movement to force it to make a Strength saving throw. On a failure, it has the Prone condition. A creature makes this save only once per turn, and you can’t use this feature if you have 10 feet of movement or less remaining.</li></ul><ul><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.8d564d6f34c06172]{Tidal Bond}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,49 +22,32 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {
-      "d1e992830583decb": {
-        "_id": "d1e992830583decb",
-        "type": "save",
-        "name": "Пройти сквозь цель",
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": []
-        },
-        "effects": [
-          {
-            "_id": "a921ca3d40fdb374"
-          }
-        ],
-        "description": {
-          "chatFlavor": ""
-        },
-        "damage": {
-          "parts": [],
-          "onSave": "none",
-          "includeBase": false
-        },
-        "save": {
-          "ability": [
-            "str"
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "0992141ebbcbd0e5",
+        "type": "ItemGrant",
+        "level": 11,
+        "title": "Actions",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.8d564d6f34c06172",
+              "optional": false
+            }
           ],
-          "dc": {
-            "calculation": "wis",
-            "formula": ""
-          }
-        }
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [
     {
       "_id": "a921ca3d40fdb374",
       "name": "Tidal Bond: Prone",
-      "img": "icons/svg/book.svg",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-big-wave.svg",
       "transfer": false,
       "disabled": false,
       "changes": [],
@@ -87,8 +70,12 @@
       "feature": "Tidal Bond",
       "class": "ranger",
       "level": 11,
-      "notes": [
-        "Только при Slip the Skin; размер и расход движения проверить вручную."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.8d564d6f34c06172",
+          "level": 11
+        }
       ]
     }
   },

@@ -2,11 +2,11 @@
   "_id": "1ed33d9ec4892459",
   "name": "Enhanced Rampage",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-sword-clash.svg",
   "system": {
     "identifier": "grimnir-marauder-enhanced-rampage",
     "description": {
-      "value": "<p><b>Marauder · уровень 15</b></p><p>The range of your Rampage feature increases to 30 feet.<br>In addition, a creature that makes the Rampage Bonus<br>Action attack can roll 1d6 and add the result to the attack roll it makes for that attack.</p>"
+      "value": "<p>The range of your Rampage feature increases to 30 feet. In addition, a creature that makes the Rampage Bonus Action attack can roll 1d6 and add the result to the attack roll it makes for that attack.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.99a88ab3f8d51c64]{Enhanced Rampage — Attack Bonus}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -22,31 +22,26 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {
-      "394b546315377359": {
-        "_id": "394b546315377359",
-        "type": "utility",
-        "name": "Бонус к атаке Rampage",
-        "activation": {
-          "type": "",
-          "value": null
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "a718bdba4447ee35",
+        "type": "ItemGrant",
+        "level": 15,
+        "title": "Actions",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.99a88ab3f8d51c64",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
         },
-        "consumption": {
-          "spellSlot": false,
-          "targets": []
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "roll": {
-          "formula": "1d6",
-          "name": "Бонус к атаке Rampage",
-          "visible": true,
-          "prompt": false
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -56,7 +51,13 @@
       "feature": "Enhanced Rampage",
       "class": "fighter",
       "level": 15,
-      "notes": []
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.99a88ab3f8d51c64",
+          "level": 15
+        }
+      ]
     }
   },
   "ownership": {

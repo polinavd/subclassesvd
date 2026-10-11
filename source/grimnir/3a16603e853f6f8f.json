@@ -2,11 +2,11 @@
   "_id": "3a16603e853f6f8f",
   "name": "Act as One",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-linked-rings.svg",
   "system": {
     "identifier": "grimnir-misplaced-soul-act-as-one",
     "description": {
-      "value": "<p><b>Misplaced Soul · уровень 3</b></p><p>Your thoughts and the Misplaced Soul’s essence flow together.<br>Telepathy. You and the Misplaced Soul can communicate telepathically while you are within 120 feet of each other.<br>Shared Movement and Action. On your turn, you can use a Bonus Action to move the Misplaced Soul up to 30 feet. At the end of this movement, it can take one action of your choice from its stat block.<br>Metamagic: Swap (1 Sorcery Point). As part of the same Bonus Action, you can spend 1 Sorcery Point to instantly swap positions with the Misplaced Soul if it is within 30 feet of you. This movement does not provoke<br>Opportunity Attacks.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Перемещение души и обмен позициями токенов — вручную.</li></ul>"
+      "value": "<p>Your thoughts and the Misplaced Soul’s essence flow together.</p><p><strong>Telepathy.</strong> You and the Misplaced Soul can communicate telepathically while you are within 120 feet of each other.</p><p><strong>Shared Movement and Action.</strong> On your turn, you can use a Bonus Action to move the Misplaced Soul up to 30 feet. At the end of this movement, it can take one action of your choice from its stat block.</p><p><strong>Metamagic: Swap (1 Sorcery Point).</strong> As part of the same Bonus Action, you can spend 1 Sorcery Point to instantly swap positions with the Misplaced Soul if it is within 30 feet of you. This movement does not provoke Opportunity Attacks.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.951e39bde294d45e]{Команда душе}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.c3c56c0ee907eee2]{Swap}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -22,61 +22,30 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {
-      "a713ec1dacb02223": {
-        "_id": "a713ec1dacb02223",
-        "type": "utility",
-        "name": "Команда душе",
-        "activation": {
-          "type": "bonus",
-          "value": 1
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": []
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        }
-      },
-      "6f980f95dcd9152d": {
-        "_id": "6f980f95dcd9152d",
-        "type": "utility",
-        "name": "Swap",
-        "activation": {
-          "type": "bonus",
-          "value": 1
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "ae29b83586947edd",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Actions",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "feat:font-of-magic",
-              "value": "1"
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.951e39bde294d45e",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.c3c56c0ee907eee2",
+              "optional": false
             }
-          ]
+          ],
+          "optional": false,
+          "spell": null
         },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "range": {
-          "value": "30",
-          "units": "ft"
-        },
-        "target": {
-          "affects": {
-            "type": "creature",
-            "count": "1"
-          },
-          "template": {
-            "type": ""
-          }
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -86,8 +55,16 @@
       "feature": "Act as One",
       "class": "sorcerer",
       "level": 3,
-      "notes": [
-        "Перемещение души и обмен позициями токенов — вручную."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.951e39bde294d45e",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.c3c56c0ee907eee2",
+          "level": 3
+        }
       ]
     }
   },

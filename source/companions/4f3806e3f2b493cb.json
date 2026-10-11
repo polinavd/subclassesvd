@@ -1,0 +1,190 @@
+{
+  "_id": "4f3806e3f2b493cb",
+  "_key": "!actors!4f3806e3f2b493cb",
+  "name": "Bestial Spirit — Land",
+  "type": "npc",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-wolf-head.svg",
+  "flags": {
+    "grimnir-lyonesse": {
+      "template": "bestial-land"
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "92c7d1d50328dd1b",
+      "_key": "!actors.items!4f3806e3f2b493cb.92c7d1d50328dd1b",
+      "name": "Rend",
+      "type": "feat",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-claw-slashes.svg",
+      "effects": [],
+      "system": {
+        "type": {
+          "value": "monster"
+        },
+        "identifier": "rend",
+        "description": {
+          "value": "<p>A melee attack against one creature within 5 feet.</p>"
+        },
+        "activities": {
+          "c2381325feecc7d9": {
+            "_id": "c2381325feecc7d9",
+            "name": "Rend",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": 1
+            },
+            "attack": {
+              "flat": true,
+              "bonus": "6",
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "range": {
+              "value": "5",
+              "units": "ft"
+            },
+            "target": {
+              "affects": {
+                "type": "creature",
+                "count": "1"
+              }
+            },
+            "consumption": {
+              "spellSlot": false,
+              "targets": []
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "4",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false
+                  }
+                }
+              ]
+            },
+            "img": "modules/grimnir-lyonesse/assets/icons/lorc-claw-slashes.svg"
+          }
+        }
+      }
+    },
+    {
+      "_id": "083526421ac1f10c",
+      "_key": "!actors.items!4f3806e3f2b493cb.083526421ac1f10c",
+      "type": "feat",
+      "name": "Pack Tactics",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-rune-stone.svg",
+      "effects": [],
+      "system": {
+        "type": {
+          "value": "monster"
+        },
+        "activities": {},
+        "description": {
+          "value": "<p>Advantage on attacks when an ally without Incapacitated is within 5 feet of the target.</p>"
+        }
+      }
+    },
+    {
+      "_id": "5aab948d114ae459",
+      "_key": "!actors.items!4f3806e3f2b493cb.5aab948d114ae459",
+      "name": "Multiattack",
+      "type": "feat",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-rune-stone.svg",
+      "effects": [],
+      "system": {
+        "type": {
+          "value": "monster"
+        },
+        "activities": {},
+        "description": {
+          "value": "<p>Make a number of Rend attacks equal to half the spell level, rounded down.</p>"
+        }
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "name": "Bestial Spirit — Land",
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "modules/grimnir-lyonesse/assets/icons/lorc-wolf-head.svg"
+    }
+  },
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 18,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 11,
+        "proficient": 0
+      },
+      "con": {
+        "value": 16,
+        "proficient": 0
+      },
+      "int": {
+        "value": 4,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 14,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 5,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 11
+      },
+      "hp": {
+        "value": 30,
+        "max": 30,
+        "temp": 0
+      },
+      "movement": {
+        "walk": 30,
+        "fly": 0,
+        "climb": 30,
+        "swim": 0,
+        "units": "ft"
+      },
+      "senses": {
+        "darkvision": 60,
+        "units": "ft"
+      }
+    },
+    "details": {
+      "type": {
+        "value": "beast"
+      },
+      "cr": 0,
+      "biography": {
+        "value": "<p>A summoned ally. It acts just after its caster, follows verbal commands, and Dodges if no command is given.</p>"
+      }
+    },
+    "traits": {
+      "size": "sm"
+    }
+  }
+}

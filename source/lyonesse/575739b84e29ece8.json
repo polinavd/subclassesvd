@@ -2,11 +2,11 @@
   "_id": "575739b84e29ece8",
   "name": "Greater Avatar",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-burning-eye.svg",
   "system": {
     "identifier": "lyonesse-the-archangel-greater-avatar",
     "description": {
-      "value": "<p><b>The Archangel · уровень 10</b></p><p>While in your Avatar of the Archangel form you gain Resistance to Psychic damage, and you are Immune to being<br>Charmed or Frightened.<br>Divine Fury. Whenever you succeed on a Wisdom saving throw, you can choose one creature you can see within<br>30 feet. That creature takes Radiant damage equal to 2d8<br>+ your Charisma modifier.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Только в Avatar после успешного Wis save. Защиты формы применяет макрос.</li></ul>"
+      "value": "<p>While in your Avatar of the Archangel form you gain Resistance to Psychic damage, and you are Immune to being Charmed or Frightened.</p><p><strong>Divine Fury.</strong> Whenever you succeed on a Wisdom saving throw, you can choose one creature you can see within 30 feet. That creature takes Radiant damage equal to 2d8 + your Charisma modifier.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.4f59e14aa44f343f]{Divine Fury}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,58 +22,26 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {
-      "7787974ca8e5d8b1": {
-        "_id": "7787974ca8e5d8b1",
-        "type": "damage",
-        "name": "Divine Fury",
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": []
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "range": {
-          "value": "30",
-          "units": "ft"
-        },
-        "target": {
-          "affects": {
-            "type": "creature",
-            "count": "1"
-          },
-          "template": {
-            "type": ""
-          }
-        },
-        "damage": {
-          "parts": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "98051298f35fe1f9",
+        "type": "ItemGrant",
+        "level": 10,
+        "title": "Actions",
+        "configuration": {
+          "items": [
             {
-              "custom": {
-                "enabled": true,
-                "formula": "2d8 + @abilities.cha.mod"
-              },
-              "types": [
-                "radiant"
-              ],
-              "scaling": {
-                "mode": "",
-                "number": null,
-                "formula": ""
-              }
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.4f59e14aa44f343f",
+              "optional": false
             }
           ],
-          "onSave": "none",
-          "includeBase": false
-        }
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -83,8 +51,12 @@
       "feature": "Greater Avatar",
       "class": "warlock",
       "level": 10,
-      "notes": [
-        "Только в Avatar после успешного Wis save. Защиты формы применяет макрос."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.4f59e14aa44f343f",
+          "level": 10
+        }
       ]
     }
   },

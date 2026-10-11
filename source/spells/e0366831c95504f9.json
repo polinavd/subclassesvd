@@ -1,0 +1,187 @@
+{
+  "name": "Barkskin",
+  "system": {
+    "description": {
+      "value": "<p>You touch a willing creature. Until the spell ends, the target's skin assumes a bark-like appearance, and the target has an Armor Class of 17 if its AC is lower than that.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "CC-BY-4.0",
+      "book": ""
+    },
+    "activation": {
+      "type": "bonus",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "type": "willing",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "touch",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 2,
+    "school": "trs",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "materials": {
+      "value": "a handful of bark",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "Vq0t8ts0lfPoGx6U"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 0,
+        "img": "modules/grimnir-lyonesse/assets/icons/cathelineau-tree-face.svg"
+      }
+    },
+    "identifier": "barkskin",
+    "method": "pact",
+    "prepared": 2,
+    "ability": "cha",
+    "sourceClass": "warlock"
+  },
+  "_id": "e0366831c95504f9",
+  "type": "spell",
+  "img": "modules/grimnir-lyonesse/assets/icons/cathelineau-tree-face.svg",
+  "effects": [
+    {
+      "_id": "Vq0t8ts0lfPoGx6U",
+      "flags": {},
+      "changes": [
+        {
+          "key": "system.attributes.ac.min",
+          "mode": 4,
+          "value": "17",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": 3600,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplBarkskin00",
+      "tint": "#ffffff",
+      "transfer": false,
+      "name": "Bark-like Skin",
+      "description": "",
+      "statuses": [],
+      "_stats": {
+        "compendiumSource": "Compendium.dnd5e.spells.Item.JPwIEfgUPVebr5AH.ActiveEffect.uM6rgctYpcbCVSkn",
+        "duplicateSource": null,
+        "coreVersion": "13.344",
+        "systemId": "dnd5e",
+        "systemVersion": "4.0.0",
+        "createdTime": null,
+        "modifiedTime": 1726592051215,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "exportSource": null
+      },
+      "img": "modules/grimnir-lyonesse/assets/icons/cathelineau-tree-face.svg",
+      "type": "base",
+      "system": {},
+      "sort": 0,
+      "_key": "!items.effects!e0366831c95504f9.Vq0t8ts0lfPoGx6U"
+    }
+  ],
+  "folder": null,
+  "sort": 5100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "grimnir-lyonesse": {
+      "parentFeature": "8804f597757bc328",
+      "parentIdentifier": "grimnir-the-ironwood-expanded-spell-list",
+      "setting": "grimnir",
+      "subclass": "The Ironwood",
+      "level": 3,
+      "version": "0.2.0",
+      "grantVariant": ""
+    }
+  },
+  "_key": "!items!e0366831c95504f9"
+}

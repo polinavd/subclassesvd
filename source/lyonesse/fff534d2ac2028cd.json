@@ -2,11 +2,11 @@
   "_id": "fff534d2ac2028cd",
   "name": "Withdraw",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/willdabeast-round-shield.svg",
   "system": {
     "identifier": "lyonesse-marauder-withdraw",
     "description": {
-      "value": "<p><b>Marauder · уровень 3</b></p><p>While wielding a Shield, you can take a Reaction to reduce the damage of an attack by half your Fighter level<br>(rounded down) plus your Constitution modifier (minimum of 1).<br>Every dent upon my shield was struck for the warrior beside me. That is the glory of the wall.<br>—Cranhath Antonsson, Grimfolk Jarl</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Вычесть результат из одного урона при надетом щите.</li></ul>"
+      "value": "<p>While wielding a Shield, you can take a Reaction to reduce the damage of an attack by half your Fighter level (rounded down) plus your Constitution modifier (minimum of 1). Every dent upon my shield was struck for the warrior beside me. That is the glory of the wall. —Cranhath Antonsson, Grimfolk Jarl</p><ul><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.a1defbb3dba39009]{Withdraw}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,31 +22,26 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {
-      "3eeb246a66dee835": {
-        "_id": "3eeb246a66dee835",
-        "type": "utility",
-        "name": "Снижение урона",
-        "activation": {
-          "type": "reaction",
-          "value": 1
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "e86d285ceaf716df",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Actions",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.a1defbb3dba39009",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
         },
-        "consumption": {
-          "spellSlot": false,
-          "targets": []
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "roll": {
-          "formula": "max(1, floor(@classes.fighter.levels / 2) + @abilities.con.mod)",
-          "name": "Снижение урона",
-          "visible": true,
-          "prompt": false
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -56,8 +51,12 @@
       "feature": "Withdraw",
       "class": "fighter",
       "level": 3,
-      "notes": [
-        "Вычесть результат из одного урона при надетом щите."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.a1defbb3dba39009",
+          "level": 3
+        }
       ]
     }
   },

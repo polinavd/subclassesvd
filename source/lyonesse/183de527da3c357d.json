@@ -1,0 +1,55 @@
+{
+  "_id": "183de527da3c357d",
+  "name": "Spellbinding — Vassal Spells",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-circle-cage.svg",
+  "folder": "07dd67ea748f54e0",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-spellbinder-spellbinding-spellbinding-vassal-spells",
+    "description": {
+      "value": "<p>You may cast Magic Circle as a Ritual once per day. Your influence over your Vassals deepens. You can summon your Vassal into a Magic Circle you have cast and when you do so, it gains the ability to cast the corresponding spells as shown on the Spellbinding table without expending a spell slot or requiring material components. When it does so, the Vassal reduces its maximum Hit Points by 5 plus 5 times the level of the spell. The Vassal cannot cast a spell that is of a higher level than your highest level spell slot.</p><table><thead><tr><th>Vassal</th><th>Spells</th></tr></thead><tbody><tr><td>All</td><td>Augury, Clairvoyance, Divination, Dream</td></tr><tr><td>Aberration</td><td>Hallucinatory Terrain</td></tr><tr><td>Dragon</td><td>Circle of Power</td></tr><tr><td>Fiend</td><td>Teleportation Circle</td></tr><tr><td>Undead</td><td>Speak with Dead</td></tr></tbody></table>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Spellbinder 6",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "d4663fa4e69f0c29": {
+        "_id": "d4663fa4e69f0c29",
+        "name": "Spellbinding — Vassal Spells",
+        "type": "utility",
+        "activation": {
+          "type": "",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-circle-cage.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Spellbinder",
+      "parentFeature": "a947119d4736ff39",
+      "parentIdentifier": "lyonesse-spellbinder-spellbinding",
+      "level": 6,
+      "version": "0.2.0",
+      "execute": "vassalSpells"
+    }
+  },
+  "_key": "!items!183de527da3c357d"
+}

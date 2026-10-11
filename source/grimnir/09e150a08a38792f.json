@@ -1,0 +1,63 @@
+{
+  "_id": "09e150a08a38792f",
+  "name": "Consume",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-psychic-waves.svg",
+  "folder": "5e7aabf373dadf67",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-misplaced-soul-the-imagined-offense-consume",
+    "description": {
+      "value": "<p>You gain additional Soul Bound Commands:</p><p><strong>Metamagic: Consume (1 Sorcery Point).</strong> You absorb the Misplaced Soul in a burst of soulstuff. You regain Hit Points equal to its current Hit Points, and the Misplaced Soul vanishes.</p><p><strong>Metamagic: Improved Thrash (1 Sorcery Point).</strong> Your Misplaced Soul’s Thrash now deals 2d12 plus your Charisma modifier Psychic damage, instead of 2d8.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Misplaced Soul 14",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "6a0602f3d6761bf1": {
+        "_id": "6a0602f3d6761bf1",
+        "type": "utility",
+        "name": "Consume",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:font-of-magic",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-psychic-waves.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Misplaced Soul",
+      "parentFeature": "cbb4c114d59660fd",
+      "parentIdentifier": "grimnir-misplaced-soul-the-imagined-offense",
+      "level": 14,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!09e150a08a38792f"
+}

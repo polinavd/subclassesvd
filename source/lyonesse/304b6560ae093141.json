@@ -1,0 +1,55 @@
+{
+  "_id": "304b6560ae093141",
+  "name": "Slip the Skin",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-water-splash.svg",
+  "folder": "41003cfc479a6160",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-selkie-warden-slip-the-skin-slip-the-skin",
+    "description": {
+      "value": "<p>As a Bonus Action, you can Slip the Skin to partially assume a selkie form for 1 minute:</p><ul><li>You have Advantage on Dexterity saving throws.</li><li>Opportunity attacks against you are made with Disadvantage.</li><li>You can move through Enemy spaces without treating them as Difficult Terrain. You can use Slip the Skin a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</li></ul>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Selkie Warden 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "fb01ae8eb85e2062": {
+        "_id": "fb01ae8eb85e2062",
+        "name": "Slip the Skin",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-water-splash.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Selkie Warden",
+      "parentFeature": "e4329ec05ab61bff",
+      "parentIdentifier": "lyonesse-selkie-warden-slip-the-skin",
+      "level": 3,
+      "version": "0.2.0",
+      "execute": "slip"
+    }
+  },
+  "_key": "!items!304b6560ae093141"
+}

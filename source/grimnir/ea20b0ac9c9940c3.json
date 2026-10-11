@@ -1,0 +1,57 @@
+{
+  "_id": "ea20b0ac9c9940c3",
+  "name": "Wild Reckoning — Attack",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-sword-clash.svg",
+  "folder": "50b4331a01e2aad7",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-path-of-the-provoked-reckoning-of-choice-wild-reckoning-attack",
+    "description": {
+      "value": "<p>When you enter your Rage, you choose one Reckoning of Choice feature. This is in addition to both a Strength of One option and a Dominant of Will option. You benefit from all three options until your Rage ends.</p><p><strong>Stoic Reckoning.</strong> When you use Reckless Attack, you gain Resistance to one damage type of your choice until the start of your next turn, and you are immune to the Stunned condition until the start of your next turn.</p><p><strong>Wrathful Reckoning.</strong> If you use Reckless Attack or Brutal Strike and miss, you can take a Bonus Action to make another melee attack with a weapon or Unarmed Strike with the same weapon or Unarmed Strike against the same target.</p><p><strong>Wild Reckoning.</strong> While you are raging, you can use your Action to make a single melee weapon attack against a creature you can see within your reach. On a hit, the attack deals maximum damage, and the target must make a Constitution saving throw against a DC equal to 8 + your Proficiency Bonus + your Strength modifier. On a failed save, the target is Stunned for 1 minute. At the end of each of its turns, the target can make another Constitution saving throw, ending the Stunned condition on itself on a success.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Path of the Provoked 14",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "3d17622dff68d8ff": {
+        "_id": "3d17622dff68d8ff",
+        "name": "Wild Reckoning",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-sword-clash.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Path of the Provoked",
+      "parentFeature": "02a061315001dcfc",
+      "parentIdentifier": "grimnir-path-of-the-provoked-reckoning-of-choice",
+      "level": 14,
+      "version": "0.2.0",
+      "execute": "weaponAttack",
+      "weaponKind": "melee",
+      "maximize": true
+    }
+  },
+  "_key": "!items!ea20b0ac9c9940c3"
+}

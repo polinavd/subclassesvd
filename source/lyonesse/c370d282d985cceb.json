@@ -1,0 +1,69 @@
+{
+  "_id": "c370d282d985cceb",
+  "name": "Scholar of the Wyrd — Bonus",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-open-book.svg",
+  "folder": "b7ea24026d36df87",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-wyrd-sorcery-scholar-of-the-wyrd-scholar-of-the-wyrd-bonus",
+    "description": {
+      "value": "<p>You also gain proficiency in History and Insight. When you make an ability check using either skill, you can add your Charisma modifier to the roll. You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Wyrd Sorcery 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "90aec1682e2303fc": {
+        "_id": "90aec1682e2303fc",
+        "type": "utility",
+        "name": "Scholar of the Wyrd — Bonus",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:lyonesse-wyrd-sorcery-scholar-of-the-wyrd",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "roll": {
+          "formula": "@abilities.cha.mod",
+          "name": "Бонус к History / Insight",
+          "visible": true,
+          "prompt": false
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-open-book.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Wyrd Sorcery",
+      "parentFeature": "aba918ded4029687",
+      "parentIdentifier": "lyonesse-wyrd-sorcery-scholar-of-the-wyrd",
+      "level": 3,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!c370d282d985cceb"
+}

@@ -1,0 +1,55 @@
+{
+  "_id": "a6674bfdf52fb775",
+  "name": "Wyrd Time — Extend",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-hourglass.svg",
+  "folder": "b7ea24026d36df87",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-wyrd-sorcery-wyrd-time-wyrd-time-extend",
+    "description": {
+      "value": "<p>At the start of your turn, you can choose to slow the flow of time for everyone but yourself. Wyrd time lasts a number of rounds equal to your Charisma modifier and can be extended by the use of 1 Sorcery Point for 1 additional round while it remains. While Wyrd Time is in effect you gain the following:</p><ul><li>Your Speed is doubled.</li><li>Attacks against you are made with Disadvantage.</li><li>You have Advantage on saving throws.</li><li>Your movement doesn’t provoke Opportunity Attacks.</li><li>On your turn, you can take one of the following actions as a Bonus Action: Help, Hide, or Utilize. Wyrd Time ends if:</li><li>One of the actions you use during this period, or any effects that you create during it, affects a creature other than you or an object being worn or carried by someone other than you. You can also end it with a Bonus action. The Help action does not count for the purposes of ending Wyrd Time.</li><li>You gain one of the following conditions: Grappled, Incapacitated, Prone, Paralyzed, Petrified, Restrained, Stunned, Unconscious. Once you use this feature, you can’t use it again until you finish a Long Rest, unless you spend 5 Sorcery Points.</li></ul>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Wyrd Sorcery 6",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "d1f71a099bb0b98f": {
+        "_id": "d1f71a099bb0b98f",
+        "name": "Wyrd Time — Extend",
+        "type": "utility",
+        "activation": {
+          "type": "",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-hourglass.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Wyrd Sorcery",
+      "parentFeature": "a08995fe190f137b",
+      "parentIdentifier": "lyonesse-wyrd-sorcery-wyrd-time",
+      "level": 6,
+      "version": "0.2.0",
+      "execute": "extend"
+    }
+  },
+  "_key": "!items!a6674bfdf52fb775"
+}

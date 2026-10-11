@@ -2,11 +2,11 @@
   "_id": "02a061315001dcfc",
   "name": "Reckoning of Choice",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-crossed-swords.svg",
   "system": {
     "identifier": "grimnir-path-of-the-provoked-reckoning-of-choice",
     "description": {
-      "value": "<p><b>Path of the Provoked · уровень 14</b></p><p>When you enter your Rage, you choose one Reckoning of<br>Choice feature. This is in addition to both a Strength of<br>One option and a Dominant of Will option. You benefit from all three options until your Rage ends.<br>Stoic Reckoning. When you use Reckless Attack, you gain Resistance to one damage type of your choice until the start of your next turn, and you are immune to the<br>Stunned condition until the start of your next turn.<br>Wrathful Reckoning. If you use Reckless Attack or<br>Brutal Strike and miss, you can take a Bonus Action to make another melee attack with a weapon or Unarmed<br>Strike with the same weapon or Unarmed Strike against the same target.<br>Wild Reckoning. While you are raging, you can use your Action to make a single melee weapon attack against a creature you can see within your reach. On a hit, the attack deals maximum damage, and the target must make a Constitution saving throw against a DC equal to 8 + your Proficiency Bonus + your Strength modifier. On a failed save, the target is Stunned for 1 minute. At the end of each of its turns, the target can make another Constitution saving throw, ending the Stunned condition on itself on a success.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Выбор варианта ярости и соответствующие эффекты — в макросе управления.</li></ul>"
+      "value": "<p>When you enter your Rage, you choose one Reckoning of Choice feature. This is in addition to both a Strength of One option and a Dominant of Will option. You benefit from all three options until your Rage ends.</p><p><strong>Stoic Reckoning.</strong> When you use Reckless Attack, you gain Resistance to one damage type of your choice until the start of your next turn, and you are immune to the Stunned condition until the start of your next turn.</p><p><strong>Wrathful Reckoning.</strong> If you use Reckless Attack or Brutal Strike and miss, you can take a Bonus Action to make another melee attack with a weapon or Unarmed Strike with the same weapon or Unarmed Strike against the same target.</p><p><strong>Wild Reckoning.</strong> While you are raging, you can use your Action to make a single melee weapon attack against a creature you can see within your reach. On a hit, the attack deals maximum damage, and the target must make a Constitution saving throw against a DC equal to 8 + your Proficiency Bonus + your Strength modifier. On a failed save, the target is Stunned for 1 minute. At the end of each of its turns, the target can make another Constitution saving throw, ending the Stunned condition on itself on a success.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.b03e159a69bcab1c]{Wrathful Reckoning — Attack}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.ea20b0ac9c9940c3]{Wild Reckoning — Attack}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -22,7 +22,30 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "335463e5ee5a4f08",
+        "type": "ItemGrant",
+        "level": 14,
+        "title": "Actions",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.b03e159a69bcab1c",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.ea20b0ac9c9940c3",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ]
   },
   "effects": [],
   "flags": {
@@ -32,8 +55,16 @@
       "feature": "Reckoning of Choice",
       "class": "barbarian",
       "level": 14,
-      "notes": [
-        "Выбор варианта ярости и соответствующие эффекты — в макросе управления."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.b03e159a69bcab1c",
+          "level": 14
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.ea20b0ac9c9940c3",
+          "level": 14
+        }
       ]
     }
   },

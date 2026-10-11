@@ -2,11 +2,11 @@
   "_id": "ccbd6411687c1c89",
   "name": "Archangel’s Spells",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-angel-wings.svg",
   "system": {
     "identifier": "lyonesse-the-archangel-archangel-s-spells",
     "description": {
-      "value": "<p><b>The Archangel · уровень 3</b></p><p>The Archangel grants you spells that punish the wicked and scour corruption with holy fire. You always have these spells prepared, and they do not count against your number of spells known.<br>Archangel Spells<br>Warlock Level<br>Spells<br>3<br>Wrathful Smite, Sanctuary, Flame Blade,<br>Zone of Truth<br>5<br>Spirit Guardians, Fear<br>7<br>Wall of Fire, Banishment<br>9<br>Banishing Smite, Dispel Evil and Good</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+      "value": "<p>The Archangel grants you spells that punish the wicked and scour corruption with holy fire. You always have these spells prepared, and they do not count against your number of spells known.</p><table><thead><tr><th>Warlock Level</th><th>Spells</th></tr></thead><tbody><tr><td>3</td><td>Wrathful Smite, Sanctuary, Flame Blade, Zone of Truth</td></tr><tr><td>5</td><td>Spirit Guardians, Fear</td></tr><tr><td>7</td><td>Wall of Fire, Banishment</td></tr><tr><td>9</td><td>Banishing Smite, Dispel Evil and Good</td></tr></tbody></table><ul><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.581a1ef1bcef1ad3]{Wrathful Smite}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.1e5a6f908ccd888d]{Sanctuary}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.35bcc424c0512190]{Flame Blade}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.810b60fe67a34388]{Zone of Truth}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.485903a994e337c5]{Spirit Guardians}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.1a4459faabfdd0a9]{Fear}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.90f63f97a6715523]{Wall of Fire}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.46ea07e0967849f8]{Banishment}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.e67e6bf91365898e]{Banishing Smite}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.171d7b98d0ade9cc]{Dispel Evil and Good}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,7 +22,101 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "474f8d9369c112a6",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.581a1ef1bcef1ad3",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.1e5a6f908ccd888d",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.35bcc424c0512190",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.810b60fe67a34388",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "b8c776c22a0740a5",
+        "type": "ItemGrant",
+        "level": 5,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.485903a994e337c5",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.1a4459faabfdd0a9",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "2796567c0a8f8fc7",
+        "type": "ItemGrant",
+        "level": 7,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.90f63f97a6715523",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.46ea07e0967849f8",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "47ae7511e8a2b259",
+        "type": "ItemGrant",
+        "level": 9,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.e67e6bf91365898e",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.171d7b98d0ade9cc",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ]
   },
   "effects": [],
   "flags": {
@@ -32,8 +126,48 @@
       "feature": "Archangel’s Spells",
       "class": "warlock",
       "level": 3,
-      "notes": [
-        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.581a1ef1bcef1ad3",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.1e5a6f908ccd888d",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.35bcc424c0512190",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.810b60fe67a34388",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.485903a994e337c5",
+          "level": 5
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.1a4459faabfdd0a9",
+          "level": 5
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.90f63f97a6715523",
+          "level": 7
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.46ea07e0967849f8",
+          "level": 7
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.e67e6bf91365898e",
+          "level": 9
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.171d7b98d0ade9cc",
+          "level": 9
+        }
       ]
     }
   },

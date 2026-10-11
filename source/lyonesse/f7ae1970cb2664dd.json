@@ -1,0 +1,69 @@
+{
+  "_id": "f7ae1970cb2664dd",
+  "name": "Saint’s Reprieve",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-shining-sword.svg",
+  "folder": "7a918a48d1938fb1",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-oath-of-saints-judgment-of-the-anointed-saint-s-reprieve",
+    "description": {
+      "value": "<p><strong>Burning Edict.</strong> When you cast Compelled Duel on a creature and it fails its saving throw, you ignore all of that creature’s damage Resistances when you deal damage to it, in addition to the spell’s normal effects.</p><p><strong>Saint’s Reprieve.</strong> When you must make a Death Saving Throw, you may expend a use of your Channel Divinity. If you do so, you regain Hit Points equal to your Paladin level + the roll of your Death Saving Throw. Until the start of your next turn, you can use a Bonus action to make an attack with Advantage on the roll.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Oath of Saints 7",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "b4d14a1124db180b": {
+        "_id": "b4d14a1124db180b",
+        "type": "utility",
+        "name": "Saint’s Reprieve",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:channel-divinity",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "roll": {
+          "formula": "@classes.paladin.levels + 1d20",
+          "name": "Saint’s Reprieve",
+          "visible": true,
+          "prompt": false
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-shining-sword.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Oath of Saints",
+      "parentFeature": "7c735f276e6ffaea",
+      "parentIdentifier": "lyonesse-oath-of-saints-judgment-of-the-anointed",
+      "level": 7,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!f7ae1970cb2664dd"
+}

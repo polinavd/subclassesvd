@@ -1,0 +1,95 @@
+{
+  "_id": "8004b167f57610a0",
+  "name": "Bestow Fate",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-crystal-ball.svg",
+  "folder": "08cc7d033b762c1f",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-college-of-the-seers-bestow-fate-bestow-fate",
+    "description": {
+      "value": "<p>As a Magic Action, you target a creature you can see or hear within 30 feet of you as your mark. When you do, you expend one use of Bardic Inspiration, and the creature must make a Charisma saving throw against your spell save DC. On a failed save, choose one of the following fates to impose on the creature for 1 minute:</p><p><strong>Clumsy.</strong> Subtract a roll of your Bardic Inspiration die from the first attack roll the creature makes on each of its turns.</p><p><strong>Feeble.</strong> Subtract a roll of your Bardic Inspiration die from one saving throw the creature makes before the effect ends (no action required). After doing so, the effect ends.</p><p><strong>Slow.</strong> The creature’s Speed is reduced by 5 feet × the result of your Bardic Inspiration die (minimum Speed 5 feet). At the end of each of the creature’s turns, reroll your Bardic Inspiration die to determine the new reduction. This effect ends early if you use this feature to mark a different creature, if you have the Incapacitated condition, or if the target has the Unconscious condition or dies.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "College of the Seers 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "8f017759dd9f1dbe": {
+        "_id": "8f017759dd9f1dbe",
+        "type": "save",
+        "name": "Bestow Fate",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:bardic-inspiration",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "range": {
+          "value": "30",
+          "units": "ft"
+        },
+        "target": {
+          "affects": {
+            "type": "creature",
+            "count": "1"
+          },
+          "template": {
+            "type": ""
+          }
+        },
+        "damage": {
+          "parts": [],
+          "onSave": "none",
+          "includeBase": false
+        },
+        "save": {
+          "ability": [
+            "cha"
+          ],
+          "dc": {
+            "calculation": "cha",
+            "formula": ""
+          }
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute",
+          "concentration": false
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-crystal-ball.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "College of the Seers",
+      "parentFeature": "8a1e8ce54ce010bf",
+      "parentIdentifier": "grimnir-college-of-the-seers-bestow-fate",
+      "level": 3,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!8004b167f57610a0"
+}

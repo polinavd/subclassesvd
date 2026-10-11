@@ -2,11 +2,11 @@
   "_id": "d664a4c8b9ffef80",
   "name": "Maker Domain Spells",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-holy-symbol.svg",
   "system": {
     "identifier": "lyonesse-college-of-the-voice-maker-domain-spells",
     "description": {
-      "value": "<p><b>College of the Voice · уровень 3</b></p><p>Your connection to the Song of the Maker ensures you always have certain spells ready. When you reach a Bard level specified in the Maker Domain Spells table, you thereafter always have the listed spells prepared.<br>When you cast a spell from the Maker Domain Spells table you only need to use the Verbal component.<br>Maker Domain Spells<br>Bard Level<br>Prepared Spells<br>3<br>Command, Healing Word, Suggestion,<br>Zone of Truth<br>5<br>Fear, Mass Healing Word<br>7<br>Compulsion, Phantasmal Killer<br>9<br>Dominate Person, Geas</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+      "value": "<p>Your connection to the Song of the Maker ensures you always have certain spells ready. When you reach a Bard level specified in the Maker Domain Spells table, you thereafter always have the listed spells prepared. When you cast a spell from the Maker Domain Spells table you only need to use the Verbal component.</p><table><thead><tr><th>Bard Level</th><th>Spells</th></tr></thead><tbody><tr><td>3</td><td>Command, Healing Word, Suggestion, Zone of Truth</td></tr><tr><td>5</td><td>Fear, Mass Healing Word</td></tr><tr><td>7</td><td>Compulsion, Phantasmal Killer</td></tr><tr><td>9</td><td>Dominate Person, Geas</td></tr></tbody></table><ul><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.64bf387a0bb53756]{Command}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.9445baac9e47469e]{Healing Word}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.56cab499f72fe7de]{Suggestion}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.bae0747f7c58a4a7]{Zone of Truth}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.99e28fc486bee80b]{Fear}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.bf16e75a81737cab]{Mass Healing Word}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.841e99a84433a42a]{Compulsion}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.d4324b6fc1295d91]{Phantasmal Killer}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.d7a47f7d112978eb]{Dominate Person}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.b0de415f6a0858d1]{Geas}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,7 +22,101 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "5c8182e7536cbc26",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.64bf387a0bb53756",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.9445baac9e47469e",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.56cab499f72fe7de",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.bae0747f7c58a4a7",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "8356e160de8e0384",
+        "type": "ItemGrant",
+        "level": 5,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.99e28fc486bee80b",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.bf16e75a81737cab",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "486eb0b14177dc6a",
+        "type": "ItemGrant",
+        "level": 7,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.841e99a84433a42a",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.d4324b6fc1295d91",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "02cf0ea228cf568a",
+        "type": "ItemGrant",
+        "level": 9,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.d7a47f7d112978eb",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.b0de415f6a0858d1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ]
   },
   "effects": [],
   "flags": {
@@ -32,8 +126,48 @@
       "feature": "Maker Domain Spells",
       "class": "bard",
       "level": 3,
-      "notes": [
-        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.64bf387a0bb53756",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.9445baac9e47469e",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.56cab499f72fe7de",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.bae0747f7c58a4a7",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.99e28fc486bee80b",
+          "level": 5
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.bf16e75a81737cab",
+          "level": 5
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.841e99a84433a42a",
+          "level": 7
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.d4324b6fc1295d91",
+          "level": 7
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.d7a47f7d112978eb",
+          "level": 9
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.b0de415f6a0858d1",
+          "level": 9
+        }
       ]
     }
   },

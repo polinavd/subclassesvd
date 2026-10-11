@@ -1,0 +1,68 @@
+{
+  "_id": "497d5c1e49a9121c",
+  "name": "Justice Delivered",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-star-swirl.svg",
+  "folder": "7c14c39ab5ef4425",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-oath-of-the-slain-justice-delivered-justice-delivered",
+    "description": {
+      "value": "<p>As a Bonus Action, you undergo a divine transformation, granting the benefits below for 1 minute or until you end them (no action required).</p><p><strong>Impervious Flesh.</strong> You have Advantage on saving throws against spells and magical effects.</p><p><strong>Might of the Gods.</strong> When a creature within 10 feet of you hits a target with a melee attack, you can use your Reaction to make one melee weapon attack against that target. You have Advantage on the attack roll.</p><p><strong>Aura of the Worthy.</strong> Your Aura of the Executioner now grants you and your allies a bonus to attack rolls equal to your Charisma modifier (minimum bonus of +1). In addition, you and your allies have Immunity to the Charmed condition while in your Aura of Protection. If a Charmed ally enters the aura, that condition has no effect on that ally while there. Once you use this feature, you can’t use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required).</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Oath of the Slain 20",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "270e35980d5a8717": {
+        "_id": "270e35980d5a8717",
+        "type": "utility",
+        "name": "Justice Delivered",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:grimnir-oath-of-the-slain-justice-delivered",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute",
+          "concentration": false
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-star-swirl.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Oath of the Slain",
+      "parentFeature": "8200d76cf9ec45a9",
+      "parentIdentifier": "grimnir-oath-of-the-slain-justice-delivered",
+      "level": 20,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!497d5c1e49a9121c"
+}

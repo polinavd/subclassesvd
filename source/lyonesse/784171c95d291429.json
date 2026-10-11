@@ -2,11 +2,11 @@
   "_id": "784171c95d291429",
   "name": "Master of Time",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-empty-hourglass.svg",
   "system": {
     "identifier": "lyonesse-wyrd-sorcery-master-of-time",
     "description": {
-      "value": "<p><b>Wyrd Sorcery · уровень 18</b></p><p>You always have the Time Stop and Foresight spells prepared.<br>When you cast Time Stop, you don’t roll for the number of turns, you automatically get the highest number on the die.<br>While under the effect of Time Stop, you have True<br>Sight out to a range of 30 feet, and you can take the<br>Dash, Hide, or Utilize action as a Bonus Action.<br>If Time Stop ends as a result of casting a spell that causes a saving throw, all targets make their saving throw at Disadvantage.<br>When you cast Foresight, the target’s movement does not provoke Opportunity Attacks and the target can take the Dash, Help, or Hide action as a Bonus Action.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Time Stop/Foresight добавляются как подготовленные заклинания; максимум ходов и дополнительные бонусные действия — вручную.</li></ul>"
+      "value": "<p>You always have the Time Stop and Foresight spells prepared. When you cast Time Stop, you don’t roll for the number of turns, you automatically get the highest number on the die. While under the effect of Time Stop, you have True Sight out to a range of 30 feet, and you can take the Dash, Hide, or Utilize action as a Bonus Action. If Time Stop ends as a result of casting a spell that causes a saving throw, all targets make their saving throw at Disadvantage. When you cast Foresight, the target’s movement does not provoke Opportunity Attacks and the target can take the Dash, Help, or Hide action as a Bonus Action.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.9dadc159323a2ea8]{Time Stop}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.135943541af40fb7]{Foresight}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,7 +22,30 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "4f65f7c2159ef365",
+        "type": "ItemGrant",
+        "level": 18,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.9dadc159323a2ea8",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.135943541af40fb7",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ]
   },
   "effects": [],
   "flags": {
@@ -32,8 +55,16 @@
       "feature": "Master of Time",
       "class": "sorcerer",
       "level": 18,
-      "notes": [
-        "Time Stop/Foresight добавляются как подготовленные заклинания; максимум ходов и дополнительные бонусные действия — вручную."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.9dadc159323a2ea8",
+          "level": 18
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.135943541af40fb7",
+          "level": 18
+        }
       ]
     }
   },

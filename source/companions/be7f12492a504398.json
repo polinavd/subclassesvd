@@ -2,7 +2,7 @@
   "_id": "be7f12492a504398",
   "name": "Hatchling Black Dragon",
   "type": "npc",
-  "img": "icons/svg/mystery-man.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/faithtoken-dragon-head.svg",
   "system": {
     "abilities": {
       "str": {
@@ -89,7 +89,7 @@
       "_id": "a4fed6a40b9f9829",
       "name": "Amphibious",
       "type": "feat",
-      "img": "icons/svg/sword.svg",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-rune-stone.svg",
       "flags": {
         "grimnir-lyonesse": {
           "templateItem": true
@@ -111,7 +111,7 @@
       "_id": "a51b32e2d9822a9b",
       "name": "Multiattack",
       "type": "feat",
-      "img": "icons/svg/sword.svg",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-rune-stone.svg",
       "flags": {
         "grimnir-lyonesse": {
           "templateItem": true
@@ -133,7 +133,7 @@
       "_id": "a12fd109b65739e4",
       "name": "Bite",
       "type": "feat",
-      "img": "icons/svg/sword.svg",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-claw-slashes.svg",
       "flags": {
         "grimnir-lyonesse": {
           "templateItem": true
@@ -191,7 +191,8 @@
                 "value": "melee",
                 "classification": "weapon"
               }
-            }
+            },
+            "img": "modules/grimnir-lyonesse/assets/icons/lorc-claw-slashes.svg"
           }
         }
       },
@@ -202,7 +203,7 @@
       "_id": "cd7e5d35c8b7d801",
       "name": "Pounce",
       "type": "feat",
-      "img": "icons/svg/sword.svg",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-rune-stone.svg",
       "flags": {
         "grimnir-lyonesse": {
           "templateItem": true
@@ -260,7 +261,8 @@
                 "value": "melee",
                 "classification": "weapon"
               }
-            }
+            },
+            "img": "modules/grimnir-lyonesse/assets/icons/lorc-rune-stone.svg"
           }
         }
       },
@@ -271,7 +273,7 @@
       "_id": "26e03c1c6fa01c3b",
       "name": "Acid Breath",
       "type": "feat",
-      "img": "icons/svg/sword.svg",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-dragon-breath.svg",
       "flags": {
         "grimnir-lyonesse": {
           "templateItem": true
@@ -342,7 +344,8 @@
                 "calculation": "",
                 "formula": "12"
               }
-            }
+            },
+            "img": "modules/grimnir-lyonesse/assets/icons/lorc-dragon-breath.svg"
           }
         },
         "uses": {
@@ -372,7 +375,7 @@
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "icons/svg/mystery-man.svg"
+      "src": "modules/grimnir-lyonesse/assets/icons/faithtoken-dragon-head.svg"
     }
   },
   "ownership": {

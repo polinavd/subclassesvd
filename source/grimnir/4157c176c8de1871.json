@@ -2,11 +2,11 @@
   "_id": "4157c176c8de1871",
   "name": "Arcane Intentions",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-third-eye.svg",
   "system": {
     "identifier": "grimnir-cohesion-of-the-primal-arcane-intentions",
     "description": {
-      "value": "<p><b>Cohesion of the Primal · уровень 3</b></p><p>Choose one intention: Dreamer or Seeker. Dreamers glimpse fragments of possible futures, while Seekers hunt those who wield magic. The intention that you choose determines the features that are available to you from this subclass.<br>You may change your intention at levels 6, 10, and 14.<br>You gain proficiency with Light Armor.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Выбор Dreamer/Seeker — в макросе «Управление подклассом».</li></ul>"
+      "value": "<p>Choose one intention: Dreamer or</p><p><strong>Seeker.</strong> Dreamers glimpse fragments of possible futures, while Seekers hunt those who wield magic. The intention that you choose determines the features that are available to you from this subclass. You may change your intention at levels 6, 10, and 14. You gain proficiency with Light Armor.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.d6c51ae439eee3c0]{Arcane Intentions}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -22,7 +22,26 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "bea7f01082af4f1d",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Actions",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.d6c51ae439eee3c0",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ]
   },
   "effects": [],
   "flags": {
@@ -32,8 +51,12 @@
       "feature": "Arcane Intentions",
       "class": "wizard",
       "level": 3,
-      "notes": [
-        "Выбор Dreamer/Seeker — в макросе «Управление подклассом»."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.d6c51ae439eee3c0",
+          "level": 3
+        }
       ]
     }
   },

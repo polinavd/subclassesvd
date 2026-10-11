@@ -2,11 +2,11 @@
   "_id": "a08995fe190f137b",
   "name": "Wyrd Time",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-hourglass.svg",
   "system": {
     "identifier": "lyonesse-wyrd-sorcery-wyrd-time",
     "description": {
-      "value": "<p><b>Wyrd Sorcery · уровень 6</b></p><p>At the start of your turn, you can choose to slow the flow of time for everyone but yourself. Wyrd time lasts a number of rounds equal to your Charisma modifier and can be extended by the use of 1 Sorcery Point for 1 additional round while it remains.<br>While Wyrd Time is in effect you gain the following:<br>• Your Speed is doubled.<br>• Attacks against you are made with Disadvantage.<br>• You have Advantage on saving throws.<br>• Your movement doesn’t provoke Opportunity Attacks.<br>• On your turn, you can take one of the following actions as a Bonus Action: Help, Hide, or Utilize.<br>Wyrd Time ends if:<br>• One of the actions you use during this period, or any effects that you create during it, affects a creature other than you or an object being worn or carried by someone other than you. You can also end it with a Bonus action. The Help action does not count for the purposes of ending Wyrd Time.<br>• You gain one of the following conditions: Grappled,<br>Incapacitated, Prone, Paralyzed, Petrified, Restrained,<br>Stunned, Unconscious.<br>Once you use this feature, you can’t use it again until you finish a Long Rest, unless you spend 5 Sorcery Points.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Скорость, защиты, длительность и расход — макрос управления. Завершение из-за воздействия на другого — вручную.</li></ul>"
+      "value": "<p>At the start of your turn, you can choose to slow the flow of time for everyone but yourself. Wyrd time lasts a number of rounds equal to your Charisma modifier and can be extended by the use of 1 Sorcery Point for 1 additional round while it remains. While Wyrd Time is in effect you gain the following:</p><ul><li>Your Speed is doubled.</li><li>Attacks against you are made with Disadvantage.</li><li>You have Advantage on saving throws.</li><li>Your movement doesn’t provoke Opportunity Attacks.</li><li>On your turn, you can take one of the following actions as a Bonus Action: Help, Hide, or Utilize. Wyrd Time ends if:</li><li>One of the actions you use during this period, or any effects that you create during it, affects a creature other than you or an object being worn or carried by someone other than you. You can also end it with a Bonus action. The Help action does not count for the purposes of ending Wyrd Time.</li><li>You gain one of the following conditions: Grappled, Incapacitated, Prone, Paralyzed, Petrified, Restrained, Stunned, Unconscious. Once you use this feature, you can’t use it again until you finish a Long Rest, unless you spend 5 Sorcery Points.</li></ul><ul><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.ab6bd8e0a4184434]{Wyrd Time}</li><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.a6674bfdf52fb775]{Wyrd Time — Extend}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -27,7 +27,30 @@
         }
       ]
     },
-    "activities": {}
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "e6f36c77a97772df",
+        "type": "ItemGrant",
+        "level": 6,
+        "title": "Actions",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.ab6bd8e0a4184434",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.a6674bfdf52fb775",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ]
   },
   "effects": [],
   "flags": {
@@ -37,8 +60,16 @@
       "feature": "Wyrd Time",
       "class": "sorcerer",
       "level": 6,
-      "notes": [
-        "Скорость, защиты, длительность и расход — макрос управления. Завершение из-за воздействия на другого — вручную."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.ab6bd8e0a4184434",
+          "level": 6
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.a6674bfdf52fb775",
+          "level": 6
+        }
       ]
     }
   },

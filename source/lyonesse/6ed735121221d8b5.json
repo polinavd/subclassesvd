@@ -1,0 +1,63 @@
+{
+  "_id": "6ed735121221d8b5",
+  "name": "Успешный спасбросок вместо провала",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-hourglass.svg",
+  "folder": "b7ea24026d36df87",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-wyrd-sorcery-step-between-moments-",
+    "description": {
+      "value": "<p>When you use Wyrd Time, you gain the following benefits while it is in effect:</p><ul><li>When you cast a spell that effects other creatures, if the spell requires a saving throw, all targets have Disadvantage on that saving throw. Wyrd Time still ends immediately.</li><li>When you fail a Saving Throw you can spend 4 Sorcery Points to succeed instead.</li><li>At the start of your turn, you can spend 1 Sorcery Point to gain True Sight out to 30 feet until the end of your turn.</li><li>You may spend 2 Sorcery Points when you cast Modify Memory. When you do this the creature has Disadvantage on its saving throw and casting the spell doesn’t end Wyrd Time.</li></ul>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Wyrd Sorcery 14",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "7a8229b79baab49e": {
+        "_id": "7a8229b79baab49e",
+        "type": "utility",
+        "name": "Успешный спасбросок вместо провала",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:font-of-magic",
+              "value": "4"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-hourglass.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Wyrd Sorcery",
+      "parentFeature": "ade629a58174117e",
+      "parentIdentifier": "lyonesse-wyrd-sorcery-step-between-moments",
+      "level": 14,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!6ed735121221d8b5"
+}

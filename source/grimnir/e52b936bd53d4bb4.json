@@ -2,11 +2,11 @@
   "_id": "e52b936bd53d4bb4",
   "name": "Surveyor of the Depths",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-big-wave.svg",
   "system": {
     "identifier": "grimnir-discovery-domain-surveyor-of-the-depths",
     "description": {
-      "value": "<p><b>Discovery Domain · уровень 17</b></p><p>You gain the ability to breathe underwater, and your<br>Swim Speed doubles.<br>You always have the Tsunami spell prepared. You can also expend a use of Channel Divinity to cast it without expending a spell slot.<br>They chart no safe waters, only worthy ones, for the gods of the Stone Court favor the bold and the unbroken.<br>—Anton Flame-born</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Tsunami выдаётся на 17 уровне. Альтернативную трату Channel Divinity выбрать вручную.</li></ul>"
+      "value": "<p>You gain the ability to breathe underwater, and your Swim Speed doubles. You always have the Tsunami spell prepared. You can also expend a use of Channel Divinity to cast it without expending a spell slot.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.dc73a7bfe4bfebc2]{Tsunami}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.211adfb4b7646e4a]{Tsunami — Channel Divinity}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -22,13 +22,36 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "0b19caa8513369a7",
+        "type": "ItemGrant",
+        "level": 17,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.dc73a7bfe4bfebc2",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.211adfb4b7646e4a",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ]
   },
   "effects": [
     {
       "_id": "16675ea247198ccf",
       "name": "Swim speed ×2",
-      "img": "icons/svg/book.svg",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-big-wave.svg",
       "transfer": true,
       "disabled": false,
       "changes": [
@@ -56,8 +79,16 @@
       "feature": "Surveyor of the Depths",
       "class": "cleric",
       "level": 17,
-      "notes": [
-        "Tsunami выдаётся на 17 уровне. Альтернативную трату Channel Divinity выбрать вручную."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.dc73a7bfe4bfebc2",
+          "level": 17
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.211adfb4b7646e4a",
+          "level": 17
+        }
       ]
     }
   },

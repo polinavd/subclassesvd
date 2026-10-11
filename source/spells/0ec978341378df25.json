@@ -1,0 +1,133 @@
+{
+  "name": "Summon Beast",
+  "type": "spell",
+  "system": {
+    "identifier": "summon-beast",
+    "description": {
+      "value": "<p>Summon an Air, Land, or Water Bestial Spirit within 90 feet for one hour. It follows your commands, acts after your turn on your Initiative, and disappears at zero HP. Its statistics scale with the slot level.</p>"
+    },
+    "source": {
+      "custom": "Player’s Handbook 2024 — mechanical summary",
+      "rules": "2024"
+    },
+    "level": 2,
+    "school": "con",
+    "activation": {
+      "type": "action",
+      "value": 1
+    },
+    "duration": {
+      "value": "60",
+      "units": "minute"
+    },
+    "range": {
+      "value": 90,
+      "units": "ft"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1"
+      },
+      "template": {
+        "type": ""
+      }
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "cd57c8d5beb6d44c": {
+        "_id": "cd57c8d5beb6d44c",
+        "type": "summon",
+        "name": "Summon Beast",
+        "consumption": {
+          "spellSlot": true,
+          "targets": [],
+          "scaling": {
+            "allowed": true,
+            "max": "7"
+          }
+        },
+        "bonuses": {
+          "ac": "@item.level",
+          "hp": "5 * (@item.level - 2)",
+          "attackDamage": "@item.level"
+        },
+        "match": {
+          "attacks": true,
+          "proficiency": true,
+          "saves": false
+        },
+        "profiles": [
+          {
+            "_id": "065127fde679720d",
+            "name": "Air",
+            "count": "1",
+            "uuid": "Compendium.grimnir-lyonesse.companions.Actor.5599ce7db66c669f",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "4c2b2ecfb560dccc",
+            "name": "Land",
+            "count": "1",
+            "uuid": "Compendium.grimnir-lyonesse.companions.Actor.4f3806e3f2b493cb",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "0546260227868ad4",
+            "name": "Water",
+            "count": "1",
+            "uuid": "Compendium.grimnir-lyonesse.companions.Actor.6083544c990d385f",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "summon": {
+          "mode": "",
+          "prompt": true
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-wolf-head.svg"
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "materials": {
+      "value": "Gilded acorn with feather, fur and fish tail",
+      "cost": 200,
+      "consumed": false,
+      "supply": 0
+    },
+    "method": "spell",
+    "prepared": 0,
+    "ability": "int",
+    "sourceClass": "wizard"
+  },
+  "effects": [],
+  "_id": "0ec978341378df25",
+  "_key": "!items!0ec978341378df25",
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "grimnir-lyonesse": {
+      "version": "0.2.0"
+    }
+  },
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-wolf-head.svg"
+}

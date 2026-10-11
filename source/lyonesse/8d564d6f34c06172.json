@@ -1,0 +1,94 @@
+{
+  "_id": "8d564d6f34c06172",
+  "name": "Tidal Bond",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-big-wave.svg",
+  "folder": "41003cfc479a6160",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-selkie-warden-tidal-bond-tidal-bond",
+    "description": {
+      "value": "<p>Your bond tightens, improving your Slip the Skin. When your Slip the Skin is active, you gain the following additional benefits:</p><ul><li>You can move across any liquid surface as if it were solid ground and ignore any hazardous effects of such terrain while upon its surface. In addition, you ignore Difficult Terrain caused by viscous liquid or currents.</li><li>Creatures with the Prone condition can’t make Opportunity Attacks against you.</li><li>When you move through a creature’s space that is one size larger than you or smaller, you can take 10 feet of your movement to force it to make a Strength saving throw. On a failure, it has the Prone condition. A creature makes this save only once per turn, and you can’t use this feature if you have 10 feet of movement or less remaining.</li></ul>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Selkie Warden 11",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "d1e992830583decb": {
+        "_id": "d1e992830583decb",
+        "type": "save",
+        "name": "Tidal Bond",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [
+          {
+            "_id": "a921ca3d40fdb374"
+          }
+        ],
+        "description": {
+          "chatFlavor": ""
+        },
+        "damage": {
+          "parts": [],
+          "onSave": "none",
+          "includeBase": false
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-big-wave.svg"
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "a921ca3d40fdb374",
+      "name": "Tidal Bond: Prone",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-big-wave.svg",
+      "transfer": false,
+      "disabled": false,
+      "changes": [],
+      "statuses": [
+        "prone"
+      ],
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true
+        }
+      },
+      "duration": {},
+      "_key": "!items.effects!8d564d6f34c06172.a921ca3d40fdb374"
+    }
+  ],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Selkie Warden",
+      "parentFeature": "a046fca9cd9ff9dd",
+      "parentIdentifier": "lyonesse-selkie-warden-tidal-bond",
+      "level": 11,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!8d564d6f34c06172"
+}

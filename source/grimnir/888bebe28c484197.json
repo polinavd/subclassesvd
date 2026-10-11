@@ -1,0 +1,69 @@
+{
+  "_id": "888bebe28c484197",
+  "name": "A Glorious Sacrifice",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-heart-organ.svg",
+  "folder": "7c14c39ab5ef4425",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-oath-of-the-slain-a-glorious-sacrifice-a-glorious-sacrifice",
+    "description": {
+      "value": "<p>When you are reduced to 0 Hit Points but not killed outright, you can use your Reaction to have a number of Hit Points equal to twice your Paladin level instead. When you do this, you take an extra turn as soon as the current turn ends. During this extra turn, you can only move up to your Speed, take the Attack Action, and use your Bonus Action to cast a Paladin spell that has a casting time of a Bonus Action. At the end of this extra turn, you take Radiant damage equal to twice your Paladin level. You can’t use this feature again until you finish a Long Rest.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Oath of the Slain 15",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "d4744bbbbd1b1857": {
+        "_id": "d4744bbbbd1b1857",
+        "type": "utility",
+        "name": "A Glorious Sacrifice",
+        "activation": {
+          "type": "reaction",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:grimnir-oath-of-the-slain-a-glorious-sacrifice",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "roll": {
+          "formula": "2 * @classes.paladin.levels",
+          "name": "A Glorious Sacrifice",
+          "visible": true,
+          "prompt": false
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-heart-organ.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Oath of the Slain",
+      "parentFeature": "6d316cc98ce88fcb",
+      "parentIdentifier": "grimnir-oath-of-the-slain-a-glorious-sacrifice",
+      "level": 15,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!888bebe28c484197"
+}

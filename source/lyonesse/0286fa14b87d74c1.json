@@ -1,0 +1,55 @@
+{
+  "_id": "0286fa14b87d74c1",
+  "name": "Avatar of the Archangel",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-angel-wings.svg",
+  "folder": "38aa6694fe4ed7c9",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-the-archangel-avatar-of-the-archangel-avatar-of-the-archangel",
+    "description": {
+      "value": "<p>When evil falls or allies perish, heaven’s judgment pours through you. When a creature you can see within 60 feet is reduced to 0 Hit Points, you may use your Reaction to call down divine fire upon an enemy within range. That creature takes Radiant damage equal to your Charisma modifier + your Warlock level. In addition, you assume your Avatar of the Archangel form.</p><p><strong>Avatar of the Archangel.</strong> You gain Temporary Hit Points equal to twice your Warlock level. While you have these Temporary Hit Points, divine radiance wreathes your body, eyes open all over your armor, and your presence feels unmistakably otherworldly. While this form is active:</p><ul><li>You shed Bright Light in a 10-foot radius and Dim Light for another 10 feet.</li><li>Your attacks deal an additional 1d8 Radiant damage.</li><li>Your vision is unimpeded by magical Darkness. Once you use this feature, you can’t use it again until you finish a Short or Long Rest.</li></ul>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "The Archangel 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "657025b5bbbb5f78": {
+        "_id": "657025b5bbbb5f78",
+        "name": "Avatar of the Archangel",
+        "type": "utility",
+        "activation": {
+          "type": "",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-angel-wings.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "The Archangel",
+      "parentFeature": "68ce5d92858594a3",
+      "parentIdentifier": "lyonesse-the-archangel-avatar-of-the-archangel",
+      "level": 3,
+      "version": "0.2.0",
+      "execute": "avatar"
+    }
+  },
+  "_key": "!items!0286fa14b87d74c1"
+}

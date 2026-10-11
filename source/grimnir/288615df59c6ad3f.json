@@ -2,11 +2,11 @@
   "_id": "288615df59c6ad3f",
   "name": "Push Your Luck",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-perspective-dice-six-faces-random.svg",
   "system": {
     "identifier": "grimnir-true-believer-push-your-luck",
     "description": {
-      "value": "<p><b>True Believer · уровень 17</b></p><p>As a Magic Action, make a DC 15 ability check using your Wisdom.<br>Success: You regain all expended spell slots and all expended uses of Wrath of Divinity.<br>Failure: You gain one level of Exhaustion. The next time you use this feature, you have Advantage on the check.<br>You can use this feature once, and you regain the use of it when you finish a Long Rest.<br>True Believer Spellcasting<br>Rogue<br>Level<br>Spells<br>Known<br>—Spell Slots per Spell Level—<br>1<br>2<br>3<br>4<br>3<br>3<br>2<br>—<br>—<br>—<br>4<br>4<br>3<br>—<br>—<br>—<br>5<br>4<br>3<br>—<br>—<br>—<br>6<br>4<br>3<br>—<br>—<br>—<br>7<br>5<br>4<br>2<br>—<br>—<br>8<br>6<br>4<br>2<br>—<br>—<br>9<br>6<br>4<br>2<br>—<br>—<br>10<br>7<br>4<br>3<br>—<br>—<br>11<br>8<br>4<br>3<br>—<br>—<br>12<br>8<br>4<br>3<br>—<br>—<br>13<br>9<br>4<br>3<br>2<br>—<br>14<br>10<br>4<br>3<br>2<br>—<br>15<br>10<br>4<br>3<br>2<br>—<br>16<br>11<br>4<br>3<br>3<br>—<br>17<br>11<br>4<br>3<br>3<br>—<br>18<br>11<br>4<br>3<br>3<br>—<br>19<br>12<br>4<br>3<br>3<br>1<br>20<br>13<br>4<br>3<br>3<br>1</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Макрос управления делает Wis DC15, восстанавливает слоты/ресурс или добавляет истощение. Используйте макрос вместо этой кнопки для автоматического результата.</li></ul>"
+      "value": "<p>As a Magic Action, make a DC 15 ability check using your Wisdom. Success: You regain all expended spell slots and all expended uses of Wrath of Divinity. Failure: You gain one level of Exhaustion. The next time you use this feature, you have Advantage on the check. You can use this feature once, and you regain the use of it when you finish a Long Rest.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.f76a2d00a5e8b175]{Push Your Luck}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -27,31 +27,26 @@
         }
       ]
     },
-    "activities": {
-      "6515e76bb13183e1": {
-        "_id": "6515e76bb13183e1",
-        "type": "utility",
-        "name": "Push Your Luck",
-        "activation": {
-          "type": "action",
-          "value": 1
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "d3a5d5a57d901f29",
+        "type": "ItemGrant",
+        "level": 17,
+        "title": "Actions",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "",
-              "value": "1"
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.f76a2d00a5e8b175",
+              "optional": false
             }
-          ]
+          ],
+          "optional": false,
+          "spell": null
         },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -61,8 +56,12 @@
       "feature": "Push Your Luck",
       "class": "rogue",
       "level": 17,
-      "notes": [
-        "Макрос управления делает Wis DC15, восстанавливает слоты/ресурс или добавляет истощение. Используйте макрос вместо этой кнопки для автоматического результата."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.f76a2d00a5e8b175",
+          "level": 17
+        }
       ]
     }
   },

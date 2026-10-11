@@ -1,0 +1,55 @@
+{
+  "_id": "a090bd83ac9ff740",
+  "name": "Summon Misplaced Soul",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-soul-vessel.svg",
+  "folder": "5e7aabf373dadf67",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-misplaced-soul-companions-from-the-before-summon-misplaced-soul",
+    "description": {
+      "value": "<p>You can use a Bonus Action to summon a Misplaced Soul in an unoccupied space within 10 feet of you. You can have only one Misplaced Soul at a time. The Misplaced Soul uses a special stat block (provided below). When you summon it, it gains additional Hit Points equal to 5 times the number of Sorcery Points you spend. The Misplaced Soul lasts for 10 minutes, until you use a Bonus Action to dismiss it, or until you or the Soul drop to 0 Hit Points. You can summon a Misplaced Soul a number of times equal to your Charisma Modifier, and you regain all uses when you finish a Long Rest.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Misplaced Soul 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "00cc7d447315b76e": {
+        "_id": "00cc7d447315b76e",
+        "name": "Summon Misplaced Soul",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/delapouite-soul-vessel.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Misplaced Soul",
+      "parentFeature": "8136d89434045e8d",
+      "parentIdentifier": "grimnir-misplaced-soul-companions-from-the-before",
+      "level": 3,
+      "version": "0.2.0",
+      "execute": "soul"
+    }
+  },
+  "_key": "!items!a090bd83ac9ff740"
+}

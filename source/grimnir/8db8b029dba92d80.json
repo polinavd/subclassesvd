@@ -1,0 +1,69 @@
+{
+  "_id": "8db8b029dba92d80",
+  "name": "Eye of the Navigator",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-ship-bow.svg",
+  "folder": "25c7aea27071b194",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-discovery-domain-expert-mariner-eye-of-the-navigator",
+    "description": {
+      "value": "<p>You are trained for long travel, navigation, and fighting across coasts, rivers, and open water.</p><p><strong>Bonus Proficiencies.</strong> You gain proficiency with Martial Weapons, Cartographer’s Tools, and Navigator’s Tools.</p><p><strong>Eye of the Navigator.</strong> When someone makes a History, Survival, or Perception check to locate or learn where a place is, you can choose to give them a +5 bonus to their roll. You can use this feature a number of times equal to your Wisdom Modifier, and you regain all expended uses when you finish a Long Rest</p><p><strong>Powerful Swimmer.</strong> You have a Swim Speed equal to your Speed, and you can hold your breath for twice as long as normal.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Discovery Domain 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "0d1122aeb83b5696": {
+        "_id": "0d1122aeb83b5696",
+        "type": "utility",
+        "name": "Eye of the Navigator",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:grimnir-discovery-domain-expert-mariner",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "roll": {
+          "formula": "5",
+          "name": "Eye of the Navigator: +5",
+          "visible": true,
+          "prompt": false
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/delapouite-ship-bow.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Discovery Domain",
+      "parentFeature": "d6650a3502761d10",
+      "parentIdentifier": "grimnir-discovery-domain-expert-mariner",
+      "level": 3,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!8db8b029dba92d80"
+}

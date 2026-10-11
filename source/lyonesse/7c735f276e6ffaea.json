@@ -2,11 +2,11 @@
   "_id": "7c735f276e6ffaea",
   "name": "Judgment of the Anointed",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-shining-sword.svg",
   "system": {
     "identifier": "lyonesse-oath-of-saints-judgment-of-the-anointed",
     "description": {
-      "value": "<p><b>Oath of Saints · уровень 7</b></p><p>Burning Edict. When you cast Compelled Duel on a creature and it fails its saving throw, you ignore all of that creature’s damage Resistances when you deal damage to it, in addition to the spell’s normal effects.<br>Saint’s Reprieve. When you must make a Death<br>Saving Throw, you may expend a use of your Channel<br>Divinity. If you do so, you regain Hit Points equal to your<br>Paladin level + the roll of your Death Saving Throw. Until the start of your next turn, you can use a Bonus action to make an attack with Advantage on the roll.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Число в кнопке — HP восстановления; модификаторы Death Save и преимущество вводить вручную. Игнорирование сопротивлений только цели Compelled Duel — вручную.</li></ul>"
+      "value": "<p><strong>Burning Edict.</strong> When you cast Compelled Duel on a creature and it fails its saving throw, you ignore all of that creature’s damage Resistances when you deal damage to it, in addition to the spell’s normal effects.</p><p><strong>Saint’s Reprieve.</strong> When you must make a Death Saving Throw, you may expend a use of your Channel Divinity. If you do so, you regain Hit Points equal to your Paladin level + the roll of your Death Saving Throw. Until the start of your next turn, you can use a Bonus action to make an attack with Advantage on the roll.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.f7ae1970cb2664dd]{Saint’s Reprieve}</li><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.8fa798bcac8cdf47]{Saint’s Reprieve — Attack}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,37 +22,30 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {
-      "b4d14a1124db180b": {
-        "_id": "b4d14a1124db180b",
-        "type": "utility",
-        "name": "Saint’s Reprieve",
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "638183e30f65aa84",
+        "type": "ItemGrant",
+        "level": 7,
+        "title": "Actions",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "feat:channel-divinity",
-              "value": "1"
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.f7ae1970cb2664dd",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.8fa798bcac8cdf47",
+              "optional": false
             }
-          ]
+          ],
+          "optional": false,
+          "spell": null
         },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "roll": {
-          "formula": "@classes.paladin.levels + 1d20",
-          "name": "Saint’s Reprieve",
-          "visible": true,
-          "prompt": false
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -62,8 +55,16 @@
       "feature": "Judgment of the Anointed",
       "class": "paladin",
       "level": 7,
-      "notes": [
-        "Число в кнопке — HP восстановления; модификаторы Death Save и преимущество вводить вручную. Игнорирование сопротивлений только цели Compelled Duel — вручную."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.f7ae1970cb2664dd",
+          "level": 7
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.8fa798bcac8cdf47",
+          "level": 7
+        }
       ]
     }
   },

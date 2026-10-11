@@ -1,0 +1,55 @@
+{
+  "_id": "0e5e824909916b53",
+  "name": "Aura of the Executioner",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-sword-array.svg",
+  "folder": "7c14c39ab5ef4425",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-oath-of-the-slain-aura-of-the-executioner-aura-of-the-executioner",
+    "description": {
+      "value": "<p>You and your allies gain a +1 bonus to attack rolls while in your Aura of Protection.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Oath of the Slain 7",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "21a02ecfcba0574f": {
+        "_id": "21a02ecfcba0574f",
+        "name": "Aura of the Executioner",
+        "type": "utility",
+        "activation": {
+          "type": "",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-sword-array.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Oath of the Slain",
+      "parentFeature": "fe5b4312a3556659",
+      "parentIdentifier": "grimnir-oath-of-the-slain-aura-of-the-executioner",
+      "level": 7,
+      "version": "0.2.0",
+      "execute": "execution"
+    }
+  },
+  "_key": "!items!0e5e824909916b53"
+}

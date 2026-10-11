@@ -2,11 +2,11 @@
   "_id": "3e58165ecf51f0c9",
   "name": "Vitality of the Ironwood",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-heart-organ.svg",
   "system": {
     "identifier": "grimnir-the-ironwood-vitality-of-the-ironwood",
     "description": {
-      "value": "<p><b>The Ironwood · уровень 3</b></p><p>Your patron gifts you a Heartseed, a Tiny organic focus that pulses with slow, ancient life. It is your spellcasting focus. If you lose it, you can perform a 1-hour ritual to grow a new one.<br>Vitality. While touching the Heartseed, you can use a<br>Bonus Action to awaken the patron’s vitality within you for 10 minutes. Until the effect ends:<br>• You gain Temporary Hit Points equal to your Warlock level plus your Charisma Modifier (minimum of 2).<br>• Your Speed increases by 5 feet.<br>Using this feature again ends the previous use.<br>You can use this feature a number of times equal to your Charisma Modifier, regaining all expended uses when you finish a Long Rest.</p>"
+      "value": "<p>Your patron gifts you a Heartseed, a Tiny organic focus that pulses with slow, ancient life. It is your spellcasting focus. If you lose it, you can perform a 1-hour ritual to grow a new one.</p><p><strong>Vitality.</strong> While touching the Heartseed, you can use a Bonus Action to awaken the patron’s vitality within you for 10 minutes. Until the effect ends:</p><ul><li>You gain Temporary Hit Points equal to your Warlock level plus your Charisma Modifier (minimum of 2).</li><li>Your Speed increases by 5 feet. Using this feature again ends the previous use. You can use this feature a number of times equal to your Charisma Modifier, regaining all expended uses when you finish a Long Rest.</li></ul><ul><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.10d25d5a55e1d959]{Vitality}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -27,68 +27,32 @@
         }
       ]
     },
-    "activities": {
-      "35188f0a256e7d5b": {
-        "_id": "35188f0a256e7d5b",
-        "type": "heal",
-        "name": "Vitality",
-        "activation": {
-          "type": "bonus",
-          "value": 1
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "4d9aa59516d25089",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Actions",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "",
-              "value": "1"
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.10d25d5a55e1d959",
+              "optional": false
             }
-          ]
-        },
-        "effects": [
-          {
-            "_id": "34c34c667725449d"
-          }
-        ],
-        "description": {
-          "chatFlavor": ""
-        },
-        "healing": {
-          "custom": {
-            "enabled": true,
-            "formula": "max(2,@classes.warlock.levels + @abilities.cha.mod)"
-          },
-          "types": [
-            "temphp"
           ],
-          "scaling": {
-            "mode": "",
-            "number": null,
-            "formula": ""
-          }
+          "optional": false,
+          "spell": null
         },
-        "target": {
-          "affects": {
-            "type": "self"
-          },
-          "template": {
-            "type": ""
-          }
-        },
-        "duration": {
-          "value": "10",
-          "units": "minute",
-          "concentration": false
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [
     {
       "_id": "34c34c667725449d",
       "name": "Vitality: +5 ft",
-      "img": "icons/svg/book.svg",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-heart-organ.svg",
       "transfer": false,
       "disabled": false,
       "changes": [
@@ -118,7 +82,13 @@
       "feature": "Vitality of the Ironwood",
       "class": "warlock",
       "level": 3,
-      "notes": []
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.10d25d5a55e1d959",
+          "level": 3
+        }
+      ]
     }
   },
   "ownership": {

@@ -2,11 +2,11 @@
   "_id": "6bade743eb9f614a",
   "name": "Wrath of Divinity",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-shining-sword.svg",
   "system": {
     "identifier": "grimnir-true-believer-wrath-of-divinity",
     "description": {
-      "value": "<p><b>True Believer · уровень 13</b></p><p>When you deal Sneak Attack damage to a creature, you can deal an additional 3d6 Radiant or Necrotic Damage<br>(your choice).<br>• If you choose Radiant, one creature you can see within 60 feet regains Hit Points equal to the bonus damage dealt.<br>• If you choose Necrotic, the target must succeed on a<br>Wisdom saving throw against your spell save DC or have the Frightened condition until the end of your next turn.<br>You can use this feature a number of times equal to your<br>Dexterity Modifier, and you regain all expended uses when you finish a Long Rest.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Активировать один вариант после Sneak Attack. Radiant лечит выбранного союзника ровно на выпавший урон; применить вручную.</li></ul>"
+      "value": "<p>When you deal Sneak Attack damage to a creature, you can deal an additional 3d6 Radiant or Necrotic Damage (your choice).</p><ul><li>If you choose Radiant, one creature you can see within 60 feet regains Hit Points equal to the bonus damage dealt.</li><li>If you choose Necrotic, the target must succeed on a Wisdom saving throw against your spell save DC or have the Frightened condition until the end of your next turn. You can use this feature a number of times equal to your Dexterity Modifier, and you regain all expended uses when you finish a Long Rest.</li></ul><ul><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.ee2319d46c2aa8a1]{Wrath of Divinity — Radiant}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.846d4bbf4bab953d]{Wrath of Divinity — Necrotic}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.5c1703bb7313e13f]{Necrotic: save}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -27,135 +27,40 @@
         }
       ]
     },
-    "activities": {
-      "82b49ad553d9081f": {
-        "_id": "82b49ad553d9081f",
-        "type": "damage",
-        "name": "Radiant bonus",
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "951ba259f58d5224",
+        "type": "ItemGrant",
+        "level": 13,
+        "title": "Actions",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "",
-              "value": "1"
-            }
-          ]
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "damage": {
-          "parts": [
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.ee2319d46c2aa8a1",
+              "optional": false
+            },
             {
-              "custom": {
-                "enabled": true,
-                "formula": "3d6"
-              },
-              "types": [
-                "radiant"
-              ],
-              "scaling": {
-                "mode": "",
-                "number": null,
-                "formula": ""
-              }
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.846d4bbf4bab953d",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.5c1703bb7313e13f",
+              "optional": false
             }
           ],
-          "onSave": "none",
-          "includeBase": false
-        }
-      },
-      "ec310d8a863664e6": {
-        "_id": "ec310d8a863664e6",
-        "type": "damage",
-        "name": "Necrotic bonus",
-        "activation": {
-          "type": "",
-          "value": null
+          "optional": false,
+          "spell": null
         },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
-            {
-              "type": "itemUses",
-              "target": "",
-              "value": "1"
-            }
-          ]
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "damage": {
-          "parts": [
-            {
-              "custom": {
-                "enabled": true,
-                "formula": "3d6"
-              },
-              "types": [
-                "necrotic"
-              ],
-              "scaling": {
-                "mode": "",
-                "number": null,
-                "formula": ""
-              }
-            }
-          ],
-          "onSave": "none",
-          "includeBase": false
-        }
-      },
-      "44526742b7930d92": {
-        "_id": "44526742b7930d92",
-        "type": "save",
-        "name": "Necrotic: save",
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": []
-        },
-        "effects": [
-          {
-            "_id": "d467d51fc9028d8b"
-          }
-        ],
-        "description": {
-          "chatFlavor": ""
-        },
-        "damage": {
-          "parts": [],
-          "onSave": "none",
-          "includeBase": false
-        },
-        "save": {
-          "ability": [
-            "wis"
-          ],
-          "dc": {
-            "calculation": "spellcasting",
-            "formula": ""
-          }
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [
     {
       "_id": "d467d51fc9028d8b",
       "name": "Wrath of Divinity: Frightened",
-      "img": "icons/svg/book.svg",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-shining-sword.svg",
       "transfer": false,
       "disabled": false,
       "changes": [],
@@ -180,8 +85,20 @@
       "feature": "Wrath of Divinity",
       "class": "rogue",
       "level": 13,
-      "notes": [
-        "Активировать один вариант после Sneak Attack. Radiant лечит выбранного союзника ровно на выпавший урон; применить вручную."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.ee2319d46c2aa8a1",
+          "level": 13
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.846d4bbf4bab953d",
+          "level": 13
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.5c1703bb7313e13f",
+          "level": 13
+        }
       ]
     }
   },

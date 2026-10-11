@@ -1,0 +1,182 @@
+{
+  "name": "Water Breathing",
+  "system": {
+    "description": {
+      "value": "<p>This spell grants up to ten willing creatures of your choice within range the ability to breathe underwater until the spell ends. Affected creatures also retain their normal mode of respiration.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "CC-BY-4.0",
+      "book": ""
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "24",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "type": "willing",
+        "count": "10",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "30",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 3,
+    "school": "trs",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "ritual"
+    ],
+    "materials": {
+      "value": "a short reed",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "hyFupFam9XIbim0U"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 0,
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-rune-stone.svg"
+      }
+    },
+    "identifier": "water-breathing",
+    "method": "spell",
+    "prepared": 2,
+    "ability": "wis",
+    "sourceClass": "ranger"
+  },
+  "_id": "ea5833cb8cc1466d",
+  "type": "spell",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-rune-stone.svg",
+  "effects": [
+    {
+      "name": "Water Breathing",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplWaterBreat",
+      "duration": {
+        "rounds": null,
+        "startTime": null,
+        "seconds": 86400,
+        "combat": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {},
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-rune-stone.svg",
+      "_id": "hyFupFam9XIbim0U",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.344",
+        "systemId": "dnd5e",
+        "systemVersion": "4.0.0",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!ea5833cb8cc1466d.hyFupFam9XIbim0U"
+    }
+  ],
+  "folder": null,
+  "sort": 100025,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "grimnir-lyonesse": {
+      "parentFeature": "51cdedfaf5b2e337",
+      "parentIdentifier": "lyonesse-selkie-warden-selkie-warden-spells",
+      "setting": "lyonesse",
+      "subclass": "Selkie Warden",
+      "level": 9,
+      "version": "0.2.0",
+      "grantVariant": ""
+    }
+  },
+  "_key": "!items!ea5833cb8cc1466d"
+}

@@ -6,5 +6,8 @@
   "sorting": "m",
   "color": "#465865",
   "sort": 10000,
-  "_key": "!folders!08cc7d033b762c1f"
+  "_key": "!folders!08cc7d033b762c1f",
+  "flags": {
+    "grimnir-lyonesse": {}
+  }
 }

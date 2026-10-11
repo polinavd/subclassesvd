@@ -2,11 +2,11 @@
   "_id": "b66fed37f934f65f",
   "name": "Dragon Soul",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-dragon-orb.svg",
   "system": {
     "identifier": "lyonesse-circle-of-the-wurm-dragon-soul",
     "description": {
-      "value": "<p><b>Circle of the Wurm · уровень 3</b></p><p>You know the Draconic language. You have Resistance against Acid damage.<br>You can bring forth the dragon spirit within. When you assume a Wild Shape form, you can choose to take the form of a Hatchling Black Dragon. Your Black Dragon form follows all the same rules as the Wild Shape form with the following exceptions:<br>• Wyrmling. You have no Fly Speed. You do not have the<br>Multiattack action.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Карточки драконов — в компендиуме спутников; превратить персонажа через штатный Wild Shape, ограничения уровня проверить.</li></ul>"
+      "value": "<p>You know the Draconic language. You have Resistance against Acid damage. You can bring forth the dragon spirit within. When you assume a Wild Shape form, you can choose to take the form of a Hatchling Black Dragon. Your Black Dragon form follows all the same rules as the Wild Shape form with the following exceptions:</p><ul><li>Wyrmling. You have no Fly Speed. You do not have the Multiattack action.</li></ul><ul><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.757643065d9e4e57]{Dragon Soul}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,7 +22,26 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "6d49a7e111a31a5d",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Actions",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.757643065d9e4e57",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ]
   },
   "effects": [],
   "flags": {
@@ -32,8 +51,12 @@
       "feature": "Dragon Soul",
       "class": "druid",
       "level": 3,
-      "notes": [
-        "Карточки драконов — в компендиуме спутников; превратить персонажа через штатный Wild Shape, ограничения уровня проверить."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.757643065d9e4e57",
+          "level": 3
+        }
       ]
     }
   },

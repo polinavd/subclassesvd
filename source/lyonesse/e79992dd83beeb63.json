@@ -1,0 +1,55 @@
+{
+  "_id": "e79992dd83beeb63",
+  "name": "Ancient Memory",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-pope-crown.svg",
+  "folder": "71e3d6e1e80dbb6c",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-college-of-the-voice-archimandrite-ancient-memory",
+    "description": {
+      "value": "<p>As an Archimandrite it is your duty to safeguard doctrine and liturgical life. You have mastered all aspects of training within the College.</p><p><strong>Ancient Memory.</strong> After a Long Rest you can choose one skill and gain Expertise with it. You do not need to be proficient with this skill. You retain this expertise until you finish another Long Rest.</p><p><strong>Voice Beyond Flesh.</strong> You can expend one of your Bardic Inspiration dice to end one of the following conditions on yourself: Incapacitated, Paralyzed, Stunned.</p><p><strong>Voice That Binds.</strong> When you cast Geas, the casting time is 1 round. While a creature is affected by your Geas, it has Disadvantage on saving throws against your spells. If it takes damage for defying your command, add your Bard level to that damage.</p><p><strong>Voice that Humbles.</strong> A creature Charmed by your Compulsion spell falls Prone at the end of any movement it takes on its turn, unless you choose for it to remain standing (no action required).</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "College of the Voice 14",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "277129c15db424ac": {
+        "_id": "277129c15db424ac",
+        "name": "Ancient Memory",
+        "type": "utility",
+        "activation": {
+          "type": "",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/delapouite-pope-crown.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "College of the Voice",
+      "parentFeature": "1bb8ff8c1bbd936b",
+      "parentIdentifier": "lyonesse-college-of-the-voice-archimandrite",
+      "level": 14,
+      "version": "0.2.0",
+      "execute": "expert"
+    }
+  },
+  "_key": "!items!e79992dd83beeb63"
+}

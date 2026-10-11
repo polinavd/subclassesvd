@@ -1,0 +1,63 @@
+{
+  "_id": "0347d82c47020e36",
+  "name": "Enhanced Rampage — Attack Bonus",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-sword-clash.svg",
+  "folder": "5992503abbb58a4b",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-marauder-enhanced-rampage-enhanced-rampage-attack-bonus",
+    "description": {
+      "value": "<p>The range of your Rampage feature increases to 30 feet. In addition, a creature that makes the Rampage Bonus Action attack can roll 1d6 and add the result to the attack roll it makes for that attack.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Marauder 15",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "6894932df272feda": {
+        "_id": "6894932df272feda",
+        "type": "utility",
+        "name": "Enhanced Rampage — Attack Bonus",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "roll": {
+          "formula": "1d6",
+          "name": "Бонус к атаке Rampage",
+          "visible": true,
+          "prompt": false
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-sword-clash.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Marauder",
+      "parentFeature": "af43a3cb594005f4",
+      "parentIdentifier": "lyonesse-marauder-enhanced-rampage",
+      "level": 15,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!0347d82c47020e36"
+}

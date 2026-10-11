@@ -1,59 +1,15 @@
-# Гримнир и Лайонисс для Foundry VTT
+# Grimnir & Lyonesse for Foundry
 
-24 подкласса, 125 фич с выдачей по уровням, 4 спутника/формы и меню управления.
-Правила 2024 из Heroes’ Handbook / Reavers of Oath and Ruin и Chivalric Handbook.
+24 subclasses from the supplied 2024 rulebooks, with features, separate action/attack/spell Items, companions and bundled Game-icons.net artwork.
 
-**Тестовая сборка 0.1.0:** Foundry 13.351, D&D5e 5.2.3. Foundry 14 — экспериментально;
-D&D5e 6.x не поддерживается. Боевые механики автоматизированы частично.
-Живой Foundry пока не проверен. Тексты правил — английские, меню и пояснения — русские.
+[Installation and character guide (Russian)](README-RU.md)
 
-## Установка и обновление
+Manifest: https://raw.githubusercontent.com/polinavd/subclassesvd/main/module.json
 
-В Foundry: **Модули → Установить модуль → Manifest URL**:
+Targets Foundry 13.351 / D&D5e 5.2.3. Foundry 14 is allowed but unverified; D&D5e 6.x is not supported.
 
-```text
-https://raw.githubusercontent.com/polinavd/subclassesvd/main/module.json
-```
+Build with Node.js 22.16+: `npm ci && npm run package`.
 
-Включите модуль в мире. Запустите макрос **«Проверка модуля»** в тестовом мире,
-затем перетащите подкласс из компендиума на персонажа с соответствующим классом 2024.
-Дополнительные действия доступны через макрос **«Управление подклассом»**.
+Source data is in `source/`; runtime code in `scripts/`; installation archive in `dist/`. Checks cover pack roundtrips, grant links, bundled artwork, upgrades, level gating, resource spending and action execution. A live Foundry session was not available for integration testing.
 
-Для обновления используйте кнопку обновления модуля на стартовом экране Foundry.
-Обновление компендиума не заменяет ранее скопированные на персонажа фичи.
-
-[Полная инструкция и ограничения](README-RU.md) · [Таблица автоматизации](AUTOMATION.html) ·
-[Готовый ZIP](https://raw.githubusercontent.com/polinavd/subclassesvd/main/dist/grimnir-lyonesse.zip)
-
-## Разработка
-
-Нужны Node.js 22.16+ (рекомендуется 24) и Python 3.
-
-```sh
-npm ci
-npm run package
-```
-
-- `source/` — редактируемые JSON документов, включая папки и вложенные эффекты.
-- `scripts/main.mjs` — логика автоматизации.
-- `packs/` — собранные LevelDB компендиумы.
-- `dist/grimnir-lyonesse.zip` — устанавливаемый архив.
-- `tests/` — проверки скриптов с макетами Foundry API и сравнение баз с исходниками.
-- `data/` — отчёты исходной проверки и перечень недостающих заклинаний.
-
-Перед выпуском измените версию в `module.json` и `package.json`, выполните
-`npm run package` и включите обновлённые `packs/` и `dist/` в тот же коммит.
-В `main` манифест и ZIP всегда должны соответствовать друг другу.
-После пуша тега `v<версия>` workflow создаёт GitHub Release с ZIP и манифестом.
-Первичная установка и обновления работают напрямую из `main`, независимо от Releases.
-
-```sh
-git tag v0.1.0
-git push origin v0.1.0
-```
-
-CI проверяет синтаксис, сценарии расхода ресурсов, содержимое компендиумов,
-соответствие ZIP исходникам и пересборку. Это не заменяет тестирование в Foundry.
-
-Тексты книг сохраняют права исходных авторов; предоставление файлов не означает
-передачу прав на правила или иллюстрации. Исходные PDF в репозиторий не включены.
+See [credits](CREDITS.md) for artwork and SRD licensing. Book text retains its authors’ rights.

@@ -2,10 +2,10 @@
   "_id": "7d01a96a86b9bdf2",
   "name": "Oath of the Slain",
   "type": "subclass",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-winged-sword.svg",
   "system": {
     "description": {
-      "value": "<p><b>2024 · Grimnir</b></p><p>Перетащите подкласс на персонажа с соответствующим базовым классом. Для форм и спутников используйте макрос «Управление подклассом». Ограничения указаны в каждой способности.</p><p>Paladin<br>Oath of the Slain<br>The Slain are Paladins that have embraced their inevitable death, emulating their Vanir hero, Thonir, and intending to serve him in their afterlife. They enforce clan law and often serve as executioners, ridding the raiders of criminals and the corrupt. The Slain believe the laws they follow are above those of the living.<br>Tenets of the Slain<br>Glory: Seek great deeds worthy of the gods.<br>Incorruptible: Clan law supersedes all earthly loyalties.<br>Death Is the Beginning: Your end is a passage into divine service.<br>Prepare for the End: Use wealth and power to strengthen<br>Grimnir before Ragnarok.<br>Level 3: Oath Spells<br>You gain Oath Spells at the listed levels and always have them prepared.<br>Oath of the Slain Spells<br>Paladin Level<br>Spells<br>3<br>Hellish Rebuke, Heroism<br>5<br>Branding Smite, Hold Person<br>9<br>Dispel Magic, Fear<br>13<br>Death Ward, Guardian of Faith<br>17<br>Hold Monster, Wall of Force<br>Level 3: Channel Divinity<br>Fight to the Last. You can use one use of your Channel Divinity as a Magic Action to restore Hit Points to creatures of your choice within 15 feet. You can restore a total number of Hit Points, divided as you choose, equal to twice your Paladin level. If a creature is at 0 Hit Points when it receives this healing, it regains twice the amount you choose to give it.<br>Mark of the Executioner. You can use one use of your<br>Channel Divinity as a Bonus Action to mark one creature you can see for execution for 1 minute. While the mark lasts, your attack rolls against the creature score a Critical Hit on a roll of 18-20 on the d20. The effect ends early if you become Incapacitated or if you mark another creature.<br>Level 3: Claim of the Vanir<br>Your soul refuses to rise as undead: no effect or creature can cause you to return to life as an undead creature.<br>Level 7: Aura of the Executioner<br>You and your allies gain a +1 bonus to attack rolls while in your Aura of Protection.<br>Level 15: A Glorious Sacrifice<br>When you are reduced to 0 Hit Points but not killed outright, you can use your Reaction to have a number of Hit<br>Points equal to twice your Paladin level instead. When you do this, you take an extra turn as soon as the current turn ends.<br>During this extra turn, you can only move up to your<br>Speed, take the Attack Action, and use your Bonus Action to cast a Paladin spell that has a casting time of a Bonus<br>Action. At the end of this extra turn, you take Radiant damage equal to twice your Paladin level.<br>You can’t use this feature again until you finish a<br>Long Rest.<br>Level 20: Justice Delivered<br>As a Bonus Action, you undergo a divine transformation, granting the benefits below for 1 minute or until you end them (no action required).<br>Impervious Flesh. You have Advantage on saving throws against spells and magical effects.<br>Might of the Gods. When a creature within 10 feet of you hits a target with a melee attack, you can use your<br>Reaction to make one melee weapon attack against that target. You have Advantage on the attack roll.<br>Aura of the Worthy. Your Aura of the Executioner now grants you and your allies a bonus to attack rolls equal to your Charisma modifier (minimum bonus of +1).<br>In addition, you and your allies have Immunity to the<br>Charmed condition while in your Aura of Protection. If a<br>Charmed ally enters the aura, that condition has no effect on that ally while there.<br>Once you use this feature, you can’t use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required).</p>"
+      "value": "<p>The Slain are Paladins that have embraced their inevitable death, emulating their Vanir hero, Thonir, and intending to serve him in their afterlife. They enforce clan law and often serve as executioners, ridding the raiders of criminals and the corrupt. The Slain believe the laws they follow are above those of the living. Tenets of the Slain Glory: Seek great deeds worthy of the gods. Incorruptible: Clan law supersedes all earthly loyalties. Death Is the Beginning: Your end is a passage into divine service. Prepare for the End: Use wealth and power to strengthen Grimnir before Ragnarok.</p>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -90,161 +90,6 @@
           "spell": null
         },
         "value": {}
-      },
-      {
-        "_id": "4c7f1f487e492a01",
-        "type": "ItemGrant",
-        "level": 3,
-        "title": "Заклинания",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplHellishReb",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplHeroism000",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": {
-            "ability": [
-              "cha"
-            ],
-            "method": "spell",
-            "prepared": 2,
-            "uses": {
-              "max": "",
-              "per": ""
-            }
-          }
-        },
-        "value": {}
-      },
-      {
-        "_id": "a01cc18660daad9d",
-        "type": "ItemGrant",
-        "level": 5,
-        "title": "Заклинания",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.dnd5e.spells.Item.7UwUjJ6owIQkEPrs",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplHoldPerson",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": {
-            "ability": [
-              "cha"
-            ],
-            "method": "spell",
-            "prepared": 2,
-            "uses": {
-              "max": "",
-              "per": ""
-            }
-          }
-        },
-        "value": {}
-      },
-      {
-        "_id": "6b257d9f7ee85c35",
-        "type": "ItemGrant",
-        "level": 9,
-        "title": "Заклинания",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDispelMagi",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFear000000",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": {
-            "ability": [
-              "cha"
-            ],
-            "method": "spell",
-            "prepared": 2,
-            "uses": {
-              "max": "",
-              "per": ""
-            }
-          }
-        },
-        "value": {}
-      },
-      {
-        "_id": "cabb4bee1fa2813f",
-        "type": "ItemGrant",
-        "level": 13,
-        "title": "Заклинания",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDeathWard0",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplGuardianof",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": {
-            "ability": [
-              "cha"
-            ],
-            "method": "spell",
-            "prepared": 2,
-            "uses": {
-              "max": "",
-              "per": ""
-            }
-          }
-        },
-        "value": {}
-      },
-      {
-        "_id": "39ba86a4f06b23f1",
-        "type": "ItemGrant",
-        "level": 17,
-        "title": "Заклинания",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplHoldMonste",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplWallofForc",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": {
-            "ability": [
-              "cha"
-            ],
-            "method": "spell",
-            "prepared": 2,
-            "uses": {
-              "max": "",
-              "per": ""
-            }
-          }
-        },
-        "value": {}
       }
     ],
     "spellcasting": {
@@ -278,7 +123,8 @@
           "Hold Monster",
           "Wall of Force"
         ]
-      }
+      },
+      "version": "0.2.0"
     }
   },
   "ownership": {

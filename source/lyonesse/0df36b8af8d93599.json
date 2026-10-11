@@ -1,0 +1,102 @@
+{
+  "_id": "0df36b8af8d93599",
+  "name": "Chains of Penitence",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-crossed-chains.svg",
+  "folder": "38aa6694fe4ed7c9",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-the-archangel-chains-of-penitence-chains-of-penitence",
+    "description": {
+      "value": "<p>While in your Avatar of the Archangel form, when you hit a creature with an attack, you can force it to make a Strength saving throw against your spell save DC. On a failure, it is Restrained until the end of your next turn as spectral chains lash around it. You can use this feature a number of times equal to your Charisma modifier (minimum of once).</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "The Archangel 6",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "ddeace6782528930": {
+        "_id": "ddeace6782528930",
+        "type": "save",
+        "name": "Chains of Penitence",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:lyonesse-the-archangel-chains-of-penitence",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [
+          {
+            "_id": "5720d1dc77f8a928"
+          }
+        ],
+        "description": {
+          "chatFlavor": ""
+        },
+        "damage": {
+          "parts": [],
+          "onSave": "none",
+          "includeBase": false
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "cha",
+            "formula": ""
+          }
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-crossed-chains.svg"
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "5720d1dc77f8a928",
+      "name": "Chains of Penitence: Restrained",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-crossed-chains.svg",
+      "transfer": false,
+      "disabled": false,
+      "changes": [],
+      "statuses": [
+        "restrained"
+      ],
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true
+        }
+      },
+      "duration": {
+        "seconds": 12
+      },
+      "_key": "!items.effects!0df36b8af8d93599.5720d1dc77f8a928"
+    }
+  ],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "The Archangel",
+      "parentFeature": "8d0b919b3d8cc798",
+      "parentIdentifier": "lyonesse-the-archangel-chains-of-penitence",
+      "level": 6,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!0df36b8af8d93599"
+}

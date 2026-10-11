@@ -2,11 +2,11 @@
   "_id": "e2efc49fb8f75f6a",
   "name": "Channel Divinity: Drowned Breath",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-sinking-ship.svg",
   "system": {
     "identifier": "grimnir-discovery-domain-channel-divinity-drowned-breath",
     "description": {
-      "value": "<p><b>Discovery Domain · уровень 3</b></p><p>When you hit a creature with a melee attack, you can expend a use of your Channel Divinity. The target takes an additional 1d8 Necrotic damage and makes a Constitution saving throw against your spell save DC. On a failure, the target becomes cursed for 1 minute and cannot regain Hit Points unless it’s underwater, it can only breathe underwater, and takes 1d8 Necrotic damage at the start of each of its turns outside the water from suffocation. A creature that is Immune to the Exhaustion condition does not take this damage.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Урон при попадании и спасбросок разделены: успешный спасбросок не отменяет первый 1d8. Вода, иммунитет к истощению, лечение и вербальные компоненты проверяются вручную.</li></ul>"
+      "value": "<p>When you hit a creature with a melee attack, you can expend a use of your Channel Divinity. The target takes an additional 1d8 Necrotic damage and makes a Constitution saving throw against your spell save DC. On a failure, the target becomes cursed for 1 minute and cannot regain Hit Points unless it’s underwater, it can only breathe underwater, and takes 1d8 Necrotic damage at the start of each of its turns outside the water from suffocation. A creature that is Immune to the Exhaustion condition does not take this damage.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.abc40462f531e5f8]{Дополнительный урон при попадании}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.3a977ae9019f6e74]{Спасбросок против проклятия}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.345c6ebd49181bc6]{Начало хода вне воды}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -22,129 +22,40 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {
-      "ea09642d3d4d1cf2": {
-        "_id": "ea09642d3d4d1cf2",
-        "type": "damage",
-        "name": "Дополнительный урон при попадании",
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "e1d77463215dc02b",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Actions",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "feat:channel-divinity",
-              "value": "1"
-            }
-          ]
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "damage": {
-          "parts": [
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.abc40462f531e5f8",
+              "optional": false
+            },
             {
-              "custom": {
-                "enabled": true,
-                "formula": "1d8"
-              },
-              "types": [
-                "necrotic"
-              ],
-              "scaling": {
-                "mode": "",
-                "number": null,
-                "formula": ""
-              }
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.3a977ae9019f6e74",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.345c6ebd49181bc6",
+              "optional": false
             }
           ],
-          "onSave": "none",
-          "includeBase": false
-        }
-      },
-      "caba391b4e04207f": {
-        "_id": "caba391b4e04207f",
-        "type": "save",
-        "name": "Спасбросок против проклятия",
-        "activation": {
-          "type": "",
-          "value": null
+          "optional": false,
+          "spell": null
         },
-        "consumption": {
-          "spellSlot": false,
-          "targets": []
-        },
-        "effects": [
-          {
-            "_id": "379f71e0bbb14938"
-          }
-        ],
-        "description": {
-          "chatFlavor": ""
-        },
-        "damage": {
-          "parts": [],
-          "onSave": "none",
-          "includeBase": false
-        },
-        "save": {
-          "ability": [
-            "con"
-          ],
-          "dc": {
-            "calculation": "wis",
-            "formula": ""
-          }
-        }
-      },
-      "3d5a4fc32c5d57e1": {
-        "_id": "3d5a4fc32c5d57e1",
-        "type": "damage",
-        "name": "Начало хода вне воды",
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": []
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "damage": {
-          "parts": [
-            {
-              "custom": {
-                "enabled": true,
-                "formula": "1d8"
-              },
-              "types": [
-                "necrotic"
-              ],
-              "scaling": {
-                "mode": "",
-                "number": null,
-                "formula": ""
-              }
-            }
-          ],
-          "onSave": "none",
-          "includeBase": false
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [
     {
       "_id": "379f71e0bbb14938",
       "name": "Drowned Breath — cursed",
-      "img": "icons/svg/book.svg",
+      "img": "modules/grimnir-lyonesse/assets/icons/delapouite-sinking-ship.svg",
       "transfer": false,
       "disabled": false,
       "changes": [],
@@ -167,8 +78,20 @@
       "feature": "Channel Divinity: Drowned Breath",
       "class": "cleric",
       "level": 3,
-      "notes": [
-        "Урон при попадании и спасбросок разделены: успешный спасбросок не отменяет первый 1d8. Вода, иммунитет к истощению, лечение и вербальные компоненты проверяются вручную."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.abc40462f531e5f8",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.3a977ae9019f6e74",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.345c6ebd49181bc6",
+          "level": 3
+        }
       ]
     }
   },

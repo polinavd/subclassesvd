@@ -1,0 +1,63 @@
+{
+  "_id": "3ea4a7fc9951c5f4",
+  "name": "Saving Throw Adjustment",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/skoll-sound-waves.svg",
+  "folder": "71e3d6e1e80dbb6c",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-college-of-the-voice-domain-verse-saving-throw-adjustment",
+    "description": {
+      "value": "<p>When you cast a spell from the Maker Domain Spells table, you can expend one or more of your Bardic Inspiration dice to improve the power of the spell. This can be done in two ways.</p><p><strong>Saving Throw Adjustment.</strong> If the spell requires the target to make a saving throw and the target succeeds on its saving throw, you can expend one of your Bardic Inspiration dice and reduce the saving throw of the target by the number rolled. You can expend more than one Bardic Inspiration dice if there are additional targets, using each additional roll on a single target. When you expend a Bardic Inspiration die on a creature and the roll is not high enough to change the outcome, the die is not expended.</p><p><strong>Healing Enhancement.</strong> If the spell restores Hit Points, you can expend one of your Bardic Inspiration dice and add the number rolled to the amount of Hit Points restored. In addition, if the spell is a single target spell, the target gains Temporary Hit Points equal to the number rolled.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "College of the Voice 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "513017f1ef03b95b": {
+        "_id": "513017f1ef03b95b",
+        "type": "utility",
+        "name": "Saving Throw Adjustment",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "roll": {
+          "formula": "@scale.bard.inspiration",
+          "name": "Saving Throw Adjustment",
+          "visible": true,
+          "prompt": false
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/skoll-sound-waves.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "College of the Voice",
+      "parentFeature": "298ced45475e2875",
+      "parentIdentifier": "lyonesse-college-of-the-voice-domain-verse",
+      "level": 3,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!3ea4a7fc9951c5f4"
+}

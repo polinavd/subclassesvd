@@ -1,0 +1,58 @@
+{
+  "_id": "7840a316de00de43",
+  "name": "Quick Shot",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-bow-arrow.svg",
+  "folder": "6548f4d360a0e760",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-outlaw-legend-of-the-weald-quick-shot",
+    "description": {
+      "value": "<p>Your deeds inspire allies and terrify oppressors.</p><p><strong>Quick Shot.</strong> If you take damage, you may use your Reaction to make a ranged attack against the source of the damage. Once you do so, you can’t use this feature again until you finish a Short or Long Rest.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Outlaw 17",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "50e2d45374fff2c8": {
+        "_id": "50e2d45374fff2c8",
+        "name": "Quick Shot",
+        "type": "utility",
+        "activation": {
+          "type": "reaction",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/delapouite-bow-arrow.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Outlaw",
+      "parentFeature": "42d0944e382ee4bd",
+      "parentIdentifier": "lyonesse-outlaw-legend-of-the-weald",
+      "level": 17,
+      "version": "0.2.0",
+      "execute": "weaponAttack",
+      "weaponKind": "ranged",
+      "advantage": false,
+      "spendParent": true
+    }
+  },
+  "_key": "!items!7840a316de00de43"
+}

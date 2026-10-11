@@ -2,11 +2,11 @@
   "_id": "71e8e8310afbd0bb",
   "name": "Turn of Fate",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-hourglass.svg",
   "system": {
     "identifier": "grimnir-cohesion-of-the-primal-turn-of-fate",
     "description": {
-      "value": "<p><b>Cohesion of the Primal · уровень 10</b></p><p>Dreamer: Master Foresayer. When you activate your<br>Stored Foresight spell as a Bonus Action, you can roll<br>1d4. On a 4, the stored spell is not expended.<br>Seeker: Advanced Disruption. When a spell with a single target affects you or an ally within 10 feet, you may use your Reaction and expend a spell slot equal to or higher than the spell’s level. If you do, the spell fails.<br>Once you use this feature, you cannot do so again until you finish a Short or Long Rest.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Seeker дополнительно тратит слот не ниже отменяемого заклинания.</li></ul>"
+      "value": "<p><strong>Dreamer:</strong> Master Foresayer. When you activate your Stored Foresight spell as a Bonus Action, you can roll 1d4. On a 4, the stored spell is not expended.</p><p><strong>Seeker:</strong> Advanced Disruption. When a spell with a single target affects you or an ally within 10 feet, you may use your Reaction and expend a spell slot equal to or higher than the spell’s level. If you do, the spell fails. Once you use this feature, you cannot do so again until you finish a Short or Long Rest.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.0780716918f8a307]{Dreamer: сохранить заклинание на 4}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.d1292c307f567971]{Seeker: Advanced Disruption}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -27,54 +27,30 @@
         }
       ]
     },
-    "activities": {
-      "03dff1e7a8b28645": {
-        "_id": "03dff1e7a8b28645",
-        "type": "utility",
-        "name": "Dreamer: сохранить заклинание на 4",
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": []
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "roll": {
-          "formula": "1d4",
-          "name": "Dreamer: сохранить заклинание на 4",
-          "visible": true,
-          "prompt": false
-        }
-      },
-      "b9b4cd8fd6d3b591": {
-        "_id": "b9b4cd8fd6d3b591",
-        "type": "utility",
-        "name": "Seeker: Advanced Disruption",
-        "activation": {
-          "type": "reaction",
-          "value": 1
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "a4655eb87ac20dee",
+        "type": "ItemGrant",
+        "level": 10,
+        "title": "Actions",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "",
-              "value": "1"
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.0780716918f8a307",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.d1292c307f567971",
+              "optional": false
             }
-          ]
+          ],
+          "optional": false,
+          "spell": null
         },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -84,8 +60,16 @@
       "feature": "Turn of Fate",
       "class": "wizard",
       "level": 10,
-      "notes": [
-        "Seeker дополнительно тратит слот не ниже отменяемого заклинания."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.0780716918f8a307",
+          "level": 10
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.d1292c307f567971",
+          "level": 10
+        }
       ]
     }
   },

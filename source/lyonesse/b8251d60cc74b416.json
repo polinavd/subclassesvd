@@ -1,0 +1,63 @@
+{
+  "_id": "b8251d60cc74b416",
+  "name": "Irresistible Cadence",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-mailed-fist.svg",
+  "folder": "47f143ead77b6269",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-knight-of-the-sacred-word-sacred-word-incarnate-irresistible-cadence",
+    "description": {
+      "value": "<p>You have become an instrument of the Maker’s truth. Your voice no longer requires effort. It simply is.</p><p><strong>Word of Judgment.</strong> When you use Voice of Authority, you can affect an additional creature of your choice within 30 feet that can hear you. It must make a separate Wisdom saving throw.</p><p><strong>Irresistible Cadence.</strong> Once per turn when a creature succeeds on its saving throw against your Stunning Strike or Voice of Authority, you can spend 2 Focus Points to force it to reroll the d20. It must use the new result.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Knight of the Sacred Word 17",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "a2581c3382a1784e": {
+        "_id": "a2581c3382a1784e",
+        "type": "utility",
+        "name": "Irresistible Cadence",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:monks-focus",
+              "value": "2"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-mailed-fist.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Knight of the Sacred Word",
+      "parentFeature": "175153c1094c06af",
+      "parentIdentifier": "lyonesse-knight-of-the-sacred-word-sacred-word-incarnate",
+      "level": 17,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!b8251d60cc74b416"
+}

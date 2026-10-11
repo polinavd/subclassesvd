@@ -2,11 +2,11 @@
   "_id": "cbb4c114d59660fd",
   "name": "The Imagined Offense",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-psychic-waves.svg",
   "system": {
     "identifier": "grimnir-misplaced-soul-the-imagined-offense",
     "description": {
-      "value": "<p><b>Misplaced Soul · уровень 14</b></p><p>You gain additional Soul Bound Commands:<br>Metamagic: Consume (1 Sorcery Point). You absorb the Misplaced Soul in a burst of soulstuff. You regain Hit<br>Points equal to its current Hit Points, and the Misplaced<br>Soul vanishes.<br>Metamagic: Improved Thrash (1 Sorcery Point).<br>Your Misplaced Soul’s Thrash now deals 2d12 plus your<br>Charisma modifier Psychic damage, instead of 2d8.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Лечение равно текущим HP души; убрать её токен. Thrash масштабируется при обновлении спутника макросом.</li></ul>"
+      "value": "<p>You gain additional Soul Bound Commands:</p><p><strong>Metamagic: Consume (1 Sorcery Point).</strong> You absorb the Misplaced Soul in a burst of soulstuff. You regain Hit Points equal to its current Hit Points, and the Misplaced Soul vanishes.</p><p><strong>Metamagic: Improved Thrash (1 Sorcery Point).</strong> Your Misplaced Soul’s Thrash now deals 2d12 plus your Charisma modifier Psychic damage, instead of 2d8.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.09e150a08a38792f]{Consume}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -22,31 +22,26 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {
-      "6a0602f3d6761bf1": {
-        "_id": "6a0602f3d6761bf1",
-        "type": "utility",
-        "name": "Consume",
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "4298e11a6c7a0270",
+        "type": "ItemGrant",
+        "level": 14,
+        "title": "Actions",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "feat:font-of-magic",
-              "value": "1"
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.09e150a08a38792f",
+              "optional": false
             }
-          ]
+          ],
+          "optional": false,
+          "spell": null
         },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -56,8 +51,12 @@
       "feature": "The Imagined Offense",
       "class": "sorcerer",
       "level": 14,
-      "notes": [
-        "Лечение равно текущим HP души; убрать её токен. Thrash масштабируется при обновлении спутника макросом."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.09e150a08a38792f",
+          "level": 14
+        }
       ]
     }
   },

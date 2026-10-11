@@ -1,0 +1,73 @@
+{
+  "_id": "c5ab450fac99440b",
+  "_key": "!items!c5ab450fac99440b",
+  "name": "Circle of Power",
+  "type": "spell",
+  "folder": null,
+  "flags": {
+    "grimnir-lyonesse": {
+      "version": "0.2.0"
+    }
+  },
+  "effects": [],
+  "system": {
+    "identifier": "circle-of-power",
+    "description": {
+      "value": "<p>For 10 minutes, the caster and allies within 30 feet have Advantage on saves against magic. A successful save against magic that normally deals half damage instead deals no damage.</p>"
+    },
+    "source": {
+      "custom": "Player’s Handbook 2024 — mechanical summary",
+      "rules": "2024"
+    },
+    "level": 5,
+    "school": "abj",
+    "activation": {
+      "type": "action",
+      "value": 1
+    },
+    "duration": {
+      "value": "10",
+      "units": "minute"
+    },
+    "range": {
+      "units": "self"
+    },
+    "target": {
+      "template": {
+        "type": "radius",
+        "size": "30",
+        "units": "ft"
+      },
+      "affects": {
+        "type": "ally",
+        "count": ""
+      }
+    },
+    "properties": [
+      "vocal",
+      "concentration"
+    ],
+    "method": "spell",
+    "prepared": 0,
+    "ability": "int",
+    "sourceClass": "wizard",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "ed6d637f0583af91": {
+        "_id": "ed6d637f0583af91",
+        "name": "Circle of Power",
+        "type": "utility",
+        "consumption": {
+          "spellSlot": true,
+          "targets": []
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-holy-grail.svg"
+      }
+    }
+  },
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-holy-grail.svg"
+}

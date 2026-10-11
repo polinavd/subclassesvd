@@ -1,0 +1,55 @@
+{
+  "_id": "d09e0f2ef09860ba",
+  "name": "Provoked — Rage",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-mailed-fist.svg",
+  "folder": "50b4331a01e2aad7",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-path-of-the-provoked-strength-of-one-provoked-rage",
+    "description": {
+      "value": "<p>You score a Critical Hit on a roll of 19 or 20 on the d20 with melee attacks using a weapon or Unarmed Strike. If there are two enemies within 5 feet of you, you score a Critical Hit on rolls of 18, 19, or 20. In addition, when you enter your Rage, you choose one of the following options. You benefit from that option until your Rage ends.</p><p><strong>Stoic Strength.</strong> When you take damage from a creature you can see, you can use your Reaction to move up to half your Speed toward that creature. This movement does not provoke Opportunity Attacks.</p><p><strong>Wrathful Strength.</strong> When you take damage from a Hostile creature that you can see, you can take a Reaction to gain 1 Provoked Point. When you hit a creature with a melee attack with a weapon or Unarmed Strike, you can spend a number of Provoked Points equal to half your Rage Damage bonus (round up). For each Provoked Point you spend, the attack deals one additional damage die for the weapon or Unarmed Strike of the same damage type. You can have a number of Provoked Points equal to your Rage Damage bonus and all unspent Provoked Points are lost when your Rage ends.</p><p><strong>Wild Strength.</strong> When you take the Attack Action, you can forgo one of your attacks to make a wild swing that threatens all nearby foes. Each creature of your choice within your weapon’s reach must make a Dexterity saving throw against a DC equal to 8 plus your Proficiency Bonus plus your Strength modifier. On a failed save, the creature takes damage as though hit by a single melee weapon attack with the weapon you used for this swing.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Path of the Provoked 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "6430f719f384dd6c": {
+        "_id": "6430f719f384dd6c",
+        "name": "Provoked — Rage",
+        "type": "utility",
+        "activation": {
+          "type": "",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-mailed-fist.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Path of the Provoked",
+      "parentFeature": "c0e916e81b0c6b7e",
+      "parentIdentifier": "grimnir-path-of-the-provoked-strength-of-one",
+      "level": 3,
+      "version": "0.2.0",
+      "execute": "rage"
+    }
+  },
+  "_key": "!items!d09e0f2ef09860ba"
+}

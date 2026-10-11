@@ -1,0 +1,90 @@
+{
+  "_id": "bcca08f6cda21026",
+  "name": "Divine Fire",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-angel-wings.svg",
+  "folder": "38aa6694fe4ed7c9",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-the-archangel-avatar-of-the-archangel-divine-fire",
+    "description": {
+      "value": "<p>When evil falls or allies perish, heaven’s judgment pours through you. When a creature you can see within 60 feet is reduced to 0 Hit Points, you may use your Reaction to call down divine fire upon an enemy within range. That creature takes Radiant damage equal to your Charisma modifier + your Warlock level. In addition, you assume your Avatar of the Archangel form.</p><p><strong>Avatar of the Archangel.</strong> You gain Temporary Hit Points equal to twice your Warlock level. While you have these Temporary Hit Points, divine radiance wreathes your body, eyes open all over your armor, and your presence feels unmistakably otherworldly. While this form is active:</p><ul><li>You shed Bright Light in a 10-foot radius and Dim Light for another 10 feet.</li><li>Your attacks deal an additional 1d8 Radiant damage.</li><li>Your vision is unimpeded by magical Darkness. Once you use this feature, you can’t use it again until you finish a Short or Long Rest.</li></ul>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "The Archangel 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "8730ba1b80b12cc4": {
+        "_id": "8730ba1b80b12cc4",
+        "type": "damage",
+        "name": "Divine Fire",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "range": {
+          "value": "60",
+          "units": "ft"
+        },
+        "target": {
+          "affects": {
+            "type": "creature",
+            "count": "1"
+          },
+          "template": {
+            "type": ""
+          }
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@abilities.cha.mod + @classes.warlock.levels"
+              },
+              "types": [
+                "radiant"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ],
+          "onSave": "none",
+          "includeBase": false
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-angel-wings.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "The Archangel",
+      "parentFeature": "68ce5d92858594a3",
+      "parentIdentifier": "lyonesse-the-archangel-avatar-of-the-archangel",
+      "level": 3,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!bcca08f6cda21026"
+}

@@ -2,11 +2,11 @@
   "_id": "863dc681748d34cb",
   "name": "Solo Lifestyle",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-walking-boot.svg",
   "system": {
     "identifier": "grimnir-way-of-the-wanderer-solo-lifestyle",
     "description": {
-      "value": "<p><b>Way of the Wanderer · уровень 3</b></p><p>Used to traveling alone you have proficiency in one musical instrument of your choice. In addition, you have proficiency in Survival.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+      "value": "<p>Used to traveling alone you have proficiency in one musical instrument of your choice. In addition, you have proficiency in Survival.</p>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -22,7 +22,8 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": []
   },
   "effects": [],
   "flags": {
@@ -32,9 +33,8 @@
       "feature": "Solo Lifestyle",
       "class": "monk",
       "level": 3,
-      "notes": [
-        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
-      ]
+      "version": "0.2.0",
+      "children": []
     }
   },
   "ownership": {

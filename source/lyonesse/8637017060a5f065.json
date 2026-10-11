@@ -2,11 +2,11 @@
   "_id": "8637017060a5f065",
   "name": "Circle of the Wurm Spells",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-dragon-breath.svg",
   "system": {
     "identifier": "lyonesse-circle-of-the-wurm-circle-of-the-wurm-spells",
     "description": {
-      "value": "<p><b>Circle of the Wurm · уровень 3</b></p><p>When you reach a Druid level specified in the Circle of the Wurm Spells table, you thereafter always have the listed spells prepared. In addition, you can cast the spells from this feature while you’re in a Wild Shape form.<br>Circle of the Wurm Spells<br>Druid Level<br>Spells<br>3<br>Acid Splash, Ray of Sickness, Acid Arrow<br>5<br>Stinking Cloud<br>7<br>Vitriolic Sphere<br>9<br>Contagion<br>The Circle speaks of ancient wyrms and forgotten wisdom. I speak of earthworms. Somehow we keep agreeing with each other.<br>—Clemsy, Otherling Pilgrim</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+      "value": "<p>When you reach a Druid level specified in the Circle of the Wurm Spells table, you thereafter always have the listed spells prepared. In addition, you can cast the spells from this feature while you’re in a Wild Shape form.</p><table><thead><tr><th>Druid Level</th><th>Spells</th></tr></thead><tbody><tr><td>3</td><td>Acid Splash, Ray of Sickness, Acid Arrow</td></tr><tr><td>5</td><td>Stinking Cloud</td></tr><tr><td>7</td><td>Vitriolic Sphere</td></tr><tr><td>9</td><td>Contagion</td></tr></tbody></table><ul><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.cad04cc3e683f282]{Acid Splash}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.7c9165a748206e26]{Ray of Sickness}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.722d826597c06513]{Acid Arrow}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.dd3349e6d3987bd6]{Stinking Cloud}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.564dff133d5e76ec]{Vitriolic Sphere}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.4849e56125496251]{Contagion}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,7 +22,85 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "65621860696a9eb7",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.cad04cc3e683f282",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.7c9165a748206e26",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.722d826597c06513",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "f03118f67e0f5fc8",
+        "type": "ItemGrant",
+        "level": 5,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.dd3349e6d3987bd6",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "ef0198bb298ec63d",
+        "type": "ItemGrant",
+        "level": 7,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.564dff133d5e76ec",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "0e6292c2bbe15d52",
+        "type": "ItemGrant",
+        "level": 9,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.4849e56125496251",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ]
   },
   "effects": [],
   "flags": {
@@ -32,8 +110,32 @@
       "feature": "Circle of the Wurm Spells",
       "class": "druid",
       "level": 3,
-      "notes": [
-        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.cad04cc3e683f282",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.7c9165a748206e26",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.722d826597c06513",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.dd3349e6d3987bd6",
+          "level": 5
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.564dff133d5e76ec",
+          "level": 7
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.4849e56125496251",
+          "level": 9
+        }
       ]
     }
   },

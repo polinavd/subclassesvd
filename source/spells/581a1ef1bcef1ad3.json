@@ -1,0 +1,117 @@
+{
+  "name": "Wrathful Smite",
+  "type": "spell",
+  "system": {
+    "identifier": "wrathful-smite",
+    "description": {
+      "value": "<p>After a melee weapon or Unarmed Strike hit, add 1d6 Necrotic damage per spell-slot level. A failed Wisdom save causes Frightened for one minute. The creature retries that save after each turn.</p>"
+    },
+    "source": {
+      "custom": "Player’s Handbook 2024 — mechanical summary",
+      "rules": "2024"
+    },
+    "level": 1,
+    "school": "nec",
+    "activation": {
+      "type": "bonus",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "range": {
+      "value": 0,
+      "units": "ft"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1"
+      },
+      "template": {
+        "type": ""
+      }
+    },
+    "properties": [
+      "vocal"
+    ],
+    "activities": {
+      "25d006a61c4ace6c": {
+        "_id": "25d006a61c4ace6c",
+        "name": "Cast",
+        "type": "save",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "override": false
+        },
+        "consumption": {
+          "spellSlot": true,
+          "targets": []
+        },
+        "effects": [],
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "full",
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "necrotic"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/skoll-burning-skull.svg"
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "method": "pact",
+    "prepared": 2,
+    "ability": "cha",
+    "sourceClass": "warlock"
+  },
+  "effects": [],
+  "_id": "581a1ef1bcef1ad3",
+  "_key": "!items!581a1ef1bcef1ad3",
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "grimnir-lyonesse": {
+      "parentFeature": "ccbd6411687c1c89",
+      "parentIdentifier": "lyonesse-the-archangel-archangel-s-spells",
+      "setting": "lyonesse",
+      "subclass": "The Archangel",
+      "level": 3,
+      "version": "0.2.0",
+      "grantVariant": ""
+    }
+  },
+  "img": "modules/grimnir-lyonesse/assets/icons/skoll-burning-skull.svg"
+}

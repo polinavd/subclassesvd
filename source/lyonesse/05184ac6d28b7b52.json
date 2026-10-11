@@ -1,0 +1,77 @@
+{
+  "_id": "05184ac6d28b7b52",
+  "name": "Drowning Mark — Cold Damage",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-sinking-ship.svg",
+  "folder": "41003cfc479a6160",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-selkie-warden-drowning-mark-drowning-mark-cold-damage",
+    "description": {
+      "value": "<p>Your Hunter’s Mark manifests as an inexorable pull toward the deep. While a creature is marked by your Hunter’s Mark:</p><ul><li>Its Speed is reduced by 10 feet, and it cannot benefit from effects that increase its Speed.</li><li>If the marked creature willingly moves 10+ feet, it takes Cold damage equal to your Wisdom modifier (minimum of 1) once per turn.</li></ul>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Selkie Warden 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "123079e177164ec3": {
+        "_id": "123079e177164ec3",
+        "type": "damage",
+        "name": "Drowning Mark — Cold Damage",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "max(1,@abilities.wis.mod)"
+              },
+              "types": [
+                "cold"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ],
+          "onSave": "none",
+          "includeBase": false
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/delapouite-sinking-ship.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Selkie Warden",
+      "parentFeature": "ce5fcfce4a097e26",
+      "parentIdentifier": "lyonesse-selkie-warden-drowning-mark",
+      "level": 3,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!05184ac6d28b7b52"
+}

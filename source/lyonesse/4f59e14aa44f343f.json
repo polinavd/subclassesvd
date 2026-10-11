@@ -1,0 +1,90 @@
+{
+  "_id": "4f59e14aa44f343f",
+  "name": "Divine Fury",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-burning-eye.svg",
+  "folder": "38aa6694fe4ed7c9",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-the-archangel-greater-avatar-divine-fury",
+    "description": {
+      "value": "<p>While in your Avatar of the Archangel form you gain Resistance to Psychic damage, and you are Immune to being Charmed or Frightened.</p><p><strong>Divine Fury.</strong> Whenever you succeed on a Wisdom saving throw, you can choose one creature you can see within 30 feet. That creature takes Radiant damage equal to 2d8 + your Charisma modifier.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "The Archangel 10",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "7787974ca8e5d8b1": {
+        "_id": "7787974ca8e5d8b1",
+        "type": "damage",
+        "name": "Divine Fury",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "range": {
+          "value": "30",
+          "units": "ft"
+        },
+        "target": {
+          "affects": {
+            "type": "creature",
+            "count": "1"
+          },
+          "template": {
+            "type": ""
+          }
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "2d8 + @abilities.cha.mod"
+              },
+              "types": [
+                "radiant"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ],
+          "onSave": "none",
+          "includeBase": false
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-burning-eye.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "The Archangel",
+      "parentFeature": "575739b84e29ece8",
+      "parentIdentifier": "lyonesse-the-archangel-greater-avatar",
+      "level": 10,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!4f59e14aa44f343f"
+}

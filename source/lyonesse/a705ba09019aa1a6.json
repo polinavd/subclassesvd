@@ -1,0 +1,57 @@
+{
+  "_id": "a705ba09019aa1a6",
+  "name": "Violent Response",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/skoll-breaking-chain.svg",
+  "folder": "67fbf9f5f0606cca",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-path-of-the-provoked-stand-unbound-violent-response",
+    "description": {
+      "value": "<p>The more enemies press you, the more violently you answer.</p><p><strong>Violent Response.</strong> While your Rage is active, when a creature you can see forces you to make a saving throw or makes an attack roll against you, you can use your Reaction to mark that creature until the end of your next turn. While the creature is marked in this way, it is Vulnerable to the next melee weapon attack you hit it with. When you hit that marked creature with a melee weapon attack, the attack deals maximum damage, and the mark ends. You can use this feature once per Rage.</p><p><strong>Improved Strength of One.</strong> When there are three enemies within 5 feet of you, you score a Critical Hit on a 17, 18, 19, or 20 on the d20 with melee attacks using a weapon or Unarmed Strike. Never provoke a berserker unless you’ve settled your affairs. —Cranhath Antonsson, Grimfolk Jarl</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Path of the Provoked 10",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "ac609759a456e67a": {
+        "_id": "ac609759a456e67a",
+        "type": "utility",
+        "name": "Violent Response",
+        "activation": {
+          "type": "reaction",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/skoll-breaking-chain.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Path of the Provoked",
+      "parentFeature": "538727c0c891d81e",
+      "parentIdentifier": "lyonesse-path-of-the-provoked-stand-unbound",
+      "level": 10,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!a705ba09019aa1a6"
+}

@@ -1,0 +1,63 @@
+{
+  "_id": "367bafb0d37e755a",
+  "name": "Продлить команду",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/skoll-sound-waves.svg",
+  "folder": "47f143ead77b6269",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-knight-of-the-sacred-word-lingering-word-",
+    "description": {
+      "value": "<p>Your mastery allows your voice to persist within the mind, compelling obedience beyond the moment of command. When a creature fails its saving throw against your Voice of Authority, you can spend 1 Focus Point at the start of your next turn to extend the command’s duration to 1 minute. You must choose the same effect you imposed with Voice of Authority. After the end of your next turn, the target can repeat the save at the end of each of its turns, ending the effect on a success.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Knight of the Sacred Word 11",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "a7676e5717b2e3c8": {
+        "_id": "a7676e5717b2e3c8",
+        "type": "utility",
+        "name": "Продлить команду",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:monks-focus",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/skoll-sound-waves.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Knight of the Sacred Word",
+      "parentFeature": "49c86b5efd030e97",
+      "parentIdentifier": "lyonesse-knight-of-the-sacred-word-lingering-word",
+      "level": 11,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!367bafb0d37e755a"
+}

@@ -2,11 +2,11 @@
   "_id": "a947119d4736ff39",
   "name": "Spellbinding",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-circle-cage.svg",
   "system": {
     "identifier": "lyonesse-spellbinder-spellbinding",
     "description": {
-      "value": "<p><b>Spellbinder · уровень 6</b></p><p>You may cast Magic Circle as a Ritual once per day.<br>Your influence over your Vassals deepens. You can summon your Vassal into a Magic Circle you have cast and when you do so, it gains the ability to cast the corresponding spells as shown on the Spellbinding table without expending a spell slot or requiring material components. When it does so, the Vassal reduces its maximum Hit Points by 5 plus 5 times the level of the spell.<br>The Vassal cannot cast a spell that is of a higher level than your highest level spell slot.<br>Spellbinding<br>Vassal<br>Spells Available to Vassal<br>All<br>Augury, Clairvoyance, Divination, Dream<br>Aberration Only<br>Hallucinatory Terrain<br>Dragon Only<br>Circle of Power<br>Fiend Only<br>Teleportation Circle<br>Undead Only<br>Speak with Dead</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Выдача заклинаний вассалу и снижение его максимума HP — вручную. 1/day интерпретировано как Long Rest; можно изменить в счётчике.</li></ul>"
+      "value": "<p>You may cast Magic Circle as a Ritual once per day. Your influence over your Vassals deepens. You can summon your Vassal into a Magic Circle you have cast and when you do so, it gains the ability to cast the corresponding spells as shown on the Spellbinding table without expending a spell slot or requiring material components. When it does so, the Vassal reduces its maximum Hit Points by 5 plus 5 times the level of the spell. The Vassal cannot cast a spell that is of a higher level than your highest level spell slot.</p><table><thead><tr><th>Vassal</th><th>Spells</th></tr></thead><tbody><tr><td>All</td><td>Augury, Clairvoyance, Divination, Dream</td></tr><tr><td>Aberration</td><td>Hallucinatory Terrain</td></tr><tr><td>Dragon</td><td>Circle of Power</td></tr><tr><td>Fiend</td><td>Teleportation Circle</td></tr><tr><td>Undead</td><td>Speak with Dead</td></tr></tbody></table><ul><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.183de527da3c357d]{Spellbinding — Vassal Spells}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.8b32282dce2afbac]{Magic Circle — Spellbinding Ritual}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -27,31 +27,30 @@
         }
       ]
     },
-    "activities": {
-      "ba5030a933c8df68": {
-        "_id": "ba5030a933c8df68",
-        "type": "utility",
-        "name": "Magic Circle (ritual)",
-        "activation": {
-          "type": "action",
-          "value": 1
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "8ab83a1a244478d7",
+        "type": "ItemGrant",
+        "level": 6,
+        "title": "Actions",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "",
-              "value": "1"
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.183de527da3c357d",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.8b32282dce2afbac",
+              "optional": false
             }
-          ]
+          ],
+          "optional": false,
+          "spell": null
         },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -61,8 +60,16 @@
       "feature": "Spellbinding",
       "class": "wizard",
       "level": 6,
-      "notes": [
-        "Выдача заклинаний вассалу и снижение его максимума HP — вручную. 1/day интерпретировано как Long Rest; можно изменить в счётчике."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.183de527da3c357d",
+          "level": 6
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.8b32282dce2afbac",
+          "level": 6
+        }
       ]
     }
   },

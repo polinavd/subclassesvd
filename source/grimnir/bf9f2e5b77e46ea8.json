@@ -1,0 +1,63 @@
+{
+  "_id": "bf9f2e5b77e46ea8",
+  "name": "Изменить Balance на Order / Mayhem",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-spider-web.svg",
+  "folder": "6b194b9e5a9172f5",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-way-of-the-wanderer-world-thread-mastery-balance-order-mayhem",
+    "description": {
+      "value": "<p>While you are in the Balance style, you can spend 1 Focus Point as a Bonus Action to change to either the Order or Mayhem style.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Way of the Wanderer 17",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "2658e000ce3a6b4c": {
+        "_id": "2658e000ce3a6b4c",
+        "type": "utility",
+        "name": "Изменить Balance на Order / Mayhem",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:monks-focus",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-spider-web.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Way of the Wanderer",
+      "parentFeature": "e2634260a51266df",
+      "parentIdentifier": "grimnir-way-of-the-wanderer-world-thread-mastery",
+      "level": 17,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!bf9f2e5b77e46ea8"
+}

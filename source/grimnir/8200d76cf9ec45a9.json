@@ -2,11 +2,11 @@
   "_id": "8200d76cf9ec45a9",
   "name": "Justice Delivered",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-star-swirl.svg",
   "system": {
     "identifier": "grimnir-oath-of-the-slain-justice-delivered",
     "description": {
-      "value": "<p><b>Oath of the Slain · уровень 20</b></p><p>As a Bonus Action, you undergo a divine transformation, granting the benefits below for 1 minute or until you end them (no action required).<br>Impervious Flesh. You have Advantage on saving throws against spells and magical effects.<br>Might of the Gods. When a creature within 10 feet of you hits a target with a melee attack, you can use your<br>Reaction to make one melee weapon attack against that target. You have Advantage on the attack roll.<br>Aura of the Worthy. Your Aura of the Executioner now grants you and your allies a bonus to attack rolls equal to your Charisma modifier (minimum bonus of +1).<br>In addition, you and your allies have Immunity to the<br>Charmed condition while in your Aura of Protection. If a<br>Charmed ally enters the aura, that condition has no effect on that ally while there.<br>Once you use this feature, you can’t use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required).</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Расширение ауры, реакционная атака и восстановление за слот 5 — вручную.</li></ul>"
+      "value": "<p>As a Bonus Action, you undergo a divine transformation, granting the benefits below for 1 minute or until you end them (no action required).</p><p><strong>Impervious Flesh.</strong> You have Advantage on saving throws against spells and magical effects.</p><p><strong>Might of the Gods.</strong> When a creature within 10 feet of you hits a target with a melee attack, you can use your Reaction to make one melee weapon attack against that target. You have Advantage on the attack roll.</p><p><strong>Aura of the Worthy.</strong> Your Aura of the Executioner now grants you and your allies a bonus to attack rolls equal to your Charisma modifier (minimum bonus of +1). In addition, you and your allies have Immunity to the Charmed condition while in your Aura of Protection. If a Charmed ally enters the aura, that condition has no effect on that ally while there. Once you use this feature, you can’t use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required).</p><ul><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.497d5c1e49a9121c]{Justice Delivered}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.17485485ba12215e]{Might of the Gods — Attack}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -27,36 +27,30 @@
         }
       ]
     },
-    "activities": {
-      "270e35980d5a8717": {
-        "_id": "270e35980d5a8717",
-        "type": "utility",
-        "name": "Justice Delivered",
-        "activation": {
-          "type": "bonus",
-          "value": 1
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "a851dbcfb5c2a258",
+        "type": "ItemGrant",
+        "level": 20,
+        "title": "Actions",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "",
-              "value": "1"
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.497d5c1e49a9121c",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.17485485ba12215e",
+              "optional": false
             }
-          ]
+          ],
+          "optional": false,
+          "spell": null
         },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "duration": {
-          "value": "1",
-          "units": "minute",
-          "concentration": false
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -66,8 +60,16 @@
       "feature": "Justice Delivered",
       "class": "paladin",
       "level": 20,
-      "notes": [
-        "Расширение ауры, реакционная атака и восстановление за слот 5 — вручную."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.497d5c1e49a9121c",
+          "level": 20
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.17485485ba12215e",
+          "level": 20
+        }
       ]
     }
   },

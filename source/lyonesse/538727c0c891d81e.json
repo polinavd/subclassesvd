@@ -2,11 +2,11 @@
   "_id": "538727c0c891d81e",
   "name": "Stand Unbound",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/skoll-breaking-chain.svg",
   "system": {
     "identifier": "lyonesse-path-of-the-provoked-stand-unbound",
     "description": {
-      "value": "<p><b>Path of the Provoked · уровень 10</b></p><p>The more enemies press you, the more violently you answer.<br>Violent Response. While your Rage is active, when a creature you can see forces you to make a saving throw or makes an attack roll against you, you can use your Reaction to mark that creature until the end of your next turn.<br>While the creature is marked in this way, it is Vulnerable to the next melee weapon attack you hit it with. When you hit that marked creature with a melee weapon attack, the attack deals maximum damage, and the mark ends.<br>You can use this feature once per Rage.<br>Improved Strength of One. When there are three enemies within 5 feet of you, you score a Critical Hit on a 17, 18, 19, or 20 on the d20 with melee attacks using a weapon or Unarmed Strike.<br>Never provoke a berserker unless you’ve settled your affairs.<br>—Cranhath Antonsson, Grimfolk Jarl</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Максимальный урон, уязвимость только к следующей атаке и лимит 1/ярость проверяет ведущая.</li></ul>"
+      "value": "<p>The more enemies press you, the more violently you answer.</p><p><strong>Violent Response.</strong> While your Rage is active, when a creature you can see forces you to make a saving throw or makes an attack roll against you, you can use your Reaction to mark that creature until the end of your next turn. While the creature is marked in this way, it is Vulnerable to the next melee weapon attack you hit it with. When you hit that marked creature with a melee weapon attack, the attack deals maximum damage, and the mark ends. You can use this feature once per Rage.</p><p><strong>Improved Strength of One.</strong> When there are three enemies within 5 feet of you, you score a Critical Hit on a 17, 18, 19, or 20 on the d20 with melee attacks using a weapon or Unarmed Strike. Never provoke a berserker unless you’ve settled your affairs. —Cranhath Antonsson, Grimfolk Jarl</p><ul><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.a705ba09019aa1a6]{Violent Response}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,25 +22,26 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {
-      "ac609759a456e67a": {
-        "_id": "ac609759a456e67a",
-        "type": "utility",
-        "name": "Violent Response — пометка",
-        "activation": {
-          "type": "reaction",
-          "value": 1
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "1fa6eedeaf878209",
+        "type": "ItemGrant",
+        "level": 10,
+        "title": "Actions",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.a705ba09019aa1a6",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
         },
-        "consumption": {
-          "spellSlot": false,
-          "targets": []
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -50,8 +51,12 @@
       "feature": "Stand Unbound",
       "class": "barbarian",
       "level": 10,
-      "notes": [
-        "Максимальный урон, уязвимость только к следующей атаке и лимит 1/ярость проверяет ведущая."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.a705ba09019aa1a6",
+          "level": 10
+        }
       ]
     }
   },

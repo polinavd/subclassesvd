@@ -2,11 +2,11 @@
   "_id": "e449603af5ef6509",
   "name": "Woodland Ambusher",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-bow-arrow.svg",
   "system": {
     "identifier": "lyonesse-outlaw-woodland-ambusher",
     "description": {
-      "value": "<p><b>Outlaw · уровень 3</b></p><p>During the first round of combat, if you have the Invisible condition when you take the Attack action using a ranged weapon, you can attack twice instead of once.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+      "value": "<p>During the first round of combat, if you have the Invisible condition when you take the Attack action using a ranged weapon, you can attack twice instead of once.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.b79e4a5141d39673]{Woodland Ambusher — Additional Attack}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,7 +22,26 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "5e01c7ad67c576db",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Actions",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.b79e4a5141d39673",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ]
   },
   "effects": [],
   "flags": {
@@ -32,8 +51,12 @@
       "feature": "Woodland Ambusher",
       "class": "rogue",
       "level": 3,
-      "notes": [
-        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.b79e4a5141d39673",
+          "level": 3
+        }
       ]
     }
   },

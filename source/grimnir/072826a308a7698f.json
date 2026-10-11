@@ -1,0 +1,55 @@
+{
+  "_id": "072826a308a7698f",
+  "name": "Enhanced Senses",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-all-seeing-eye.svg",
+  "folder": "cdafd80b70bcfbb0",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-circle-of-the-devourer-enhanced-senses-enhanced-senses",
+    "description": {
+      "value": "<p>You may use a Bonus Action to gain an additional sense. You may only have one of the following active at one time:</p><ul><li>You gain Darkvision out to a range of 120 feet.</li><li>You gain Blindsight out to a range of 10 feet.</li><li>You gain Tremorsense out to a range of 30 feet. This feature ends if you have the Unconscious condition.</li></ul>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Circle of the Devourer 10",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "66a6982dda8cb0e1": {
+        "_id": "66a6982dda8cb0e1",
+        "name": "Enhanced Senses",
+        "type": "utility",
+        "activation": {
+          "type": "",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/delapouite-all-seeing-eye.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Circle of the Devourer",
+      "parentFeature": "fe912d43e27ee53b",
+      "parentIdentifier": "grimnir-circle-of-the-devourer-enhanced-senses",
+      "level": 10,
+      "version": "0.2.0",
+      "execute": "senses"
+    }
+  },
+  "_key": "!items!072826a308a7698f"
+}

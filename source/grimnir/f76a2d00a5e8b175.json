@@ -1,0 +1,55 @@
+{
+  "_id": "f76a2d00a5e8b175",
+  "name": "Push Your Luck",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-perspective-dice-six-faces-random.svg",
+  "folder": "4abb7a3dcaaf0cac",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-true-believer-push-your-luck-push-your-luck",
+    "description": {
+      "value": "<p>As a Magic Action, make a DC 15 ability check using your Wisdom. Success: You regain all expended spell slots and all expended uses of Wrath of Divinity. Failure: You gain one level of Exhaustion. The next time you use this feature, you have Advantage on the check. You can use this feature once, and you regain the use of it when you finish a Long Rest.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "True Believer 17",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "36a8a23ac2c36ab3": {
+        "_id": "36a8a23ac2c36ab3",
+        "name": "Push Your Luck",
+        "type": "utility",
+        "activation": {
+          "type": "",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/delapouite-perspective-dice-six-faces-random.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "True Believer",
+      "parentFeature": "288615df59c6ad3f",
+      "parentIdentifier": "grimnir-true-believer-push-your-luck",
+      "level": 17,
+      "version": "0.2.0",
+      "execute": "luck"
+    }
+  },
+  "_key": "!items!f76a2d00a5e8b175"
+}

@@ -1,0 +1,57 @@
+{
+  "_id": "6060b58c3823034f",
+  "name": "Potent Fate",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-third-eye.svg",
+  "folder": "08cc7d033b762c1f",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-college-of-the-seers-potent-fate-potent-fate",
+    "description": {
+      "value": "<p>When a roll from your Bestow Fate feature uses your Bardic Inspiration die, you can reroll that die. You must use the second result. You can do this once per turn. Additionally, when a creature affected by your Bestow Fate makes an attack roll, saving throw, or ability check, you can use your Reaction to force that creature to reroll that roll. You can decide to use this feature after the creature rolls, but before the DM tells you whether the roll succeeds or fails.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "College of the Seers 14",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "babdeceddd28f2f4": {
+        "_id": "babdeceddd28f2f4",
+        "type": "utility",
+        "name": "Potent Fate",
+        "activation": {
+          "type": "reaction",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-third-eye.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "College of the Seers",
+      "parentFeature": "0a8515dee76ca9a6",
+      "parentIdentifier": "grimnir-college-of-the-seers-potent-fate",
+      "level": 14,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!6060b58c3823034f"
+}

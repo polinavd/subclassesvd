@@ -1,0 +1,55 @@
+{
+  "_id": "10d25d5a55e1d959",
+  "name": "Vitality",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-heart-organ.svg",
+  "folder": "d64d34d188a6eeab",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-the-ironwood-vitality-of-the-ironwood-vitality",
+    "description": {
+      "value": "<p>Your patron gifts you a Heartseed, a Tiny organic focus that pulses with slow, ancient life. It is your spellcasting focus. If you lose it, you can perform a 1-hour ritual to grow a new one.</p><p><strong>Vitality.</strong> While touching the Heartseed, you can use a Bonus Action to awaken the patron’s vitality within you for 10 minutes. Until the effect ends:</p><ul><li>You gain Temporary Hit Points equal to your Warlock level plus your Charisma Modifier (minimum of 2).</li><li>Your Speed increases by 5 feet. Using this feature again ends the previous use. You can use this feature a number of times equal to your Charisma Modifier, regaining all expended uses when you finish a Long Rest.</li></ul>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "The Ironwood 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "a95fcb09f9267abf": {
+        "_id": "a95fcb09f9267abf",
+        "name": "Vitality",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-heart-organ.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "The Ironwood",
+      "parentFeature": "3e58165ecf51f0c9",
+      "parentIdentifier": "grimnir-the-ironwood-vitality-of-the-ironwood",
+      "level": 3,
+      "version": "0.2.0",
+      "execute": "vitality"
+    }
+  },
+  "_key": "!items!10d25d5a55e1d959"
+}

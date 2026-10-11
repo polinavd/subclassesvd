@@ -2,11 +2,11 @@
   "_id": "8d2dfbd6a6734dc3",
   "name": "Unholy Contracts",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-evil-book.svg",
   "system": {
     "identifier": "lyonesse-spellbinder-unholy-contracts",
     "description": {
-      "value": "<p><b>Spellbinder · уровень 10</b></p><p>You can cast the Planar Binding spell as a Ritual once and regain the ability to do so when you finish a Long Rest.<br>If the target of your Planar Binding is your Vassal, the casting time is reduced to 10 minutes. While your Vassal is controlled by your Planar Binding spell, you do not need to Concentrate on the Vassal’s Summon spell. You are unable to cast another Planar Binding spell while your<br>Vassal is bound.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Выбор цели, отмена концентрации и блок нового Planar Binding — вручную.</li></ul>"
+      "value": "<p>You can cast the Planar Binding spell as a Ritual once and regain the ability to do so when you finish a Long Rest. If the target of your Planar Binding is your Vassal, the casting time is reduced to 10 minutes. While your Vassal is controlled by your Planar Binding spell, you do not need to Concentrate on the Vassal’s Summon spell. You are unable to cast another Planar Binding spell while your Vassal is bound.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.b4eb3362da4b31a9]{Planar Binding — Unholy Contracts Ritual}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -27,31 +27,26 @@
         }
       ]
     },
-    "activities": {
-      "a9b2f73e51e67921": {
-        "_id": "a9b2f73e51e67921",
-        "type": "utility",
-        "name": "Planar Binding (ritual)",
-        "activation": {
-          "type": "action",
-          "value": 1
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "0276345fc174f0b4",
+        "type": "ItemGrant",
+        "level": 10,
+        "title": "Spells",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "",
-              "value": "1"
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.b4eb3362da4b31a9",
+              "optional": false
             }
-          ]
+          ],
+          "optional": false,
+          "spell": null
         },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -61,8 +56,12 @@
       "feature": "Unholy Contracts",
       "class": "wizard",
       "level": 10,
-      "notes": [
-        "Выбор цели, отмена концентрации и блок нового Planar Binding — вручную."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.b4eb3362da4b31a9",
+          "level": 10
+        }
       ]
     }
   },

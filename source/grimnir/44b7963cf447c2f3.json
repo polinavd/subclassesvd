@@ -1,0 +1,86 @@
+{
+  "_id": "44b7963cf447c2f3",
+  "name": "Shove",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-shield-impact.svg",
+  "folder": "8873c3624dd55b20",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-marauder-break-the-line-shove",
+    "description": {
+      "value": "<p>You can take a Bonus Action to make an Unarmed Strike using the Shove option. If you have a Shield equipped or the creature has the Prone condition, it has Disadvantage on the saving throw. If you shove a creature and push it, you can push it 10 feet instead of 5 feet, and move with the creature horizontally without provoking Opportunity Attacks, remaining within 5 feet of it at the end of your movement.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Marauder 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "9725c8339c5d30fc": {
+        "_id": "9725c8339c5d30fc",
+        "type": "save",
+        "name": "Shove",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "range": {
+          "value": "5",
+          "units": "ft"
+        },
+        "target": {
+          "affects": {
+            "type": "creature",
+            "count": "1"
+          },
+          "template": {
+            "type": ""
+          }
+        },
+        "damage": {
+          "parts": [],
+          "onSave": "none",
+          "includeBase": false
+        },
+        "save": {
+          "ability": [
+            "str",
+            "dex"
+          ],
+          "dc": {
+            "calculation": "str",
+            "formula": ""
+          }
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/delapouite-shield-impact.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Marauder",
+      "parentFeature": "cbc0cf5949f6866f",
+      "parentIdentifier": "grimnir-marauder-break-the-line",
+      "level": 3,
+      "version": "0.2.0",
+      "execute": "shove"
+    }
+  },
+  "_key": "!items!44b7963cf447c2f3"
+}

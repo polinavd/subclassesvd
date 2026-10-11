@@ -1,0 +1,83 @@
+{
+  "_id": "846d4bbf4bab953d",
+  "name": "Wrath of Divinity — Necrotic",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-shining-sword.svg",
+  "folder": "4abb7a3dcaaf0cac",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-true-believer-wrath-of-divinity-wrath-of-divinity-necrotic",
+    "description": {
+      "value": "<p>When you deal Sneak Attack damage to a creature, you can deal an additional 3d6 Radiant or Necrotic Damage (your choice).</p><ul><li>If you choose Radiant, one creature you can see within 60 feet regains Hit Points equal to the bonus damage dealt.</li><li>If you choose Necrotic, the target must succeed on a Wisdom saving throw against your spell save DC or have the Frightened condition until the end of your next turn. You can use this feature a number of times equal to your Dexterity Modifier, and you regain all expended uses when you finish a Long Rest.</li></ul>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "True Believer 13",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "ec310d8a863664e6": {
+        "_id": "ec310d8a863664e6",
+        "type": "damage",
+        "name": "Wrath of Divinity — Necrotic",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:grimnir-true-believer-wrath-of-divinity",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "3d6"
+              },
+              "types": [
+                "necrotic"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ],
+          "onSave": "none",
+          "includeBase": false
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-shining-sword.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "True Believer",
+      "parentFeature": "6bade743eb9f614a",
+      "parentIdentifier": "grimnir-true-believer-wrath-of-divinity",
+      "level": 13,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!846d4bbf4bab953d"
+}

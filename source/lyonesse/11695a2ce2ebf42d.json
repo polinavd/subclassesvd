@@ -1,0 +1,55 @@
+{
+  "_id": "11695a2ce2ebf42d",
+  "name": "Hymnal Memory",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-open-book.svg",
+  "folder": "71e3d6e1e80dbb6c",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-college-of-the-voice-eparch-hymnal-memory",
+    "description": {
+      "value": "<p>As an Eparch it is your duty to administer sacraments, govern college discipline, and guide liturgy. Your extensive training allows you to do the following:</p><p><strong>Steadfast Will.</strong> If you fail a saving throw, you can expend one of your Bardic Inspiration dice and add the number rolled to your saving throw result.</p><p><strong>Purifying Breath.</strong> You can expend one of your Bardic Inspiration dice to end one of the following conditions on yourself: Charmed, Frightened, Poisoned.</p><p><strong>Hymnal Memory.</strong> After you have finished a Long Rest, you can choose one skill and gain proficiency with it. You retain this proficiency until you finish another Long Rest.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "College of the Voice 6",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "b7e84550f8d693b3": {
+        "_id": "b7e84550f8d693b3",
+        "name": "Hymnal Memory",
+        "type": "utility",
+        "activation": {
+          "type": "",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-open-book.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "College of the Voice",
+      "parentFeature": "8ed5e926dc40a813",
+      "parentIdentifier": "lyonesse-college-of-the-voice-eparch",
+      "level": 6,
+      "version": "0.2.0",
+      "execute": "skill"
+    }
+  },
+  "_key": "!items!11695a2ce2ebf42d"
+}

@@ -2,11 +2,11 @@
   "_id": "8804f597757bc328",
   "name": "Expanded Spell List",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-vine-leaf.svg",
   "system": {
     "identifier": "grimnir-the-ironwood-expanded-spell-list",
     "description": {
-      "value": "<p><b>The Ironwood · уровень 3</b></p><p>The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Ironwood Spells table, you thereafter always have the listed spells prepared.<br>Ironwood Spells<br>Warlock Level<br>Spells<br>3<br>Barkskin, Entangle, Goodberry, Heat Metal<br>5<br>Plant Growth, Speak With Plants<br>7<br>Giant Insect, Grasping Vine<br>9<br>Awaken, Commune with Nature</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+      "value": "<p>The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Ironwood Spells table, you thereafter always have the listed spells prepared.</p><table><thead><tr><th>Warlock Level</th><th>Spells</th></tr></thead><tbody><tr><td>3</td><td>Barkskin, Entangle, Goodberry, Heat Metal</td></tr><tr><td>5</td><td>Plant Growth, Speak with Plants</td></tr><tr><td>7</td><td>Giant Insect, Grasping Vine</td></tr><tr><td>9</td><td>Awaken, Commune with Nature</td></tr></tbody></table><ul><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.e0366831c95504f9]{Barkskin}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.d6c87404b9d8184c]{Entangle}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.5f3cd8e022501590]{Goodberry}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.2208125b4d88f7f6]{Heat Metal}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.76f89c411c4df235]{Plant Growth}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.6ac3e46840673ddf]{Speak with Plants}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.ce6cfece857981f0]{Giant Insect}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.2934d53fe730fa7e]{Grasping Vine}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.af84e76851318236]{Awaken}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.0e7cefca61452128]{Commune with Nature}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -22,7 +22,101 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "8e3194c3b858a4d8",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.e0366831c95504f9",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.d6c87404b9d8184c",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.5f3cd8e022501590",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.2208125b4d88f7f6",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "2dd76c3350602c10",
+        "type": "ItemGrant",
+        "level": 5,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.76f89c411c4df235",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.6ac3e46840673ddf",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "313a66cabdc7c521",
+        "type": "ItemGrant",
+        "level": 7,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.ce6cfece857981f0",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.2934d53fe730fa7e",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "a968195bbe0c65d8",
+        "type": "ItemGrant",
+        "level": 9,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.af84e76851318236",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.0e7cefca61452128",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ]
   },
   "effects": [],
   "flags": {
@@ -32,8 +126,48 @@
       "feature": "Expanded Spell List",
       "class": "warlock",
       "level": 3,
-      "notes": [
-        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.e0366831c95504f9",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.d6c87404b9d8184c",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.5f3cd8e022501590",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.2208125b4d88f7f6",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.76f89c411c4df235",
+          "level": 5
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.6ac3e46840673ddf",
+          "level": 5
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.ce6cfece857981f0",
+          "level": 7
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.2934d53fe730fa7e",
+          "level": 7
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.af84e76851318236",
+          "level": 9
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.0e7cefca61452128",
+          "level": 9
+        }
       ]
     }
   },

@@ -1,0 +1,58 @@
+{
+  "_id": "d9662e35163d74e7",
+  "name": "Rampage",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-bloody-sword.svg",
+  "folder": "8873c3624dd55b20",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-marauder-rampage-rampage",
+    "description": {
+      "value": "<p>Whenever you or an ally within 10 feet of you reduces a creature to 0 Hit Points with an attack, that creature can take a Bonus Action before the end of the current turn to move up to half its Speed and make one attack.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Marauder 10",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "0b94172b0d8c2bfb": {
+        "_id": "0b94172b0d8c2bfb",
+        "type": "utility",
+        "name": "Rampage",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-bloody-sword.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Marauder",
+      "parentFeature": "c6a12eb65ca6fbf4",
+      "parentIdentifier": "grimnir-marauder-rampage",
+      "level": 10,
+      "version": "0.2.0",
+      "execute": "weaponAttack"
+    }
+  },
+  "_key": "!items!d9662e35163d74e7"
+}

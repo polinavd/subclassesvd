@@ -1,0 +1,55 @@
+{
+  "_id": "76226260fc886a41",
+  "name": "Ironwood Armor",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-tree-door.svg",
+  "folder": "d64d34d188a6eeab",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-the-ironwood-armor-of-the-ironwood-ironwood-armor",
+    "description": {
+      "value": "<p>During a Long or Short Rest, you can grow a suit of living armor called Ironwood Armor, using your Heartseed. Only you can wear this armor, and you have the training to use it. If you grow another Ironwood Armor, the previous one vanishes. While wearing this armor, you have Training with Shields. Choose one of the following forms each time you grow the armor:</p><p><strong>Mantle of Leaves.</strong> You have Advantage on Dexterity (Stealth) checks. Your Speed increases by an additional 5 feet.</p><p><strong>Unbreakable Branches.</strong> Attack rolls against you can’t score Critical Hits.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "The Ironwood 6",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "0c4bdf26723f8cee": {
+        "_id": "0c4bdf26723f8cee",
+        "name": "Ironwood Armor",
+        "type": "utility",
+        "activation": {
+          "type": "",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/delapouite-tree-door.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "The Ironwood",
+      "parentFeature": "fc40adc6df235feb",
+      "parentIdentifier": "grimnir-the-ironwood-armor-of-the-ironwood",
+      "level": 6,
+      "version": "0.2.0",
+      "execute": "armor"
+    }
+  },
+  "_key": "!items!76226260fc886a41"
+}

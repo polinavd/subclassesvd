@@ -2,11 +2,11 @@
   "_id": "2209e315b40ffb5e",
   "name": "Wolf Companion",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-wolf-head.svg",
   "system": {
     "identifier": "grimnir-wolf-rider-wolf-companion",
     "description": {
-      "value": "<p><b>Wolf Rider · уровень 3</b></p><p>A Grimnir Wolf chooses you as its rider. It is friendly to you and your allies, and it obeys your commands. See its game statistics in the accompanying Grimnir Wolf stat block, which uses your Proficiency Bonus (PB) in several places.<br>Your Wolf in Combat. In combat, the wolf acts during your turn. It can move and use its Reaction on its own, but the only action it takes is the Dodge action unless you take a Bonus Action to command it to take an action in its stat block or some other action. You can also sacrifice one of your attacks when you take the Attack action to command the wolf to take the Bite action. If you have the<br>Incapacitated condition, the wolf acts on its own and isn’t limited to the Dodge action.<br>Bonded Soul. You and your wolf share limited telepathy out to 120 feet. The wolf can move stealthily at a normal pace while within 10 feet of you.<br>Bonded Commands. When you cast the Hunter’s Mark spell without expending a spell slot or move the mark to a new creature, you can command your Grimnir Wolf as part of the same Bonus Action. In addition, you gain certain benefits when you give your wolf the Dodge or<br>Help commands.<br>Dodge: If the wolf takes the Dodge action and remains within 10 feet of you, attack rolls against you have<br>Disadvantage until the start of your next turn.<br>Help: When the wolf uses the Help action to assist you in attacking a creature, your next attack against that creature scores a Critical Hit on a roll of 18- 20 on the d20.<br>If Your Wolf Dies. You must bury its remains. If you do not have access to its remains you must spend an hour carving a totem and bury that instead. After you finish a Long Rest, it returns to life at full Hit Points from beneath the earth.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Спутник и масштабирование — макрос управления. Условные совместные атаки, Help/Dodge, защита рядом и перехват смерти — вручную.</li></ul>"
+      "value": "<p>A Grimnir Wolf chooses you as its rider. It is friendly to you and your allies, and it obeys your commands. See its game statistics in the accompanying Grimnir Wolf stat block, which uses your Proficiency Bonus (PB) in several places.</p><p><strong>Your Wolf in Combat.</strong> In combat, the wolf acts during your turn. It can move and use its Reaction on its own, but the only action it takes is the Dodge action unless you take a Bonus Action to command it to take an action in its stat block or some other action. You can also sacrifice one of your attacks when you take the Attack action to command the wolf to take the Bite action. If you have the Incapacitated condition, the wolf acts on its own and isn’t limited to the Dodge action.</p><p><strong>Bonded Soul.</strong> You and your wolf share limited telepathy out to 120 feet. The wolf can move stealthily at a normal pace while within 10 feet of you.</p><p><strong>Bonded Commands.</strong> When you cast the Hunter’s Mark spell without expending a spell slot or move the mark to a new creature, you can command your Grimnir Wolf as part of the same Bonus Action. In addition, you gain certain benefits when you give your wolf the Dodge or Help commands.</p><p><strong>Dodge:</strong> If the wolf takes the Dodge action and remains within 10 feet of you, attack rolls against you have Disadvantage until the start of your next turn.</p><p><strong>Help:</strong> When the wolf uses the Help action to assist you in attacking a creature, your next attack against that creature scores a Critical Hit on a roll of 18- 20 on the d20.</p><p><strong>If Your Wolf Dies.</strong> You must bury its remains. If you do not have access to its remains you must spend an hour carving a totem and bury that instead. After you finish a Long Rest, it returns to life at full Hit Points from beneath the earth.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.340072579489f34e]{Wolf Companion}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -22,7 +22,26 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "11413dc4ff4fb2c4",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Actions",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.340072579489f34e",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ]
   },
   "effects": [],
   "flags": {
@@ -32,8 +51,12 @@
       "feature": "Wolf Companion",
       "class": "ranger",
       "level": 3,
-      "notes": [
-        "Спутник и масштабирование — макрос управления. Условные совместные атаки, Help/Dodge, защита рядом и перехват смерти — вручную."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.340072579489f34e",
+          "level": 3
+        }
       ]
     }
   },

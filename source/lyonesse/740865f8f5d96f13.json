@@ -1,0 +1,55 @@
+{
+  "_id": "740865f8f5d96f13",
+  "name": "Shield of the Seven Virtues",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-holy-grail.svg",
+  "folder": "7a918a48d1938fb1",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-oath-of-saints-sevenfold-path-shield-of-the-seven-virtues",
+    "description": {
+      "value": "<p><strong>Consecrated Plate.</strong> When you finish a Long Rest, you can consecrate Half Plate Armor or Plate Armor. While wearing this Consecrated Plate, you gain Resistance to Necrotic damage and your choice of either Bludgeoning, Piercing, or Slashing damage and can change your choice when you finish another Long Rest.</p><p><strong>Shield of the Seven Virtues.</strong> At the end of a Long or Short Rest, choose up to three traits from the list below. You and your allies gain these traits while in your Aura of Protection.</p><p><strong>Charity:</strong> Hostile creatures have Disadvantage on attack rolls against any ally in your aura who is Bloodied.</p><p><strong>Faith:</strong> Advantage on Concentration checks.</p><p><strong>Honor:</strong> When a creature in your aura is targeted by an attack, an ally adjacent to them can use their Reaction to impose Disadvantage on that attack.</p><p><strong>Hope:</strong> Allies in your aura who are Bloodied gain +2 AC.</p><p><strong>Humility:</strong> Advantage on Charisma saving throws.</p><p><strong>Prudence:</strong> Advantage on Wisdom saving throws. You retain the chosen traits until you finish another Long or Short Rest and choose new ones.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Oath of Saints 15",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "1b70d598bbd53d91": {
+        "_id": "1b70d598bbd53d91",
+        "name": "Shield of the Seven Virtues",
+        "type": "utility",
+        "activation": {
+          "type": "",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-holy-grail.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Oath of Saints",
+      "parentFeature": "3db353c575e26455",
+      "parentIdentifier": "lyonesse-oath-of-saints-sevenfold-path",
+      "level": 15,
+      "version": "0.2.0",
+      "execute": "virtues"
+    }
+  },
+  "_key": "!items!740865f8f5d96f13"
+}

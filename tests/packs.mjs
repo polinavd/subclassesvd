@@ -8,7 +8,7 @@ const root = new URL('../', import.meta.url).pathname;
 const manifest = JSON.parse(await fs.readFile(path.join(root, 'module.json'), 'utf8'));
 const temp = await fs.mkdtemp(path.join(os.tmpdir(), 'subclassesvd-packs-'));
 const source = new Map();
-let subclasses = 0, features = 0, grants = 0;
+let subclasses = 0, features = 0, actions = 0, spells = 0, grants = 0;
 async function readDocs(folder) {
   const docs = new Map();
   for (const file of await fs.readdir(folder)) {
@@ -34,7 +34,15 @@ try {
     for (const doc of original.values()) {
       source.set(`Compendium.${manifest.id}.${pack.name}.${pack.type}.${doc._id}`, doc);
       if (doc.type === 'subclass') subclasses++;
-      if (doc.type === 'feat') features++;
+      if (doc.type === 'feat' && doc.flags?.[manifest.id]?.feature) features++;
+      if (doc.flags?.[manifest.id]?.parentFeature && doc.type !== 'spell') actions++;
+      if (doc.type === 'spell') spells++;
+      for (const i of [doc,...(doc.items??[])]) if (['feat','subclass','spell','weapon','npc','script'].includes(i.type)) {
+        assert.ok(i.img?.startsWith(`modules/${manifest.id}/assets/icons/`),`Missing local icon: ${i.name}`);
+        await fs.access(path.join(root,i.img.slice(`modules/${manifest.id}/`.length)));
+        assert.ok(!/<br\s*\/?|<hr|Автоматизация|Configured by companion macro/i.test(i.system?.description?.value??''),`Dirty description: ${i.name}`);
+        for (const activity of Object.values(i.system?.activities??{})) assert.equal(activity.img,i.img);
+      }
       for (const activity of Object.values(doc.system?.activities ?? {})) {
         for (const effect of activity.effects ?? []) {
           assert.ok(doc.effects?.some(e => e._id === effect._id), `Unresolved effect: ${doc.name}`);
@@ -59,8 +67,22 @@ try {
   }
   assert.equal(subclasses, 24);
   assert.equal(features, 125);
-  assert.equal(grants, 218);
-  console.log(`Four packs match source: ${subclasses} subclasses, ${features} features, ${grants} grants`);
+  assert.ok(actions >= 130);
+  assert.ok(spells >= 100);
+  assert.equal(manifest.packs.length,5);
+  for(const doc of source.values()){
+    for(const child of doc.flags?.[manifest.id]?.children??[]) assert.ok(source.has(child.uuid),`Unresolved action/spell: ${child.uuid}`);
+    for(const activity of Object.values(doc.system?.activities??{}))for(const profile of activity.profiles??[])if(profile.uuid?.startsWith(`Compendium.${manifest.id}.`))assert.ok(source.has(profile.uuid),`Unresolved summon: ${profile.uuid}`);
+    if(doc.type==='feat' && doc.flags?.[manifest.id]?.feature){
+      const uuids=doc.system.advancement.filter(a=>a.type==='ItemGrant').flatMap(a=>a.configuration.items.map(i=>i.uuid));
+      assert.equal(new Set(uuids).size,uuids.length,`Duplicate grant: ${doc.name}`);
+      for(const child of doc.flags[manifest.id].children??[])assert.ok(uuids.includes(child.uuid),`Missing native grant: ${doc.name}`);
+    }
+  }
+  const natural=[...source.values()].filter(d=>d.type==='weapon'&&d.flags?.[manifest.id]?.requiresForm==='primal-arm');
+  assert.equal(natural.length,3);for(const w of natural){const attacks=Object.values(w.system.activities);assert.ok(attacks.some(a=>a.type==='attack'&&a.attack.ability==='wis'&&a.damage.parts.length));}
+  const primeval=[...source.values()].find(d=>d.name==='Summon Beast — Primeval Call');assert.ok(Object.values(primeval.system.activities).some(a=>a.type==='summon'&&a.profiles.length===3&&!a.consumption.spellSlot));
+  console.log(`Five packs match source: ${subclasses} subclasses, ${features} features, ${actions} action cards, ${spells} spell cards, ${grants} grants`);
 } finally {
   await fs.rm(temp, { recursive: true, force: true });
 }

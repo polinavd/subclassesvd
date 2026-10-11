@@ -1,0 +1,63 @@
+{
+  "_id": "d1292c307f567971",
+  "name": "Seeker: Advanced Disruption",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-hourglass.svg",
+  "folder": "ff1c1188f5b8ad9f",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-cohesion-of-the-primal-turn-of-fate-seeker-advanced-disruption",
+    "description": {
+      "value": "<p><strong>Dreamer:</strong> Master Foresayer. When you activate your Stored Foresight spell as a Bonus Action, you can roll 1d4. On a 4, the stored spell is not expended.</p><p><strong>Seeker:</strong> Advanced Disruption. When a spell with a single target affects you or an ally within 10 feet, you may use your Reaction and expend a spell slot equal to or higher than the spell’s level. If you do, the spell fails. Once you use this feature, you cannot do so again until you finish a Short or Long Rest.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Cohesion of the Primal 10",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "b9b4cd8fd6d3b591": {
+        "_id": "b9b4cd8fd6d3b591",
+        "type": "utility",
+        "name": "Seeker: Advanced Disruption",
+        "activation": {
+          "type": "reaction",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:grimnir-cohesion-of-the-primal-turn-of-fate",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-hourglass.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Cohesion of the Primal",
+      "parentFeature": "71e8e8310afbd0bb",
+      "parentIdentifier": "grimnir-cohesion-of-the-primal-turn-of-fate",
+      "level": 10,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!d1292c307f567971"
+}

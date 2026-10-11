@@ -1,0 +1,82 @@
+{
+  "_id": "4668ffd8f4e9f8a6",
+  "name": "Fight to the Last: пул лечения",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-winged-sword.svg",
+  "folder": "7c14c39ab5ef4425",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-oath-of-the-slain-channel-divinity-fight-to-the-last",
+    "description": {
+      "value": "<p><strong>Fight to the Last.</strong> You can use one use of your Channel Divinity as a Magic Action to restore Hit Points to creatures of your choice within 15 feet. You can restore a total number of Hit Points, divided as you choose, equal to twice your Paladin level. If a creature is at 0 Hit Points when it receives this healing, it regains twice the amount you choose to give it.</p><p><strong>Mark of the Executioner.</strong> You can use one use of your Channel Divinity as a Bonus Action to mark one creature you can see for execution for 1 minute. While the mark lasts, your attack rolls against the creature score a Critical Hit on a roll of 18-20 on the d20. The effect ends early if you become Incapacitated or if you mark another creature.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Oath of the Slain 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "375c2a8837b5acd7": {
+        "_id": "375c2a8837b5acd7",
+        "type": "utility",
+        "name": "Fight to the Last: пул лечения",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:channel-divinity",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "range": {
+          "value": "15",
+          "units": "ft"
+        },
+        "target": {
+          "affects": {
+            "type": "creature",
+            "count": "1"
+          },
+          "template": {
+            "type": ""
+          }
+        },
+        "roll": {
+          "formula": "2 * @classes.paladin.levels",
+          "name": "Fight to the Last: пул лечения",
+          "visible": true,
+          "prompt": false
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-winged-sword.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Oath of the Slain",
+      "parentFeature": "9d3c13f390307514",
+      "parentIdentifier": "grimnir-oath-of-the-slain-channel-divinity",
+      "level": 3,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!4668ffd8f4e9f8a6"
+}

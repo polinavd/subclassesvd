@@ -1,0 +1,100 @@
+{
+  "name": "Compelled Duel",
+  "type": "spell",
+  "system": {
+    "identifier": "compelled-duel",
+    "description": {
+      "value": "<p>A visible creature makes a Wisdom save. Failure: attacks against others have Disadvantage; it cannot willingly go beyond 30 feet from you. Ends if you attack or cast on another enemy, an ally damages it, or your turn ends beyond 30 feet.</p>"
+    },
+    "source": {
+      "custom": "Player’s Handbook 2024 — mechanical summary",
+      "rules": "2024"
+    },
+    "level": 1,
+    "school": "enc",
+    "activation": {
+      "type": "bonus",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "range": {
+      "value": 30,
+      "units": "ft"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1"
+      },
+      "template": {
+        "type": ""
+      }
+    },
+    "properties": [
+      "vocal",
+      "concentration"
+    ],
+    "activities": {
+      "25d006a61c4ace6c": {
+        "_id": "25d006a61c4ace6c",
+        "name": "Cast",
+        "type": "save",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "override": false
+        },
+        "consumption": {
+          "spellSlot": true,
+          "targets": []
+        },
+        "effects": [],
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-sword-clash.svg"
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "method": "spell",
+    "prepared": 2,
+    "ability": "cha",
+    "sourceClass": "paladin"
+  },
+  "effects": [],
+  "_id": "04499cbeb2e39e47",
+  "_key": "!items!04499cbeb2e39e47",
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "grimnir-lyonesse": {
+      "parentFeature": "fae5d337d50f8f00",
+      "parentIdentifier": "lyonesse-oath-of-saints-oath-spells",
+      "setting": "lyonesse",
+      "subclass": "Oath of Saints",
+      "level": 3,
+      "version": "0.2.0",
+      "grantVariant": ""
+    }
+  },
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-sword-clash.svg"
+}

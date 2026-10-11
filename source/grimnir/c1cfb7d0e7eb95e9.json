@@ -1,0 +1,57 @@
+{
+  "_id": "c1cfb7d0e7eb95e9",
+  "name": "Violent Response",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/skoll-breaking-chain.svg",
+  "folder": "50b4331a01e2aad7",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-path-of-the-provoked-stand-unbound-violent-response",
+    "description": {
+      "value": "<p>The more enemies press you, the more violently you answer.</p><p><strong>Violent Response.</strong> While your Rage is active, when a creature you can see forces you to make a saving throw or makes an attack roll against you, you can use your Reaction to mark that creature until the end of your next turn. While the creature is marked in this way, it is Vulnerable to the next melee weapon attack you hit it with. When you hit that marked creature with a melee weapon attack, the attack deals maximum damage, and the mark ends. You can use this feature once per Rage.</p><p><strong>Improved Strength of One.</strong> When there are three enemies within 5 feet of you, you score a Critical Hit on a 17, 18, 19, or 20 on the d20 with melee attacks using a weapon or Unarmed Strike.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Path of the Provoked 10",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "0b501d9b6eec7d6e": {
+        "_id": "0b501d9b6eec7d6e",
+        "type": "utility",
+        "name": "Violent Response",
+        "activation": {
+          "type": "reaction",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/skoll-breaking-chain.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Path of the Provoked",
+      "parentFeature": "f5e8a1b56d0a44bb",
+      "parentIdentifier": "grimnir-path-of-the-provoked-stand-unbound",
+      "level": 10,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!c1cfb7d0e7eb95e9"
+}

@@ -2,11 +2,11 @@
   "_id": "8d0b919b3d8cc798",
   "name": "Chains of Penitence",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-crossed-chains.svg",
   "system": {
     "identifier": "lyonesse-the-archangel-chains-of-penitence",
     "description": {
-      "value": "<p><b>The Archangel · уровень 6</b></p><p>While in your Avatar of the Archangel form, when you hit a creature with an attack, you can force it to make a<br>Strength saving throw against your spell save DC. On a failure, it is Restrained until the end of your next turn as spectral chains lash around it.<br>You can use this feature a number of times equal to your Charisma modifier (minimum of once).</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>В книге НЕ указано восстановление использований. Счётчик есть, автосброс не придуман; решение ведущей. Требуется Avatar.</li></ul>"
+      "value": "<p>While in your Avatar of the Archangel form, when you hit a creature with an attack, you can force it to make a Strength saving throw against your spell save DC. On a failure, it is Restrained until the end of your next turn as spectral chains lash around it. You can use this feature a number of times equal to your Charisma modifier (minimum of once).</p><ul><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.0df36b8af8d93599]{Chains of Penitence}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,55 +22,32 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {
-      "ddeace6782528930": {
-        "_id": "ddeace6782528930",
-        "type": "save",
-        "name": "Chains of Penitence",
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "0ba52828fa0a97c9",
+        "type": "ItemGrant",
+        "level": 6,
+        "title": "Actions",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "",
-              "value": "1"
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.0df36b8af8d93599",
+              "optional": false
             }
-          ]
-        },
-        "effects": [
-          {
-            "_id": "5720d1dc77f8a928"
-          }
-        ],
-        "description": {
-          "chatFlavor": ""
-        },
-        "damage": {
-          "parts": [],
-          "onSave": "none",
-          "includeBase": false
-        },
-        "save": {
-          "ability": [
-            "str"
           ],
-          "dc": {
-            "calculation": "cha",
-            "formula": ""
-          }
-        }
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [
     {
       "_id": "5720d1dc77f8a928",
       "name": "Chains of Penitence: Restrained",
-      "img": "icons/svg/book.svg",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-crossed-chains.svg",
       "transfer": false,
       "disabled": false,
       "changes": [],
@@ -95,8 +72,12 @@
       "feature": "Chains of Penitence",
       "class": "warlock",
       "level": 6,
-      "notes": [
-        "В книге НЕ указано восстановление использований. Счётчик есть, автосброс не придуман; решение ведущей. Требуется Avatar."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.0df36b8af8d93599",
+          "level": 6
+        }
       ]
     }
   },

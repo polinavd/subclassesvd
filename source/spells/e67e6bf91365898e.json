@@ -1,0 +1,135 @@
+{
+  "name": "Banishing Smite",
+  "type": "spell",
+  "system": {
+    "identifier": "banishing-smite",
+    "description": {
+      "value": "<p>After a melee weapon or Unarmed Strike hit, add 5d10 Force damage. At 50 HP or less, a failed Charisma save banishes the creature to a harmless demiplane, Incapacitated, while concentration lasts. It returns when the spell ends.</p>"
+    },
+    "source": {
+      "custom": "Player’s Handbook 2024 — mechanical summary",
+      "rules": "2024"
+    },
+    "level": 5,
+    "school": "con",
+    "activation": {
+      "type": "bonus",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "range": {
+      "value": 0,
+      "units": "ft"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1"
+      },
+      "template": {
+        "type": ""
+      }
+    },
+    "properties": [
+      "vocal",
+      "concentration"
+    ],
+    "activities": {
+      "25d006a61c4ace6c": {
+        "_id": "25d006a61c4ace6c",
+        "name": "Smite Damage",
+        "type": "damage",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "override": false
+        },
+        "consumption": {
+          "spellSlot": true,
+          "targets": []
+        },
+        "effects": [],
+        "damage": {
+          "onSave": "none",
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "5d10"
+              },
+              "types": [
+                "force"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-winged-sword.svg"
+      },
+      "efb6788bd596cfc8": {
+        "_id": "efb6788bd596cfc8",
+        "name": "Banish — target at 50 HP or less",
+        "type": "save",
+        "activation": {
+          "type": "",
+          "value": null,
+          "override": true
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "save": {
+          "ability": [
+            "cha"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "full",
+          "parts": []
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-winged-sword.svg"
+      }
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "method": "pact",
+    "prepared": 2,
+    "ability": "cha",
+    "sourceClass": "warlock"
+  },
+  "effects": [],
+  "_id": "e67e6bf91365898e",
+  "_key": "!items!e67e6bf91365898e",
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "grimnir-lyonesse": {
+      "parentFeature": "ccbd6411687c1c89",
+      "parentIdentifier": "lyonesse-the-archangel-archangel-s-spells",
+      "setting": "lyonesse",
+      "subclass": "The Archangel",
+      "level": 9,
+      "version": "0.2.0",
+      "grantVariant": ""
+    }
+  },
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-winged-sword.svg"
+}

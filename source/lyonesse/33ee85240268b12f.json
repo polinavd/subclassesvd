@@ -1,0 +1,69 @@
+{
+  "_id": "33ee85240268b12f",
+  "name": "Steadfast Voice",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-lotus.svg",
+  "folder": "47f143ead77b6269",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-knight-of-the-sacred-word-resonant-body-steadfast-voice",
+    "description": {
+      "value": "<p>You master your breath and body, allowing your voice to shape your own form.</p><p><strong>Steadfast Voice.</strong> When you fail a saving throw, you can spend 1 Focus Point to add your Martial Arts die to the roll, potentially turning failure into success.</p><p><strong>Purifying Breath.</strong> At the start of your turn, you can spend 1 Focus Point to end one of the following conditions on yourself: Paralyzed or Stunned.</p><p><strong>Striking Word.</strong> When you use Voice of Authority, you can deal extra Force damage equal to one roll of your Martial Arts die if the target fails its saving throw.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Knight of the Sacred Word 6",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "ac6e4940b7de3b19": {
+        "_id": "ac6e4940b7de3b19",
+        "type": "utility",
+        "name": "Steadfast Voice",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:monks-focus",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "roll": {
+          "formula": "@scale.monk.die",
+          "name": "Steadfast Voice",
+          "visible": true,
+          "prompt": false
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-lotus.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Knight of the Sacred Word",
+      "parentFeature": "a645c6fb256a2bde",
+      "parentIdentifier": "lyonesse-knight-of-the-sacred-word-resonant-body",
+      "level": 6,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!33ee85240268b12f"
+}

@@ -2,11 +2,11 @@
   "_id": "175153c1094c06af",
   "name": "Sacred Word Incarnate",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-mailed-fist.svg",
   "system": {
     "identifier": "lyonesse-knight-of-the-sacred-word-sacred-word-incarnate",
     "description": {
-      "value": "<p><b>Knight of the Sacred Word · уровень 17</b></p><p>You have become an instrument of the Maker’s truth.<br>Your voice no longer requires effort. It simply is.<br>Word of Judgment. When you use Voice of Authority, you can affect an additional creature of your choice within 30 feet that can hear you. It must make a separate<br>Wisdom saving throw.<br>Irresistible Cadence. Once per turn when a creature succeeds on its saving throw against your Stunning Strike or Voice of Authority, you can spend 2 Focus Points to force it to reroll the d20. It must use the new result.<br>I asked a Knight of the Sacred Word what he did.<br>He said, ‘I kick ass for the Maker’.<br>—Clemsy, Otherling Pilgrim</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Выбор второй цели, её отдельный спасбросок и принудительный переброс — вручную.</li></ul>"
+      "value": "<p>You have become an instrument of the Maker’s truth. Your voice no longer requires effort. It simply is.</p><p><strong>Word of Judgment.</strong> When you use Voice of Authority, you can affect an additional creature of your choice within 30 feet that can hear you. It must make a separate Wisdom saving throw.</p><p><strong>Irresistible Cadence.</strong> Once per turn when a creature succeeds on its saving throw against your Stunning Strike or Voice of Authority, you can spend 2 Focus Points to force it to reroll the d20. It must use the new result.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.b8251d60cc74b416]{Irresistible Cadence}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,31 +22,26 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {
-      "a2581c3382a1784e": {
-        "_id": "a2581c3382a1784e",
-        "type": "utility",
-        "name": "Irresistible Cadence",
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "2e310f4bc074a782",
+        "type": "ItemGrant",
+        "level": 17,
+        "title": "Actions",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "feat:monks-focus",
-              "value": "2"
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.b8251d60cc74b416",
+              "optional": false
             }
-          ]
+          ],
+          "optional": false,
+          "spell": null
         },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -56,8 +51,12 @@
       "feature": "Sacred Word Incarnate",
       "class": "monk",
       "level": 17,
-      "notes": [
-        "Выбор второй цели, её отдельный спасбросок и принудительный переброс — вручную."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.b8251d60cc74b416",
+          "level": 17
+        }
       ]
     }
   },

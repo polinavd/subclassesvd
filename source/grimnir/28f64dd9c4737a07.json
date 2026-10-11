@@ -2,11 +2,11 @@
   "_id": "28f64dd9c4737a07",
   "name": "Defend the Pack",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-wolf-head.svg",
   "system": {
     "identifier": "grimnir-wolf-rider-defend-the-pack",
     "description": {
-      "value": "<p><b>Wolf Rider · уровень 15</b></p><p>Your bond turns instinct into protection.<br>Favored Bond: When your wolf is about to be reduced to<br>0 Hit Points or killed, you can expend one use of your<br>Favored Enemy to change its Hit Points to be 1 instead or prevent it from dying. (No action required).<br>Pack Cover: While Concentrating on Hunter’s Mark, you and your wolf have the benefits of Half Cover.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Спутник и масштабирование — макрос управления. Условные совместные атаки, Help/Dodge, защита рядом и перехват смерти — вручную.</li></ul>"
+      "value": "<p>Your bond turns instinct into protection.</p><p><strong>Favored Bond:</strong> When your wolf is about to be reduced to 0 Hit Points or killed, you can expend one use of your Favored Enemy to change its Hit Points to be 1 instead or prevent it from dying. (No action required).</p><p><strong>Pack Cover:</strong> While Concentrating on Hunter’s Mark, you and your wolf have the benefits of Half Cover.</p>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -22,7 +22,8 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": []
   },
   "effects": [],
   "flags": {
@@ -32,9 +33,8 @@
       "feature": "Defend the Pack",
       "class": "ranger",
       "level": 15,
-      "notes": [
-        "Спутник и масштабирование — макрос управления. Условные совместные атаки, Help/Dodge, защита рядом и перехват смерти — вручную."
-      ]
+      "version": "0.2.0",
+      "children": []
     }
   },
   "ownership": {

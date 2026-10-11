@@ -2,11 +2,11 @@
   "_id": "b873bf13945a4033",
   "name": "Path of Fate",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-lotus.svg",
   "system": {
     "identifier": "grimnir-way-of-the-wanderer-path-of-fate",
     "description": {
-      "value": "<p><b>Way of the Wanderer · уровень 3</b></p><p>Your choices tug at the strands of destiny, shaping each battle toward order or mayhem.<br>When you roll Initiative, choose one of three styles:<br>Order, Balance, or Mayhem. You gain that style’s benefits for the duration of the combat.<br>Every time you roll Initiative in the future, you follow the following restrictions:<br>• If your previous style was Balance, you may choose<br>Order or Mayhem.<br>• If your previous style was Order or Mayhem, you must choose that same style or Balance.<br>Order. You can choose to have your Unarmed Strikes deal Cold damage. Creatures of your choice within 30 feet using Unarmed Strikes or weapons with the Finesse property (including yourself) score a Critical Hit on a roll of 18, 19, or 20 on the d20.<br>Balance. You can reroll one D20 Test that you make.<br>You must use the new roll. You can use this feature a number of times equal to your Wisdom modifier, regaining all uses when you finish a Long Rest.<br>Mayhem. You can choose to have your Unarmed<br>Strikes deal Thunder damage. When using your Deflect<br>Attacks and you spend 1 Focus Point to redirect the damage, you add one Martial Arts die in Thunder damage to the damage dealt. You can use this feature a number of times equal to your Wisdom modifier, regaining all uses when you finish a Long Rest.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Выбор стиля и эффекты на владельце — макрос управления; аура критов союзникам и погодные изменения — вручную.</li></ul>"
+      "value": "<p>Your choices tug at the strands of destiny, shaping each battle toward order or mayhem. When you roll Initiative, choose one of three styles: Order, Balance, or</p><p><strong>Mayhem.</strong> You gain that style’s benefits for the duration of the combat. Every time you roll Initiative in the future, you follow the following restrictions:</p><ul><li>If your previous style was Balance, you may choose Order or</li></ul><p><strong>Mayhem.</strong> </p><ul><li>If your previous style was Order or Mayhem, you must choose that same style or</li></ul><p><strong>Balance.</strong> </p><p><strong>Order.</strong> You can choose to have your Unarmed Strikes deal Cold damage. Creatures of your choice within 30 feet using Unarmed Strikes or weapons with the Finesse property (including yourself) score a Critical Hit on a roll of 18, 19, or 20 on the d20.</p><p><strong>Balance.</strong> You can reroll one D20 Test that you make. You must use the new roll. You can use this feature a number of times equal to your Wisdom modifier, regaining all uses when you finish a Long Rest.</p><p><strong>Mayhem.</strong> You can choose to have your Unarmed Strikes deal Thunder damage. When using your Deflect Attacks and you spend 1 Focus Point to redirect the damage, you add one Martial Arts die in Thunder damage to the damage dealt. You can use this feature a number of times equal to your Wisdom modifier, regaining all uses when you finish a Long Rest.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.135b6830f57cce5f]{Balance: переброс}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.40c3cc40ac744366]{Path of Fate}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -27,31 +27,30 @@
         }
       ]
     },
-    "activities": {
-      "aa22905db5f2d6bb": {
-        "_id": "aa22905db5f2d6bb",
-        "type": "utility",
-        "name": "Balance: переброс",
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "c073d57c0ad69a33",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Actions",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "",
-              "value": "1"
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.135b6830f57cce5f",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.40c3cc40ac744366",
+              "optional": false
             }
-          ]
+          ],
+          "optional": false,
+          "spell": null
         },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -61,8 +60,16 @@
       "feature": "Path of Fate",
       "class": "monk",
       "level": 3,
-      "notes": [
-        "Выбор стиля и эффекты на владельце — макрос управления; аура критов союзникам и погодные изменения — вручную."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.135b6830f57cce5f",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.40c3cc40ac744366",
+          "level": 3
+        }
       ]
     }
   },

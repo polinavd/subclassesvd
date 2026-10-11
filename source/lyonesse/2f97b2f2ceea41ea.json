@@ -2,11 +2,11 @@
   "_id": "2f97b2f2ceea41ea",
   "name": "Master of Chains",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-crossed-chains.svg",
   "system": {
     "identifier": "lyonesse-spellbinder-master-of-chains",
     "description": {
-      "value": "<p><b>Spellbinder · уровень 14</b></p><p>Your ability to bind otherworldly creatures to your will reaches its apex. When you cast a Summon spell using a level 7+ spell slot, you can choose to replace the Spirit stat block with one of the following fiends: Bone Devil or<br>Chain Devil.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+      "value": "<p>Your ability to bind otherworldly creatures to your will reaches its apex. When you cast a Summon spell using a level 7+ spell slot, you can choose to replace the Spirit stat block with one of the following fiends: Bone Devil or Chain Devil.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.cc36b6ea3e09182d]{Master of Chains — Fiend}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,7 +22,26 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "cacb80f854c12742",
+        "type": "ItemGrant",
+        "level": 14,
+        "title": "Actions",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.cc36b6ea3e09182d",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ]
   },
   "effects": [],
   "flags": {
@@ -32,8 +51,12 @@
       "feature": "Master of Chains",
       "class": "wizard",
       "level": 14,
-      "notes": [
-        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.cc36b6ea3e09182d",
+          "level": 14
+        }
       ]
     }
   },

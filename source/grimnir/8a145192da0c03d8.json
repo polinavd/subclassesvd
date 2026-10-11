@@ -2,11 +2,11 @@
   "_id": "8a145192da0c03d8",
   "name": "Foresaying",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-crystal-ball.svg",
   "system": {
     "identifier": "grimnir-cohesion-of-the-primal-foresaying",
     "description": {
-      "value": "<p><b>Cohesion of the Primal · уровень 6</b></p><p>You can better see the connections between the past and the future.<br>Dreamer: Stored Foresight. When you cast a Wizard spell of level 5 or lower using a spell slot with a casting time of an Action or longer and a range of Self, you can store it instead of gaining its effects. You can later cast the stored spell as a Bonus Action without expending a spell slot or consuming components. You can store only one spell at a time. You can use this feature a number of times equal to your Intelligence modifier, and regain all uses when you finish a Long Rest. Any stored spell fades at the end of a Long Rest.<br>Seeker: Disrupt Spellcasting. When you hit a creature with a melee or ranged weapon attack, you may use a<br>Bonus Action to force it to make an Intelligence saving throw against your spell save DC. On a failed save, the creature cannot cast spells or take the Magic action until the end of your next turn. You can use this feature a number of times equal to your Intelligence modifier, regaining all uses on a Long Rest.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Хранимое заклинание и запрет Magic Action отслеживаются вручную.</li></ul>"
+      "value": "<p>You can better see the connections between the past and the future.</p><p><strong>Dreamer:</strong> Stored Foresight. When you cast a Wizard spell of level 5 or lower using a spell slot with a casting time of an Action or longer and a range of Self, you can store it instead of gaining its effects. You can later cast the stored spell as a Bonus Action without expending a spell slot or consuming components. You can store only one spell at a time. You can use this feature a number of times equal to your Intelligence modifier, and regain all uses when you finish a Long Rest. Any stored spell fades at the end of a Long Rest.</p><p><strong>Seeker:</strong> Disrupt Spellcasting. When you hit a creature with a melee or ranged weapon attack, you may use a Bonus Action to force it to make an Intelligence saving throw against your spell save DC. On a failed save, the creature cannot cast spells or take the Magic action until the end of your next turn. You can use this feature a number of times equal to your Intelligence modifier, regaining all uses on a Long Rest.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.d5d034ea5477530f]{Dreamer: Store spell}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.27479c6f4562b2df]{Seeker: Disrupt Spellcasting}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -27,68 +27,30 @@
         }
       ]
     },
-    "activities": {
-      "0ea4d6477f0ea3c5": {
-        "_id": "0ea4d6477f0ea3c5",
-        "type": "utility",
-        "name": "Dreamer: Store spell",
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "a68e5f5473975a36",
+        "type": "ItemGrant",
+        "level": 6,
+        "title": "Actions",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "",
-              "value": "1"
-            }
-          ]
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        }
-      },
-      "b3ec1f74e3d12769": {
-        "_id": "b3ec1f74e3d12769",
-        "type": "save",
-        "name": "Seeker: Disrupt Spellcasting",
-        "activation": {
-          "type": "bonus",
-          "value": 1
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.d5d034ea5477530f",
+              "optional": false
+            },
             {
-              "type": "itemUses",
-              "target": "",
-              "value": "1"
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.27479c6f4562b2df",
+              "optional": false
             }
-          ]
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "damage": {
-          "parts": [],
-          "onSave": "none",
-          "includeBase": false
-        },
-        "save": {
-          "ability": [
-            "int"
           ],
-          "dc": {
-            "calculation": "int",
-            "formula": ""
-          }
-        }
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -98,8 +60,16 @@
       "feature": "Foresaying",
       "class": "wizard",
       "level": 6,
-      "notes": [
-        "Хранимое заклинание и запрет Magic Action отслеживаются вручную."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.d5d034ea5477530f",
+          "level": 6
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.27479c6f4562b2df",
+          "level": 6
+        }
       ]
     }
   },

@@ -2,11 +2,11 @@
   "_id": "b7616a3fc3a13646",
   "name": "Trick Shot",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/skoll-bullseye.svg",
   "system": {
     "identifier": "lyonesse-outlaw-trick-shot",
     "description": {
-      "value": "<p><b>Outlaw · уровень 13</b></p><p>You gain the following Cunning Strike options.<br>Bullseye (Cost: 2d6). Immediately after the attack, you can make a ranged attack against the same target with<br>Advantage.<br>Twinned Shot (Cost: 2d6). Immediately after the attack, you can make a ranged attack against a different target.<br>Mark (Cost: 4d6). Until the start of your next turn, all attacks from your allies have Advantage on attack rolls against the target.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+      "value": "<p>You gain the following Cunning Strike options.</p><p><strong>Bullseye (Cost: 2d6).</strong> Immediately after the attack, you can make a ranged attack against the same target with Advantage.</p><p><strong>Twinned Shot (Cost: 2d6).</strong> Immediately after the attack, you can make a ranged attack against a different target.</p><p><strong>Mark (Cost: 4d6).</strong> Until the start of your next turn, all attacks from your allies have Advantage on attack rolls against the target.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.df99481bd05fb224]{Bullseye}</li><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.5192ddd2f17772f8]{Twinned Shot}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,7 +22,30 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "97e9f231b1977169",
+        "type": "ItemGrant",
+        "level": 13,
+        "title": "Actions",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.df99481bd05fb224",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.5192ddd2f17772f8",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ]
   },
   "effects": [],
   "flags": {
@@ -32,8 +55,16 @@
       "feature": "Trick Shot",
       "class": "rogue",
       "level": 13,
-      "notes": [
-        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.df99481bd05fb224",
+          "level": 13
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.5192ddd2f17772f8",
+          "level": 13
+        }
       ]
     }
   },

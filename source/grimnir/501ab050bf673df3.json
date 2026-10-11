@@ -1,0 +1,63 @@
+{
+  "_id": "501ab050bf673df3",
+  "name": "Regeneration",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-brain-tentacle.svg",
+  "folder": "5e7aabf373dadf67",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-misplaced-soul-dreams-made-real-regeneration",
+    "description": {
+      "value": "<p>When you summon a Misplaced Soul, you can spend additional Sorcery Points to grant it special traits. These traits last until the Soul disappears.</p><p><strong>Metamagic: Magic Resistance (1 Sorcery Point).</strong> You give the Misplaced Soul the Magic Resistance trait (see accompanying stat block).</p><p><strong>Metamagic: Regeneration (2 Sorcery Points).</strong> You give the Misplaced Soul the Regeneration trait (see accompanying stat block).</p><p><strong>Metamagic: Reality (4 Sorcery Points).</strong> The Misplaced Soul that you create loses the Invisibility trait. It gains the Rend Ranged Attack and the Magic Resistance and Regeneration traits. If you become Incapacitated or are reduced to 0 Hit Points while this Misplaced Soul exists, roll 1d20. If you roll a 1 or 2 the Misplaced Soul becomes a real creature that persists. They are under the DM’s control and have the stat block of an Archmage. Their disposition is Friendly towards you. Once a Misplaced Soul becomes a real creature in this manner, this effect won’t transform a Misplaced Soul into a real creature again until 1 year has passed.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Misplaced Soul 18",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "71453d0152ee4920": {
+        "_id": "71453d0152ee4920",
+        "type": "utility",
+        "name": "Regeneration",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:font-of-magic",
+              "value": "2"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/delapouite-brain-tentacle.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Misplaced Soul",
+      "parentFeature": "281dd5a14f21592d",
+      "parentIdentifier": "grimnir-misplaced-soul-dreams-made-real",
+      "level": 18,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!501ab050bf673df3"
+}

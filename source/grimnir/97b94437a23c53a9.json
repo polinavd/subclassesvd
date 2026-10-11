@@ -2,11 +2,11 @@
   "_id": "97b94437a23c53a9",
   "name": "Primal Arm",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-claw-slashes.svg",
   "system": {
     "identifier": "grimnir-circle-of-the-devourer-primal-arm",
     "description": {
-      "value": "<p><b>Circle of the Devourer · уровень 6</b></p><p>As a Bonus Action, you can expend one use of Wild<br>Shape to transform one of your arms. This transformation lasts for 1 hour, or until you dismiss it as a Bonus Action.<br>Choose one of the following natural weapons. Each is treated as a Simple weapon with which you are proficient. You use your Wisdom modifier for its attack and damage rolls.<br>Bone Club. Melee Attack Roll: Reach 5 ft. Hit: 1d8 plus<br>Wisdom modifier Bludgeoning damage. The target must make a Strength saving throw against your spell save DC.<br>On a failed save, the target is Knocked Prone.<br>Bladed Claw. Melee Attack Roll: Reach 5 ft. Hit: 2d6 plus<br>Wisdom modifier Slashing damage.<br>Poisonous Barbs. Ranged Attack Roll: Range 30/60 ft.<br>Hit: 1d8 plus Wisdom modifier Piercing damage. The target must make a Constitution saving throw against your spell save DC. On a failed save, the target is Poisoned until the end of its next turn. A creature Poisoned in this way cannot regain Hit Points.<br>When you take the Attack Action, you can make one additional attack with your Primal Arm weapon.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Активировать спасбросок только после попадания. Форма руки, конец отравления и запрет лечения — вручную.</li></ul>"
+      "value": "<p>As a Bonus Action, you can expend one use of Wild Shape to transform one of your arms. This transformation lasts for 1 hour, or until you dismiss it as a Bonus Action. Choose one of the following natural weapons. Each is treated as a Simple weapon with which you are proficient. You use your Wisdom modifier for its attack and damage rolls.</p><p><strong>Bone Club.</strong> Melee Attack Roll: Reach 5 ft. Hit: 1d8 plus Wisdom modifier Bludgeoning damage. The target must make a Strength saving throw against your spell save DC. On a failed save, the target is Knocked Prone.</p><p><strong>Bladed Claw.</strong> Melee Attack Roll: Reach 5 ft. Hit: 2d6 plus Wisdom modifier Slashing damage.</p><p><strong>Poisonous Barbs.</strong> Ranged Attack Roll: Range 30/60 ft. Hit: 1d8 plus Wisdom modifier Piercing damage. The target must make a Constitution saving throw against your spell save DC. On a failed save, the target is Poisoned until the end of its next turn. A creature Poisoned in this way cannot regain Hit Points. When you take the Attack Action, you can make one additional attack with your Primal Arm weapon.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.114541e364cceb6a]{Primal Arm — Transform}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.bdf71d6dfb71613b]{Bone Club: save}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.a4df47338fec03f8]{Poisonous Barbs: save}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.9f97a6a7857cf3b7]{Bone Club}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.5d42e747f1bc4a55]{Bladed Claw}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.8e516c0db4dfe835]{Poisonous Barbs}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.efe76abe87aac610]{Primal Arm — Additional Attack}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -22,286 +22,56 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {
-      "c565645c0283e58b": {
-        "_id": "c565645c0283e58b",
-        "type": "utility",
-        "name": "Transform arm",
-        "activation": {
-          "type": "bonus",
-          "value": 1
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "0d45c9a442928f30",
+        "type": "ItemGrant",
+        "level": 6,
+        "title": "Actions",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "feat:wild-shape",
-              "value": "1"
-            }
-          ]
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "duration": {
-          "value": "60",
-          "units": "minute",
-          "concentration": false
-        }
-      },
-      "36e6385f39488e36": {
-        "_id": "36e6385f39488e36",
-        "type": "attack",
-        "name": "Bone Club",
-        "activation": {
-          "type": "action",
-          "value": 1
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": []
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "range": {
-          "value": "5",
-          "units": "ft"
-        },
-        "target": {
-          "affects": {
-            "type": "creature",
-            "count": "1"
-          },
-          "template": {
-            "type": ""
-          }
-        },
-        "damage": {
-          "parts": [
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.114541e364cceb6a",
+              "optional": false
+            },
             {
-              "custom": {
-                "enabled": true,
-                "formula": "1d8 + @abilities.wis.mod"
-              },
-              "types": [
-                "bludgeoning"
-              ],
-              "scaling": {
-                "mode": "",
-                "number": null,
-                "formula": ""
-              }
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.bdf71d6dfb71613b",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.a4df47338fec03f8",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.9f97a6a7857cf3b7",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.5d42e747f1bc4a55",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.8e516c0db4dfe835",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.efe76abe87aac610",
+              "optional": false
             }
           ],
-          "onSave": "none",
-          "includeBase": false
+          "optional": false,
+          "spell": null
         },
-        "attack": {
-          "ability": "wis",
-          "type": {
-            "value": "melee",
-            "classification": "weapon"
-          },
-          "bonus": ""
-        }
-      },
-      "9424054b75fb2377": {
-        "_id": "9424054b75fb2377",
-        "type": "attack",
-        "name": "Bladed Claw",
-        "activation": {
-          "type": "action",
-          "value": 1
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": []
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "range": {
-          "value": "5",
-          "units": "ft"
-        },
-        "target": {
-          "affects": {
-            "type": "creature",
-            "count": "1"
-          },
-          "template": {
-            "type": ""
-          }
-        },
-        "damage": {
-          "parts": [
-            {
-              "custom": {
-                "enabled": true,
-                "formula": "2d6 + @abilities.wis.mod"
-              },
-              "types": [
-                "slashing"
-              ],
-              "scaling": {
-                "mode": "",
-                "number": null,
-                "formula": ""
-              }
-            }
-          ],
-          "onSave": "none",
-          "includeBase": false
-        },
-        "attack": {
-          "ability": "wis",
-          "type": {
-            "value": "melee",
-            "classification": "weapon"
-          },
-          "bonus": ""
-        }
-      },
-      "70af0a02022d2bcf": {
-        "_id": "70af0a02022d2bcf",
-        "type": "attack",
-        "name": "Poisonous Barbs",
-        "activation": {
-          "type": "action",
-          "value": 1
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": []
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "range": {
-          "value": "30",
-          "units": "ft"
-        },
-        "target": {
-          "affects": {
-            "type": "creature",
-            "count": "1"
-          },
-          "template": {
-            "type": ""
-          }
-        },
-        "damage": {
-          "parts": [
-            {
-              "custom": {
-                "enabled": true,
-                "formula": "1d8 + @abilities.wis.mod"
-              },
-              "types": [
-                "piercing"
-              ],
-              "scaling": {
-                "mode": "",
-                "number": null,
-                "formula": ""
-              }
-            }
-          ],
-          "onSave": "none",
-          "includeBase": false
-        },
-        "attack": {
-          "ability": "wis",
-          "type": {
-            "value": "ranged",
-            "classification": "weapon"
-          },
-          "bonus": ""
-        }
-      },
-      "5edada7c7b644ae4": {
-        "_id": "5edada7c7b644ae4",
-        "type": "save",
-        "name": "Bone Club: save",
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": []
-        },
-        "effects": [
-          {
-            "_id": "198054b763954a9d"
-          }
-        ],
-        "description": {
-          "chatFlavor": ""
-        },
-        "damage": {
-          "parts": [],
-          "onSave": "none",
-          "includeBase": false
-        },
-        "save": {
-          "ability": [
-            "str"
-          ],
-          "dc": {
-            "calculation": "wis",
-            "formula": ""
-          }
-        }
-      },
-      "d55b09580f27ab7d": {
-        "_id": "d55b09580f27ab7d",
-        "type": "save",
-        "name": "Poisonous Barbs: save",
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": []
-        },
-        "effects": [
-          {
-            "_id": "3613771f654a8d91"
-          }
-        ],
-        "description": {
-          "chatFlavor": ""
-        },
-        "damage": {
-          "parts": [],
-          "onSave": "none",
-          "includeBase": false
-        },
-        "save": {
-          "ability": [
-            "con"
-          ],
-          "dc": {
-            "calculation": "wis",
-            "formula": ""
-          }
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [
     {
       "_id": "198054b763954a9d",
       "name": "Bone Club: Prone",
-      "img": "icons/svg/book.svg",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-claw-slashes.svg",
       "transfer": false,
       "disabled": false,
       "changes": [],
@@ -319,7 +89,7 @@
     {
       "_id": "3613771f654a8d91",
       "name": "Poisonous Barbs: Poisoned",
-      "img": "icons/svg/book.svg",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-claw-slashes.svg",
       "transfer": false,
       "disabled": false,
       "changes": [],
@@ -344,8 +114,36 @@
       "feature": "Primal Arm",
       "class": "druid",
       "level": 6,
-      "notes": [
-        "Активировать спасбросок только после попадания. Форма руки, конец отравления и запрет лечения — вручную."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.114541e364cceb6a",
+          "level": 6
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.bdf71d6dfb71613b",
+          "level": 6
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.a4df47338fec03f8",
+          "level": 6
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.9f97a6a7857cf3b7",
+          "level": 6
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.5d42e747f1bc4a55",
+          "level": 6
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.8e516c0db4dfe835",
+          "level": 6
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.efe76abe87aac610",
+          "level": 6
+        }
       ]
     }
   },

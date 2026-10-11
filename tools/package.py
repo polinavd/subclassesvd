@@ -9,8 +9,8 @@ MANIFEST = json.loads((ROOT / 'module.json').read_text())
 PACKAGE = json.loads((ROOT / 'package.json').read_text())
 assert MANIFEST['version'] == PACKAGE['version'], 'module.json/package.json version mismatch'
 ARCHIVE = ROOT / 'dist' / 'grimnir-lyonesse.zip'
-FILES = [ROOT / name for name in ['module.json', 'README-RU.md', 'AUTOMATION.html']]
-for folder in ['scripts', 'packs', 'data']:
+FILES = [ROOT / name for name in ['module.json', 'README-RU.md', 'CREDITS.md']]
+for folder in ['scripts', 'packs', 'data', 'assets']:
     FILES.extend(p for p in (ROOT / folder).rglob('*') if p.is_file() and p.name != 'LOCK')
 FILES.sort()
 EXPECTED = {f"{MANIFEST['id']}/{p.relative_to(ROOT).as_posix()}": p.read_bytes() for p in FILES}

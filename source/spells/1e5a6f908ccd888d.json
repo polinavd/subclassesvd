@@ -1,0 +1,248 @@
+{
+  "_id": "1e5a6f908ccd888d",
+  "name": "Sanctuary",
+  "type": "spell",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-holy-symbol.svg",
+  "system": {
+    "description": {
+      "value": "<div><p>You ward a creature within range. Until the spell ends, any creature who targets the warded creature with an attack roll or a damaging spell must succeed on a [[/save ability=wis dc=@attributes.spell.dc format=long]] or either choose a new target or lose the attack or spell. This spell doesn't protect the warded creature from areas of effect. The spell ends if the warded creature makes an attack roll, casts a spell, or deals damage.</p></div>",
+      "chat": ""
+    },
+    "source": {
+      "rules": "2024",
+      "license": "CC-BY-4.0",
+      "book": "",
+      "revision": 2
+    },
+    "activation": {
+      "type": "bonus",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "1",
+        "type": "creature",
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "ft",
+      "special": "",
+      "value": "30"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 1,
+    "school": "abj",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "materials": {
+      "value": "a shard of glass from a mirror",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activities": {
+      "2iUeoKysfdtmK0kZ": {
+        "type": "utility",
+        "_id": "2iUeoKysfdtmK0kZ",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "OuM8iKhckcDKavOx"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "name": "Cast",
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-holy-symbol.svg",
+        "appliedEffects": []
+      },
+      "6TdVnZPI3lxQrycI": {
+        "type": "save",
+        "name": "Save on Target",
+        "_id": "6TdVnZPI3lxQrycI",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "value": null,
+          "override": true,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "range": {
+          "override": true,
+          "units": "any",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "damage": {
+          "parts": [],
+          "onSave": "none"
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-holy-symbol.svg",
+        "appliedEffects": []
+      }
+    },
+    "identifier": "sanctuary",
+    "method": "pact",
+    "prepared": 2,
+    "ability": "cha",
+    "sourceClass": "warlock"
+  },
+  "effects": [
+    {
+      "name": "Warded",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-holy-symbol.svg",
+      "origin": "Compendium.dnd5e.spells24.Item.phbSanctuary0000",
+      "transfer": false,
+      "_id": "OuM8iKhckcDKavOx",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": 60,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<p>Until the spell ends, any creature who targets the warded creature with an attack roll or a damaging spell must succeed on a [[/save ability=wis format=long]] or either choose a new target or lose the attack or spell.</p><p> The spell ends if the warded creature makes an attack roll, casts a spell, or deals damage.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.344",
+        "systemId": "dnd5e",
+        "systemVersion": "4.0.0",
+        "createdTime": 1725637309210,
+        "modifiedTime": 1725637468105,
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "exportSource": null
+      },
+      "_key": "!items.effects!1e5a6f908ccd888d.OuM8iKhckcDKavOx"
+    }
+  ],
+  "folder": null,
+  "flags": {
+    "grimnir-lyonesse": {
+      "parentFeature": "ccbd6411687c1c89",
+      "parentIdentifier": "lyonesse-the-archangel-archangel-s-spells",
+      "setting": "lyonesse",
+      "subclass": "The Archangel",
+      "level": 3,
+      "version": "0.2.0",
+      "grantVariant": ""
+    }
+  },
+  "sort": 100391,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!1e5a6f908ccd888d"
+}

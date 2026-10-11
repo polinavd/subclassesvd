@@ -2,11 +2,11 @@
   "_id": "e4329ec05ab61bff",
   "name": "Slip the Skin",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-water-splash.svg",
   "system": {
     "identifier": "lyonesse-selkie-warden-slip-the-skin",
     "description": {
-      "value": "<p><b>Selkie Warden · уровень 3</b></p><p>As a Bonus Action, you can Slip the Skin to partially assume a selkie form for 1 minute:<br>• You have Advantage on Dexterity saving throws.<br>• Opportunity attacks against you are made with Disadvantage.<br>• You can move through Enemy spaces without treating them as Difficult Terrain.<br>You can use Slip the Skin a number of times equal to your<br>Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Активация эффекта и расход — макрос управления.</li></ul>"
+      "value": "<p>As a Bonus Action, you can Slip the Skin to partially assume a selkie form for 1 minute:</p><ul><li>You have Advantage on Dexterity saving throws.</li><li>Opportunity attacks against you are made with Disadvantage.</li><li>You can move through Enemy spaces without treating them as Difficult Terrain. You can use Slip the Skin a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</li></ul><ul><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.304b6560ae093141]{Slip the Skin}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -27,7 +27,26 @@
         }
       ]
     },
-    "activities": {}
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "d857f7bc2e06a173",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Actions",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.304b6560ae093141",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ]
   },
   "effects": [],
   "flags": {
@@ -37,8 +56,12 @@
       "feature": "Slip the Skin",
       "class": "ranger",
       "level": 3,
-      "notes": [
-        "Активация эффекта и расход — макрос управления."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.304b6560ae093141",
+          "level": 3
+        }
       ]
     }
   },

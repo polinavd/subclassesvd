@@ -2,11 +2,11 @@
   "_id": "8ed5e926dc40a813",
   "name": "Eparch",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-open-book.svg",
   "system": {
     "identifier": "lyonesse-college-of-the-voice-eparch",
     "description": {
-      "value": "<p><b>College of the Voice · уровень 6</b></p><p>As an Eparch it is your duty to administer sacraments, govern college discipline, and guide liturgy. Your extensive training allows you to do the following:<br>Steadfast Will. If you fail a saving throw, you can expend one of your Bardic Inspiration dice and add the number rolled to your saving throw result.<br>Purifying Breath. You can expend one of your Bardic<br>Inspiration dice to end one of the following conditions on yourself: Charmed, Frightened, Poisoned.<br>Hymnal Memory. After you have finished a Long Rest, you can choose one skill and gain proficiency with it. You retain this proficiency until you finish another Long Rest.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Purifying Breath и временное владение навыком — макрос управления.</li></ul>"
+      "value": "<p>As an Eparch it is your duty to administer sacraments, govern college discipline, and guide liturgy. Your extensive training allows you to do the following:</p><p><strong>Steadfast Will.</strong> If you fail a saving throw, you can expend one of your Bardic Inspiration dice and add the number rolled to your saving throw result.</p><p><strong>Purifying Breath.</strong> You can expend one of your Bardic Inspiration dice to end one of the following conditions on yourself: Charmed, Frightened, Poisoned.</p><p><strong>Hymnal Memory.</strong> After you have finished a Long Rest, you can choose one skill and gain proficiency with it. You retain this proficiency until you finish another Long Rest.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.da7085bbf463d412]{Steadfast Will}</li><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.11695a2ce2ebf42d]{Hymnal Memory}</li><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.8a8e88e797f9d7a7]{Purifying Breath}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,37 +22,34 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {
-      "88f5507526cf50bd": {
-        "_id": "88f5507526cf50bd",
-        "type": "utility",
-        "name": "Steadfast Will",
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "bafa73dd75b1a345",
+        "type": "ItemGrant",
+        "level": 6,
+        "title": "Actions",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "feat:bardic-inspiration",
-              "value": "1"
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.da7085bbf463d412",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.11695a2ce2ebf42d",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.8a8e88e797f9d7a7",
+              "optional": false
             }
-          ]
+          ],
+          "optional": false,
+          "spell": null
         },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "roll": {
-          "formula": "@scale.bard.inspiration",
-          "name": "Steadfast Will",
-          "visible": true,
-          "prompt": false
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [],
   "flags": {
@@ -62,8 +59,20 @@
       "feature": "Eparch",
       "class": "bard",
       "level": 6,
-      "notes": [
-        "Purifying Breath и временное владение навыком — макрос управления."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.da7085bbf463d412",
+          "level": 6
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.11695a2ce2ebf42d",
+          "level": 6
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.8a8e88e797f9d7a7",
+          "level": 6
+        }
       ]
     }
   },

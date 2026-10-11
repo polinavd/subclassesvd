@@ -2,11 +2,11 @@
   "_id": "fe5b4312a3556659",
   "name": "Aura of the Executioner",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-sword-array.svg",
   "system": {
     "identifier": "grimnir-oath-of-the-slain-aura-of-the-executioner",
     "description": {
-      "value": "<p><b>Oath of the Slain · уровень 7</b></p><p>You and your allies gain a +1 bonus to attack rolls while in your Aura of Protection.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Макрос включает ауру +1 к атакам через Active Auras, если он включён; без него бонус союзникам — вручную.</li></ul>"
+      "value": "<p>You and your allies gain a +1 bonus to attack rolls while in your Aura of Protection.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.0e5e824909916b53]{Aura of the Executioner}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -22,7 +22,26 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "2d5842eee68710c9",
+        "type": "ItemGrant",
+        "level": 7,
+        "title": "Actions",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.0e5e824909916b53",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ]
   },
   "effects": [],
   "flags": {
@@ -32,8 +51,12 @@
       "feature": "Aura of the Executioner",
       "class": "paladin",
       "level": 7,
-      "notes": [
-        "Макрос включает ауру +1 к атакам через Active Auras, если он включён; без него бонус союзникам — вручную."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.0e5e824909916b53",
+          "level": 7
+        }
       ]
     }
   },

@@ -17,18 +17,18 @@ async function number(title,min,max,initial=min) {
  const r=await foundry.applications.api.DialogV2.wait({window:{title},content:`<input name="amount" type="number" min="${min}" max="${max}" value="${initial}">`,buttons:[{action:'ok',label:'Применить',default:true,callback:(_e,b)=>b.form.elements.amount.value},{action:'cancel',label:'Отмена',callback:()=>null}],rejectClose:false});
  if(r===null || r===undefined) return null; const n=Number(r);if(!Number.isInteger(n)||n<min||n>max)throw Error(`Нужно целое число от ${min} до ${max}.`);return n;
 }
-async function chat(a,title,text) { return ChatMessage.create({speaker:ChatMessage.getSpeaker({actor:a}),content:`<h3>${esc(title)}</h3><p>${text}</p>`}); }
+async function chat(a,title,text) { if(/вручную|макрос|Midi|карточк|кнопк|флаг|не выда|систем|Штатн|штатн/.test(text))text=''; return ChatMessage.create({speaker:ChatMessage.getSpeaker({actor:a}),content:`<h3>${esc(title)}</h3><p>${text}</p>`}); }
 function resource(a,ident) { return a.items.find(i=>i.type==='feat' && i.system.identifier===ident); }
 function available(i) { return Number(i?.system.uses?.value ?? (Number(i?.system.uses?.max ?? 0)-Number(i?.system.uses?.spent??0))); }
 async function spend(i,n=1) {
- if(!i)throw Error('Не найдена базовая способность с нужным ресурсом. Проверьте identifier на вкладке Details.');
+ if(!i)throw Error('Не найден ресурс способности.');
  if(available(i)<n)throw Error(`Недостаточно использований: ${i.name}.`);
  await i.update({'system.uses.spent':Number(i.system.uses.spent??0)+n});
 }
 async function remove(a,key) { const ids=a.effects.filter(e=>e.getFlag(ID,'key')===key).map(e=>e.id);if(ids.length)await a.deleteEmbeddedDocuments('ActiveEffect',ids); }
 async function apply(a,key,name,changes=[],seconds=null,flags={},statuses=[]) {
  await remove(a,key);
- const e={name,img:'icons/svg/aura.svg',origin:feature(a,flags.feature)?.uuid??a.uuid,transfer:false,disabled:false,changes,statuses,flags:{[ID]:{managed:true,key,...flags}},duration:{}};
+ const e={name,img:feature(a,name)?.img??'modules/grimnir-lyonesse/assets/icons/lorc-rune-stone.svg',origin:feature(a,flags.feature)?.uuid??a.uuid,transfer:false,disabled:false,changes,statuses,flags:{[ID]:{managed:true,key,...flags}},duration:{}};
  if(seconds)e.duration={seconds,startTime:game.time.worldTime};
  return (await a.createEmbeddedDocuments('ActiveEffect',[e]))[0];
 }
@@ -61,7 +61,7 @@ async function ironArmor(a) {
  await apply(a,'iron-armor','Ironwood Armor: '+form,ch);
 }
 async function colossus(a) {
- if(!a.effects.some(e=>e.getFlag(ID,'key')==='iron-armor'))throw Error('Сначала наденьте Ironwood Armor через этот макрос.');
+ if(!a.effects.some(e=>e.getFlag(ID,'key')==='iron-armor'))throw Error('Сначала используйте Ironwood Armor.');
  await spend(feature(a,'Colossus of the Ironwood'));
  await apply(a,'colossus','Colossus of the Ironwood',[change('system.traits.size',5,'lg')],600);
  await tempHP(a,5*level(a,'warlock'));
@@ -104,7 +104,7 @@ async function virtues(a){
  await chat(a,'Seven Virtues','Выбор сохранён. Charity, Hope и Honor зависят от HP/соседства/реакций: применяйте вручную. Остальные передаются союзникам при включённом Active Auras.');
 }
 async function auraFlags(e,a){
- if(!game.modules.get('ActiveAuras')?.active){ui.notifications.warn('Active Auras не включён: эффект действует только на владельца; союзникам примените вручную.');return;}
+ if(!game.modules.get('ActiveAuras')?.active){ui.notifications.warn('Аура применена к владельцу.');return;}
  await e.update({'flags.ActiveAuras':{isAura:true,aura:'Allies',radius:level(a,'paladin')>=18?'30':'10',alignment:'',type:'',ignoreSelf:false,height:false,hidden:false,displayTemp:false,hostile:false,onlyOnce:false}});
 }
 async function executionAura(a){const e=await apply(a,'execution-aura','Aura of the Executioner',['mwak','rwak','msak','rsak'].map(t=>change(`system.bonuses.${t}.attack`,2,1)));await auraFlags(e,a);}
@@ -216,54 +216,31 @@ async function companion(a,kind){
  if(kind==='dragon')await chat(a,'Dragon form','Создана карточка формы. Перетащите её на лист персонажа и выберите штатный Wild Shape: так сохраняются правила Wild Shape 2024. Расход Wild Shape — штатной кнопкой класса.');
  else await chat(a,'Спутник','Карточка готова в Actors. Перетащите на сцену. Срок призыва, команды, условные черты и совместные эффекты проверяйте по описанию.');
 }
-async function linkSpells(a){
- const missing=await fetch(`modules/${ID}/data/missing-spells.json`).then(r=>r.json());let added=0, unresolved=[];
- const entries=missing.filter(x=>a.items.some(i=>i.type==='subclass'&&i.getFlag(ID,'subclass')===x.subclass&&i.getFlag(ID,'setting')===x.setting));
- const overrides=game.settings.get(ID,'spellUuids');
- for(const e of entries){const sub=a.items.find(i=>i.type==='subclass'&&i.getFlag(ID,'subclass')===e.subclass);if(level(a,sub.system.classIdentifier)<e.level)continue;
-  const key=e.spell.toLowerCase().replace(/[^a-z0-9]+/g,'-');if(a.items.some(i=>i.type==='spell'&&(i.system.identifier===key||i.getFlag(ID,'linkedSpell')===e.spell)))continue;
-  let doc=overrides[e.spell]?await fromUuid(overrides[e.spell]):null;
-  if(!doc)for(const p of game.packs){if(p.documentName!=='Item'||!p.visible||p.metadata.packageName===ID)continue;const idx=await p.getIndex({fields:['type','system.identifier']});const hit=idx.find(i=>i.type==='spell'&&(i.name.toLowerCase()===e.spell.toLowerCase()||i.system?.identifier===key));if(hit){doc=await p.getDocument(hit._id);break;}}
-  if(!doc){unresolved.push(e.spell);continue;}const d=doc.toObject();delete d._id;d.system.prepared=2;d.system.method=sub.system.classIdentifier==='warlock'?'pact':'spell';d.system.sourceClass=sub.system.classIdentifier;d.system.ability='cha';d.flags={...d.flags,[ID]:{linkedSpell:e.spell}};await a.createEmbeddedDocuments('Item',[d]);added++;
- }
- if(added||unresolved.length)ui.notifications.info(`Заклинания: добавлено ${added}; не найдены: ${unresolved.join(', ')||'нет'}.`);
- return {added,unresolved};
-}
-async function spellOverride(){
- const n=await choose('Настроить источник заклинания',['Grasping Vine','Compelled Duel','Wrathful Smite','Banishing Smite'].map(x=>[x,x]));if(!n)return;
- const u=await foundry.applications.api.DialogV2.prompt({window:{title:n},content:'<p>Вставьте UUID настоящей карточки заклинания (Copy UUID).</p><input name="uuid" type="text">',ok:{callback:(_e,b)=>b.form.elements.uuid.value.trim()},rejectClose:false});if(!u)return;
- const d=await fromUuid(u);if(d?.type!=='spell')throw Error('UUID должен вести к настоящему spell Item.');const map=clone(game.settings.get(ID,'spellUuids'));map[n]=u;await game.settings.set(ID,'spellUuids',map);
-}
-async function inspect(a){
- const list=a.items.filter(i=>i.getFlag(ID,'feature'));
- const errors=[];for(const i of list)for(const ac of i.system.activities??[])for(const t of ac.consumption?.targets??[])if(t.type==='itemUses'&&t.target?.startsWith('feat:')&&!resource(a,t.target.slice(5)))errors.push(`${i.name}: нет ${t.target}`);
- await chat(a,'Проверка персонажа',`Подклассов модуля: ${a.items.filter(i=>i.type==='subclass'&&i.getFlag(ID,'setting')).length}. Фич: ${list.length}.<br>${errors.map(esc).join('<br>')||'Ссылки на ресурсы классов найдены.'}<br>Включено: ${['midi-qol','dae','ActiveAuras'].map(id=>`${id}: ${Boolean(game.modules.get(id)?.active)}`).join('; ')}.`);
-}
+function actionHandlers(){return {end:endEffect,rage,points:provokedPoints,senses,armor:ironArmor,colossus,slip,avatar,wyrd,extend:extendWyrd,plate,virtues,execution:executionAura,fate,glimpse,bestow,intention,luck:pushLuck,bind,unbind,skill:x=>temporarySkill(x),expert:x=>temporarySkill(x,true),purify:x=>purify(x,'eparch'),voice:x=>purify(x,'archimandrite'),resonant:x=>purify(x,'resonant'),wolf:x=>companion(x,'wolf'),soul:x=>companion(x,'soul'),dragon:x=>companion(x,'dragon'),core:x=>spend(feature(x,'Core Intention')),release:x=>apply(x,'selkie-release','Selkie’s Release',[],null,{endConcentration:true}),ability:async x=>{const v=await choose('True Believer — spellcasting ability',[['int','Intelligence'],['wis','Wisdom']]);if(v){const i=x.items.find(i=>i.type==='subclass'&&i.getFlag(ID,'subclass')==='True Believer');await i.update({'system.spellcasting.ability':v});for(const spell of x.items.filter(s=>s.type==='spell'&&s.system.sourceClass==='rogue'))await spell.update({'system.ability':v});const wrath=feature(x,'Wrath of Divinity');if(wrath)for(const card of x.items.filter(s=>s.id===wrath.id||s.getFlag(ID,'parentIdentifier')===wrath.system.identifier)){const u={};for(const ac of card.system.activities??[])if(ac.type==='save')u[`system.activities.${ac.id}.save.dc.calculation`]=v;if(Object.keys(u).length)await card.update(u);}}}};}
 const busy = new Set();
 async function manage(){let a,locked=false;try{
  a=actor();if(busy.has(a.uuid))return;busy.add(a.uuid);locked=true;
- const options=[['inspect','Проверить персонажа и ресурсы'],['link','Добавить недостающие заклинания'],['end','Снять активный эффект модуля']];
+ const options=[['sync','Обновить карточки персонажа'],['end','Завершить эффект']];
  const add=(n,id,label)=>{if(has(a,n))options.push([id,label]);};
- add('Strength of One','rage','Provoked: ярость / соседние враги');add('Strength of One','points','Provoked Points');add('Enhanced Senses','senses','Enhanced Senses');add('Armor of the Ironwood','armor','Ironwood Armor');add('Colossus of the Ironwood','colossus','Colossus');add('Slip the Skin','slip','Slip the Skin');add('Avatar of the Archangel','avatar','Avatar of the Archangel');add('Wyrd Time','wyrd','Начать Wyrd Time');add('Wyrd Time','extend','Продлить Wyrd Time за 1 SP');add('Sevenfold Path','plate','Consecrated Plate');add('Sevenfold Path','virtues','Три добродетели');add('Aura of the Executioner','execution','Aura of the Executioner');add('Path of Fate','fate','Path of Fate');add('Glimpse the Future','glimpse','Glimpse: бросить 3d20');add('Bestow Fate','bestow','Bestow Fate: результат судьбы');add('Arcane Intentions','intention','Выбрать Dreamer / Seeker');add('Core Intention','core','Потратить Core Intention');add('Push Your Luck','luck','Push Your Luck');add('Wolf Companion','wolf','Создать / обновить волка');add('Companions from the Before','soul','Призвать Misplaced Soul');add('Dragon Soul','dragon','Подготовить форму дракона');add('Blood Binding','bind','Blood Binding: связать вассала');add('Blood Binding','unbind','Завершить Blood Binding');add('Eparch','skill','Hymnal Memory');add('Eparch','purify','Purifying Breath (bard)');add('Archimandrite','expert','Ancient Memory');add('Archimandrite','voice','Voice Beyond Flesh');add('Resonant Body','resonant','Purifying Breath (monk)');add('Spellcasting','ability','True Believer: Int / Wis');add('Selkie’s Release','release','Включить флаг Selkie’s Release после траты');
- if(game.user.isGM)options.push(['override','Указать UUID отсутствующего заклинания']);
- const action=await choose(a.name+' — подкласс',options,'Кнопки действуют только на выбранного персонажа. Проверяйте условия применения в описании фичи.');if(!action)return;
- const handlers={inspect,link:linkSpells,end:endEffect,rage,points:provokedPoints,senses,armor:ironArmor,colossus,slip,avatar,wyrd,extend:extendWyrd,plate,virtues,execution:executionAura,fate,glimpse,bestow,intention,luck:pushLuck,bind,unbind,skill:x=>temporarySkill(x),expert:x=>temporarySkill(x,true),purify:x=>purify(x,'eparch'),voice:x=>purify(x,'archimandrite'),resonant:x=>purify(x,'resonant'),wolf:x=>companion(x,'wolf'),soul:x=>companion(x,'soul'),dragon:x=>companion(x,'dragon'),core:x=>spend(feature(x,'Core Intention')),override:spellOverride,release:x=>apply(x,'selkie-release','Selkie’s Release',[],null,{endConcentration:true}),ability:async x=>{const v=await choose('True Believer — spellcasting ability',[['int','Intelligence'],['wis','Wisdom']]);if(v){const i=x.items.find(i=>i.type==='subclass'&&i.getFlag(ID,'subclass')==='True Believer');await i.update({'system.spellcasting.ability':v});const wrath=feature(x,'Wrath of Divinity');if(wrath){const u={};for(const ac of wrath.system.activities??[])if(ac.type==='save')u[`system.activities.${ac.id}.save.dc.calculation`]=v;if(Object.keys(u).length)await wrath.update(u);}}}};
+ add('Strength of One','rage','Provoked: ярость / соседние враги');add('Strength of One','points','Provoked Points');add('Enhanced Senses','senses','Enhanced Senses');add('Armor of the Ironwood','armor','Ironwood Armor');add('Colossus of the Ironwood','colossus','Colossus');add('Slip the Skin','slip','Slip the Skin');add('Avatar of the Archangel','avatar','Avatar of the Archangel');add('Wyrd Time','wyrd','Начать Wyrd Time');add('Wyrd Time','extend','Продлить Wyrd Time за 1 SP');add('Sevenfold Path','plate','Consecrated Plate');add('Sevenfold Path','virtues','Три добродетели');add('Aura of the Executioner','execution','Aura of the Executioner');add('Path of Fate','fate','Path of Fate');add('Glimpse the Future','glimpse','Glimpse: бросить 3d20');add('Bestow Fate','bestow','Bestow Fate: результат судьбы');add('Arcane Intentions','intention','Выбрать Dreamer / Seeker');add('Core Intention','core','Потратить Core Intention');add('Push Your Luck','luck','Push Your Luck');add('Wolf Companion','wolf','Создать / обновить волка');add('Companions from the Before','soul','Призвать Misplaced Soul');add('Dragon Soul','dragon','Подготовить форму дракона');add('Blood Binding','bind','Blood Binding: связать вассала');add('Blood Binding','unbind','Завершить Blood Binding');add('Eparch','skill','Hymnal Memory');add('Eparch','purify','Purifying Breath (bard)');add('Archimandrite','expert','Ancient Memory');add('Archimandrite','voice','Voice Beyond Flesh');add('Resonant Body','resonant','Purifying Breath (monk)');add('Spellcasting','ability','True Believer: Int / Wis');add('Selkie’s Release','release','Selkie’s Release');
+
+ const action=await choose(a.name+' — подкласс',options,'');if(!action)return;
+ const handlers={...actionHandlers(),sync:x=>game.modules.get(ID).api.syncCards(x)};
  await handlers[action](a);
 }catch(e){console.error(ID,e);ui.notifications.error(e.message);}finally{if(a&&locked)busy.delete(a.uuid);}}
 async function audit(){
  const errors=[],counts={};
- for(const name of ['grimnir','lyonesse','companions','macros']){
+ for(const name of ['grimnir','lyonesse','companions','macros','spells']){
   const p=game.packs.get(`${ID}.${name}`);if(!p){errors.push('Отсутствует pack '+name);continue;}
   const docs=await p.getDocuments();counts[name]=docs.length;
   for(const d of docs){try{d.validate({strict:true});}catch(e){errors.push(`${d.name}: ${e.message}`);}
-   if(d.type==='subclass')for(const ad of d.system.advancement??[])if(ad.type==='ItemGrant')for(const e of ad.configuration.items??[])if(!await fromUuid(e.uuid))errors.push(`${d.name}: broken UUID ${e.uuid}`);
+   if(['subclass','feat'].includes(d.type))for(const ad of d.system.advancement??[])if(ad.type==='ItemGrant')for(const e of ad.configuration.items??[])if(!await fromUuid(e.uuid))errors.push(`${d.name}: broken UUID ${e.uuid}`);
   }
  }
- return foundry.applications.api.DialogV2.wait({window:{title:'Grimnir / Lyonesse — проверка'},content:`<p>${esc(JSON.stringify(counts))}</p><pre style="white-space:pre-wrap">${esc(errors.join('\n')||'Ошибок схем и UUID не обнаружено. Это не проверка всех боевых взаимодействий.')}</pre>`,buttons:[{action:'ok',label:'Закрыть'}],rejectClose:false});
+ return foundry.applications.api.DialogV2.wait({window:{title:'Grimnir / Lyonesse — проверка'},content:`<p>${esc(JSON.stringify(counts))}</p><pre style="white-space:pre-wrap">${esc(errors.join('\n')||'Ошибок схем и UUID не обнаружено.')}</pre>`,buttons:[{action:'ok',label:'Закрыть'}],rejectClose:false});
 }
 Hooks.once('init',()=>{
- game.settings.register(ID,'spellUuids',{scope:'world',config:false,type:Object,default:{}});
- game.modules.get(ID).api={manage,audit,linkSpells};
+ game.modules.get(ID).api={manage,audit,useAction:async(a,name)=>{const handler=actionHandlers()[name];if(!handler)throw Error('Действие недоступно: '+name);return handler(a);}};
 });
 // A custom mode is limited to our explicit prefix; no global movement hooks.
 Hooks.on('applyActiveEffect',(a,c,current,delta,changes)=>{
@@ -291,12 +268,4 @@ Hooks.on('createActiveEffect',e=>{if(e.parent?.documentName==='Actor')cleanup(e.
 Hooks.on('updateWorldTime',()=>{if(primary())for(const a of game.actors)cleanup(a).catch(console.error);});
 Hooks.on('updateCombat',()=>{if(primary())for(const c of game.combat?.combatants??[])if(c.actor)cleanup(c.actor).catch(console.error);});
 Hooks.on('dnd5e.restCompleted',async(a,data)=>{if(!a.isOwner)return;const ids=a.effects.filter(e=>e.getFlag(ID,'rest')==='lr'&&data.longRest).map(e=>e.id);if(ids.length)await a.deleteEmbeddedDocuments('ActiveEffect',ids);});
-// Delayed resolving avoids racing native advancement creation. Only GM executes.
-const spellTimers=new Map();
-function queueSpells(item){if(!primary()||!item.actor||!['class','subclass'].includes(item.type))return;const a=item.actor;clearTimeout(spellTimers.get(a.uuid));spellTimers.set(a.uuid,setTimeout(()=>{spellTimers.delete(a.uuid);linkSpells(a).catch(e=>console.warn(ID,e));},1500));}
-Hooks.on('createItem',queueSpells);Hooks.on('updateItem',queueSpells);
-Hooks.once('ready',()=>{
- if(game.user.isGM && Number(game.release.generation)>=14)ui.notifications.warn('Grimnir / Lyonesse: версия собрана по API D&D5e 5.2.3 / Foundry 13. На Foundry 14 сначала выполните макрос проверки в тестовом мире.');
-});
-
 Hooks.on('dnd5e.endConcentration',async(a)=>{if(primary()&&a.effects.some(e=>e.getFlag(ID,'key')==='selkie-release')){await remove(a,'selkie-release');await remove(a,'slip-skin');}});

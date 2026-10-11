@@ -1,0 +1,69 @@
+{
+  "_id": "da7085bbf463d412",
+  "name": "Steadfast Will",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-open-book.svg",
+  "folder": "71e3d6e1e80dbb6c",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-college-of-the-voice-eparch-steadfast-will",
+    "description": {
+      "value": "<p>As an Eparch it is your duty to administer sacraments, govern college discipline, and guide liturgy. Your extensive training allows you to do the following:</p><p><strong>Steadfast Will.</strong> If you fail a saving throw, you can expend one of your Bardic Inspiration dice and add the number rolled to your saving throw result.</p><p><strong>Purifying Breath.</strong> You can expend one of your Bardic Inspiration dice to end one of the following conditions on yourself: Charmed, Frightened, Poisoned.</p><p><strong>Hymnal Memory.</strong> After you have finished a Long Rest, you can choose one skill and gain proficiency with it. You retain this proficiency until you finish another Long Rest.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "College of the Voice 6",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "88f5507526cf50bd": {
+        "_id": "88f5507526cf50bd",
+        "type": "utility",
+        "name": "Steadfast Will",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:bardic-inspiration",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "roll": {
+          "formula": "@scale.bard.inspiration",
+          "name": "Steadfast Will",
+          "visible": true,
+          "prompt": false
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-open-book.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "College of the Voice",
+      "parentFeature": "8ed5e926dc40a813",
+      "parentIdentifier": "lyonesse-college-of-the-voice-eparch",
+      "level": 6,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!da7085bbf463d412"
+}

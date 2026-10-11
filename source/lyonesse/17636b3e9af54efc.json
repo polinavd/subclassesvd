@@ -1,0 +1,77 @@
+{
+  "_id": "17636b3e9af54efc",
+  "name": "Powerful Shot: extra damage",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-walking-boot.svg",
+  "folder": "6548f4d360a0e760",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-outlaw-fleet-of-the-weald-powerful-shot-extra-damage",
+    "description": {
+      "value": "<p>You move through the wild as if it were your home.</p><p><strong>Swift Passage.</strong> Difficult Terrain doesn’t cost you extra movement.</p><p><strong>Climber.</strong> You gain a Climb Speed equal to your Speed.</p><p><strong>Powerful Shot.</strong> When you use Steady Aim using a Ranged weapon with the Heavy property, you may add an additional 1d6 to your Sneak Attack damage.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Outlaw 9",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "06c0fc9ddf82f535": {
+        "_id": "06c0fc9ddf82f535",
+        "type": "damage",
+        "name": "Powerful Shot: extra damage",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "1d6"
+              },
+              "types": [
+                "piercing"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ],
+          "onSave": "none",
+          "includeBase": false
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-walking-boot.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Outlaw",
+      "parentFeature": "f8c7b28f81527854",
+      "parentIdentifier": "lyonesse-outlaw-fleet-of-the-weald",
+      "level": 9,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!17636b3e9af54efc"
+}

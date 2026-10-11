@@ -2,10 +2,10 @@
   "_id": "0d37e8c5449ef67c",
   "name": "Oath of Saints",
   "type": "subclass",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-holy-grail.svg",
   "system": {
     "description": {
-      "value": "<p><b>2024 · Lyonesse</b></p><p>Перетащите подкласс на персонажа с соответствующим базовым классом. Для форм и спутников используйте макрос «Управление подклассом». Ограничения указаны в каждой способности.</p><p>Paladin<br>Oath of Saints<br>The Oath of Saints is sworn by those who would join the storied order of the Knights of Saints. These holy warriors commit themselves not only to the chivalric code, but also to the legacy of the saints who upheld it before them. A knight who lives the code with unwavering devotion may one day be counted among those saints, their name honored by generations to come. The<br>Knights of Saints embody the highest ideals of valor, faith, and moral excellence.<br>Chivalric Code<br>Charity. Protect the weak with mercy and compassion.<br>Courage. Face fear with steadfast heart.<br>Faith. Hold loyalty to the Maker above all.<br>Honor. Uphold truth and integrity even when unseen.<br>Hope. Trust in the ultimate triumph of righteousness.<br>Humility. Master pride through self-restraint.<br>Prudence. Discern the wise path amid turmoil.<br>Oath Ceremony<br>When a new knight is inaugurated into the order, the presiding knight touches a sword to each shoulder, charges the candidate to uphold the code, and invokes the blessing of the Maker and the saints. Only then does the initiate rise as a Knight of Saints.<br>The Seven-Sided Table<br>The order is forever limited to seven knights, each representing a facet of the chivalric code. Together, they serve the ruler who best embodies these virtues. Their oath binds them to that leader alone; when the ruler dies, the knights judge the successor. If the new sovereign fails to exemplify the code, the Knights of Saints depart in search of a worthier patron. Such times of transition are perilous, for rejected rulers often take offense, and vengeance, upon the knights who refuse them.<br>Level 3: Oath Spells<br>You gain Oath Spells at the listed levels and always have them prepared.<br>Oath Spells<br>Paladin Level<br>Spells<br>3<br>Bless, Compelled Duel<br>5<br>Prayer of Healing, Zone of Truth<br>9<br>Remove Curse, Revivify<br>13<br>Banishment, Guardian of Faith<br>17<br>Commune, Dispel Evil and Good<br>Level 3: Saintly Challenge<br>Challenge Without Hesitation. You can cast Compelled<br>Duel a number of times equal to your Strength Modifier without expending a spell slot. You regain all expended uses of this ability when you finish a Long Rest.<br>Unbroken Vow. Taking damage from the target of<br>Compelled Duel can’t break your Concentration on Compelled Duel.<br>Level 7: Judgment of the Anointed<br>Burning Edict. When you cast Compelled Duel on a creature and it fails its saving throw, you ignore all of that creature’s damage Resistances when you deal damage to it, in addition to the spell’s normal effects.<br>Saint’s Reprieve. When you must make a Death<br>Saving Throw, you may expend a use of your Channel<br>Divinity. If you do so, you regain Hit Points equal to your<br>Paladin level + the roll of your Death Saving Throw. Until the start of your next turn, you can use a Bonus action to make an attack with Advantage on the roll.<br>Level 15: Sevenfold Path<br>Consecrated Plate. When you finish a Long Rest, you can consecrate Half Plate Armor or Plate Armor. While wearing this Consecrated Plate, you gain Resistance to<br>Necrotic damage and your choice of either Bludgeoning,<br>Piercing, or Slashing damage and can change your choice when you finish another Long Rest.<br>Shield of the Seven Virtues. At the end of a Long or<br>Short Rest, choose up to three traits from the list below.<br>You and your allies gain these traits while in your Aura of<br>Protection.<br>Charity: Hostile creatures have Disadvantage on attack rolls against any ally in your aura who is Bloodied.<br>Faith: Advantage on Concentration checks.<br>Honor: When a creature in your aura is targeted by an attack, an ally adjacent to them can use their Reaction to impose Disadvantage on that attack.<br>Hope: Allies in your aura who are Bloodied gain +2 AC.<br>Humility: Advantage on Charisma saving throws.<br>Prudence: Advantage on Wisdom saving throws.<br>You retain the chosen traits until you finish another Long or Short Rest and choose new ones.<br>Squire<br>A Knight of Saints is expected to choose a squire when they reach level 7. This squire is to be trained as a possible successor. They are expected to maintain your armor, care for your mount, assist in daily life and train in martial skills.<br>Level 20: Saints that Came Before<br>The spirits of all saints that have come before you bolster you in your time of need.<br>Radiant Finality. When you cast Compelled Duel on a creature and it fails its saving throw, you have Advantage on attack rolls against that creature in addition to the spell’s normal effects. In addition, you can cast Compelled<br>Duel as part of the same Bonus Action used to cast a<br>Paladin spell that has “Smite” in its name and does not require Concentration.<br>Maker’s Bulwark. Your Consecrated Plate improves.<br>While you are wearing it you gain an additional +2 bonus to your Armor Class.</p>"
+      "value": "<p>The Oath of Saints is sworn by those who would join the storied order of the Knights of Saints. These holy warriors commit themselves not only to the chivalric code, but also to the legacy of the saints who upheld it before them. A knight who lives the code with unwavering devotion may one day be counted among those saints, their name honored by generations to come. The Knights of Saints embody the highest ideals of valor, faith, and moral excellence. Chivalric Code</p><p><strong>Charity.</strong> Protect the weak with mercy and compassion. Courage. Face fear with steadfast heart.</p><p><strong>Faith.</strong> Hold loyalty to the Maker above all.</p><p><strong>Honor.</strong> Uphold truth and integrity even when unseen.</p><p><strong>Hope.</strong> Trust in the ultimate triumph of righteousness.</p><p><strong>Humility.</strong> Master pride through self-restraint.</p><p><strong>Prudence.</strong> Discern the wise path amid turmoil. Oath Ceremony When a new knight is inaugurated into the order, the presiding knight touches a sword to each shoulder, charges the candidate to uphold the code, and invokes the blessing of the Maker and the saints. Only then does the initiate rise as a Knight of Saints. The Seven-Sided Table The order is forever limited to seven knights, each representing a facet of the chivalric code. Together, they serve the ruler who best embodies these virtues. Their oath binds them to that leader alone; when the ruler dies, the knights judge the successor. If the new sovereign fails to exemplify the code, the Knights of Saints depart in search of a worthier patron. Such times of transition are perilous, for rejected rulers often take offense, and vengeance, upon the knights who refuse them.</p>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -86,157 +86,6 @@
           "spell": null
         },
         "value": {}
-      },
-      {
-        "_id": "3d147fab75878312",
-        "type": "ItemGrant",
-        "level": 3,
-        "title": "Заклинания",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplBless00000",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": {
-            "ability": [
-              "cha"
-            ],
-            "method": "spell",
-            "prepared": 2,
-            "uses": {
-              "max": "",
-              "per": ""
-            }
-          }
-        },
-        "value": {}
-      },
-      {
-        "_id": "82380a6eb67ae2ae",
-        "type": "ItemGrant",
-        "level": 5,
-        "title": "Заклинания",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplPrayerofHe",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplZoneofTrut",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": {
-            "ability": [
-              "cha"
-            ],
-            "method": "spell",
-            "prepared": 2,
-            "uses": {
-              "max": "",
-              "per": ""
-            }
-          }
-        },
-        "value": {}
-      },
-      {
-        "_id": "4f15cee91685331a",
-        "type": "ItemGrant",
-        "level": 9,
-        "title": "Заклинания",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplRemoveCurs",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplRevivify00",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": {
-            "ability": [
-              "cha"
-            ],
-            "method": "spell",
-            "prepared": 2,
-            "uses": {
-              "max": "",
-              "per": ""
-            }
-          }
-        },
-        "value": {}
-      },
-      {
-        "_id": "89f9731e3f4c4252",
-        "type": "ItemGrant",
-        "level": 13,
-        "title": "Заклинания",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplBanishment",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplGuardianof",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": {
-            "ability": [
-              "cha"
-            ],
-            "method": "spell",
-            "prepared": 2,
-            "uses": {
-              "max": "",
-              "per": ""
-            }
-          }
-        },
-        "value": {}
-      },
-      {
-        "_id": "efdb8fdcae281ac5",
-        "type": "ItemGrant",
-        "level": 17,
-        "title": "Заклинания",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplCommune000",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDispelEvil",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": {
-            "ability": [
-              "cha"
-            ],
-            "method": "spell",
-            "prepared": 2,
-            "uses": {
-              "max": "",
-              "per": ""
-            }
-          }
-        },
-        "value": {}
       }
     ],
     "spellcasting": {
@@ -270,7 +119,8 @@
           "Commune",
           "Dispel Evil and Good"
         ]
-      }
+      },
+      "version": "0.2.0"
     }
   },
   "ownership": {

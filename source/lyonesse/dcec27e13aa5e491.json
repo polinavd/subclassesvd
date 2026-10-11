@@ -2,11 +2,11 @@
   "_id": "dcec27e13aa5e491",
   "name": "Holy Warrior",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-angel-outfit.svg",
   "system": {
     "identifier": "lyonesse-the-archangel-holy-warrior",
     "description": {
-      "value": "<p><b>The Archangel · уровень 3</b></p><p>You have Armor Training in Medium Armor and Shields.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+      "value": "<p>You have Armor Training in Medium Armor and Shields.</p>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,7 +22,8 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": []
   },
   "effects": [],
   "flags": {
@@ -32,9 +33,8 @@
       "feature": "Holy Warrior",
       "class": "warlock",
       "level": 3,
-      "notes": [
-        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
-      ]
+      "version": "0.2.0",
+      "children": []
     }
   },
   "ownership": {

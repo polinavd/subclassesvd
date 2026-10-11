@@ -1,0 +1,77 @@
+{
+  "_id": "27479c6f4562b2df",
+  "name": "Seeker: Disrupt Spellcasting",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-crystal-ball.svg",
+  "folder": "ff1c1188f5b8ad9f",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-cohesion-of-the-primal-foresaying-seeker-disrupt-spellcasting",
+    "description": {
+      "value": "<p>You can better see the connections between the past and the future.</p><p><strong>Dreamer:</strong> Stored Foresight. When you cast a Wizard spell of level 5 or lower using a spell slot with a casting time of an Action or longer and a range of Self, you can store it instead of gaining its effects. You can later cast the stored spell as a Bonus Action without expending a spell slot or consuming components. You can store only one spell at a time. You can use this feature a number of times equal to your Intelligence modifier, and regain all uses when you finish a Long Rest. Any stored spell fades at the end of a Long Rest.</p><p><strong>Seeker:</strong> Disrupt Spellcasting. When you hit a creature with a melee or ranged weapon attack, you may use a Bonus Action to force it to make an Intelligence saving throw against your spell save DC. On a failed save, the creature cannot cast spells or take the Magic action until the end of your next turn. You can use this feature a number of times equal to your Intelligence modifier, regaining all uses on a Long Rest.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Cohesion of the Primal 6",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "b3ec1f74e3d12769": {
+        "_id": "b3ec1f74e3d12769",
+        "type": "save",
+        "name": "Seeker: Disrupt Spellcasting",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:grimnir-cohesion-of-the-primal-foresaying",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "damage": {
+          "parts": [],
+          "onSave": "none",
+          "includeBase": false
+        },
+        "save": {
+          "ability": [
+            "int"
+          ],
+          "dc": {
+            "calculation": "int",
+            "formula": ""
+          }
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-crystal-ball.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Cohesion of the Primal",
+      "parentFeature": "8a145192da0c03d8",
+      "parentIdentifier": "grimnir-cohesion-of-the-primal-foresaying",
+      "level": 6,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!27479c6f4562b2df"
+}

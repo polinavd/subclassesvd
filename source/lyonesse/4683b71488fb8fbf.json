@@ -2,11 +2,11 @@
   "_id": "4683b71488fb8fbf",
   "name": "Wyrd Spells",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-hourglass.svg",
   "system": {
     "identifier": "lyonesse-wyrd-sorcery-wyrd-spells",
     "description": {
-      "value": "<p><b>Wyrd Sorcery · уровень 3</b></p><p>When you reach a Sorcerer level specified in the Wyrd<br>Spells table, you thereafter always have the listed spells prepared.<br>Wyrd Spells<br>Sorcerer Level<br>Spells<br>3<br>Augury, Disguise Self, Gentle Repose, Sleep<br>5<br>Haste, Slow<br>7<br>Divination, Hallucinatory Terrain<br>9<br>Legend Lore, Modify Memory</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+      "value": "<p>When you reach a Sorcerer level specified in the Wyrd Spells table, you thereafter always have the listed spells prepared.</p><table><thead><tr><th>Sorcerer Level</th><th>Spells</th></tr></thead><tbody><tr><td>3</td><td>Augury, Disguise Self, Gentle Repose, Sleep</td></tr><tr><td>5</td><td>Haste, Slow</td></tr><tr><td>7</td><td>Divination, Hallucinatory Terrain</td></tr><tr><td>9</td><td>Legend Lore, Modify Memory</td></tr></tbody></table><ul><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.16b934f074d95baa]{Augury}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.eb7c8dd39c6b8f97]{Disguise Self}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.b268604385cd826e]{Gentle Repose}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.3534198920129759]{Sleep}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.08d8fba13e9f68e2]{Haste}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.ff4c8079b28ddfd0]{Slow}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.b7342a031c4c6cd8]{Divination}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.ccbe70ce90aaac70]{Hallucinatory Terrain}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.8916a8a76a24c68a]{Legend Lore}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.5791086151475c98]{Modify Memory}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,7 +22,101 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "0946fbf23003285c",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.16b934f074d95baa",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.eb7c8dd39c6b8f97",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.b268604385cd826e",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.3534198920129759",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "33311e694f593d4a",
+        "type": "ItemGrant",
+        "level": 5,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.08d8fba13e9f68e2",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.ff4c8079b28ddfd0",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "f3b1453b900be5b2",
+        "type": "ItemGrant",
+        "level": 7,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.b7342a031c4c6cd8",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.ccbe70ce90aaac70",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "20acc509b0056ef8",
+        "type": "ItemGrant",
+        "level": 9,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.8916a8a76a24c68a",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.5791086151475c98",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ]
   },
   "effects": [],
   "flags": {
@@ -32,8 +126,48 @@
       "feature": "Wyrd Spells",
       "class": "sorcerer",
       "level": 3,
-      "notes": [
-        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.16b934f074d95baa",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.eb7c8dd39c6b8f97",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.b268604385cd826e",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.3534198920129759",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.08d8fba13e9f68e2",
+          "level": 5
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.ff4c8079b28ddfd0",
+          "level": 5
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.b7342a031c4c6cd8",
+          "level": 7
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.ccbe70ce90aaac70",
+          "level": 7
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.8916a8a76a24c68a",
+          "level": 9
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.5791086151475c98",
+          "level": 9
+        }
       ]
     }
   },

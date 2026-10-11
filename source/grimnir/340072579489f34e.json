@@ -1,0 +1,55 @@
+{
+  "_id": "340072579489f34e",
+  "name": "Wolf Companion",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-wolf-head.svg",
+  "folder": "ced440b7e6bd78b1",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-wolf-rider-wolf-companion-wolf-companion",
+    "description": {
+      "value": "<p>A Grimnir Wolf chooses you as its rider. It is friendly to you and your allies, and it obeys your commands. See its game statistics in the accompanying Grimnir Wolf stat block, which uses your Proficiency Bonus (PB) in several places.</p><p><strong>Your Wolf in Combat.</strong> In combat, the wolf acts during your turn. It can move and use its Reaction on its own, but the only action it takes is the Dodge action unless you take a Bonus Action to command it to take an action in its stat block or some other action. You can also sacrifice one of your attacks when you take the Attack action to command the wolf to take the Bite action. If you have the Incapacitated condition, the wolf acts on its own and isn’t limited to the Dodge action.</p><p><strong>Bonded Soul.</strong> You and your wolf share limited telepathy out to 120 feet. The wolf can move stealthily at a normal pace while within 10 feet of you.</p><p><strong>Bonded Commands.</strong> When you cast the Hunter’s Mark spell without expending a spell slot or move the mark to a new creature, you can command your Grimnir Wolf as part of the same Bonus Action. In addition, you gain certain benefits when you give your wolf the Dodge or Help commands.</p><p><strong>Dodge:</strong> If the wolf takes the Dodge action and remains within 10 feet of you, attack rolls against you have Disadvantage until the start of your next turn.</p><p><strong>Help:</strong> When the wolf uses the Help action to assist you in attacking a creature, your next attack against that creature scores a Critical Hit on a roll of 18- 20 on the d20.</p><p><strong>If Your Wolf Dies.</strong> You must bury its remains. If you do not have access to its remains you must spend an hour carving a totem and bury that instead. After you finish a Long Rest, it returns to life at full Hit Points from beneath the earth.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Wolf Rider 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "c9be4f8b29ecc4c1": {
+        "_id": "c9be4f8b29ecc4c1",
+        "name": "Wolf Companion",
+        "type": "utility",
+        "activation": {
+          "type": "",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-wolf-head.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Wolf Rider",
+      "parentFeature": "2209e315b40ffb5e",
+      "parentIdentifier": "grimnir-wolf-rider-wolf-companion",
+      "level": 3,
+      "version": "0.2.0",
+      "execute": "wolf"
+    }
+  },
+  "_key": "!items!340072579489f34e"
+}

@@ -2,11 +2,11 @@
   "_id": "75c5014885768158",
   "name": "False Gods",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-holy-symbol.svg",
   "system": {
     "identifier": "grimnir-true-believer-false-gods",
     "description": {
-      "value": "<p><b>True Believer · уровень 3</b></p><p>Your devotion and secrecy sharpen your understanding of other faiths. You gain proficiency in one of the following skills: Deception, History, or Religion.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+      "value": "<p>Your devotion and secrecy sharpen your understanding of other faiths. You gain proficiency in one of the following skills: Deception, History, or Religion.</p>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -22,7 +22,8 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": []
   },
   "effects": [],
   "flags": {
@@ -32,9 +33,8 @@
       "feature": "False Gods",
       "class": "rogue",
       "level": 3,
-      "notes": [
-        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
-      ]
+      "version": "0.2.0",
+      "children": []
     }
   },
   "ownership": {

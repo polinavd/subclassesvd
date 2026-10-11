@@ -2,11 +2,11 @@
   "_id": "096aa1e5435c94fc",
   "name": "Dangerous Beast",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-wolf-head.svg",
   "system": {
     "identifier": "grimnir-wolf-rider-dangerous-beast",
     "description": {
-      "value": "<p><b>Wolf Rider · уровень 11</b></p><p>You and your wolf strike together with coordination.<br>Lethal Pack. If your wolf uses the Help action to aid you, your next attack against that target scores a Critical<br>Hit on a 17–20. If you use the Help action to aid the wolf, its next attack scores a Critical Hit on a 15–20.<br>Wolf Aspect. Your wolf gains one aspect. You can change the chosen aspect after a Long Rest.<br>Frost Wolf: Your wolf adds 1d4 Frost damage to each of its attacks. Once per turn, the wolf can reroll its damage and use either result.<br>Forest Wolf: The wolf and all allies within 15 feet have<br>Advantage on Initiative rolls.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Спутник и масштабирование — макрос управления. Условные совместные атаки, Help/Dodge, защита рядом и перехват смерти — вручную.</li></ul>"
+      "value": "<p>You and your wolf strike together with coordination.</p><p><strong>Lethal Pack.</strong> If your wolf uses the Help action to aid you, your next attack against that target scores a Critical Hit on a 17–20. If you use the Help action to aid the wolf, its next attack scores a Critical Hit on a 15–20.</p><p><strong>Wolf Aspect.</strong> Your wolf gains one aspect. You can change the chosen aspect after a Long Rest.</p><p><strong>Frost Wolf:</strong> Your wolf adds 1d4 Frost damage to each of its attacks. Once per turn, the wolf can reroll its damage and use either result.</p><p><strong>Forest Wolf:</strong> The wolf and all allies within 15 feet have Advantage on Initiative rolls.</p>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -22,7 +22,8 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": []
   },
   "effects": [],
   "flags": {
@@ -32,9 +33,8 @@
       "feature": "Dangerous Beast",
       "class": "ranger",
       "level": 11,
-      "notes": [
-        "Спутник и масштабирование — макрос управления. Условные совместные атаки, Help/Dodge, защита рядом и перехват смерти — вручную."
-      ]
+      "version": "0.2.0",
+      "children": []
     }
   },
   "ownership": {

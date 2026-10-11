@@ -1,0 +1,55 @@
+{
+  "_id": "ce9f55177b6657e4",
+  "name": "Blood Binding — End",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-chained-heart.svg",
+  "folder": "07dd67ea748f54e0",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-spellbinder-blood-binding-blood-binding-end",
+    "description": {
+      "value": "<p>When you cast a Summon spell from the Wizard spell list, you can choose to make the creature summoned your Vassal. Each time you summon your Vassal, including the initial summons, you must reduce your Hit Point maximum by an amount equal to twice the level of the Summon spell. This Hit Point reduction lasts as long as you Concentrate on the spell. Whenever you cast the same Summon spell again, you can choose to have the same Vassal return, drawn from your Amulet of Binding. You can have one Vassal per Wizard Summon spell. A Vassal adds your Intelligence modifier as additional damage when they deal damage with an attack. They understand your speech regardless of language and can telepathically communicate with you within 60 feet.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Spellbinder 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "20ae18fecdfebf71": {
+        "_id": "20ae18fecdfebf71",
+        "name": "Blood Binding — End",
+        "type": "utility",
+        "activation": {
+          "type": "",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-chained-heart.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Spellbinder",
+      "parentFeature": "e1fc735dacca9e81",
+      "parentIdentifier": "lyonesse-spellbinder-blood-binding",
+      "level": 3,
+      "version": "0.2.0",
+      "execute": "unbind"
+    }
+  },
+  "_key": "!items!ce9f55177b6657e4"
+}

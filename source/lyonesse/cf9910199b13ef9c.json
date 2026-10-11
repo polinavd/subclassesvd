@@ -2,10 +2,10 @@
   "_id": "cf9910199b13ef9c",
   "name": "College of the Voice",
   "type": "subclass",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/skoll-sound-waves.svg",
   "system": {
     "description": {
-      "value": "<p><b>2024 · Lyonesse</b></p><p>Перетащите подкласс на персонажа с соответствующим базовым классом. Для форм и спутников используйте макрос «Управление подклассом». Ограничения указаны в каждой способности.</p><p>Bard<br>College of the Voice<br>There are bards who speak to entertain, and there are those whose words command obedience. The College of the Voice traces its lineage to an ancient order devoted to preserving divine truth through sound. To them, the voice was not merely a gift, it was a key to the soul.<br>Initiates are chosen young, tested for clarity of tone, memory, and self-control. They spend years in cloisters of silence, learning to still the body and discipline the mind.<br>Through meditation and ritual speech, they master the art of persuasion so completely that their words seem to bypass reason and pierce directly into the heart. Many emerge as scholars or advisors to the powerful. Others wander the world, seeking those who might be turned toward enlightenment.<br>Members of the College of the Voice believe that every utterance carries spiritual weight. They train to infuse their words with conviction and power. In combat, they can command enemies to falter or obey through subtle harmonics. In peace, their presence alone can sway the hearts of crowds or unravel the secrets of the unwilling.<br>Though their order preaches humility and service, few who hear a true Voice forget the sense of awe that follows.<br>Level 3: Cantor<br>As a Cantor, you lead the song of the congregation, guiding chants, hymns, and responses. You maintain correct liturgical melodies.<br>You gain proficiency in History, Insight, and Religion.<br>If you are already proficient in one of these skills, you can instead choose another skill from the Bard skill list.<br>Level 3: Maker Domain Spells<br>Your connection to the Song of the Maker ensures you always have certain spells ready. When you reach a Bard level specified in the Maker Domain Spells table, you thereafter always have the listed spells prepared.<br>When you cast a spell from the Maker Domain Spells table you only need to use the Verbal component.<br>Maker Domain Spells<br>Bard Level<br>Prepared Spells<br>3<br>Command, Healing Word, Suggestion,<br>Zone of Truth<br>5<br>Fear, Mass Healing Word<br>7<br>Compulsion, Phantasmal Killer<br>9<br>Dominate Person, Geas<br>Level 3: Domain Verse<br>When you cast a spell from the Maker Domain Spells table, you can expend one or more of your Bardic Inspiration dice to improve the power of the spell. This can be done in two ways.<br>Saving Throw Adjustment. If the spell requires the target to make a saving throw and the target succeeds on its saving throw, you can expend one of your Bardic Inspiration dice and reduce the saving throw of the target by the number rolled. You can expend more than one Bardic<br>Inspiration dice if there are additional targets, using each additional roll on a single target. When you expend a Bardic Inspiration die on a creature and the roll is not high enough to change the outcome, the die is not expended.<br>Healing Enhancement. If the spell restores Hit<br>Points, you can expend one of your Bardic Inspiration dice and add the number rolled to the amount of Hit<br>Points restored. In addition, if the spell is a single target spell, the target gains Temporary Hit Points equal to the number rolled.<br>Level 6: Eparch<br>As an Eparch it is your duty to administer sacraments, govern college discipline, and guide liturgy. Your extensive training allows you to do the following:<br>Steadfast Will. If you fail a saving throw, you can expend one of your Bardic Inspiration dice and add the number rolled to your saving throw result.<br>Purifying Breath. You can expend one of your Bardic<br>Inspiration dice to end one of the following conditions on yourself: Charmed, Frightened, Poisoned.<br>Hymnal Memory. After you have finished a Long Rest, you can choose one skill and gain proficiency with it. You retain this proficiency until you finish another Long Rest.<br>Level 14: Archimandrite<br>As an Archimandrite it is your duty to safeguard doctrine and liturgical life. You have mastered all aspects of training within the College.<br>Ancient Memory. After a Long Rest you can choose one skill and gain Expertise with it. You do not need to be proficient with this skill. You retain this expertise until you finish another Long Rest.<br>Voice Beyond Flesh. You can expend one of your Bardic Inspiration dice to end one of the following conditions on yourself: Incapacitated, Paralyzed, Stunned.<br>Voice That Binds. When you cast Geas, the casting time is 1 round. While a creature is affected by your Geas, it has Disadvantage on saving throws against your spells.<br>If it takes damage for defying your command, add your<br>Bard level to that damage.<br>Voice that Humbles. A creature Charmed by your<br>Compulsion spell falls Prone at the end of any movement it takes on its turn, unless you choose for it to remain standing (no action required).</p>"
+      "value": "<p>There are bards who speak to entertain, and there are those whose words command obedience. The College of the Voice traces its lineage to an ancient order devoted to preserving divine truth through sound. To them, the voice was not merely a gift, it was a key to the soul. Initiates are chosen young, tested for clarity of tone, memory, and self-control. They spend years in cloisters of silence, learning to still the body and discipline the mind. Through meditation and ritual speech, they master the art of persuasion so completely that their words seem to bypass reason and pierce directly into the heart. Many emerge as scholars or advisors to the powerful. Others wander the world, seeking those who might be turned toward enlightenment. Members of the College of the Voice believe that every utterance carries spiritual weight. They train to infuse their words with conviction and power. In combat, they can command enemies to falter or obey through subtle harmonics. In peace, their presence alone can sway the hearts of crowds or unravel the secrets of the unwilling. Though their order preaches humility and service, few who hear a true Voice forget the sense of awe that follows.</p>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -90,138 +90,6 @@
           "spell": null
         },
         "value": {}
-      },
-      {
-        "_id": "6b40f77af784caed",
-        "type": "ItemGrant",
-        "level": 3,
-        "title": "Заклинания",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplCommand000",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplHealingWor",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSuggestion",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplZoneofTrut",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": {
-            "ability": [
-              "cha"
-            ],
-            "method": "spell",
-            "prepared": 2,
-            "uses": {
-              "max": "",
-              "per": ""
-            }
-          }
-        },
-        "value": {}
-      },
-      {
-        "_id": "a5a970f8d49abb98",
-        "type": "ItemGrant",
-        "level": 5,
-        "title": "Заклинания",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFear000000",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplMassHealin",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": {
-            "ability": [
-              "cha"
-            ],
-            "method": "spell",
-            "prepared": 2,
-            "uses": {
-              "max": "",
-              "per": ""
-            }
-          }
-        },
-        "value": {}
-      },
-      {
-        "_id": "e9428925beab11e2",
-        "type": "ItemGrant",
-        "level": 7,
-        "title": "Заклинания",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplCompulsion",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplPhantasmal",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": {
-            "ability": [
-              "cha"
-            ],
-            "method": "spell",
-            "prepared": 2,
-            "uses": {
-              "max": "",
-              "per": ""
-            }
-          }
-        },
-        "value": {}
-      },
-      {
-        "_id": "8aa6bcfe3b369520",
-        "type": "ItemGrant",
-        "level": 9,
-        "title": "Заклинания",
-        "configuration": {
-          "items": [
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDominatePe",
-              "optional": false
-            },
-            {
-              "uuid": "Compendium.dnd5e.spells24.Item.phbsplGeas000000",
-              "optional": false
-            }
-          ],
-          "optional": false,
-          "spell": {
-            "ability": [
-              "cha"
-            ],
-            "method": "spell",
-            "prepared": 2,
-            "uses": {
-              "max": "",
-              "per": ""
-            }
-          }
-        },
-        "value": {}
       }
     ],
     "spellcasting": {
@@ -253,7 +121,8 @@
           "Dominate Person",
           "Geas"
         ]
-      }
+      },
+      "version": "0.2.0"
     }
   },
   "ownership": {

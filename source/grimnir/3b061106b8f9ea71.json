@@ -1,0 +1,63 @@
+{
+  "_id": "3b061106b8f9ea71",
+  "name": "Withdraw",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/willdabeast-round-shield.svg",
+  "folder": "8873c3624dd55b20",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-marauder-withdraw-withdraw",
+    "description": {
+      "value": "<p>While wielding a Shield, you can take a Reaction to reduce the damage of an attack by half your Fighter level (rounded down) plus your Constitution modifier (minimum of 1).</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Marauder 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "4ba3ebea8daa777d": {
+        "_id": "4ba3ebea8daa777d",
+        "type": "utility",
+        "name": "Withdraw",
+        "activation": {
+          "type": "reaction",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "roll": {
+          "formula": "max(1, floor(@classes.fighter.levels / 2) + @abilities.con.mod)",
+          "name": "Снижение урона",
+          "visible": true,
+          "prompt": false
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/willdabeast-round-shield.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Marauder",
+      "parentFeature": "d1c0ed7462f768b1",
+      "parentIdentifier": "grimnir-marauder-withdraw",
+      "level": 3,
+      "version": "0.2.0"
+    }
+  },
+  "_key": "!items!3b061106b8f9ea71"
+}

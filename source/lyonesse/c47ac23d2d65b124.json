@@ -1,0 +1,64 @@
+{
+  "_id": "c47ac23d2d65b124",
+  "name": "Selkie’s Release",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-water-splash.svg",
+  "folder": "41003cfc479a6160",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-selkie-warden-selkie-s-release-selkie-s-release",
+    "description": {
+      "value": "<p>When you cast Hunter’s Mark, you can partially assume the form of the bound selkie. This form lasts until Hunter’s Mark ends. Once you use this feature, you can’t use it again until you finish a Long Rest unless you expend a level 4+ spell slot (no action required). While in this form, you gain the following benefits:</p><p><strong>Call of the Sea.</strong> You can take a Bonus Action to call forth a geyser of water along the ground in a 50-foot long, 5-foot Wide, 5-foot tall Line. Ranged attacks passing through the wall have Disadvantage and creatures have Resistance to Fire damage from effects that pass through the wall. The wall is Difficult Terrain, but creatures can swim through it. The geyser remains until the spell ends or another geyser is called.</p><p><strong>Drowning Grasp.</strong> When you mark a creature with your Hunter’s Mark, it makes a Strength saving throw. On a failure it has the Restrained condition. While restrained in this way, it cannot breathe unless it can breathe underwater. The marked creature repeats the save at the end of each of its turns, ending the condition on a success.</p><p><strong>Fluid Body.</strong> Your Slip of the Skin improves, transforming you into a semi-transparent liquid. While your Slip of the Skin is active, you have Immunity to the Grappled, Prone, and Restrained conditions. In addition, when you move through a creature’s space, it takes Cold damage equal to your Ranger level once per turn and you can move through any space as small as an inch. If you end your movement inside a space occupied by a creature or inside an object, you take 1d10 Force damage and are shunted to the nearest unoccupied space.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Selkie Warden 15",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "de72c673856c1ade": {
+        "_id": "de72c673856c1ade",
+        "type": "utility",
+        "name": "Selkie’s Release",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:lyonesse-selkie-warden-selkie-s-release",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-water-splash.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Selkie Warden",
+      "parentFeature": "e0560957f8c7c40a",
+      "parentIdentifier": "lyonesse-selkie-warden-selkie-s-release",
+      "level": 15,
+      "version": "0.2.0",
+      "execute": "release"
+    }
+  },
+  "_key": "!items!c47ac23d2d65b124"
+}

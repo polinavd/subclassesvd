@@ -2,11 +2,11 @@
   "_id": "cd90b424c0b2e768",
   "name": "Discovery Domain Spells",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-compass.svg",
   "system": {
     "identifier": "lyonesse-discovery-domain-discovery-domain-spells",
     "description": {
-      "value": "<p><b>Discovery Domain · уровень 3</b></p><p>Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Discovery Domain Spells table, you thereafter always have the listed spells prepared.<br>Discovery Domain Spells<br>Cleric Level<br>Spells<br>3<br>Augury, Expeditious Retreat, Fog Cloud,<br>Pass Without Trace<br>5<br>Clairvoyance, Haste<br>7<br>Control Water, Locate Creature<br>9<br>Commune, Passwall</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+      "value": "<p>Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Discovery Domain Spells table, you thereafter always have the listed spells prepared.</p><table><thead><tr><th>Cleric Level</th><th>Spells</th></tr></thead><tbody><tr><td>3</td><td>Augury, Expeditious Retreat, Fog Cloud, Pass without Trace</td></tr><tr><td>5</td><td>Clairvoyance, Haste</td></tr><tr><td>7</td><td>Control Water, Locate Creature</td></tr><tr><td>9</td><td>Commune, Passwall</td></tr></tbody></table><ul><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.021fda1a8ad59ac5]{Augury}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.12d9ec060b3e4ff0]{Expeditious Retreat}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.8100b144caa7854a]{Fog Cloud}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.5b4ec3dc0acbe413]{Pass without Trace}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.48363bb2c58f041e]{Clairvoyance}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.d98d8d8a1c70d845]{Haste}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.a595cc6dcc4c748d]{Control Water}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.fd0697018a5cabc2]{Locate Creature}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.b788f9ee4c4abb71]{Commune}</li><li>@UUID[Compendium.grimnir-lyonesse.spells.Item.bc3de919d0e3902b]{Passwall}</li></ul>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -22,7 +22,101 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {}
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "4f0bb09614ec1292",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.021fda1a8ad59ac5",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.12d9ec060b3e4ff0",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.8100b144caa7854a",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.5b4ec3dc0acbe413",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "6950dab812ea2d27",
+        "type": "ItemGrant",
+        "level": 5,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.48363bb2c58f041e",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.d98d8d8a1c70d845",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "60a6fe5f7768f96f",
+        "type": "ItemGrant",
+        "level": 7,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.a595cc6dcc4c748d",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.fd0697018a5cabc2",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "ee10827ac843a71f",
+        "type": "ItemGrant",
+        "level": 9,
+        "title": "Spells",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.b788f9ee4c4abb71",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.spells.Item.bc3de919d0e3902b",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ]
   },
   "effects": [],
   "flags": {
@@ -32,8 +126,48 @@
       "feature": "Discovery Domain Spells",
       "class": "cleric",
       "level": 3,
-      "notes": [
-        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.021fda1a8ad59ac5",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.12d9ec060b3e4ff0",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.8100b144caa7854a",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.5b4ec3dc0acbe413",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.48363bb2c58f041e",
+          "level": 5
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.d98d8d8a1c70d845",
+          "level": 5
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.a595cc6dcc4c748d",
+          "level": 7
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.fd0697018a5cabc2",
+          "level": 7
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.b788f9ee4c4abb71",
+          "level": 9
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.spells.Item.bc3de919d0e3902b",
+          "level": 9
+        }
       ]
     }
   },

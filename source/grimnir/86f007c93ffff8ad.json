@@ -2,11 +2,11 @@
   "_id": "86f007c93ffff8ad",
   "name": "Forked Destiny",
   "type": "feat",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-lightning-tree.svg",
   "system": {
     "identifier": "grimnir-way-of-the-wanderer-forked-destiny",
     "description": {
-      "value": "<p><b>Way of the Wanderer · уровень 6</b></p><p>You can spend Focus Points on powers associated with either Order or Mayhem.<br>Order Powers<br>Final Punch. As a Bonus Action after hitting a creature with an attack, you can spend 3 Focus points to force it to make a Charisma saving throw or be transported to a harmless demiplane. While there, the target has the Incapacitated condition. At the end of its next turn, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. You can’t use this power again until you roll Initiative.<br>The Lone Wanderer<br>In all the long history of Grimnir, there has only ever been one Wanderer at a time. The tradition is not a monastery or a brotherhood. It is a solitary mantle passed from teacher to student when fate decides the moment is right. Each Wanderer inherits not only techniques but a burden: to walk the world as the silent counterweight that keeps its destiny from tipping into catastrophe.<br>A Wanderer is marked from an early age by omens that others fail to see, and by an instinctive understanding that the future is never fixed. Their meditations reveal glimpses of unseen cords threading through all living things, binding past and future in ways only they can sense.<br>They serve no clan and swear no oath to any god. This neutrality makes them unsettling to raiders and even to the völv, who regard them with a mixture of reverence and fear. For a Wanderer knows a truth most would rather ignore: every action creates imbalance elsewhere.<br>To save one life may condemn another; to destroy a threat may unleash a greater one.<br>To a Wanderer, fate is a woven cord, and every choice plucks at its strands. Balance is not peace, nor is it gentleness. It is the willingness to act when others hesitate, and to accept that even righteous deeds carry hidden costs.<br>If your DM allows it, you can play as an older<br>Wanderer who has taken a young student under their wing. This student doesn’t accompany you on adventures but is waiting to be trained during downtime.<br>Weather<br>When you enter battle, fate reshapes the world. For a mile around you, the weather changes to match your chosen style. Mayhem unleashes violent storms of wind, lightning, and pelting rain or ice. Order brings crushing stillness, with no wind, harsh sunlight, and total silence as even animals refuse to make sound. Only in Balance does the world behave as nature intends.<br>This change in weather lasts for an hour.<br>Twist of Fate. When a creature within 5 feet takes damage from a melee attack, you can spend 2 Focus points and use your Reaction to reduce the damage by your Monk level plus your Wisdom modifier. Your Unarmed Strikes deal an extra 1d6 Radiant damage until the end of your next turn.<br>Mayhem Powers<br>Lightning Leap. As a Bonus Action, you can spend 2<br>Focus points to teleport up to 60 feet to a space you can see. Your Unarmed Strikes this turn deal an extra 1d6<br>Lightning damage.<br>Steal Fate. As a Bonus Action, you can spend 4 Focus points to swap Initiative positions with a creature you can see within 60 feet. You can’t use this power again until you roll Initiative. A creature can’t take two turns in a round as a result of this effect, and if a creature would lose its turn this round as a result of this effect, it takes its turn immediately after your turn this round.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Телепортация, очередь ходов, лимиты до инициативы, демиплан и окончание бонусного урона — вручную.</li></ul>"
+      "value": "<p>You can spend Focus Points on powers associated with either Order or</p><p><strong>Mayhem.</strong> Order Powers</p><p><strong>Final Punch.</strong> As a Bonus Action after hitting a creature with an attack, you can spend 3 Focus points to force it to make a Charisma saving throw or be transported to a harmless demiplane. While there, the target has the Incapacitated condition. At the end of its next turn, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. You can’t use this power again until you roll Initiative.</p><p><strong>Twist of Fate.</strong> When a creature within 5 feet takes damage from a melee attack, you can spend 2 Focus points and use your Reaction to reduce the damage by your Monk level plus your Wisdom modifier. Your Unarmed Strikes deal an extra 1d6 Radiant damage until the end of your next turn. Mayhem Powers</p><p><strong>Lightning Leap.</strong> As a Bonus Action, you can spend 2 Focus points to teleport up to 60 feet to a space you can see. Your Unarmed Strikes this turn deal an extra 1d6 Lightning damage.</p><p><strong>Steal Fate.</strong> As a Bonus Action, you can spend 4 Focus points to swap Initiative positions with a creature you can see within 60 feet. You can’t use this power again until you roll Initiative. A creature can’t take two turns in a round as a result of this effect, and if a creature would lose its turn this round as a result of this effect, it takes its turn immediately after your turn this round.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.c3261cf0e1fedb3f]{Final Punch}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.42221d227c0bd947]{Twist of Fate}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.cb203a1b5fb3495f]{Lightning Leap}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.5c04f1718ee3d9ab]{Steal Fate}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.c7e0296e5ebfb0e0]{Twist of Fate: extra damage}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.c7d101843e2293a4]{Lightning Leap: extra damage}</li></ul>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -22,243 +22,52 @@
       "spent": 0,
       "recovery": []
     },
-    "activities": {
-      "d7691bc7b79b8e8b": {
-        "_id": "d7691bc7b79b8e8b",
-        "type": "save",
-        "name": "Final Punch",
-        "activation": {
-          "type": "bonus",
-          "value": 1
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+    "activities": {},
+    "advancement": [
+      {
+        "_id": "8e9f73c4d53124ae",
+        "type": "ItemGrant",
+        "level": 6,
+        "title": "Actions",
+        "configuration": {
+          "items": [
             {
-              "type": "itemUses",
-              "target": "feat:monks-focus",
-              "value": "3"
-            }
-          ]
-        },
-        "effects": [
-          {
-            "_id": "22abd28c9b3e6282"
-          }
-        ],
-        "description": {
-          "chatFlavor": ""
-        },
-        "damage": {
-          "parts": [],
-          "onSave": "none",
-          "includeBase": false
-        },
-        "save": {
-          "ability": [
-            "cha"
-          ],
-          "dc": {
-            "calculation": "wis",
-            "formula": ""
-          }
-        }
-      },
-      "79e5379ac0ada4e7": {
-        "_id": "79e5379ac0ada4e7",
-        "type": "utility",
-        "name": "Twist of Fate",
-        "activation": {
-          "type": "reaction",
-          "value": 1
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.c3261cf0e1fedb3f",
+              "optional": false
+            },
             {
-              "type": "itemUses",
-              "target": "feat:monks-focus",
-              "value": "2"
-            }
-          ]
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "range": {
-          "value": "5",
-          "units": "ft"
-        },
-        "target": {
-          "affects": {
-            "type": "creature",
-            "count": "1"
-          },
-          "template": {
-            "type": ""
-          }
-        },
-        "roll": {
-          "formula": "@classes.monk.levels + @abilities.wis.mod",
-          "name": "Twist of Fate",
-          "visible": true,
-          "prompt": false
-        }
-      },
-      "aacdce839ca3bb33": {
-        "_id": "aacdce839ca3bb33",
-        "type": "utility",
-        "name": "Lightning Leap",
-        "activation": {
-          "type": "bonus",
-          "value": 1
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.42221d227c0bd947",
+              "optional": false
+            },
             {
-              "type": "itemUses",
-              "target": "feat:monks-focus",
-              "value": "2"
-            }
-          ]
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "range": {
-          "value": "60",
-          "units": "ft"
-        },
-        "target": {
-          "affects": {
-            "type": "creature",
-            "count": "1"
-          },
-          "template": {
-            "type": ""
-          }
-        }
-      },
-      "26766b813e8125c9": {
-        "_id": "26766b813e8125c9",
-        "type": "utility",
-        "name": "Steal Fate",
-        "activation": {
-          "type": "bonus",
-          "value": 1
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": [
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.cb203a1b5fb3495f",
+              "optional": false
+            },
             {
-              "type": "itemUses",
-              "target": "feat:monks-focus",
-              "value": "4"
-            }
-          ]
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "range": {
-          "value": "60",
-          "units": "ft"
-        },
-        "target": {
-          "affects": {
-            "type": "creature",
-            "count": "1"
-          },
-          "template": {
-            "type": ""
-          }
-        }
-      },
-      "88202a25f1b85baa": {
-        "_id": "88202a25f1b85baa",
-        "type": "damage",
-        "name": "Twist of Fate: extra damage",
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "consumption": {
-          "spellSlot": false,
-          "targets": []
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "damage": {
-          "parts": [
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.5c04f1718ee3d9ab",
+              "optional": false
+            },
             {
-              "custom": {
-                "enabled": true,
-                "formula": "1d6"
-              },
-              "types": [
-                "radiant"
-              ],
-              "scaling": {
-                "mode": "",
-                "number": null,
-                "formula": ""
-              }
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.c7e0296e5ebfb0e0",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.c7d101843e2293a4",
+              "optional": false
             }
           ],
-          "onSave": "none",
-          "includeBase": false
-        }
-      },
-      "fe2e095c13a4cafb": {
-        "_id": "fe2e095c13a4cafb",
-        "type": "damage",
-        "name": "Lightning Leap: extra damage",
-        "activation": {
-          "type": "",
-          "value": null
+          "optional": false,
+          "spell": null
         },
-        "consumption": {
-          "spellSlot": false,
-          "targets": []
-        },
-        "effects": [],
-        "description": {
-          "chatFlavor": ""
-        },
-        "damage": {
-          "parts": [
-            {
-              "custom": {
-                "enabled": true,
-                "formula": "1d6"
-              },
-              "types": [
-                "lightning"
-              ],
-              "scaling": {
-                "mode": "",
-                "number": null,
-                "formula": ""
-              }
-            }
-          ],
-          "onSave": "none",
-          "includeBase": false
-        }
+        "value": {}
       }
-    }
+    ]
   },
   "effects": [
     {
       "_id": "22abd28c9b3e6282",
       "name": "Final Punch: Incapacitated",
-      "img": "icons/svg/book.svg",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-lightning-tree.svg",
       "transfer": false,
       "disabled": false,
       "changes": [],
@@ -283,8 +92,32 @@
       "feature": "Forked Destiny",
       "class": "monk",
       "level": 6,
-      "notes": [
-        "Телепортация, очередь ходов, лимиты до инициативы, демиплан и окончание бонусного урона — вручную."
+      "version": "0.2.0",
+      "children": [
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.c3261cf0e1fedb3f",
+          "level": 6
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.42221d227c0bd947",
+          "level": 6
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.cb203a1b5fb3495f",
+          "level": 6
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.5c04f1718ee3d9ab",
+          "level": 6
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.c7e0296e5ebfb0e0",
+          "level": 6
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.c7d101843e2293a4",
+          "level": 6
+        }
       ]
     }
   },

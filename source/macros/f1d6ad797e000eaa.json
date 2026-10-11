@@ -3,11 +3,13 @@
   "name": "Проверка модуля",
   "type": "script",
   "scope": "global",
-  "img": "icons/svg/book.svg",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-open-book.svg",
   "command": "await game.modules.get(\"grimnir-lyonesse\").api.audit();",
   "ownership": {
     "default": 2
   },
-  "flags": {},
+  "flags": {
+    "grimnir-lyonesse": {}
+  },
   "_key": "!macros!f1d6ad797e000eaa"
 }
