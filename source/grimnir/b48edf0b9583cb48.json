@@ -1,0 +1,46 @@
+{
+  "_id": "b48edf0b9583cb48",
+  "name": "Chosen in Motion",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-way-of-the-wanderer-chosen-in-motion",
+    "description": {
+      "value": "<p><b>Way of the Wanderer · уровень 11</b></p><p>When you roll Initiative, if you choose Mayhem or Order, you gain special abilities for 1 minute.<br>Order Ability. You have Resistance to Cold and Radiant damage. Difficult terrain does not affect you; your<br>Speed increases by 10 feet; you do not provoke Opportunity Attacks.<br>Mayhem Ability. You have Resistance to Lightning and Thunder damage. You have a Fly Speed equal to your Speed.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "44",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Way of the Wanderer 11",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Way of the Wanderer",
+      "feature": "Chosen in Motion",
+      "class": "monk",
+      "level": 11,
+      "notes": [
+        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "6b194b9e5a9172f5",
+  "sort": 110000,
+  "_key": "!items!b48edf0b9583cb48"
+}

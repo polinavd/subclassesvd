@@ -1,0 +1,46 @@
+{
+  "_id": "5e52df8caa137091",
+  "name": "Rekindled Breath",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-circle-of-the-wurm-rekindled-breath",
+    "description": {
+      "value": "<p><b>Circle of the Wurm · уровень 14</b></p><p>You can expend a level 4+ spell slot to restore all expended uses of your Acid Breath. This requires no action. When you use your Acid Breath, it deals extra Acid damage equal to your Druid level.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Дыхание и +уровень Druid настраиваются в макросе создания формы. Восстановление дыхания требует вручную потратить слот 4+.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "46",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Circle of the Wurm 14",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Circle of the Wurm",
+      "feature": "Rekindled Breath",
+      "class": "druid",
+      "level": 14,
+      "notes": [
+        "Дыхание и +уровень Druid настраиваются в макросе создания формы. Восстановление дыхания требует вручную потратить слот 4+."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "7828b28733ff481e",
+  "sort": 140000,
+  "_key": "!items!5e52df8caa137091"
+}

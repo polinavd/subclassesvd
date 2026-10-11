@@ -1,0 +1,81 @@
+{
+  "_id": "6d316cc98ce88fcb",
+  "name": "A Glorious Sacrifice",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-oath-of-the-slain-a-glorious-sacrifice",
+    "description": {
+      "value": "<p><b>Oath of the Slain · уровень 15</b></p><p>When you are reduced to 0 Hit Points but not killed outright, you can use your Reaction to have a number of Hit<br>Points equal to twice your Paladin level instead. When you do this, you take an extra turn as soon as the current turn ends.<br>During this extra turn, you can only move up to your<br>Speed, take the Attack Action, and use your Bonus Action to cast a Paladin spell that has a casting time of a Bonus<br>Action. At the end of this extra turn, you take Radiant damage equal to twice your Paladin level.<br>You can’t use this feature again until you finish a<br>Long Rest.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Установить HP равными результату, не прибавлять его. Дополнительный ход и последующий radiant damage — вручную.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "46",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Oath of the Slain 15",
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {
+      "d4744bbbbd1b1857": {
+        "_id": "d4744bbbbd1b1857",
+        "type": "utility",
+        "name": "A Glorious Sacrifice",
+        "activation": {
+          "type": "reaction",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "roll": {
+          "formula": "2 * @classes.paladin.levels",
+          "name": "A Glorious Sacrifice",
+          "visible": true,
+          "prompt": false
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Oath of the Slain",
+      "feature": "A Glorious Sacrifice",
+      "class": "paladin",
+      "level": 15,
+      "notes": [
+        "Установить HP равными результату, не прибавлять его. Дополнительный ход и последующий radiant damage — вручную."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "7c14c39ab5ef4425",
+  "sort": 150000,
+  "_key": "!items!6d316cc98ce88fcb"
+}

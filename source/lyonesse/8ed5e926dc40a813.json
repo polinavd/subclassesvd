@@ -1,0 +1,76 @@
+{
+  "_id": "8ed5e926dc40a813",
+  "name": "Eparch",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-college-of-the-voice-eparch",
+    "description": {
+      "value": "<p><b>College of the Voice · уровень 6</b></p><p>As an Eparch it is your duty to administer sacraments, govern college discipline, and guide liturgy. Your extensive training allows you to do the following:<br>Steadfast Will. If you fail a saving throw, you can expend one of your Bardic Inspiration dice and add the number rolled to your saving throw result.<br>Purifying Breath. You can expend one of your Bardic<br>Inspiration dice to end one of the following conditions on yourself: Charmed, Frightened, Poisoned.<br>Hymnal Memory. After you have finished a Long Rest, you can choose one skill and gain proficiency with it. You retain this proficiency until you finish another Long Rest.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Purifying Breath и временное владение навыком — макрос управления.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "42",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "College of the Voice 6",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "88f5507526cf50bd": {
+        "_id": "88f5507526cf50bd",
+        "type": "utility",
+        "name": "Steadfast Will",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:bardic-inspiration",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "roll": {
+          "formula": "@scale.bard.inspiration",
+          "name": "Steadfast Will",
+          "visible": true,
+          "prompt": false
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "College of the Voice",
+      "feature": "Eparch",
+      "class": "bard",
+      "level": 6,
+      "notes": [
+        "Purifying Breath и временное владение навыком — макрос управления."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "71e3d6e1e80dbb6c",
+  "sort": 60000,
+  "_key": "!items!8ed5e926dc40a813"
+}

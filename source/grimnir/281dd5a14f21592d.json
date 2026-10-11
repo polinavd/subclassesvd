@@ -1,0 +1,116 @@
+{
+  "_id": "281dd5a14f21592d",
+  "name": "Dreams Made Real",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-misplaced-soul-dreams-made-real",
+    "description": {
+      "value": "<p><b>Misplaced Soul · уровень 18</b></p><p>When you summon a Misplaced Soul, you can spend additional Sorcery Points to grant it special traits. These traits last until the Soul disappears.<br>Metamagic: Magic Resistance (1 Sorcery Point).<br>You give the Misplaced Soul the Magic Resistance trait<br>(see accompanying stat block).<br>Metamagic: Regeneration (2 Sorcery Points).<br>You give the Misplaced Soul the Regeneration trait (see accompanying stat block).<br>Metamagic: Reality (4 Sorcery Points). The Misplaced Soul that you create loses the Invisibility trait. It gains the Rend Ranged Attack and the Magic Resistance and Regeneration traits. If you become Incapacitated or are reduced to 0 Hit Points while this Misplaced Soul exists, roll 1d20. If you roll a 1 or 2 the Misplaced Soul becomes a real creature that persists. They are under the<br>DM’s control and have the stat block of an Archmage.<br>Their disposition is Friendly towards you.<br>Once a Misplaced Soul becomes a real creature in this manner, this effect won’t transform a Misplaced Soul into a real creature again until 1 year has passed.<br>Nothing sadder than a Misplaced Soul Sorcerer. Thinks he might be an illusion that got too real. Mate, if you’re fake, at least be useful and disappear when I tell you to.<br>—Britta the Scourge</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Чёрты спутника применять вручную после расхода. В книге для Reality указан Rend, но его параметры отсутствуют в статблоке; не выдуманы.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "52",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Misplaced Soul 18",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "510ad0aca1ac6292": {
+        "_id": "510ad0aca1ac6292",
+        "type": "utility",
+        "name": "Magic Resistance",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:font-of-magic",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        }
+      },
+      "71453d0152ee4920": {
+        "_id": "71453d0152ee4920",
+        "type": "utility",
+        "name": "Regeneration",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:font-of-magic",
+              "value": "2"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        }
+      },
+      "62924069e042198a": {
+        "_id": "62924069e042198a",
+        "type": "utility",
+        "name": "Reality",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:font-of-magic",
+              "value": "4"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Misplaced Soul",
+      "feature": "Dreams Made Real",
+      "class": "sorcerer",
+      "level": 18,
+      "notes": [
+        "Чёрты спутника применять вручную после расхода. В книге для Reality указан Rend, но его параметры отсутствуют в статблоке; не выдуманы."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "5e7aabf373dadf67",
+  "sort": 180000,
+  "_key": "!items!281dd5a14f21592d"
+}

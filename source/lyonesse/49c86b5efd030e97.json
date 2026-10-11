@@ -1,0 +1,70 @@
+{
+  "_id": "49c86b5efd030e97",
+  "name": "Lingering Word",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-knight-of-the-sacred-word-lingering-word",
+    "description": {
+      "value": "<p><b>Knight of the Sacred Word · уровень 11</b></p><p>Your mastery allows your voice to persist within the mind, compelling obedience beyond the moment of command.<br>When a creature fails its saving throw against your<br>Voice of Authority, you can spend 1 Focus Point at the start of your next turn to extend the command’s duration to 1 minute. You must choose the same effect you imposed with Voice of Authority. After the end of your next turn, the target can repeat the save at the end of each of its turns, ending the effect on a success.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Продлить исходный эффект до минуты; повторные спасброски после конца следующего хода — вручную.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "52",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Knight of the Sacred Word 11",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "a7676e5717b2e3c8": {
+        "_id": "a7676e5717b2e3c8",
+        "type": "utility",
+        "name": "Продлить команду",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:monks-focus",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Knight of the Sacred Word",
+      "feature": "Lingering Word",
+      "class": "monk",
+      "level": 11,
+      "notes": [
+        "Продлить исходный эффект до минуты; повторные спасброски после конца следующего хода — вручную."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "47f143ead77b6269",
+  "sort": 110000,
+  "_key": "!items!49c86b5efd030e97"
+}

@@ -1,0 +1,106 @@
+{
+  "_id": "0ffa9e603d300ce3",
+  "name": "Circle of the Devourer",
+  "type": "subclass",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": {
+      "value": "<p><b>2024 · Grimnir</b></p><p>Перетащите подкласс на персонажа с соответствующим базовым классом. Для форм и спутников используйте макрос «Управление подклассом». Ограничения указаны в каждой способности.</p><p>Druid<br>Circle of the Devourer<br>Under the deep, ever-stretching darkness of the long northern winters, the raiders of the Knattle clan have survived, even thrived, where no other dare. Here in this land of massive, shifting plains of ice and ever-howling snow squalls, Druids have long connected with the primal world. They have isolated themselves on long pilgrimages to the highest rocky crags and they have raised their hands to the skies. And some rare few have born witness to the ever-shifting lights of the aurora; some have touched the true essence of Grimnir.<br>You are one of these hardy, pragmatic Druids. The few, the weak, must perish to nourish the many. And so, you have learned to wrestle the spirits of the lands to transform your own body in various, and often unpredictable ways. You become the defender when threatened, the hunter when starving, and the devourer when assaulted.<br>Those spirits you dominate, though consumed, die to enable your survival, your community’s survival, and ultimately the persistence of the world itself. You ensure their sacrifice matters.<br>Primal Protection<br>1d6<br>Effect<br>1–2<br>Protruding Spines. Jagged spines burst from your body. Each creature within 5 feet of you takes 2d4 plus your Wisdom modifier Piercing damage and is pushed 5 feet away from you. The spines then retract.<br>3–4<br>Bulbous Shell. Your skin hardens into a thick, mottled shell. You gain a +3 bonus to AC until the end of your next turn. If this increased AC would cause the triggering attack to miss you, it does.<br>5<br>Abyssal Glare. Your eyes become glowing purple orbs until the end of your next turn. Whenever a creature deals damage to you, including the triggering attack, it takes Psychic damage equal to twice your Wisdom modifier.<br>6<br>Aberrant Flesh. Your flesh warps and knits itself back together. You regain 2d4 plus your Wisdom<br>Modifier Hit Points immediately after taking the triggering damage.<br>Level 3: Primal Protection<br>The primal spirits exert their powers to protect you. If you are hit by an attack, you may use a Reaction to roll on the<br>Primal Protection table to determine a defensive effect.<br>You can use this feature a number of times equal to your Wisdom Modifier, and you regain all expended uses when you finish a Short or Long Rest.<br>Level 6: Primal Arm<br>As a Bonus Action, you can expend one use of Wild<br>Shape to transform one of your arms. This transformation lasts for 1 hour, or until you dismiss it as a Bonus Action.<br>Choose one of the following natural weapons. Each is treated as a Simple weapon with which you are proficient. You use your Wisdom modifier for its attack and damage rolls.<br>Bone Club. Melee Attack Roll: Reach 5 ft. Hit: 1d8 plus<br>Wisdom modifier Bludgeoning damage. The target must make a Strength saving throw against your spell save DC.<br>On a failed save, the target is Knocked Prone.<br>Bladed Claw. Melee Attack Roll: Reach 5 ft. Hit: 2d6 plus<br>Wisdom modifier Slashing damage.<br>Poisonous Barbs. Ranged Attack Roll: Range 30/60 ft.<br>Hit: 1d8 plus Wisdom modifier Piercing damage. The target must make a Constitution saving throw against your spell save DC. On a failed save, the target is Poisoned until the end of its next turn. A creature Poisoned in this way cannot regain Hit Points.<br>When you take the Attack Action, you can make one additional attack with your Primal Arm weapon.<br>Level 10: Enhanced Senses<br>You may use a Bonus Action to gain an additional sense.<br>You may only have one of the following active at one time:<br>• You gain Darkvision out to a range of 120 feet.<br>• You gain Blindsight out to a range of 10 feet.<br>• You gain Tremorsense out to a range of 30 feet.<br>This feature ends if you have the Unconscious condition.<br>Level 14: Primal Expertise<br>When you use Primal Protection, you choose the effect instead of rolling.</p>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "40",
+      "rules": "2024"
+    },
+    "identifier": "grimnir-circle-of-the-devourer",
+    "classIdentifier": "druid",
+    "advancement": [
+      {
+        "_id": "4a36dffbe33749c5",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.ed13daffd640d09a",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "6493c0956e0890a8",
+        "type": "ItemGrant",
+        "level": 6,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.97b94437a23c53a9",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "0ebf8d79cf5249e9",
+        "type": "ItemGrant",
+        "level": 10,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.fe912d43e27ee53b",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "ef6ccb9ecab26d29",
+        "type": "ItemGrant",
+        "level": 14,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.f8adcbb01aa8cc4b",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Circle of the Devourer",
+      "spellList": {}
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "cdafd80b70bcfbb0",
+  "sort": 0,
+  "_key": "!items!0ffa9e603d300ce3"
+}

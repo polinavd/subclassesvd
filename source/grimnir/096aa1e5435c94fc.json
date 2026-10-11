@@ -1,0 +1,46 @@
+{
+  "_id": "096aa1e5435c94fc",
+  "name": "Dangerous Beast",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-wolf-rider-dangerous-beast",
+    "description": {
+      "value": "<p><b>Wolf Rider · уровень 11</b></p><p>You and your wolf strike together with coordination.<br>Lethal Pack. If your wolf uses the Help action to aid you, your next attack against that target scores a Critical<br>Hit on a 17–20. If you use the Help action to aid the wolf, its next attack scores a Critical Hit on a 15–20.<br>Wolf Aspect. Your wolf gains one aspect. You can change the chosen aspect after a Long Rest.<br>Frost Wolf: Your wolf adds 1d4 Frost damage to each of its attacks. Once per turn, the wolf can reroll its damage and use either result.<br>Forest Wolf: The wolf and all allies within 15 feet have<br>Advantage on Initiative rolls.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Спутник и масштабирование — макрос управления. Условные совместные атаки, Help/Dodge, защита рядом и перехват смерти — вручную.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "48",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Wolf Rider 11",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Wolf Rider",
+      "feature": "Dangerous Beast",
+      "class": "ranger",
+      "level": 11,
+      "notes": [
+        "Спутник и масштабирование — макрос управления. Условные совместные атаки, Help/Dodge, защита рядом и перехват смерти — вручную."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "ced440b7e6bd78b1",
+  "sort": 110000,
+  "_key": "!items!096aa1e5435c94fc"
+}

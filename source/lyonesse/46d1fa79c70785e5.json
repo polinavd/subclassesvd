@@ -1,0 +1,114 @@
+{
+  "_id": "46d1fa79c70785e5",
+  "name": "Spellbinder",
+  "type": "subclass",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": {
+      "value": "<p><b>2024 · Lyonesse</b></p><p>Перетащите подкласс на персонажа с соответствующим базовым классом. Для форм и спутников используйте макрос «Управление подклассом». Ограничения указаны в каждой способности.</p><p>Wizard<br>Spellbinder<br>Your power was not learned but stolen through cunning and the reckless violation of ancient taboos. Perhaps you were once trained in the rigid disciplines of the Hellbinders, but you went further. Where they bound their servants with magical law, you stole true names and wove your own chains of command.<br>You are a Spellbinder, a Wizard who commands the unwilling and turns defiance into obedience. Each creature you summon is not a fleeting conjuration but a bound soul, sealed within a magical relic known as an Amulet of Binding. You brand them with your essence, call them forth again and again, and in time, they come to know you, and fear you.<br>Level 3: Amulet of Binding<br>Upon choosing this subclass, you create an Amulet of<br>Binding. It is a relic that imprisons the essences of your summoned Vassals when they are not active. When you cast a Summon spell from the Wizard spell list, the creature emerges from the amulet, and when the spell ends, the creature’s essence is forcibly drawn back into it. If your amulet is destroyed (AC 17, 30 hit points, immune to Psychic and Poison damage), you cannot summon your Vassals again until you complete a special 8-hour ritual and expend 250 GP worth of rare metals to forge a new one.<br>Level 3: Binding Savant<br>Choose one Wizard or Druid Summon spell that has the word Summon in its name, which must be no higher than level 2, and add it to your spellbook for free.<br>In addition, whenever you gain access to a new level of spell slots in this class, you can add up to two spells from the Wizard or Druid spell lists that have “Summon” in their name (in any combination) to your spellbook for free. The chosen spells must be of a level for which you have spell slots and will appear in future spellbooks you own automatically.<br>Level 3: Blood Binding<br>When you cast a Summon spell from the Wizard spell list, you can choose to make the creature summoned your<br>Vassal. Each time you summon your Vassal, including the initial summons, you must reduce your Hit Point maximum by an amount equal to twice the level of the Summon spell. This Hit Point reduction lasts as long as you<br>Concentrate on the spell. Whenever you cast the same<br>Summon spell again, you can choose to have the same<br>Vassal return, drawn from your Amulet of Binding. You can have one Vassal per Wizard Summon spell. A Vassal adds your Intelligence modifier as additional damage when they deal damage with an attack. They understand your speech regardless of language and can telepathically communicate with you within 60 feet.<br>Level 6: Spellbinding<br>You may cast Magic Circle as a Ritual once per day.<br>Your influence over your Vassals deepens. You can summon your Vassal into a Magic Circle you have cast and when you do so, it gains the ability to cast the corresponding spells as shown on the Spellbinding table without expending a spell slot or requiring material components. When it does so, the Vassal reduces its maximum Hit Points by 5 plus 5 times the level of the spell.<br>The Vassal cannot cast a spell that is of a higher level than your highest level spell slot.<br>Spellbinding<br>Vassal<br>Spells Available to Vassal<br>All<br>Augury, Clairvoyance, Divination, Dream<br>Aberration Only<br>Hallucinatory Terrain<br>Dragon Only<br>Circle of Power<br>Fiend Only<br>Teleportation Circle<br>Undead Only<br>Speak with Dead<br>Level 10: Unholy Contracts<br>You can cast the Planar Binding spell as a Ritual once and regain the ability to do so when you finish a Long Rest.<br>If the target of your Planar Binding is your Vassal, the casting time is reduced to 10 minutes. While your Vassal is controlled by your Planar Binding spell, you do not need to Concentrate on the Vassal’s Summon spell. You are unable to cast another Planar Binding spell while your<br>Vassal is bound.<br>Level 14: Master of Chains<br>Your ability to bind otherworldly creatures to your will reaches its apex. When you cast a Summon spell using a level 7+ spell slot, you can choose to replace the Spirit stat block with one of the following fiends: Bone Devil or<br>Chain Devil.<br>Summon Spells<br>A Summon spell is any spell whose name begins with the word Summon, such as Summon Dragon<br>Named Vassals<br>You or the DM should give each Vassal a unique name and personality. Each Vassal is likely to become a memorable NPC in the campaign.</p>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "64",
+      "rules": "2024"
+    },
+    "identifier": "lyonesse-spellbinder",
+    "classIdentifier": "wizard",
+    "advancement": [
+      {
+        "_id": "e85aba1f29970559",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.869b3c5a20a1cacd",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.f12fea597b076acc",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.e1fc735dacca9e81",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "fdb9a8cb7af0ad54",
+        "type": "ItemGrant",
+        "level": 6,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.a947119d4736ff39",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "12db38f068bab493",
+        "type": "ItemGrant",
+        "level": 10,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.8d2dfbd6a6734dc3",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "726890a06cb8567d",
+        "type": "ItemGrant",
+        "level": 14,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.2f97b2f2ceea41ea",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Spellbinder",
+      "spellList": {}
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "07dd67ea748f54e0",
+  "sort": 0,
+  "_key": "!items!46d1fa79c70785e5"
+}

@@ -1,0 +1,64 @@
+{
+  "_id": "3a02396d49ee18ab",
+  "name": "Rampage",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-marauder-rampage",
+    "description": {
+      "value": "<p><b>Marauder · уровень 10</b></p><p>Whenever you or an ally within 10 feet of you reduces a creature to 0 Hit Points with an attack, that creature can take a Bonus Action before the end of the current turn to move up to half its Speed and make one attack.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>После подходящего убийства вручную переместить получателя и бросить его оружие.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "50",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Marauder 10",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "75966b268cbc65ec": {
+        "_id": "75966b268cbc65ec",
+        "type": "utility",
+        "name": "Rampage",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Marauder",
+      "feature": "Rampage",
+      "class": "fighter",
+      "level": 10,
+      "notes": [
+        "После подходящего убийства вручную переместить получателя и бросить его оружие."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "5992503abbb58a4b",
+  "sort": 100000,
+  "_key": "!items!3a02396d49ee18ab"
+}

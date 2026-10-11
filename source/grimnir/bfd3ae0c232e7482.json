@@ -1,0 +1,127 @@
+{
+  "_id": "bfd3ae0c232e7482",
+  "name": "Marauder",
+  "type": "subclass",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": {
+      "value": "<p><b>2024 · Grimnir</b></p><p>Перетащите подкласс на персонажа с соответствующим базовым классом. Для форм и спутников используйте макрос «Управление подклассом». Ограничения указаны в каждой способности.</p><p>Fighter<br>Marauder<br>All raiders seek glory in battle and the spoils that come from a life full of successful raids. Yet only a few live long enough to achieve these aims. A Marauder demonstrates leadership via small skirmishes at first and slowly they build upon their reputation. As their glory rises, so do their opportunities.<br>The Marauder understands how to control any battlefield they find themselves upon, from the deck of a ship being tossed by a foul storm to the wind-tossed tundra of the north. They minimize their own losses while inflicting great damage upon their enemies. A true leader leads by ferocious stubbornness and the marauder is no exception.<br>Level 3: Break the Line<br>You can take a Bonus Action to make an Unarmed Strike using the Shove option. If you have a Shield equipped or the creature has the Prone condition, it has Disadvantage on the saving throw.<br>If you shove a creature and push it, you can push it 10 feet instead of 5 feet, and move with the creature horizontally without provoking Opportunity Attacks, remaining within 5 feet of it at the end of your movement.<br>Level 3: Withdraw<br>While wielding a Shield, you can take a Reaction to reduce the damage of an attack by half your Fighter level<br>(rounded down) plus your Constitution modifier (minimum of 1).<br>Level 7: Breaker’s Charge<br>As a Bonus Action, you may spend one use of your<br>Second Wind to move in a straight line up to a distance equal to your Speed. Each creature whose size is one category larger than yours or smaller, and whose space you enter during this movement, must make a Strength saving throw. The DC equals 8 plus your Proficiency Bonus plus your Strength modifier.<br>On a failed save, the creature takes Bludgeoning damage equal to your Strength Modifier and the creature has the Prone condition and is pushed 5 feet to the side of your path. On a successful save, your movement for this action immediately ends.<br>Level 10: Rampage<br>Whenever you or an ally within 10 feet of you reduces a creature to 0 Hit Points with an attack, that creature can take a Bonus Action before the end of the current turn to move up to half its Speed and make one attack.<br>Level 15: Enhanced Rampage<br>The range of your Rampage feature increases to 30 feet.<br>In addition, a creature that makes the Rampage Bonus<br>Action attack can roll 1d6 and add the result to the attack roll it makes for that attack.<br>Level 18: End the Threat<br>As a Bonus Action, you may spend one use of your<br>Second Wind to command your allies to focus their assault on a single foe. Choose one creature you can see.<br>Each ally within 30 feet of you who can hear you can use its Reaction to move up to half its Speed and make one attack against the chosen target.<br>A marauder is not born in glory, but in the small fights no one remembers, where survival is the only victory.<br>—Anton Flame-born</p>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "42",
+      "rules": "2024"
+    },
+    "identifier": "grimnir-marauder",
+    "classIdentifier": "fighter",
+    "advancement": [
+      {
+        "_id": "5652d534644b8666",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.cbc0cf5949f6866f",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.d1c0ed7462f768b1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "327ddb5710fec07c",
+        "type": "ItemGrant",
+        "level": 7,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.0b3aec5c283636fa",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "b8234608f805fddf",
+        "type": "ItemGrant",
+        "level": 10,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.c6a12eb65ca6fbf4",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "f8f1a6602b49c96a",
+        "type": "ItemGrant",
+        "level": 15,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.1ed33d9ec4892459",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "28b00c71ae4da9c4",
+        "type": "ItemGrant",
+        "level": 18,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.f981cabae3579046",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Marauder",
+      "spellList": {}
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "8873c3624dd55b20",
+  "sort": 0,
+  "_key": "!items!bfd3ae0c232e7482"
+}

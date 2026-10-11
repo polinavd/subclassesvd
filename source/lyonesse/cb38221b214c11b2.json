@@ -1,0 +1,263 @@
+{
+  "_id": "cb38221b214c11b2",
+  "name": "Voice of Authority",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-knight-of-the-sacred-word-voice-of-authority",
+    "description": {
+      "value": "<p><b>Knight of the Sacred Word · уровень 3</b></p><p>Your voice carries force that can command the body as surely as your strikes.<br>Once per turn, when you hit a creature with a Monk weapon or an Unarmed Strike, you can expend 1 Focus<br>Point to issue a single-word command as part of the attack. The target must succeed on a Wisdom saving throw or suffer one of the following effects of your choice until the start of your next turn:<br>Halt. The creature’s Speed becomes 0.<br>Silence. The creature cannot speak or cast spells with<br>Verbal components.<br>Yield. The creature has Disadvantage on attack rolls.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>После попадания не чаще 1/ход; снять в начале следующего хода. На 6 уровне Striking Word бросается отдельной кнопкой.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "52",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Knight of the Sacred Word 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "0de0d86144a1f8f0": {
+        "_id": "0de0d86144a1f8f0",
+        "type": "save",
+        "name": "Halt",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:monks-focus",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [
+          {
+            "_id": "0de0d86144a1f8f0"
+          }
+        ],
+        "description": {
+          "chatFlavor": ""
+        },
+        "damage": {
+          "parts": [],
+          "onSave": "none",
+          "includeBase": false
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        }
+      },
+      "bf3a9e704388d2bc": {
+        "_id": "bf3a9e704388d2bc",
+        "type": "save",
+        "name": "Silence",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:monks-focus",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [
+          {
+            "_id": "bf3a9e704388d2bc"
+          }
+        ],
+        "description": {
+          "chatFlavor": ""
+        },
+        "damage": {
+          "parts": [],
+          "onSave": "none",
+          "includeBase": false
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        }
+      },
+      "640394e128e4dd38": {
+        "_id": "640394e128e4dd38",
+        "type": "save",
+        "name": "Yield",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:monks-focus",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [
+          {
+            "_id": "640394e128e4dd38"
+          }
+        ],
+        "description": {
+          "chatFlavor": ""
+        },
+        "damage": {
+          "parts": [],
+          "onSave": "none",
+          "includeBase": false
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        }
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "0de0d86144a1f8f0",
+      "name": "Halt",
+      "img": "icons/svg/book.svg",
+      "transfer": false,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.attributes.movement.walk",
+          "mode": 5,
+          "value": "0",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.movement.fly",
+          "mode": 5,
+          "value": "0",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.movement.swim",
+          "mode": 5,
+          "value": "0",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.movement.climb",
+          "mode": 5,
+          "value": "0",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.movement.burrow",
+          "mode": 5,
+          "value": "0",
+          "priority": 20
+        }
+      ],
+      "statuses": [],
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true
+        }
+      },
+      "duration": {
+        "seconds": 6
+      },
+      "_key": "!items.effects!cb38221b214c11b2.0de0d86144a1f8f0"
+    },
+    {
+      "_id": "bf3a9e704388d2bc",
+      "name": "Silence",
+      "img": "icons/svg/book.svg",
+      "transfer": false,
+      "disabled": false,
+      "changes": [],
+      "statuses": [],
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true
+        }
+      },
+      "duration": {
+        "seconds": 6
+      },
+      "_key": "!items.effects!cb38221b214c11b2.bf3a9e704388d2bc"
+    },
+    {
+      "_id": "640394e128e4dd38",
+      "name": "Yield",
+      "img": "icons/svg/book.svg",
+      "transfer": false,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "flags.midi-qol.disadvantage.attack.all",
+          "mode": 5,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "statuses": [],
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true
+        }
+      },
+      "duration": {
+        "seconds": 6
+      },
+      "_key": "!items.effects!cb38221b214c11b2.640394e128e4dd38"
+    }
+  ],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Knight of the Sacred Word",
+      "feature": "Voice of Authority",
+      "class": "monk",
+      "level": 3,
+      "notes": [
+        "После попадания не чаще 1/ход; снять в начале следующего хода. На 6 уровне Striking Word бросается отдельной кнопкой."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "47f143ead77b6269",
+  "sort": 30000,
+  "_key": "!items!cb38221b214c11b2"
+}

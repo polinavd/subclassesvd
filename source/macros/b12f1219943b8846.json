@@ -1,0 +1,13 @@
+{
+  "_id": "b12f1219943b8846",
+  "name": "Управление подклассом",
+  "type": "script",
+  "scope": "global",
+  "img": "icons/svg/book.svg",
+  "command": "await game.modules.get(\"grimnir-lyonesse\").api.manage();",
+  "ownership": {
+    "default": 2
+  },
+  "flags": {},
+  "_key": "!macros!b12f1219943b8846"
+}

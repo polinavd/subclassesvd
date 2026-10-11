@@ -1,0 +1,92 @@
+{
+  "_id": "0a4dfdd34247f741",
+  "name": "Break the Line",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-marauder-break-the-line",
+    "description": {
+      "value": "<p><b>Marauder · уровень 3</b></p><p>You can take a Bonus Action to make an Unarmed Strike using the Shove option. If you have a Shield equipped or the creature has the Prone condition, it has Disadvantage on the saving throw.<br>If you shove a creature and push it, you can push it 10 feet instead of 5 feet, and move with the creature horizontally without provoking Opportunity Attacks, remaining within 5 feet of it at the end of your movement.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Цель выбирает Str/Dex. Помеха от щита/Prone, выбор отталкивания или Prone и перемещение — вручную.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "50",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Marauder 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "1773b79d0bcfc71d": {
+        "_id": "1773b79d0bcfc71d",
+        "type": "save",
+        "name": "Shove",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "range": {
+          "value": "5",
+          "units": "ft"
+        },
+        "target": {
+          "affects": {
+            "type": "creature",
+            "count": "1"
+          },
+          "template": {
+            "type": ""
+          }
+        },
+        "damage": {
+          "parts": [],
+          "onSave": "none",
+          "includeBase": false
+        },
+        "save": {
+          "ability": [
+            "str",
+            "dex"
+          ],
+          "dc": {
+            "calculation": "str",
+            "formula": ""
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Marauder",
+      "feature": "Break the Line",
+      "class": "fighter",
+      "level": 3,
+      "notes": [
+        "Цель выбирает Str/Dex. Помеха от щита/Prone, выбор отталкивания или Prone и перемещение — вручную."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "5992503abbb58a4b",
+  "sort": 30000,
+  "_key": "!items!0a4dfdd34247f741"
+}

@@ -1,0 +1,98 @@
+{
+  "_id": "71e8e8310afbd0bb",
+  "name": "Turn of Fate",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-cohesion-of-the-primal-turn-of-fate",
+    "description": {
+      "value": "<p><b>Cohesion of the Primal · уровень 10</b></p><p>Dreamer: Master Foresayer. When you activate your<br>Stored Foresight spell as a Bonus Action, you can roll<br>1d4. On a 4, the stored spell is not expended.<br>Seeker: Advanced Disruption. When a spell with a single target affects you or an ally within 10 feet, you may use your Reaction and expend a spell slot equal to or higher than the spell’s level. If you do, the spell fails.<br>Once you use this feature, you cannot do so again until you finish a Short or Long Rest.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Seeker дополнительно тратит слот не ниже отменяемого заклинания.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "56",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Cohesion of the Primal 10",
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {
+      "03dff1e7a8b28645": {
+        "_id": "03dff1e7a8b28645",
+        "type": "utility",
+        "name": "Dreamer: сохранить заклинание на 4",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "roll": {
+          "formula": "1d4",
+          "name": "Dreamer: сохранить заклинание на 4",
+          "visible": true,
+          "prompt": false
+        }
+      },
+      "b9b4cd8fd6d3b591": {
+        "_id": "b9b4cd8fd6d3b591",
+        "type": "utility",
+        "name": "Seeker: Advanced Disruption",
+        "activation": {
+          "type": "reaction",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Cohesion of the Primal",
+      "feature": "Turn of Fate",
+      "class": "wizard",
+      "level": 10,
+      "notes": [
+        "Seeker дополнительно тратит слот не ниже отменяемого заклинания."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "ff1c1188f5b8ad9f",
+  "sort": 100000,
+  "_key": "!items!71e8e8310afbd0bb"
+}

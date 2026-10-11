@@ -1,0 +1,46 @@
+{
+  "_id": "e1fc735dacca9e81",
+  "name": "Blood Binding",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-spellbinder-blood-binding",
+    "description": {
+      "value": "<p><b>Spellbinder · уровень 3</b></p><p>When you cast a Summon spell from the Wizard spell list, you can choose to make the creature summoned your<br>Vassal. Each time you summon your Vassal, including the initial summons, you must reduce your Hit Point maximum by an amount equal to twice the level of the Summon spell. This Hit Point reduction lasts as long as you<br>Concentrate on the spell. Whenever you cast the same<br>Summon spell again, you can choose to have the same<br>Vassal return, drawn from your Amulet of Binding. You can have one Vassal per Wizard Summon spell. A Vassal adds your Intelligence modifier as additional damage when they deal damage with an attack. They understand your speech regardless of language and can telepathically communicate with you within 60 feet.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Макрос выбирает Vassal, снижает максимум HP и добавляет Int к урону его атак. Снятие при окончании концентрации — через кнопку того же макроса.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "64",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Spellbinder 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Spellbinder",
+      "feature": "Blood Binding",
+      "class": "wizard",
+      "level": 3,
+      "notes": [
+        "Макрос выбирает Vassal, снижает максимум HP и добавляет Int к урону его атак. Снятие при окончании концентрации — через кнопку того же макроса."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "07dd67ea748f54e0",
+  "sort": 30000,
+  "_key": "!items!e1fc735dacca9e81"
+}

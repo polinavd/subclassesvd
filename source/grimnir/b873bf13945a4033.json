@@ -1,0 +1,75 @@
+{
+  "_id": "b873bf13945a4033",
+  "name": "Path of Fate",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-way-of-the-wanderer-path-of-fate",
+    "description": {
+      "value": "<p><b>Way of the Wanderer · уровень 3</b></p><p>Your choices tug at the strands of destiny, shaping each battle toward order or mayhem.<br>When you roll Initiative, choose one of three styles:<br>Order, Balance, or Mayhem. You gain that style’s benefits for the duration of the combat.<br>Every time you roll Initiative in the future, you follow the following restrictions:<br>• If your previous style was Balance, you may choose<br>Order or Mayhem.<br>• If your previous style was Order or Mayhem, you must choose that same style or Balance.<br>Order. You can choose to have your Unarmed Strikes deal Cold damage. Creatures of your choice within 30 feet using Unarmed Strikes or weapons with the Finesse property (including yourself) score a Critical Hit on a roll of 18, 19, or 20 on the d20.<br>Balance. You can reroll one D20 Test that you make.<br>You must use the new roll. You can use this feature a number of times equal to your Wisdom modifier, regaining all uses when you finish a Long Rest.<br>Mayhem. You can choose to have your Unarmed<br>Strikes deal Thunder damage. When using your Deflect<br>Attacks and you spend 1 Focus Point to redirect the damage, you add one Martial Arts die in Thunder damage to the damage dealt. You can use this feature a number of times equal to your Wisdom modifier, regaining all uses when you finish a Long Rest.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Выбор стиля и эффекты на владельце — макрос управления; аура критов союзникам и погодные изменения — вручную.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "44",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Way of the Wanderer 3",
+    "uses": {
+      "max": "max(0,@abilities.wis.mod)",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {
+      "aa22905db5f2d6bb": {
+        "_id": "aa22905db5f2d6bb",
+        "type": "utility",
+        "name": "Balance: переброс",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Way of the Wanderer",
+      "feature": "Path of Fate",
+      "class": "monk",
+      "level": 3,
+      "notes": [
+        "Выбор стиля и эффекты на владельце — макрос управления; аура критов союзникам и погодные изменения — вручную."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "6b194b9e5a9172f5",
+  "sort": 30000,
+  "_key": "!items!b873bf13945a4033"
+}

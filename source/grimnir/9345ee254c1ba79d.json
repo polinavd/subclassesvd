@@ -1,0 +1,257 @@
+{
+  "_id": "9345ee254c1ba79d",
+  "name": "The Ironwood",
+  "type": "subclass",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": {
+      "value": "<p><b>2024 · Grimnir</b></p><p>Перетащите подкласс на персонажа с соответствующим базовым классом. Для форм и спутников используйте макрос «Управление подклассом». Ограничения указаны в каждой способности.</p><p>Warlock<br>Patron: The Ironwood<br>Your patron is a powerful ironheart tree, a patriarch or matriarch of one of the great ironwood forests. These trees originated from the old world, the Lost Lands. Their motives are unknown, not even to those who claim to have much knowledge of them.<br>Level 3: Expanded Spell List<br>The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Ironwood Spells table, you thereafter always have the listed spells prepared.<br>Ironwood Spells<br>Warlock Level<br>Spells<br>3<br>Barkskin, Entangle, Goodberry, Heat Metal<br>5<br>Plant Growth, Speak With Plants<br>7<br>Giant Insect, Grasping Vine<br>9<br>Awaken, Commune with Nature<br>Level 3: Vitality of the Ironwood<br>Your patron gifts you a Heartseed, a Tiny organic focus that pulses with slow, ancient life. It is your spellcasting focus. If you lose it, you can perform a 1-hour ritual to grow a new one.<br>Vitality. While touching the Heartseed, you can use a<br>Bonus Action to awaken the patron’s vitality within you for 10 minutes. Until the effect ends:<br>• You gain Temporary Hit Points equal to your Warlock level plus your Charisma Modifier (minimum of 2).<br>• Your Speed increases by 5 feet.<br>Using this feature again ends the previous use.<br>You can use this feature a number of times equal to your Charisma Modifier, regaining all expended uses when you finish a Long Rest.<br>Level 6: Armor of the Ironwood<br>During a Long or Short Rest, you can grow a suit of living armor called Ironwood Armor, using your Heartseed. Only you can wear this armor, and you have the training to use it. If you grow another Ironwood Armor, the previous one vanishes. While wearing this armor, you have Training with Shields.<br>Choose one of the following forms each time you grow the armor:<br>Mantle of Leaves. You have Advantage on Dexterity<br>(Stealth) checks. Your Speed increases by an additional<br>5 feet.<br>Unbreakable Branches. Attack rolls against you can’t score Critical Hits.<br>Level 10: Tree Passage<br>You gain the ability to enter a tree and move from inside it to inside another tree within 500 feet. Both trees must be at least the same size as you. You must use 5 feet of movement to enter a tree. You instantly know the location of all other trees within 500 feet and, as part of the move used to enter the tree, can either pass into one of those trees or step out of the tree you’re in. You appear in a spot of your choice within 5 feet of the destination tree, using another 5 feet of movement. If you have no movement left, you appear within 5 feet of the tree you entered.<br>When you exit one of two things happen:<br>Intelligent Tree. If the tree has an Intelligence score, roll a number of d6 equal to your Charisma Modifier. You regain Hit Points equal to the total.<br>Nonintelligent Tree. If the tree has no Intelligence score, it explodes. All creatures of your choice within 15 feet must make a Dexterity saving throw (using your Warlock spell save DC). Failure: 5d6 Piercing damage.<br>Success: Half damage<br>You can use Tree Passage a number of times equal to your Charisma Modifier, regaining all uses on a Short or<br>Long Rest.<br>Level 14: Colossus of the Ironwood<br>While wearing your Ironwood Armor, you can use a<br>Bonus Action to transform into a Large size, bark-covered humanoid if you are in a space large enough. This transformation lasts for 10 minutes, or until you end it early as a Bonus Action, or if you die. You have the following benefits while transformed:<br>• You gain Temporary Hit Points equal to five times your<br>Warlock level.<br>• You have Advantage on attack rolls that you make with<br>Simple and Martial weapons.<br>• When you hit a creature with a weapon attack, that attack deals an extra 3d6 Force damage. You can deal this extra damage no more than once on each turn.<br>You must finish a Long Rest to use this feature again. You may also regain its use by expending the use of one of your Mystic Arcanum (no action required).<br>Ironwood Armor<br>Armor Class = 10 + Dex modifier + Cha modifier<br>Resistance to Bludgeoning damage.</p>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "54",
+      "rules": "2024"
+    },
+    "identifier": "grimnir-the-ironwood",
+    "classIdentifier": "warlock",
+    "advancement": [
+      {
+        "_id": "90da8668160a8890",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.8804f597757bc328",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.3e58165ecf51f0c9",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "ea1d2b33a4ce2657",
+        "type": "ItemGrant",
+        "level": 6,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.fc40adc6df235feb",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "760832e100998cb3",
+        "type": "ItemGrant",
+        "level": 10,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.47bac1ec2d481b2f",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "62b1262d1b43bef8",
+        "type": "ItemGrant",
+        "level": 14,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.c7bb5f78a3dc29d9",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "d1559e961d02e03e",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Заклинания",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplBarkskin00",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplEntangle00",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplGoodberry0",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplHeatMetal0",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [
+              "cha"
+            ],
+            "method": "pact",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {}
+      },
+      {
+        "_id": "825f5efdf109a0b2",
+        "type": "ItemGrant",
+        "level": 5,
+        "title": "Заклинания",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplPlantGrowt",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSpeakwithP",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [
+              "cha"
+            ],
+            "method": "pact",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {}
+      },
+      {
+        "_id": "86e51ec75342c7f9",
+        "type": "ItemGrant",
+        "level": 7,
+        "title": "Заклинания",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplGiantInsec",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [
+              "cha"
+            ],
+            "method": "pact",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {}
+      },
+      {
+        "_id": "1ed88e4fadb66c29",
+        "type": "ItemGrant",
+        "level": 9,
+        "title": "Заклинания",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplAwaken0000",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplCommunewit",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [
+              "cha"
+            ],
+            "method": "pact",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {}
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "The Ironwood",
+      "spellList": {
+        "3": [
+          "Barkskin",
+          "Entangle",
+          "Goodberry",
+          "Heat Metal"
+        ],
+        "5": [
+          "Plant Growth",
+          "Speak with Plants"
+        ],
+        "7": [
+          "Giant Insect",
+          "Grasping Vine"
+        ],
+        "9": [
+          "Awaken",
+          "Commune with Nature"
+        ]
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "d64d34d188a6eeab",
+  "sort": 0,
+  "_key": "!items!9345ee254c1ba79d"
+}

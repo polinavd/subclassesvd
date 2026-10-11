@@ -1,0 +1,46 @@
+{
+  "_id": "b66fed37f934f65f",
+  "name": "Dragon Soul",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-circle-of-the-wurm-dragon-soul",
+    "description": {
+      "value": "<p><b>Circle of the Wurm · уровень 3</b></p><p>You know the Draconic language. You have Resistance against Acid damage.<br>You can bring forth the dragon spirit within. When you assume a Wild Shape form, you can choose to take the form of a Hatchling Black Dragon. Your Black Dragon form follows all the same rules as the Wild Shape form with the following exceptions:<br>• Wyrmling. You have no Fly Speed. You do not have the<br>Multiattack action.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Карточки драконов — в компендиуме спутников; превратить персонажа через штатный Wild Shape, ограничения уровня проверить.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "46",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Circle of the Wurm 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Circle of the Wurm",
+      "feature": "Dragon Soul",
+      "class": "druid",
+      "level": 3,
+      "notes": [
+        "Карточки драконов — в компендиуме спутников; превратить персонажа через штатный Wild Shape, ограничения уровня проверить."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "7828b28733ff481e",
+  "sort": 30000,
+  "_key": "!items!b66fed37f934f65f"
+}

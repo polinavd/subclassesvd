@@ -1,0 +1,106 @@
+{
+  "_id": "01cf8a48ad4a604c",
+  "name": "Path of the Provoked",
+  "type": "subclass",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": {
+      "value": "<p><b>2024 · Lyonesse</b></p><p>Перетащите подкласс на персонажа с соответствующим базовым классом. Для форм и спутников используйте макрос «Управление подклассом». Ограничения указаны в каждой способности.</p><p>T he lands of Lyonesse have shaped unique traditions and forms of power. From Grimfolk raiders and spellbinders to saintly champions and selkie wardens, these subclasses reflect the legends of the setting, allowing characters to become part of<br>Lyonesse’s mythology.<br>Barbarian<br>Path of the Provoked<br>Among the Grimfolk of Lyonesse, strength is not measured by calm, but by how fiercely one answers insult and injury. The Path of the Provoked is born from warriors who believe that wrath is a weapon to be sharpened, not restrained. These Barbarians do not seek battle, but once tested, they answer with overwhelming force. Each blow against them fuels their fury, each enemy a spark to the fire. Along the coasts where longships gather, their sagas are spoken with wary respect, for the Provoked do not forget, and they do not forgive.<br>Level 3: Strength of One<br>You score a Critical Hit on a roll of 19 or 20 on the d20 with melee attacks using a weapon or Unarmed Strike.<br>If there are two enemies within 5 feet of you, you score a<br>Critical Hit on rolls of 18, 19, or 20.<br>In addition, when you enter your Rage, you choose one of the following options. You benefit from that option until your Rage ends.<br>Stoic Strength. When you take damage from a creature you can see, you can use your Reaction to move up to half your Speed toward that creature. This movement does not provoke Opportunity Attacks.<br>Wrathful Strength. When you take damage from a<br>Hostile creature that you can see, you can take a Reaction to gain 1 Provoked Point. When you hit a creature with a melee attack with a weapon or Unarmed Strike, you can spend a number of Provoked Points equal to half your<br>Rage Damage bonus (round up). For each Provoked Point you spend, the attack deals one additional damage die for the weapon or Unarmed Strike of the same damage type.<br>You can have a number of Provoked Points equal to your Rage Damage bonus and all unspent Provoked<br>Points are lost when your Rage ends.<br>Wild Strength. When you take the Attack Action, you can forgo one of your attacks to make a wild swing that threatens all nearby foes. Each creature of your choice within your weapon’s reach must make a Dexterity saving throw against a DC equal to 8 plus your Proficiency<br>Bonus plus your Strength modifier. On a failed save, the creature takes damage as though hit by a single melee weapon attack with the weapon you used for this swing.<br>Level 6: Dominant of Will<br>When you enter your Rage, you choose one Dominant of<br>Will feature. This is in addition to your Strength of One selection. You benefit from both options until your Rage ends.<br>Stoic Dominance. You have Advantage on saving throws against the Charmed and Frightened conditions.<br>Wrathful Dominance. You have Expertise in Intimidation. In addition, while you are Restrained or Prone, you do not have Disadvantage on melee weapon attack rolls.<br>Wild Dominance. You can take the Dash Action as a<br>Bonus Action. When you take the Dash Action this way,<br>Difficult Terrain doesn’t cost you extra movement for the rest of that turn.<br>Level 10: Stand Unbound<br>The more enemies press you, the more violently you answer.<br>Violent Response. While your Rage is active, when a creature you can see forces you to make a saving throw or makes an attack roll against you, you can use your Reaction to mark that creature until the end of your next turn.<br>While the creature is marked in this way, it is Vulnerable to the next melee weapon attack you hit it with. When you hit that marked creature with a melee weapon attack, the attack deals maximum damage, and the mark ends.<br>You can use this feature once per Rage.<br>Improved Strength of One. When there are three enemies within 5 feet of you, you score a Critical Hit on a 17, 18, 19, or 20 on the d20 with melee attacks using a weapon or Unarmed Strike.<br>Never provoke a berserker unless you’ve settled your affairs.<br>—Cranhath Antonsson, Grimfolk Jarl<br>Level 14: Reckoning of Choice<br>When you enter your Rage, you choose one Reckoning of<br>Choice feature. This is in addition to both a Strength of<br>One option and a Dominant of Will option. You benefit from all three options until your Rage ends.<br>Stoic Reckoning. When you use Reckless Attack, you gain Resistance to one damage type of your choice until the start of your next turn, and you are immune to the<br>Stunned condition until the start of your next turn.<br>Wrathful Reckoning. If you use Reckless Attack or<br>Brutal Strike and miss, you can take a Bonus Action to make another melee attack with a weapon or Unarmed<br>Strike with the same weapon or Unarmed Strike against the same target.<br>Wild Reckoning. While you are raging, you can use your Action to make a single melee weapon attack against a creature you can see within your reach. On a hit, the attack deals maximum damage, and the target must make a Constitution saving throw against a DC equal to 8 + your Proficiency Bonus + your Strength modifier. On a failed save, the target is Stunned for 1 minute. At the end of each of its turns, the target can make another Constitution saving throw, ending the Stunned condition on itself on a success.</p>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "40",
+      "rules": "2024"
+    },
+    "identifier": "lyonesse-path-of-the-provoked",
+    "classIdentifier": "barbarian",
+    "advancement": [
+      {
+        "_id": "8717844b61639bc3",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.e6745422b3700dbd",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "d8deded268510131",
+        "type": "ItemGrant",
+        "level": 6,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.df57787095641dcb",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "2b28ed41b04f3beb",
+        "type": "ItemGrant",
+        "level": 10,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.538727c0c891d81e",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "74a3168b8a0a00b2",
+        "type": "ItemGrant",
+        "level": 14,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.2b8b6aef2f1b0af0",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Path of the Provoked",
+      "spellList": {}
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "67fbf9f5f0606cca",
+  "sort": 0,
+  "_key": "!items!01cf8a48ad4a604c"
+}

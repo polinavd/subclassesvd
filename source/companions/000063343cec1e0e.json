@@ -1,0 +1,293 @@
+{
+  "_id": "000063343cec1e0e",
+  "name": "Misplaced Soul",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0
+      },
+      "con": {
+        "value": 10,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 8,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 7,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 10
+      },
+      "hp": {
+        "value": 10,
+        "max": 10,
+        "temp": 0
+      },
+      "movement": {
+        "walk": 40,
+        "units": "ft"
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fey"
+      },
+      "cr": 0.5,
+      "biography": {
+        "value": "<p>Companion lasts 10 minutes; ends when summoner or soul reaches 0 HP, or dismissed as Bonus Action. Create through the subclass management macro. Invisibility, duration and commands require GM tracking. Grapple escape DC equals summoner spell save DC.</p>"
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [
+          "poison"
+        ]
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "exhaustion",
+          "frightened",
+          "grappled",
+          "paralyzed",
+          "petrified",
+          "poisoned",
+          "prone",
+          "restrained"
+        ]
+      },
+      "languages": {
+        "value": [
+          "common"
+        ],
+        "custom": "Understands Common"
+      }
+    },
+    "skills": {}
+  },
+  "items": [
+    {
+      "_id": "3bbcd67e54f8eabc",
+      "name": "Invisibility",
+      "type": "feat",
+      "img": "icons/svg/sword.svg",
+      "flags": {
+        "grimnir-lyonesse": {
+          "templateItem": true
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Invisible except to its summoner. Token visibility must be managed by the GM.</p>"
+        },
+        "type": {
+          "value": "monster"
+        },
+        "activities": {}
+      },
+      "effects": [],
+      "_key": "!actors.items!000063343cec1e0e.3bbcd67e54f8eabc"
+    },
+    {
+      "_id": "405ac8c0b9208e0b",
+      "name": "Interfere",
+      "type": "feat",
+      "img": "icons/svg/sword.svg",
+      "flags": {
+        "grimnir-lyonesse": {
+          "templateItem": true
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Large or smaller target is Grappled; escape DC equals summoner spell save DC.</p>"
+        },
+        "type": {
+          "value": "monster"
+        },
+        "activities": {
+          "2a62fcda7e3549b4": {
+            "_id": "2a62fcda7e3549b4",
+            "name": "Interfere",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "spellSlot": false,
+              "targets": []
+            },
+            "range": {
+              "units": "ft",
+              "value": "5"
+            },
+            "target": {
+              "affects": {
+                "type": "creature",
+                "count": "1"
+              }
+            },
+            "damage": {
+              "parts": [
+                {
+                  "custom": {
+                    "enabled": true,
+                    "formula": "1d4"
+                  },
+                  "types": [
+                    "psychic"
+                  ]
+                }
+              ],
+              "includeBase": false,
+              "onSave": "none"
+            },
+            "attack": {
+              "flat": true,
+              "bonus": "0",
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            }
+          }
+        }
+      },
+      "effects": [],
+      "_key": "!actors.items!000063343cec1e0e.405ac8c0b9208e0b"
+    },
+    {
+      "_id": "27d74abe610c7905",
+      "name": "Thrash",
+      "type": "feat",
+      "img": "icons/svg/sword.svg",
+      "flags": {
+        "grimnir-lyonesse": {
+          "templateItem": true
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Requires level 6 and 1 Sorcery Point, spent by the summoner’s command activity.</p>"
+        },
+        "type": {
+          "value": "monster"
+        },
+        "activities": {
+          "f27f6a16f16794d9": {
+            "_id": "f27f6a16f16794d9",
+            "name": "Thrash",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "spellSlot": false,
+              "targets": []
+            },
+            "range": {
+              "units": "ft",
+              "value": "30"
+            },
+            "target": {
+              "affects": {
+                "type": "creature",
+                "count": "1"
+              }
+            },
+            "damage": {
+              "parts": [
+                {
+                  "custom": {
+                    "enabled": true,
+                    "formula": "2d8"
+                  },
+                  "types": [
+                    "psychic"
+                  ]
+                }
+              ],
+              "includeBase": false,
+              "onSave": "none"
+            },
+            "attack": {
+              "flat": true,
+              "bonus": "0",
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            }
+          }
+        }
+      },
+      "effects": [],
+      "_key": "!actors.items!000063343cec1e0e.27d74abe610c7905"
+    },
+    {
+      "_id": "381237ec63da92c8",
+      "name": "Reduce Harm",
+      "type": "feat",
+      "img": "icons/svg/sword.svg",
+      "flags": {
+        "grimnir-lyonesse": {
+          "templateItem": true
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Reaction: take damage instead of creature within 5 ft hit by an attack, after its resistances/immunities/vulnerabilities. Damage beyond soul HP remains on original target. Requires level 6 and 2 Sorcery Points.</p>"
+        },
+        "type": {
+          "value": "monster"
+        },
+        "activities": {}
+      },
+      "effects": [],
+      "_key": "!actors.items!000063343cec1e0e.381237ec63da92c8"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "template": "soul"
+    }
+  },
+  "prototypeToken": {
+    "name": "Misplaced Soul",
+    "actorLink": true,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!000063343cec1e0e"
+}

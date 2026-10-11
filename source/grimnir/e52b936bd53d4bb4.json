@@ -1,0 +1,70 @@
+{
+  "_id": "e52b936bd53d4bb4",
+  "name": "Surveyor of the Depths",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-discovery-domain-surveyor-of-the-depths",
+    "description": {
+      "value": "<p><b>Discovery Domain · уровень 17</b></p><p>You gain the ability to breathe underwater, and your<br>Swim Speed doubles.<br>You always have the Tsunami spell prepared. You can also expend a use of Channel Divinity to cast it without expending a spell slot.<br>They chart no safe waters, only worthy ones, for the gods of the Stone Court favor the bold and the unbroken.<br>—Anton Flame-born</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Tsunami выдаётся на 17 уровне. Альтернативную трату Channel Divinity выбрать вручную.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "38",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Discovery Domain 17",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [
+    {
+      "_id": "16675ea247198ccf",
+      "name": "Swim speed ×2",
+      "img": "icons/svg/book.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.attributes.movement.swim",
+          "mode": 0,
+          "value": "gl-swim:2",
+          "priority": 20
+        }
+      ],
+      "statuses": [],
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true
+        }
+      },
+      "duration": {},
+      "_key": "!items.effects!e52b936bd53d4bb4.16675ea247198ccf"
+    }
+  ],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Discovery Domain",
+      "feature": "Surveyor of the Depths",
+      "class": "cleric",
+      "level": 17,
+      "notes": [
+        "Tsunami выдаётся на 17 уровне. Альтернативную трату Channel Divinity выбрать вручную."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "25c7aea27071b194",
+  "sort": 170000,
+  "_key": "!items!e52b936bd53d4bb4"
+}

@@ -1,0 +1,46 @@
+{
+  "_id": "ccbd6411687c1c89",
+  "name": "Archangel’s Spells",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-the-archangel-archangel-s-spells",
+    "description": {
+      "value": "<p><b>The Archangel · уровень 3</b></p><p>The Archangel grants you spells that punish the wicked and scour corruption with holy fire. You always have these spells prepared, and they do not count against your number of spells known.<br>Archangel Spells<br>Warlock Level<br>Spells<br>3<br>Wrathful Smite, Sanctuary, Flame Blade,<br>Zone of Truth<br>5<br>Spirit Guardians, Fear<br>7<br>Wall of Fire, Banishment<br>9<br>Banishing Smite, Dispel Evil and Good</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "62",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "The Archangel 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "The Archangel",
+      "feature": "Archangel’s Spells",
+      "class": "warlock",
+      "level": 3,
+      "notes": [
+        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "38aa6694fe4ed7c9",
+  "sort": 30000,
+  "_key": "!items!ccbd6411687c1c89"
+}

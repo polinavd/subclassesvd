@@ -1,0 +1,68 @@
+{
+  "_id": "073060c08dd1211d",
+  "name": "Draconic Influence",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-circle-of-the-wurm-draconic-influence",
+    "description": {
+      "value": "<p><b>Circle of the Wurm · уровень 6</b></p><p>The spirit of the dragon takes root within you, its influence enduring whether you wear its form or your own.<br>Acidic Touch. Each of your attacks in a Wild Shape form can deal its normal damage type or Acid damage. You make this choice each time you hit with those attacks.<br>Water Dweller. You gain a Swim Speed equal to your<br>Speed.<br>Maturing Wyrm Spirit. You no longer have the Wyrmling exception in your Dragon Soul feature.</p>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "46",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Circle of the Wurm 6",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [
+    {
+      "_id": "8331c8729acdf80c",
+      "name": "Swim speed",
+      "img": "icons/svg/book.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.attributes.movement.swim",
+          "mode": 0,
+          "value": "gl-swim:1",
+          "priority": 20
+        }
+      ],
+      "statuses": [],
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true
+        }
+      },
+      "duration": {},
+      "_key": "!items.effects!073060c08dd1211d.8331c8729acdf80c"
+    }
+  ],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Circle of the Wurm",
+      "feature": "Draconic Influence",
+      "class": "druid",
+      "level": 6,
+      "notes": []
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "7828b28733ff481e",
+  "sort": 60000,
+  "_key": "!items!073060c08dd1211d"
+}

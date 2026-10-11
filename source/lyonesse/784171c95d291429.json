@@ -1,0 +1,46 @@
+{
+  "_id": "784171c95d291429",
+  "name": "Master of Time",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-wyrd-sorcery-master-of-time",
+    "description": {
+      "value": "<p><b>Wyrd Sorcery · уровень 18</b></p><p>You always have the Time Stop and Foresight spells prepared.<br>When you cast Time Stop, you don’t roll for the number of turns, you automatically get the highest number on the die.<br>While under the effect of Time Stop, you have True<br>Sight out to a range of 30 feet, and you can take the<br>Dash, Hide, or Utilize action as a Bonus Action.<br>If Time Stop ends as a result of casting a spell that causes a saving throw, all targets make their saving throw at Disadvantage.<br>When you cast Foresight, the target’s movement does not provoke Opportunity Attacks and the target can take the Dash, Help, or Hide action as a Bonus Action.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Time Stop/Foresight добавляются как подготовленные заклинания; максимум ходов и дополнительные бонусные действия — вручную.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "60",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Wyrd Sorcery 18",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Wyrd Sorcery",
+      "feature": "Master of Time",
+      "class": "sorcerer",
+      "level": 18,
+      "notes": [
+        "Time Stop/Foresight добавляются как подготовленные заклинания; максимум ходов и дополнительные бонусные действия — вручную."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "b7ea24026d36df87",
+  "sort": 180000,
+  "_key": "!items!784171c95d291429"
+}

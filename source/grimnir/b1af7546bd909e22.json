@@ -1,0 +1,110 @@
+{
+  "_id": "b1af7546bd909e22",
+  "name": "Misplaced Soul",
+  "type": "subclass",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": {
+      "value": "<p><b>2024 · Grimnir</b></p><p>Перетащите подкласс на персонажа с соответствующим базовым классом. Для форм и спутников используйте макрос «Управление подклассом». Ограничения указаны в каждой способности.</p><p>Sorcerer<br>Misplaced Soul<br>In your dreams you remember a vast and strange place that you have come to believe is where you originated— or where you were kept until needed. You have memories of other souls, like yourself, lingering in that domain. You have the power to summon these souls.<br>Level 3: Companions from the Before<br>You can use a Bonus Action to summon a Misplaced<br>Soul in an unoccupied space within 10 feet of you. You can have only one Misplaced Soul at a time.<br>The Misplaced Soul uses a special stat block (provided below). When you summon it, it gains additional Hit<br>Points equal to 5 times the number of Sorcery Points you spend. The Misplaced Soul lasts for 10 minutes, until you use a Bonus Action to dismiss it, or until you or the Soul drop to 0 Hit Points.<br>You can summon a Misplaced Soul a number of times equal to your Charisma Modifier, and you regain all uses when you finish a Long Rest.<br>Level 3: Act as One<br>Your thoughts and the Misplaced Soul’s essence flow together.<br>Telepathy. You and the Misplaced Soul can communicate telepathically while you are within 120 feet of each other.<br>Shared Movement and Action. On your turn, you can use a Bonus Action to move the Misplaced Soul up to 30 feet. At the end of this movement, it can take one action of your choice from its stat block.<br>Metamagic: Swap (1 Sorcery Point). As part of the same Bonus Action, you can spend 1 Sorcery Point to instantly swap positions with the Misplaced Soul if it is within 30 feet of you. This movement does not provoke<br>Opportunity Attacks.<br>Level 6: Soul Bound Commands<br>You gain the ability to spend Sorcery Points to have your<br>Misplaced Soul perform specific actions.<br>Metamagic: Thrash (1 Sorcery Point). You may use a<br>Bonus Action to have your Misplaced Soul use its Thrash attack. This can also be done as part of the Bonus Action you use to summon a Misplaced Soul.<br>Metamagic: Reduce Harm (2 Sorcery Points).  You may have your Misplaced Soul use its Reduce Harm as a<br>Reaction when a creature within 5 feet of it is hit by an attack.<br>Level 14: The Imagined Offense<br>You gain additional Soul Bound Commands:<br>Metamagic: Consume (1 Sorcery Point). You absorb the Misplaced Soul in a burst of soulstuff. You regain Hit<br>Points equal to its current Hit Points, and the Misplaced<br>Soul vanishes.<br>Metamagic: Improved Thrash (1 Sorcery Point).<br>Your Misplaced Soul’s Thrash now deals 2d12 plus your<br>Charisma modifier Psychic damage, instead of 2d8.<br>Level 18: Dreams Made Real<br>When you summon a Misplaced Soul, you can spend additional Sorcery Points to grant it special traits. These traits last until the Soul disappears.<br>Metamagic: Magic Resistance (1 Sorcery Point).<br>You give the Misplaced Soul the Magic Resistance trait<br>(see accompanying stat block).<br>Metamagic: Regeneration (2 Sorcery Points).<br>You give the Misplaced Soul the Regeneration trait (see accompanying stat block).<br>Metamagic: Reality (4 Sorcery Points). The Misplaced Soul that you create loses the Invisibility trait. It gains the Rend Ranged Attack and the Magic Resistance and Regeneration traits. If you become Incapacitated or are reduced to 0 Hit Points while this Misplaced Soul exists, roll 1d20. If you roll a 1 or 2 the Misplaced Soul becomes a real creature that persists. They are under the<br>DM’s control and have the stat block of an Archmage.<br>Their disposition is Friendly towards you.<br>Once a Misplaced Soul becomes a real creature in this manner, this effect won’t transform a Misplaced Soul into a real creature again until 1 year has passed.<br>Nothing sadder than a Misplaced Soul Sorcerer. Thinks he might be an illusion that got too real. Mate, if you’re fake, at least be useful and disappear when I tell you to.<br>—Britta the Scourge<br>Misplaced Soul<br>Medium Fey, Unaligned<br>AC 10<br>Initiative +0 (10)<br>HP 10 plus 5 H P per Sorcery Points spent<br>Speed 40 ft.<br>MOD SAVE<br>MOD SAVE<br>MOD SAVE<br>Str<br>10<br>+0<br>+0<br>Dex 10 +0<br>+0<br>Con 10 +0<br>+0<br>Int<br>10 +0<br>+0<br>Wis<br>8<br>–1<br>–1<br>Cha<br>7<br>–2<br>–2<br>Immunities Poison; Charmed, Exhaustion, Frightened,<br>Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained<br>Senses Darkvision 60 ft.; Passive Perception 9<br>Languages Understands Common<br>Challenge 1/2 (100 XP; PB +2)<br>Traits<br>Invisibility. The misplaced soul has the Invisible condition, except to the spellcaster who summoned it.<br>Magic Resistance (Level 18 required, plus 1 Sorcery Point).<br>The misplaced soul has Advantage on saving throws against spells and other magical effects.<br>Regeneration (Level 18 required, plus 2 Sorcery Points).<br>The misplaced soul regains 10 Hit Points at the start of each of its turns if it has at least 1 Hit Point.<br>Actions<br>Interfere. Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d4 plus your Charisma Modifier<br>Psychic damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC equals your spell saving throw).<br>Thrash (Level 6 Required, plus 1 Sorcery Point). Ranged<br>Attack Roll: Bonus equals your spell attack modifier, range<br>30 ft. Hit: 2d8 plus your Charisma Modifier Psychic damage.<br>Reactions<br>Reduce Harm (level 6 required, plus 2 Sorcery Points).<br>Trigger: A creature within 5 ft. of the misplaced soul is hit by an attack roll. Response: The misplaced soul takes the damage instead of the target, after applying the target’s<br>Immunities, Resistances, or Vulnerabilities. If the misplaced soul is reduced to 0 Hit Points this way, the original target takes any remaining damage.</p>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "52",
+      "rules": "2024"
+    },
+    "identifier": "grimnir-misplaced-soul",
+    "classIdentifier": "sorcerer",
+    "advancement": [
+      {
+        "_id": "d8a27a584fa2df52",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.8136d89434045e8d",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.3a16603e853f6f8f",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "cf17096fe4d91531",
+        "type": "ItemGrant",
+        "level": 6,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.2451b9d2ef380a10",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "616bb475ca6479bb",
+        "type": "ItemGrant",
+        "level": 14,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.cbb4c114d59660fd",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "c98053fe4e6a2d4b",
+        "type": "ItemGrant",
+        "level": 18,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.281dd5a14f21592d",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Misplaced Soul",
+      "spellList": {}
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "5e7aabf373dadf67",
+  "sort": 0,
+  "_key": "!items!b1af7546bd909e22"
+}

@@ -1,0 +1,14 @@
+{
+  "passed": 8,
+  "tests": [
+    "API registration",
+    "Provoked thresholds by level and enemy count; ranged unaffected",
+    "Better existing critical threshold preserved",
+    "Swim scaling",
+    "Foreign custom effects left unchanged",
+    "Slip the Skin consumes exactly once and creates timed effect",
+    "Cancelled dialog is read-only",
+    "Insufficient resource blocks activation"
+  ],
+  "environment": "Node VM with mocked Foundry API; not a live Foundry test"
+}

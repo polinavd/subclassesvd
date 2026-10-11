@@ -1,0 +1,46 @@
+{
+  "_id": "d4838ae72de2ff0a",
+  "name": "Drowning Grip",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-discovery-domain-drowning-grip",
+    "description": {
+      "value": "<p><b>Discovery Domain · уровень 6</b></p><p>You can now activate your Drowned Breath by expending a use of Channel Divinity when a creature fails a saving throw against one of your spells.<br>In addition, a creature affected by Drowned Breath cannot cast spells requiring a Verbal component.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "38",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Discovery Domain 6",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Discovery Domain",
+      "feature": "Drowning Grip",
+      "class": "cleric",
+      "level": 6,
+      "notes": [
+        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "25c7aea27071b194",
+  "sort": 60000,
+  "_key": "!items!d4838ae72de2ff0a"
+}

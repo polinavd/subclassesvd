@@ -1,0 +1,64 @@
+{
+  "_id": "f5e8a1b56d0a44bb",
+  "name": "Stand Unbound",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-path-of-the-provoked-stand-unbound",
+    "description": {
+      "value": "<p><b>Path of the Provoked · уровень 10</b></p><p>The more enemies press you, the more violently you answer.<br>Violent Response. While your Rage is active, when a creature you can see forces you to make a saving throw or makes an attack roll against you, you can use your Reaction to mark that creature until the end of your next turn.<br>While the creature is marked in this way, it is Vulnerable to the next melee weapon attack you hit it with. When you hit that marked creature with a melee weapon attack, the attack deals maximum damage, and the mark ends.<br>You can use this feature once per Rage.<br>Improved Strength of One. When there are three enemies within 5 feet of you, you score a Critical Hit on a 17, 18, 19, or 20 on the d20 with melee attacks using a weapon or Unarmed Strike.<br>Never trust a smiling Tvar. One minute they’re offering you bread, the next they’re turning your raid into a slaughter.<br>—Gösta Horntooth</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Максимальный урон, уязвимость только к следующей атаке и лимит 1/ярость проверяет ведущая.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "34",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Path of the Provoked 10",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "0b501d9b6eec7d6e": {
+        "_id": "0b501d9b6eec7d6e",
+        "type": "utility",
+        "name": "Violent Response — пометка",
+        "activation": {
+          "type": "reaction",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Path of the Provoked",
+      "feature": "Stand Unbound",
+      "class": "barbarian",
+      "level": 10,
+      "notes": [
+        "Максимальный урон, уязвимость только к следующей атаке и лимит 1/ярость проверяет ведущая."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "50b4331a01e2aad7",
+  "sort": 100000,
+  "_key": "!items!f5e8a1b56d0a44bb"
+}

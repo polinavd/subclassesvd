@@ -1,0 +1,108 @@
+{
+  "_id": "f8c7b28f81527854",
+  "name": "Fleet of the Weald",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-outlaw-fleet-of-the-weald",
+    "description": {
+      "value": "<p><b>Outlaw · уровень 9</b></p><p>You move through the wild as if it were your home.<br>Swift Passage. Difficult Terrain doesn’t cost you extra movement.<br>Climber. You gain a Climb Speed equal to your Speed.<br>Powerful Shot. When you use Steady Aim using a<br>Ranged weapon with the Heavy property, you may add an additional 1d6 to your Sneak Attack damage.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Урон добавлять только после Steady Aim тяжёлым дальнобойным оружием.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "58",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Outlaw 9",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "06c0fc9ddf82f535": {
+        "_id": "06c0fc9ddf82f535",
+        "type": "damage",
+        "name": "Powerful Shot: extra damage",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "1d6"
+              },
+              "types": [
+                "piercing"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ],
+          "onSave": "none",
+          "includeBase": false
+        }
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "a3ffc447a299b4c9",
+      "name": "Climb speed",
+      "img": "icons/svg/book.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.attributes.movement.climb",
+          "mode": 0,
+          "value": "gl-swim:1",
+          "priority": 20
+        }
+      ],
+      "statuses": [],
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true
+        }
+      },
+      "duration": {},
+      "_key": "!items.effects!f8c7b28f81527854.a3ffc447a299b4c9"
+    }
+  ],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Outlaw",
+      "feature": "Fleet of the Weald",
+      "class": "rogue",
+      "level": 9,
+      "notes": [
+        "Урон добавлять только после Steady Aim тяжёлым дальнобойным оружием."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "6548f4d360a0e760",
+  "sort": 90000,
+  "_key": "!items!f8c7b28f81527854"
+}

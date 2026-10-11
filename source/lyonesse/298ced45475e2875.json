@@ -1,0 +1,99 @@
+{
+  "_id": "298ced45475e2875",
+  "name": "Domain Verse",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-college-of-the-voice-domain-verse",
+    "description": {
+      "value": "<p><b>College of the Voice · уровень 3</b></p><p>When you cast a spell from the Maker Domain Spells table, you can expend one or more of your Bardic Inspiration dice to improve the power of the spell. This can be done in two ways.<br>Saving Throw Adjustment. If the spell requires the target to make a saving throw and the target succeeds on its saving throw, you can expend one of your Bardic Inspiration dice and reduce the saving throw of the target by the number rolled. You can expend more than one Bardic<br>Inspiration dice if there are additional targets, using each additional roll on a single target. When you expend a Bardic Inspiration die on a creature and the roll is not high enough to change the outcome, the die is not expended.<br>Healing Enhancement. If the spell restores Hit<br>Points, you can expend one of your Bardic Inspiration dice and add the number rolled to the amount of Hit<br>Points restored. In addition, if the spell is a single target spell, the target gains Temporary Hit Points equal to the number rolled.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Saving Throw Adjustment: списать Inspiration только если результат изменён. Добавление лечения и временных HP — вручную.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "42",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "College of the Voice 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "513017f1ef03b95b": {
+        "_id": "513017f1ef03b95b",
+        "type": "utility",
+        "name": "Saving Throw Adjustment",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "roll": {
+          "formula": "@scale.bard.inspiration",
+          "name": "Saving Throw Adjustment",
+          "visible": true,
+          "prompt": false
+        }
+      },
+      "cfc9e005b415e56d": {
+        "_id": "cfc9e005b415e56d",
+        "type": "utility",
+        "name": "Healing Enhancement",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:bardic-inspiration",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "roll": {
+          "formula": "@scale.bard.inspiration",
+          "name": "Healing Enhancement",
+          "visible": true,
+          "prompt": false
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "College of the Voice",
+      "feature": "Domain Verse",
+      "class": "bard",
+      "level": 3,
+      "notes": [
+        "Saving Throw Adjustment: списать Inspiration только если результат изменён. Добавление лечения и временных HP — вручную."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "71e3d6e1e80dbb6c",
+  "sort": 30000,
+  "_key": "!items!298ced45475e2875"
+}

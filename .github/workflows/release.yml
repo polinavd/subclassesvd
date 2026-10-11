@@ -1,0 +1,39 @@
+name: Release module
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - run: npm ci
+      - run: npm test
+      - run: npm run check:archive
+      - name: Verify release tag and prepare pinned manifest
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          m = json.loads(Path('module.json').read_text())
+          tag = os.environ['RELEASE_TAG']
+          assert tag == 'v' + m['version'], 'Tag must match module version'
+          m['download'] = f'https://github.com/polinavd/subclassesvd/releases/download/{tag}/grimnir-lyonesse.zip'
+          Path('dist/module.json').write_text(json.dumps(m, ensure_ascii=False, indent=2) + '\n')
+          PY
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: gh release create "$RELEASE_TAG" dist/grimnir-lyonesse.zip dist/module.json --verify-tag --title "$RELEASE_TAG" --generate-notes

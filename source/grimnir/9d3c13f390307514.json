@@ -1,0 +1,112 @@
+{
+  "_id": "9d3c13f390307514",
+  "name": "Channel Divinity",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-oath-of-the-slain-channel-divinity",
+    "description": {
+      "value": "<p><b>Oath of the Slain · уровень 3</b></p><p>Fight to the Last. You can use one use of your Channel Divinity as a Magic Action to restore Hit Points to creatures of your choice within 15 feet. You can restore a total number of Hit Points, divided as you choose, equal to twice your Paladin level. If a creature is at 0 Hit Points when it receives this healing, it regains twice the amount you choose to give it.<br>Mark of the Executioner. You can use one use of your<br>Channel Divinity as a Bonus Action to mark one creature you can see for execution for 1 minute. While the mark lasts, your attack rolls against the creature score a Critical Hit on a roll of 18-20 on the d20. The effect ends early if you become Incapacitated or if you mark another creature.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Распределение лечения и удвоение на 0 HP — вручную. Криты по отмеченной цели: выбрать порог 18 в броске оружия.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "46",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Oath of the Slain 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "375c2a8837b5acd7": {
+        "_id": "375c2a8837b5acd7",
+        "type": "utility",
+        "name": "Fight to the Last: пул лечения",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:channel-divinity",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "range": {
+          "value": "15",
+          "units": "ft"
+        },
+        "target": {
+          "affects": {
+            "type": "creature",
+            "count": "1"
+          },
+          "template": {
+            "type": ""
+          }
+        },
+        "roll": {
+          "formula": "2 * @classes.paladin.levels",
+          "name": "Fight to the Last: пул лечения",
+          "visible": true,
+          "prompt": false
+        }
+      },
+      "db3842cd52b71f7f": {
+        "_id": "db3842cd52b71f7f",
+        "type": "utility",
+        "name": "Mark of the Executioner",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:channel-divinity",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Oath of the Slain",
+      "feature": "Channel Divinity",
+      "class": "paladin",
+      "level": 3,
+      "notes": [
+        "Распределение лечения и удвоение на 0 HP — вручную. Криты по отмеченной цели: выбрать порог 18 в броске оружия."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "7c14c39ab5ef4425",
+  "sort": 30000,
+  "_key": "!items!9d3c13f390307514"
+}

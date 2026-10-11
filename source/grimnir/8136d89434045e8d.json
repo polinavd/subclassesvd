@@ -1,0 +1,51 @@
+{
+  "_id": "8136d89434045e8d",
+  "name": "Companions from the Before",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-misplaced-soul-companions-from-the-before",
+    "description": {
+      "value": "<p><b>Misplaced Soul · уровень 3</b></p><p>You can use a Bonus Action to summon a Misplaced<br>Soul in an unoccupied space within 10 feet of you. You can have only one Misplaced Soul at a time.<br>The Misplaced Soul uses a special stat block (provided below). When you summon it, it gains additional Hit<br>Points equal to 5 times the number of Sorcery Points you spend. The Misplaced Soul lasts for 10 minutes, until you use a Bonus Action to dismiss it, or until you or the Soul drop to 0 Hit Points.<br>You can summon a Misplaced Soul a number of times equal to your Charisma Modifier, and you regain all uses when you finish a Long Rest.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Создать/обновить спутника и потратить призыв/Sorcery Points — через макрос управления.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "52",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Misplaced Soul 3",
+    "uses": {
+      "max": "max(0,@abilities.cha.mod)",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Misplaced Soul",
+      "feature": "Companions from the Before",
+      "class": "sorcerer",
+      "level": 3,
+      "notes": [
+        "Создать/обновить спутника и потратить призыв/Sorcery Points — через макрос управления."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "5e7aabf373dadf67",
+  "sort": 30000,
+  "_key": "!items!8136d89434045e8d"
+}

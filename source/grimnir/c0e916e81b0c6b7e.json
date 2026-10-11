@@ -1,0 +1,46 @@
+{
+  "_id": "c0e916e81b0c6b7e",
+  "name": "Strength of One",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-path-of-the-provoked-strength-of-one",
+    "description": {
+      "value": "<p><b>Path of the Provoked · уровень 3</b></p><p>You score a Critical Hit on a roll of 19 or 20 on the d20 with melee attacks using a weapon or Unarmed Strike.<br>If there are two enemies within 5 feet of you, you score a<br>Critical Hit on rolls of 18, 19, or 20.<br>In addition, when you enter your Rage, you choose one of the following options. You benefit from that option until your Rage ends.<br>Stoic Strength. When you take damage from a creature you can see, you can use your Reaction to move up to half your Speed toward that creature. This movement does not provoke Opportunity Attacks.<br>Wrathful Strength. When you take damage from a<br>Hostile creature that you can see, you can take a Reaction to gain 1 Provoked Point. When you hit a creature with a melee attack with a weapon or Unarmed Strike, you can spend a number of Provoked Points equal to half your<br>Rage Damage bonus (round up). For each Provoked Point you spend, the attack deals one additional damage die for the weapon or Unarmed Strike of the same damage type.<br>You can have a number of Provoked Points equal to your Rage Damage bonus and all unspent Provoked<br>Points are lost when your Rage ends.<br>Wild Strength. When you take the Attack Action, you can forgo one of your attacks to make a wild swing that threatens all nearby foes. Each creature of your choice within your weapon’s reach must make a Dexterity saving throw against a DC equal to 8 plus your Proficiency<br>Bonus plus your Strength modifier. On a failed save, the creature takes damage as though hit by a single melee weapon attack with the weapon you used for this swing.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Криты ближних атак обрабатываются скриптом модуля; число соседних врагов задаётся в макросе управления и обновляется при изменении позиции. Варианты ярости — в макросе управления.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "34",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Path of the Provoked 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Path of the Provoked",
+      "feature": "Strength of One",
+      "class": "barbarian",
+      "level": 3,
+      "notes": [
+        "Криты ближних атак обрабатываются скриптом модуля; число соседних врагов подтверждается перед броском. Варианты ярости — в макросе управления."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "50b4331a01e2aad7",
+  "sort": 30000,
+  "_key": "!items!c0e916e81b0c6b7e"
+}

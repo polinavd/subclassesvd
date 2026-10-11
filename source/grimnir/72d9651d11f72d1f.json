@@ -1,0 +1,46 @@
+{
+  "_id": "72d9651d11f72d1f",
+  "name": "Dubious Healing",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-true-believer-dubious-healing",
+    "description": {
+      "value": "<p><b>True Believer · уровень 9</b></p><p>When you cast a spell that restores Hit Points, you can choose to give the target Temporary Hit Points equal to the amount the spell would have healed instead of restoring any Hit Points.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "50",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "True Believer 9",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "True Believer",
+      "feature": "Dubious Healing",
+      "class": "rogue",
+      "level": 9,
+      "notes": [
+        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "4abb7a3dcaaf0cac",
+  "sort": 90000,
+  "_key": "!items!72d9651d11f72d1f"
+}

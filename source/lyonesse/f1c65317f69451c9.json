@@ -1,0 +1,46 @@
+{
+  "_id": "f1c65317f69451c9",
+  "name": "Final Avatar",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-the-archangel-final-avatar",
+    "description": {
+      "value": "<p><b>The Archangel · уровень 14</b></p><p>You fully embody heaven’s executioner, becoming the<br>Archangel’s perfected vessel. While in your Avatar of the<br>Archangel form, you gain the following benefits:<br>• You shed Bright Light in a 30-foot radius and Dim<br>Light for another 60 feet.<br>• You have Resistance to all damage except Force.<br>• When you hit a creature with an attack, you can teleport up to 30 feet to an unoccupied space you can see.<br>• You always know the direction and distance to any creature you have damaged since the start of this transformation.<br>You can now expend a Pact Magic spell slot (no action required) to restore your use of Avatar of the Archangel.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Сопротивления формы применяет макрос; телепортация, слежение и восстановление за Pact slot — вручную.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "62",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "The Archangel 14",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "The Archangel",
+      "feature": "Final Avatar",
+      "class": "warlock",
+      "level": 14,
+      "notes": [
+        "Сопротивления формы применяет макрос; телепортация, слежение и восстановление за Pact slot — вручную."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "38aa6694fe4ed7c9",
+  "sort": 140000,
+  "_key": "!items!f1c65317f69451c9"
+}

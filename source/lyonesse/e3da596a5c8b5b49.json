@@ -1,0 +1,75 @@
+{
+  "_id": "e3da596a5c8b5b49",
+  "name": "Saintly Challenge",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-oath-of-saints-saintly-challenge",
+    "description": {
+      "value": "<p><b>Oath of Saints · уровень 3</b></p><p>Challenge Without Hesitation. You can cast Compelled<br>Duel a number of times equal to your Strength Modifier without expending a spell slot. You regain all expended uses of this ability when you finish a Long Rest.<br>Unbroken Vow. Taking damage from the target of<br>Compelled Duel can’t break your Concentration on Compelled Duel.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Нажать заклинание без расхода слота после этой кнопки. Сохранение концентрации от цели — вручную.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "54",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Oath of Saints 3",
+    "uses": {
+      "max": "max(0,@abilities.str.mod)",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {
+      "417b08eb09c59759": {
+        "_id": "417b08eb09c59759",
+        "type": "utility",
+        "name": "Compelled Duel без слота",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Oath of Saints",
+      "feature": "Saintly Challenge",
+      "class": "paladin",
+      "level": 3,
+      "notes": [
+        "Нажать заклинание без расхода слота после этой кнопки. Сохранение концентрации от цели — вручную."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "7a918a48d1938fb1",
+  "sort": 30000,
+  "_key": "!items!e3da596a5c8b5b49"
+}

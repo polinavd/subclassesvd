@@ -1,0 +1,46 @@
+{
+  "_id": "df57787095641dcb",
+  "name": "Dominant of Will",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-path-of-the-provoked-dominant-of-will",
+    "description": {
+      "value": "<p><b>Path of the Provoked · уровень 6</b></p><p>When you enter your Rage, you choose one Dominant of<br>Will feature. This is in addition to your Strength of One selection. You benefit from both options until your Rage ends.<br>Stoic Dominance. You have Advantage on saving throws against the Charmed and Frightened conditions.<br>Wrathful Dominance. You have Expertise in Intimidation. In addition, while you are Restrained or Prone, you do not have Disadvantage on melee weapon attack rolls.<br>Wild Dominance. You can take the Dash Action as a<br>Bonus Action. When you take the Dash Action this way,<br>Difficult Terrain doesn’t cost you extra movement for the rest of that turn.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Выбор варианта ярости и соответствующие эффекты — в макросе управления.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "40",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Path of the Provoked 6",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Path of the Provoked",
+      "feature": "Dominant of Will",
+      "class": "barbarian",
+      "level": 6,
+      "notes": [
+        "Выбор варианта ярости и соответствующие эффекты — в макросе управления."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "67fbf9f5f0606cca",
+  "sort": 60000,
+  "_key": "!items!df57787095641dcb"
+}

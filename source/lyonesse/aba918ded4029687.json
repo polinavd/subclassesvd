@@ -1,0 +1,79 @@
+{
+  "_id": "aba918ded4029687",
+  "name": "Scholar of the Wyrd",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-wyrd-sorcery-scholar-of-the-wyrd",
+    "description": {
+      "value": "<p><b>Wyrd Sorcery · уровень 3</b></p><p>You also gain proficiency in History and Insight. When you make an ability check using either skill, you can add your Charisma modifier to the roll. You can use this feature a number of times equal to your Charisma modifier<br>(minimum of once), and you regain all expended uses when you finish a Long Rest.</p>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "60",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Wyrd Sorcery 3",
+    "uses": {
+      "max": "max(1,@abilities.cha.mod)",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {
+      "90aec1682e2303fc": {
+        "_id": "90aec1682e2303fc",
+        "type": "utility",
+        "name": "Бонус к History / Insight",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "roll": {
+          "formula": "@abilities.cha.mod",
+          "name": "Бонус к History / Insight",
+          "visible": true,
+          "prompt": false
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Wyrd Sorcery",
+      "feature": "Scholar of the Wyrd",
+      "class": "sorcerer",
+      "level": 3,
+      "notes": []
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "b7ea24026d36df87",
+  "sort": 30000,
+  "_key": "!items!aba918ded4029687"
+}

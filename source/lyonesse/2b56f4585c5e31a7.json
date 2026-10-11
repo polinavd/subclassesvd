@@ -1,0 +1,46 @@
+{
+  "_id": "2b56f4585c5e31a7",
+  "name": "Outlaw’s Craft",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-outlaw-outlaw-s-craft",
+    "description": {
+      "value": "<p><b>Outlaw · уровень 3</b></p><p>You gain the following benefits:<br>Woodsman. You gain Proficiency in the Survival skill, the Disguise Kit tool, and Martial Ranged weapons with the Heavy property. In addition, you gain a Disguise Kit and a Longbow.<br>Improved Hunting Traps. Any Hunting Trap that you set uses your Cunning Strike DC instead of the DCs listed (minimum DC of 13).<br>Swift Snare. When you roll Initiative, you can immediately place a Hunting Trap (if you have one in your possession) in an empty space within 15 feet of you (no action required).<br>Thornweald outlaws rob the rich, avoid the poor, and occasionally steal from the Fey. That’s usually their last mistake.<br>—Clemsy, Otherling Pilgrim</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Longbow и Disguise Kit выдаются; DC ловушек и размещение Swift Snare — вручную.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "58",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Outlaw 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Outlaw",
+      "feature": "Outlaw’s Craft",
+      "class": "rogue",
+      "level": 3,
+      "notes": [
+        "Longbow и Disguise Kit выдаются; DC ловушек и размещение Swift Snare — вручную."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "6548f4d360a0e760",
+  "sort": 30000,
+  "_key": "!items!2b56f4585c5e31a7"
+}

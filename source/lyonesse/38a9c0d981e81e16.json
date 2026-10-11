@@ -1,0 +1,46 @@
+{
+  "_id": "38a9c0d981e81e16",
+  "name": "Saints that Came Before",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-oath-of-saints-saints-that-came-before",
+    "description": {
+      "value": "<p><b>Oath of Saints · уровень 20</b></p><p>The spirits of all saints that have come before you bolster you in your time of need.<br>Radiant Finality. When you cast Compelled Duel on a creature and it fails its saving throw, you have Advantage on attack rolls against that creature in addition to the spell’s normal effects. In addition, you can cast Compelled<br>Duel as part of the same Bonus Action used to cast a<br>Paladin spell that has “Smite” in its name and does not require Concentration.<br>Maker’s Bulwark. Your Consecrated Plate improves.<br>While you are wearing it you gain an additional +2 bonus to your Armor Class.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Макрос Consecrated Plate добавляет +2 AC. Условное преимущество и двойной бонусный каст — вручную.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "54",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Oath of Saints 20",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Oath of Saints",
+      "feature": "Saints that Came Before",
+      "class": "paladin",
+      "level": 20,
+      "notes": [
+        "Макрос Consecrated Plate добавляет +2 AC. Условное преимущество и двойной бонусный каст — вручную."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "7a918a48d1938fb1",
+  "sort": 200000,
+  "_key": "!items!38a9c0d981e81e16"
+}

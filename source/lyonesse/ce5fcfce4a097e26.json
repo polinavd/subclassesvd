@@ -1,0 +1,84 @@
+{
+  "_id": "ce5fcfce4a097e26",
+  "name": "Drowning Mark",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-selkie-warden-drowning-mark",
+    "description": {
+      "value": "<p><b>Selkie Warden · уровень 3</b></p><p>Your Hunter’s Mark manifests as an inexorable pull toward the deep. While a creature is marked by your<br>Hunter’s Mark:<br>• Its Speed is reduced by 10 feet, and it cannot benefit from effects that increase its Speed.<br>• If the marked creature willingly moves 10+ feet, it takes<br>Cold damage equal to your Wisdom modifier (minimum of 1) once per turn.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Скорость цели, добровольность 10 ft и предел 1/ход — вручную.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "56",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Selkie Warden 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "123079e177164ec3": {
+        "_id": "123079e177164ec3",
+        "type": "damage",
+        "name": "Урон при добровольном движении",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "max(1,@abilities.wis.mod)"
+              },
+              "types": [
+                "cold"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ],
+          "onSave": "none",
+          "includeBase": false
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Selkie Warden",
+      "feature": "Drowning Mark",
+      "class": "ranger",
+      "level": 3,
+      "notes": [
+        "Скорость цели, добровольность 10 ft и предел 1/ход — вручную."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "41003cfc479a6160",
+  "sort": 30000,
+  "_key": "!items!ce5fcfce4a097e26"
+}

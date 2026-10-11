@@ -1,0 +1,316 @@
+{
+  "_id": "acc4da0a46cfe487",
+  "name": "Wyrd Sorcery",
+  "type": "subclass",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": {
+      "value": "<p><b>2024 · Lyonesse</b></p><p>Перетащите подкласс на персонажа с соответствующим базовым классом. Для форм и спутников используйте макрос «Управление подклассом». Ограничения указаны в каждой способности.</p><p>Sorcerer<br>Wyrd Sorcery<br>You were born with an affinity for ancient magic older than mortal spellcraft, a force known as the Wyrd. Sages claim that the Wyrd flows from the same deep well as the<br>Fey, its threads woven through the hidden paths of the<br>Otherworld where time bends. It is the pattern that binds past, present, and future, the ever-weaving tapestry of all things. Though the future is not predetermined, it carries a powerful momentum, an inevitability shaped by all that has come before.<br>Your gift allows you to slow time and reach into this pattern, touching the strands that the Fey themselves guard and twist. With careful will, you can alter these threads, bending what should happen into what might happen, and shielding the world from destinies best left unraveled.<br>Level 3: Scholar of the Wyrd<br>You also gain proficiency in History and Insight. When you make an ability check using either skill, you can add your Charisma modifier to the roll. You can use this feature a number of times equal to your Charisma modifier<br>(minimum of once), and you regain all expended uses when you finish a Long Rest.<br>Level 3: Wyrd Spells<br>When you reach a Sorcerer level specified in the Wyrd<br>Spells table, you thereafter always have the listed spells prepared.<br>Wyrd Spells<br>Sorcerer Level<br>Spells<br>3<br>Augury, Disguise Self, Gentle Repose, Sleep<br>5<br>Haste, Slow<br>7<br>Divination, Hallucinatory Terrain<br>9<br>Legend Lore, Modify Memory<br>Level 3: Glimpse the Future<br>When you roll Initiative, roll three d20s and record the numbers rolled. You can replace the Initiative roll of a creature with one of these rolls. A creature can’t be affected more than once, and a creature can make a Charisma saving throw to resist this effect. On a success, the die is not applied and is wasted. Each die can only be used once and all dice are lost when you are no longer in Initiative.<br>Level 6: Wyrd Time<br>At the start of your turn, you can choose to slow the flow of time for everyone but yourself. Wyrd time lasts a number of rounds equal to your Charisma modifier and can be extended by the use of 1 Sorcery Point for 1 additional round while it remains.<br>While Wyrd Time is in effect you gain the following:<br>• Your Speed is doubled.<br>• Attacks against you are made with Disadvantage.<br>• You have Advantage on saving throws.<br>• Your movement doesn’t provoke Opportunity Attacks.<br>• On your turn, you can take one of the following actions as a Bonus Action: Help, Hide, or Utilize.<br>Wyrd Time ends if:<br>• One of the actions you use during this period, or any effects that you create during it, affects a creature other than you or an object being worn or carried by someone other than you. You can also end it with a Bonus action. The Help action does not count for the purposes of ending Wyrd Time.<br>• You gain one of the following conditions: Grappled,<br>Incapacitated, Prone, Paralyzed, Petrified, Restrained,<br>Stunned, Unconscious.<br>Once you use this feature, you can’t use it again until you finish a Long Rest, unless you spend 5 Sorcery Points.<br>Level 14: Step Between Moments<br>When you use Wyrd Time, you gain the following benefits while it is in effect:<br>• When you cast a spell that effects other creatures, if the spell requires a saving throw, all targets have Disadvantage on that saving throw. Wyrd Time still ends immediately.<br>• When you fail a Saving Throw you can spend 4 Sorcery<br>Points to succeed instead.<br>• At the start of your turn, you can spend 1 Sorcery<br>Point to gain True Sight out to 30 feet until the end of your turn.<br>• You may spend 2 Sorcery Points when you cast Modify<br>Memory. When you do this the creature has Disadvantage on its saving throw and casting the spell doesn’t end Wyrd Time.<br>Level 18: Master of Time<br>You always have the Time Stop and Foresight spells prepared.<br>When you cast Time Stop, you don’t roll for the number of turns, you automatically get the highest number on the die.<br>While under the effect of Time Stop, you have True<br>Sight out to a range of 30 feet, and you can take the<br>Dash, Hide, or Utilize action as a Bonus Action.<br>If Time Stop ends as a result of casting a spell that causes a saving throw, all targets make their saving throw at Disadvantage.<br>When you cast Foresight, the target’s movement does not provoke Opportunity Attacks and the target can take the Dash, Help, or Hide action as a Bonus Action.</p>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "60",
+      "rules": "2024"
+    },
+    "identifier": "lyonesse-wyrd-sorcery",
+    "classIdentifier": "sorcerer",
+    "advancement": [
+      {
+        "_id": "864c0fe90c3d6960",
+        "type": "Trait",
+        "level": 3,
+        "title": "Владения",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:his",
+            "skills:ins"
+          ],
+          "choices": []
+        },
+        "value": {}
+      },
+      {
+        "_id": "fef9d9009dd8285b",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.aba918ded4029687",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.4683b71488fb8fbf",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.1ab6d21c2af0d4a9",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "8225008102710df9",
+        "type": "ItemGrant",
+        "level": 6,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.a08995fe190f137b",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "80b9b3efa8e2f7cd",
+        "type": "ItemGrant",
+        "level": 14,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.ade629a58174117e",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "f339e267ef3d651d",
+        "type": "ItemGrant",
+        "level": 18,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.784171c95d291429",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "84ef8b10e8a17a1c",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Заклинания",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplAugury0000",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDisguiseSe",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplGentleRepo",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSleep00000",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {}
+      },
+      {
+        "_id": "fcd204889c4a7f60",
+        "type": "ItemGrant",
+        "level": 5,
+        "title": "Заклинания",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplHaste00000",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSlow000000",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {}
+      },
+      {
+        "_id": "80ce3a8eb0415466",
+        "type": "ItemGrant",
+        "level": 7,
+        "title": "Заклинания",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDivination",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplHallucinat",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {}
+      },
+      {
+        "_id": "7483463a14a9fdd2",
+        "type": "ItemGrant",
+        "level": 9,
+        "title": "Заклинания",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplLegendLore",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplModifyMemo",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {}
+      },
+      {
+        "_id": "1d01d4e27dd2f012",
+        "type": "ItemGrant",
+        "level": 18,
+        "title": "Заклинания",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplTimeStop00",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplForesight0",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [
+              "cha"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {}
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Wyrd Sorcery",
+      "spellList": {
+        "3": [
+          "Augury",
+          "Disguise Self",
+          "Gentle Repose",
+          "Sleep"
+        ],
+        "5": [
+          "Haste",
+          "Slow"
+        ],
+        "7": [
+          "Divination",
+          "Hallucinatory Terrain"
+        ],
+        "9": [
+          "Legend Lore",
+          "Modify Memory"
+        ],
+        "18": [
+          "Time Stop",
+          "Foresight"
+        ]
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "b7ea24026d36df87",
+  "sort": 0,
+  "_key": "!items!acc4da0a46cfe487"
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "1ed33d9ec4892459",
+  "name": "Enhanced Rampage",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-marauder-enhanced-rampage",
+    "description": {
+      "value": "<p><b>Marauder · уровень 15</b></p><p>The range of your Rampage feature increases to 30 feet.<br>In addition, a creature that makes the Rampage Bonus<br>Action attack can roll 1d6 and add the result to the attack roll it makes for that attack.</p>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "42",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Marauder 15",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "394b546315377359": {
+        "_id": "394b546315377359",
+        "type": "utility",
+        "name": "Бонус к атаке Rampage",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "roll": {
+          "formula": "1d6",
+          "name": "Бонус к атаке Rampage",
+          "visible": true,
+          "prompt": false
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Marauder",
+      "feature": "Enhanced Rampage",
+      "class": "fighter",
+      "level": 15,
+      "notes": []
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "8873c3624dd55b20",
+  "sort": 150000,
+  "_key": "!items!1ed33d9ec4892459"
+}

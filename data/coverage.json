@@ -1,0 +1,1365 @@
+[
+  {
+    "setting": "grimnir",
+    "subclass": "Path of the Provoked",
+    "feature": "Strength of One",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Криты ближних атак обрабатываются скриптом модуля; число соседних врагов подтверждается перед броском. Варианты ярости — в макросе управления."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Path of the Provoked",
+    "feature": "Dominant of Will",
+    "level": 6,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Выбор варианта ярости и соответствующие эффекты — в макросе управления."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Path of the Provoked",
+    "feature": "Stand Unbound",
+    "level": 10,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Максимальный урон, уязвимость только к следующей атаке и лимит 1/ярость проверяет ведущая."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Path of the Provoked",
+    "feature": "Reckoning of Choice",
+    "level": 14,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Выбор варианта ярости и соответствующие эффекты — в макросе управления."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "College of the Seers",
+    "feature": "Bonus Proficiencies",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "College of the Seers",
+    "feature": "Bestow Fate",
+    "level": 3,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Выбор судьбы и бросок Bardic Inspiration — в макросе; модификация конкретного броска, смена цели и окончание условия — вручную."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "College of the Seers",
+    "feature": "Enduring Inspiration",
+    "level": 6,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Bestow Fate: на 6 уровне доступны две цели; расходовать Inspiration за каждую. Bold / Sturdy — через макрос."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "College of the Seers",
+    "feature": "Potent Fate",
+    "level": 14,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Перебросы конкретного результата и лимит 1/ход — вручную."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Discovery Domain",
+    "feature": "Discovery Domain Spells",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Discovery Domain",
+    "feature": "Expert Mariner",
+    "level": 3,
+    "activities": 1,
+    "effects": 1,
+    "notes": [
+      "Бонус +5 применить к подходящей проверке после активации."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Discovery Domain",
+    "feature": "Channel Divinity: Drowned Breath",
+    "level": 3,
+    "activities": 3,
+    "effects": 1,
+    "notes": [
+      "Урон при попадании и спасбросок разделены: успешный спасбросок не отменяет первый 1d8. Вода, иммунитет к истощению, лечение и вербальные компоненты проверяются вручную."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Discovery Domain",
+    "feature": "Drowning Grip",
+    "level": 6,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Discovery Domain",
+    "feature": "Surveyor of the Depths",
+    "level": 17,
+    "activities": 0,
+    "effects": 1,
+    "notes": [
+      "Tsunami выдаётся на 17 уровне. Альтернативную трату Channel Divinity выбрать вручную."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Circle of the Devourer",
+    "feature": "Primal Protection",
+    "level": 3,
+    "activities": 5,
+    "effects": 1,
+    "notes": [
+      "После определения результата активировать только выпавший эффект. С 14 уровня выбирать без 1d6, расход остаётся 1. Конец следующего хода и отталкивание — вручную."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Circle of the Devourer",
+    "feature": "Primal Arm",
+    "level": 6,
+    "activities": 6,
+    "effects": 2,
+    "notes": [
+      "Активировать спасбросок только после попадания. Форма руки, конец отравления и запрет лечения — вручную."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Circle of the Devourer",
+    "feature": "Enhanced Senses",
+    "level": 10,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Выбор одного чувства, замена и снятие при Unconscious — макрос управления."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Circle of the Devourer",
+    "feature": "Primal Expertise",
+    "level": 14,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Marauder",
+    "feature": "Break the Line",
+    "level": 3,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Цель выбирает Str/Dex. Помеха от щита/Prone, выбор отталкивания или Prone и перемещение — вручную."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Marauder",
+    "feature": "Withdraw",
+    "level": 3,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Вычесть результат из одного урона при надетом щите."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Marauder",
+    "feature": "Breaker’s Charge",
+    "level": 7,
+    "activities": 1,
+    "effects": 1,
+    "notes": [
+      "Маршрут, размер целей, отталкивание и остановка на успешном спасброске — вручную; Second Wind тратится один раз за рывок."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Marauder",
+    "feature": "Rampage",
+    "level": 10,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "После подходящего убийства вручную переместить получателя и бросить его оружие."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Marauder",
+    "feature": "Enhanced Rampage",
+    "level": 15,
+    "activities": 1,
+    "effects": 0,
+    "notes": []
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Marauder",
+    "feature": "End the Threat",
+    "level": 18,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Союзники сами тратят реакции и выполняют движение/атаку."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Way of the Wanderer",
+    "feature": "Solo Lifestyle",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Way of the Wanderer",
+    "feature": "Path of Fate",
+    "level": 3,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Выбор стиля и эффекты на владельце — макрос управления; аура критов союзникам и погодные изменения — вручную."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Way of the Wanderer",
+    "feature": "Forked Destiny",
+    "level": 6,
+    "activities": 6,
+    "effects": 1,
+    "notes": [
+      "Телепортация, очередь ходов, лимиты до инициативы, демиплан и окончание бонусного урона — вручную."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Way of the Wanderer",
+    "feature": "Chosen in Motion",
+    "level": 11,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Way of the Wanderer",
+    "feature": "World-Thread Mastery",
+    "level": 17,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "После траты сменить стиль через макрос."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Oath of the Slain",
+    "feature": "Oath Spells",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Oath of the Slain",
+    "feature": "Channel Divinity",
+    "level": 3,
+    "activities": 2,
+    "effects": 0,
+    "notes": [
+      "Распределение лечения и удвоение на 0 HP — вручную. Криты по отмеченной цели: выбрать порог 18 в броске оружия."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Oath of the Slain",
+    "feature": "Claim of the Vanir",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Oath of the Slain",
+    "feature": "Aura of the Executioner",
+    "level": 7,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Макрос включает ауру +1 к атакам через Active Auras, если он включён; без него бонус союзникам — вручную."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Oath of the Slain",
+    "feature": "A Glorious Sacrifice",
+    "level": 15,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Установить HP равными результату, не прибавлять его. Дополнительный ход и последующий radiant damage — вручную."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Oath of the Slain",
+    "feature": "Justice Delivered",
+    "level": 20,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Расширение ауры, реакционная атака и восстановление за слот 5 — вручную."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Wolf Rider",
+    "feature": "Wolf Companion",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Спутник и масштабирование — макрос управления. Условные совместные атаки, Help/Dodge, защита рядом и перехват смерти — вручную."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Wolf Rider",
+    "feature": "Woodland Rider",
+    "level": 7,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Спутник и масштабирование — макрос управления. Условные совместные атаки, Help/Dodge, защита рядом и перехват смерти — вручную."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Wolf Rider",
+    "feature": "Pack Leader",
+    "level": 7,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Спутник и масштабирование — макрос управления. Условные совместные атаки, Help/Dodge, защита рядом и перехват смерти — вручную."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Wolf Rider",
+    "feature": "Dangerous Beast",
+    "level": 11,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Спутник и масштабирование — макрос управления. Условные совместные атаки, Help/Dodge, защита рядом и перехват смерти — вручную."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Wolf Rider",
+    "feature": "Defend the Pack",
+    "level": 15,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Спутник и масштабирование — макрос управления. Условные совместные атаки, Help/Dodge, защита рядом и перехват смерти — вручную."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "True Believer",
+    "feature": "False Gods",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "True Believer",
+    "feature": "Spellcasting",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Прогрессия слотов third включена; по умолчанию Wisdom. Intelligence можно выбрать макросом. 3 кантрипа и подготовленные Cleric spells выбираются вручную."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "True Believer",
+    "feature": "Dubious Healing",
+    "level": 9,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "True Believer",
+    "feature": "Wrath of Divinity",
+    "level": 13,
+    "activities": 3,
+    "effects": 1,
+    "notes": [
+      "Активировать один вариант после Sneak Attack. Radiant лечит выбранного союзника ровно на выпавший урон; применить вручную."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "True Believer",
+    "feature": "Push Your Luck",
+    "level": 17,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Макрос управления делает Wis DC15, восстанавливает слоты/ресурс или добавляет истощение. Используйте макрос вместо этой кнопки для автоматического результата."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Misplaced Soul",
+    "feature": "Companions from the Before",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Создать/обновить спутника и потратить призыв/Sorcery Points — через макрос управления."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Misplaced Soul",
+    "feature": "Act as One",
+    "level": 3,
+    "activities": 2,
+    "effects": 0,
+    "notes": [
+      "Перемещение души и обмен позициями токенов — вручную."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Misplaced Soul",
+    "feature": "Soul Bound Commands",
+    "level": 6,
+    "activities": 2,
+    "effects": 0,
+    "notes": [
+      "Thrash бросается из карточки души. Перенос урона и остаток сверх HP — вручную."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Misplaced Soul",
+    "feature": "The Imagined Offense",
+    "level": 14,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Лечение равно текущим HP души; убрать её токен. Thrash масштабируется при обновлении спутника макросом."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Misplaced Soul",
+    "feature": "Dreams Made Real",
+    "level": 18,
+    "activities": 3,
+    "effects": 0,
+    "notes": [
+      "Чёрты спутника применять вручную после расхода. В книге для Reality указан Rend, но его параметры отсутствуют в статблоке; не выдуманы."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "The Ironwood",
+    "feature": "Expanded Spell List",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "The Ironwood",
+    "feature": "Vitality of the Ironwood",
+    "level": 3,
+    "activities": 1,
+    "effects": 1,
+    "notes": []
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "The Ironwood",
+    "feature": "Armor of the Ironwood",
+    "level": 6,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Макрос выбора брони: AC 10+Dex+Cha, resistance bludgeoning, владение щитами и выбранная форма. Снять эффект при снятии брони."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "The Ironwood",
+    "feature": "Tree Passage",
+    "level": 10,
+    "activities": 2,
+    "effects": 0,
+    "notes": [
+      "Выбирать только один выход; перемещение до 500 ft через деревья — вручную."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "The Ironwood",
+    "feature": "Colossus of the Ironwood",
+    "level": 14,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Активация размера, временных HP и эффекта — через макрос управления. Урон 3d6 добавляется отдельной кнопкой не чаще раза за ход; восстановление Mystic Arcanum — вручную."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Cohesion of the Primal",
+    "feature": "Primal Ink",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Cohesion of the Primal",
+    "feature": "Arcane Intentions",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Выбор Dreamer/Seeker — в макросе «Управление подклассом»."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Cohesion of the Primal",
+    "feature": "Core Intention",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Dreamer и Seeker имеют раздельные ресурсы в макросе управления; не активируйте оба направления."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Cohesion of the Primal",
+    "feature": "Foresaying",
+    "level": 6,
+    "activities": 2,
+    "effects": 0,
+    "notes": [
+      "Хранимое заклинание и запрет Magic Action отслеживаются вручную."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Cohesion of the Primal",
+    "feature": "Turn of Fate",
+    "level": 10,
+    "activities": 2,
+    "effects": 0,
+    "notes": [
+      "Seeker дополнительно тратит слот не ниже отменяемого заклинания."
+    ]
+  },
+  {
+    "setting": "grimnir",
+    "subclass": "Cohesion of the Primal",
+    "feature": "Cord & Curse",
+    "level": 14,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Summon Beast и список трёх иммунитетов Seeker выбираются вручную; книга не задаёт поведение Summon Beast при утрате слота 1 уровня."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Path of the Provoked",
+    "feature": "Strength of One",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Криты ближних атак обрабатываются скриптом модуля; число соседних врагов подтверждается перед броском. Варианты ярости — в макросе управления."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Path of the Provoked",
+    "feature": "Dominant of Will",
+    "level": 6,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Выбор варианта ярости и соответствующие эффекты — в макросе управления."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Path of the Provoked",
+    "feature": "Stand Unbound",
+    "level": 10,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Максимальный урон, уязвимость только к следующей атаке и лимит 1/ярость проверяет ведущая."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Path of the Provoked",
+    "feature": "Reckoning of Choice",
+    "level": 14,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Выбор варианта ярости и соответствующие эффекты — в макросе управления."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "College of the Voice",
+    "feature": "Cantor",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "College of the Voice",
+    "feature": "Maker Domain Spells",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "College of the Voice",
+    "feature": "Domain Verse",
+    "level": 3,
+    "activities": 2,
+    "effects": 0,
+    "notes": [
+      "Saving Throw Adjustment: списать Inspiration только если результат изменён. Добавление лечения и временных HP — вручную."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "College of the Voice",
+    "feature": "Eparch",
+    "level": 6,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Purifying Breath и временное владение навыком — макрос управления."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "College of the Voice",
+    "feature": "Archimandrite",
+    "level": 14,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Voice Beyond Flesh и выбор Expertise — макрос управления; изменения Geas/Compulsion — вручную."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Discovery Domain",
+    "feature": "Discovery Domain Spells",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Discovery Domain",
+    "feature": "Expert Mariner",
+    "level": 3,
+    "activities": 1,
+    "effects": 1,
+    "notes": [
+      "Бонус +5 применить к подходящей проверке после активации."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Discovery Domain",
+    "feature": "Channel Divinity: Drowned Breath",
+    "level": 3,
+    "activities": 3,
+    "effects": 1,
+    "notes": [
+      "Урон при попадании и спасбросок разделены: успешный спасбросок не отменяет первый 1d8. Вода, иммунитет к истощению, лечение и вербальные компоненты проверяются вручную."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Discovery Domain",
+    "feature": "Drowning Grip",
+    "level": 6,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Discovery Domain",
+    "feature": "Surveyor of the Depths",
+    "level": 17,
+    "activities": 0,
+    "effects": 1,
+    "notes": [
+      "Tsunami выдаётся на 17 уровне. Альтернативную трату Channel Divinity выбрать вручную."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Circle of the Wurm",
+    "feature": "Dragon Soul",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Карточки драконов — в компендиуме спутников; превратить персонажа через штатный Wild Shape, ограничения уровня проверить."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Circle of the Wurm",
+    "feature": "Circle of the Wurm Spells",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Circle of the Wurm",
+    "feature": "Draconic Influence",
+    "level": 6,
+    "activities": 0,
+    "effects": 1,
+    "notes": []
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Circle of the Wurm",
+    "feature": "Awakened Legacy",
+    "level": 10,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Circle of the Wurm",
+    "feature": "Rekindled Breath",
+    "level": 14,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Дыхание и +уровень Druid настраиваются в макросе создания формы. Восстановление дыхания требует вручную потратить слот 4+."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Marauder",
+    "feature": "Break the Line",
+    "level": 3,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Цель выбирает Str/Dex. Помеха от щита/Prone, выбор отталкивания или Prone и перемещение — вручную."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Marauder",
+    "feature": "Withdraw",
+    "level": 3,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Вычесть результат из одного урона при надетом щите."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Marauder",
+    "feature": "Breaker’s Charge",
+    "level": 7,
+    "activities": 1,
+    "effects": 1,
+    "notes": [
+      "Маршрут, размер целей, отталкивание и остановка на успешном спасброске — вручную; Second Wind тратится один раз за рывок."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Marauder",
+    "feature": "Rampage",
+    "level": 10,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "После подходящего убийства вручную переместить получателя и бросить его оружие."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Marauder",
+    "feature": "Enhanced Rampage",
+    "level": 15,
+    "activities": 1,
+    "effects": 0,
+    "notes": []
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Marauder",
+    "feature": "End the Threat",
+    "level": 18,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Союзники сами тратят реакции и выполняют движение/атаку."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Knight of the Sacred Word",
+    "feature": "Voice of Authority",
+    "level": 3,
+    "activities": 3,
+    "effects": 3,
+    "notes": [
+      "После попадания не чаще 1/ход; снять в начале следующего хода. На 6 уровне Striking Word бросается отдельной кнопкой."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Knight of the Sacred Word",
+    "feature": "Cantor’s Discipline",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Knight of the Sacred Word",
+    "feature": "Resonant Body",
+    "level": 6,
+    "activities": 2,
+    "effects": 0,
+    "notes": [
+      "Purifying Breath — макрос управления в начале хода."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Knight of the Sacred Word",
+    "feature": "Lingering Word",
+    "level": 11,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Продлить исходный эффект до минуты; повторные спасброски после конца следующего хода — вручную."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Knight of the Sacred Word",
+    "feature": "Sacred Word Incarnate",
+    "level": 17,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Выбор второй цели, её отдельный спасбросок и принудительный переброс — вручную."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Oath of Saints",
+    "feature": "Oath Spells",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Oath of Saints",
+    "feature": "Saintly Challenge",
+    "level": 3,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Нажать заклинание без расхода слота после этой кнопки. Сохранение концентрации от цели — вручную."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Oath of Saints",
+    "feature": "Judgment of the Anointed",
+    "level": 7,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Число в кнопке — HP восстановления; модификаторы Death Save и преимущество вводить вручную. Игнорирование сопротивлений только цели Compelled Duel — вручную."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Oath of Saints",
+    "feature": "Sevenfold Path",
+    "level": 15,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Consecrated Plate и выбор трёх добродетелей — макрос управления. Условные Charity/Hope/Honor отслеживает ведущая."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Oath of Saints",
+    "feature": "Saints that Came Before",
+    "level": 20,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Макрос Consecrated Plate добавляет +2 AC. Условное преимущество и двойной бонусный каст — вручную."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Selkie Warden",
+    "feature": "Seal-Skin Reliquary",
+    "level": 3,
+    "activities": 0,
+    "effects": 1,
+    "notes": []
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Selkie Warden",
+    "feature": "Slip the Skin",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Активация эффекта и расход — макрос управления."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Selkie Warden",
+    "feature": "Drowning Mark",
+    "level": 3,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Скорость цели, добровольность 10 ft и предел 1/ход — вручную."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Selkie Warden",
+    "feature": "Selkie Warden Spells",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Selkie Warden",
+    "feature": "Molt",
+    "level": 7,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Selkie Warden",
+    "feature": "Tidal Bond",
+    "level": 11,
+    "activities": 1,
+    "effects": 1,
+    "notes": [
+      "Только при Slip the Skin; размер и расход движения проверить вручную."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Selkie Warden",
+    "feature": "Selkie’s Release",
+    "level": 15,
+    "activities": 3,
+    "effects": 1,
+    "notes": [
+      "Форма длится до окончания Hunter’s Mark. Гейзер, повторы спасбросков, движение и окончание — вручную; Fluid Body иммунитеты включить макросом."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Outlaw",
+    "feature": "Woodland Ambusher",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Outlaw",
+    "feature": "Outlaw’s Craft",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Longbow и Disguise Kit выдаются; DC ловушек и размещение Swift Snare — вручную."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Outlaw",
+    "feature": "Fleet of the Weald",
+    "level": 9,
+    "activities": 1,
+    "effects": 1,
+    "notes": [
+      "Урон добавлять только после Steady Aim тяжёлым дальнобойным оружием."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Outlaw",
+    "feature": "Trick Shot",
+    "level": 13,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Outlaw",
+    "feature": "Legend of the Weald",
+    "level": 17,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "После кнопки выполнить атаку своим дальнобойным оружием."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Wyrd Sorcery",
+    "feature": "Scholar of the Wyrd",
+    "level": 3,
+    "activities": 1,
+    "effects": 0,
+    "notes": []
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Wyrd Sorcery",
+    "feature": "Wyrd Spells",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Wyrd Sorcery",
+    "feature": "Glimpse the Future",
+    "level": 3,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Макрос хранит три отдельных результата и показывает их; замену инициативы и Charisma save ведущая проводит вручную."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Wyrd Sorcery",
+    "feature": "Wyrd Time",
+    "level": 6,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Скорость, защиты, длительность и расход — макрос управления. Завершение из-за воздействия на другого — вручную."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Wyrd Sorcery",
+    "feature": "Step Between Moments",
+    "level": 14,
+    "activities": 3,
+    "effects": 0,
+    "notes": [
+      "Условные эффекты и конец хода — вручную."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Wyrd Sorcery",
+    "feature": "Master of Time",
+    "level": 18,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Time Stop/Foresight добавляются как подготовленные заклинания; максимум ходов и дополнительные бонусные действия — вручную."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "The Archangel",
+    "feature": "Holy Warrior",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "The Archangel",
+    "feature": "Archangel’s Spells",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "The Archangel",
+    "feature": "Avatar of the Archangel",
+    "level": 3,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Форма, временные HP и сопротивления — макрос управления; реакционный урон бросить отдельной кнопкой. Форма снимается при потере временных HP."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "The Archangel",
+    "feature": "Chains of Penitence",
+    "level": 6,
+    "activities": 1,
+    "effects": 1,
+    "notes": [
+      "В книге НЕ указано восстановление использований. Счётчик есть, автосброс не придуман; решение ведущей. Требуется Avatar."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "The Archangel",
+    "feature": "Greater Avatar",
+    "level": 10,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Только в Avatar после успешного Wis save. Защиты формы применяет макрос."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "The Archangel",
+    "feature": "Final Avatar",
+    "level": 14,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Сопротивления формы применяет макрос; телепортация, слежение и восстановление за Pact slot — вручную."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Spellbinder",
+    "feature": "Amulet of Binding",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Spellbinder",
+    "feature": "Binding Savant",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Spellbinder",
+    "feature": "Blood Binding",
+    "level": 3,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Макрос выбирает Vassal, снижает максимум HP и добавляет Int к урону его атак. Снятие при окончании концентрации — через кнопку того же макроса."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Spellbinder",
+    "feature": "Spellbinding",
+    "level": 6,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Выдача заклинаний вассалу и снижение его максимума HP — вручную. 1/day интерпретировано как Long Rest; можно изменить в счётчике."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Spellbinder",
+    "feature": "Unholy Contracts",
+    "level": 10,
+    "activities": 1,
+    "effects": 0,
+    "notes": [
+      "Выбор цели, отмена концентрации и блок нового Planar Binding — вручную."
+    ]
+  },
+  {
+    "setting": "lyonesse",
+    "subclass": "Spellbinder",
+    "feature": "Master of Chains",
+    "level": 14,
+    "activities": 0,
+    "effects": 0,
+    "notes": [
+      "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+    ]
+  }
+]

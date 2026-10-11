@@ -1,0 +1,93 @@
+{
+  "_id": "2451b9d2ef380a10",
+  "name": "Soul Bound Commands",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-misplaced-soul-soul-bound-commands",
+    "description": {
+      "value": "<p><b>Misplaced Soul · уровень 6</b></p><p>You gain the ability to spend Sorcery Points to have your<br>Misplaced Soul perform specific actions.<br>Metamagic: Thrash (1 Sorcery Point). You may use a<br>Bonus Action to have your Misplaced Soul use its Thrash attack. This can also be done as part of the Bonus Action you use to summon a Misplaced Soul.<br>Metamagic: Reduce Harm (2 Sorcery Points).  You may have your Misplaced Soul use its Reduce Harm as a<br>Reaction when a creature within 5 feet of it is hit by an attack.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Thrash бросается из карточки души. Перенос урона и остаток сверх HP — вручную.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "52",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Misplaced Soul 6",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "2b50f0835c7c21aa": {
+        "_id": "2b50f0835c7c21aa",
+        "type": "utility",
+        "name": "Thrash: команда",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:font-of-magic",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        }
+      },
+      "2abf821361a38f0c": {
+        "_id": "2abf821361a38f0c",
+        "type": "utility",
+        "name": "Reduce Harm",
+        "activation": {
+          "type": "reaction",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:font-of-magic",
+              "value": "2"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Misplaced Soul",
+      "feature": "Soul Bound Commands",
+      "class": "sorcerer",
+      "level": 6,
+      "notes": [
+        "Thrash бросается из карточки души. Перенос урона и остаток сверх HP — вручную."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "5e7aabf373dadf67",
+  "sort": 60000,
+  "_key": "!items!2451b9d2ef380a10"
+}

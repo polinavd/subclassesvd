@@ -1,0 +1,13 @@
+{
+  "_id": "f1d6ad797e000eaa",
+  "name": "Проверка модуля",
+  "type": "script",
+  "scope": "global",
+  "img": "icons/svg/book.svg",
+  "command": "await game.modules.get(\"grimnir-lyonesse\").api.audit();",
+  "ownership": {
+    "default": 2
+  },
+  "flags": {},
+  "_key": "!macros!f1d6ad797e000eaa"
+}

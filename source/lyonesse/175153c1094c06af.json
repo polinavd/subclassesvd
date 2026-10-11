@@ -1,0 +1,70 @@
+{
+  "_id": "175153c1094c06af",
+  "name": "Sacred Word Incarnate",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-knight-of-the-sacred-word-sacred-word-incarnate",
+    "description": {
+      "value": "<p><b>Knight of the Sacred Word · уровень 17</b></p><p>You have become an instrument of the Maker’s truth.<br>Your voice no longer requires effort. It simply is.<br>Word of Judgment. When you use Voice of Authority, you can affect an additional creature of your choice within 30 feet that can hear you. It must make a separate<br>Wisdom saving throw.<br>Irresistible Cadence. Once per turn when a creature succeeds on its saving throw against your Stunning Strike or Voice of Authority, you can spend 2 Focus Points to force it to reroll the d20. It must use the new result.<br>I asked a Knight of the Sacred Word what he did.<br>He said, ‘I kick ass for the Maker’.<br>—Clemsy, Otherling Pilgrim</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Выбор второй цели, её отдельный спасбросок и принудительный переброс — вручную.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "52",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Knight of the Sacred Word 17",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "a2581c3382a1784e": {
+        "_id": "a2581c3382a1784e",
+        "type": "utility",
+        "name": "Irresistible Cadence",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:monks-focus",
+              "value": "2"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Knight of the Sacred Word",
+      "feature": "Sacred Word Incarnate",
+      "class": "monk",
+      "level": 17,
+      "notes": [
+        "Выбор второй цели, её отдельный спасбросок и принудительный переброс — вручную."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "47f143ead77b6269",
+  "sort": 170000,
+  "_key": "!items!175153c1094c06af"
+}

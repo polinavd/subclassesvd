@@ -1,0 +1,64 @@
+{
+  "_id": "0a8515dee76ca9a6",
+  "name": "Potent Fate",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-college-of-the-seers-potent-fate",
+    "description": {
+      "value": "<p><b>College of the Seers · уровень 14</b></p><p>When a roll from your Bestow Fate feature uses your Bardic Inspiration die, you can reroll that die. You must use the second result. You can do this once per turn.<br>Additionally, when a creature affected by your Bestow<br>Fate makes an attack roll, saving throw, or ability check, you can use your Reaction to force that creature to reroll that roll.<br>You can decide to use this feature after the creature rolls, but before the DM tells you whether the roll succeeds or fails.<br>The College of the Seers trains children to sing, spy, and curse your enemies. Half become useless bards, the other half become dangerous little shits who smile while they ruin you.<br>—Britta the Scourge</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Перебросы конкретного результата и лимит 1/ход — вручную.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "36",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "College of the Seers 14",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "babdeceddd28f2f4": {
+        "_id": "babdeceddd28f2f4",
+        "type": "utility",
+        "name": "Принудительный переброс",
+        "activation": {
+          "type": "reaction",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "College of the Seers",
+      "feature": "Potent Fate",
+      "class": "bard",
+      "level": 14,
+      "notes": [
+        "Перебросы конкретного результата и лимит 1/ход — вручную."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "08cc7d033b762c1f",
+  "sort": 140000,
+  "_key": "!items!0a8515dee76ca9a6"
+}

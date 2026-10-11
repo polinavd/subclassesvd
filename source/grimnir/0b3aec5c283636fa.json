@@ -1,0 +1,122 @@
+{
+  "_id": "0b3aec5c283636fa",
+  "name": "Breaker’s Charge",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-marauder-breaker-s-charge",
+    "description": {
+      "value": "<p><b>Marauder · уровень 7</b></p><p>As a Bonus Action, you may spend one use of your<br>Second Wind to move in a straight line up to a distance equal to your Speed. Each creature whose size is one category larger than yours or smaller, and whose space you enter during this movement, must make a Strength saving throw. The DC equals 8 plus your Proficiency Bonus plus your Strength modifier.<br>On a failed save, the creature takes Bludgeoning damage equal to your Strength Modifier and the creature has the Prone condition and is pushed 5 feet to the side of your path. On a successful save, your movement for this action immediately ends.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Маршрут, размер целей, отталкивание и остановка на успешном спасброске — вручную; Second Wind тратится один раз за рывок.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "42",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Marauder 7",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "24e4a2b571fe8588": {
+        "_id": "24e4a2b571fe8588",
+        "type": "save",
+        "name": "Breaker’s Charge",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:second-wind",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [
+          {
+            "_id": "4fa34172ce72d7fd"
+          }
+        ],
+        "description": {
+          "chatFlavor": ""
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@abilities.str.mod"
+              },
+              "types": [
+                "bludgeoning"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ],
+          "onSave": "none",
+          "includeBase": false
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "str",
+            "formula": ""
+          }
+        }
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "4fa34172ce72d7fd",
+      "name": "Breaker’s Charge: Prone",
+      "img": "icons/svg/book.svg",
+      "transfer": false,
+      "disabled": false,
+      "changes": [],
+      "statuses": [
+        "prone"
+      ],
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true
+        }
+      },
+      "duration": {},
+      "_key": "!items.effects!0b3aec5c283636fa.4fa34172ce72d7fd"
+    }
+  ],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Marauder",
+      "feature": "Breaker’s Charge",
+      "class": "fighter",
+      "level": 7,
+      "notes": [
+        "Маршрут, размер целей, отталкивание и остановка на успешном спасброске — вручную; Second Wind тратится один раз за рывок."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "8873c3624dd55b20",
+  "sort": 70000,
+  "_key": "!items!0b3aec5c283636fa"
+}

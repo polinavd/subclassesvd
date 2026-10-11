@@ -1,0 +1,102 @@
+{
+  "_id": "8a1e8ce54ce010bf",
+  "name": "Bestow Fate",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-college-of-the-seers-bestow-fate",
+    "description": {
+      "value": "<p><b>College of the Seers · уровень 3</b></p><p>As a Magic Action, you target a creature you can see or hear within 30 feet of you as your mark. When you do, you expend one use of Bardic Inspiration, and the creature must make a Charisma saving throw against your spell save DC. On a failed save, choose one of the following fates to impose on the creature for 1 minute:<br>Clumsy. Subtract a roll of your Bardic Inspiration die from the first attack roll the creature makes on each of its turns.<br>Feeble. Subtract a roll of your Bardic Inspiration die from one saving throw the creature makes before the effect ends (no action required). After doing so, the effect ends.<br>Slow. The creature’s Speed is reduced by 5 feet × the result of your Bardic Inspiration die (minimum Speed 5 feet).<br>At the end of each of the creature’s turns, reroll your<br>Bardic Inspiration die to determine the new reduction.<br>This effect ends early if you use this feature to mark a different creature, if you have the Incapacitated condition, or if the target has the Unconscious condition or dies.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Выбор судьбы и бросок Bardic Inspiration — в макросе; модификация конкретного броска, смена цели и окончание условия — вручную.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "36",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "College of the Seers 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "8f017759dd9f1dbe": {
+        "_id": "8f017759dd9f1dbe",
+        "type": "save",
+        "name": "Bestow Fate",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:bardic-inspiration",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "range": {
+          "value": "30",
+          "units": "ft"
+        },
+        "target": {
+          "affects": {
+            "type": "creature",
+            "count": "1"
+          },
+          "template": {
+            "type": ""
+          }
+        },
+        "damage": {
+          "parts": [],
+          "onSave": "none",
+          "includeBase": false
+        },
+        "save": {
+          "ability": [
+            "cha"
+          ],
+          "dc": {
+            "calculation": "cha",
+            "formula": ""
+          }
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute",
+          "concentration": false
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "College of the Seers",
+      "feature": "Bestow Fate",
+      "class": "bard",
+      "level": 3,
+      "notes": [
+        "Выбор судьбы и бросок Bardic Inspiration — в макросе; модификация конкретного броска, смена цели и окончание условия — вручную."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "08cc7d033b762c1f",
+  "sort": 30000,
+  "_key": "!items!8a1e8ce54ce010bf"
+}

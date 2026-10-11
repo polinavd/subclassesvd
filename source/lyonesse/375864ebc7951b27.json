@@ -1,0 +1,295 @@
+{
+  "_id": "375864ebc7951b27",
+  "name": "Discovery Domain",
+  "type": "subclass",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": {
+      "value": "<p><b>2024 · Lyonesse</b></p><p>Перетащите подкласс на персонажа с соответствующим базовым классом. Для форм и спутников используйте макрос «Управление подклассом». Ограничения указаны в каждой способности.</p><p>Cleric<br>Discovery Domain<br>Clerics of the Discovery Domain in Lyonesse worship the gods of the Grimfolk, carried across the sea when the first raiders came to these shores centuries ago.<br>The Discovery Domain is devoted to exploration and the claiming of hidden riches. These Clerics serve as guides within Grimfolk raiding clans, leading their people into the unknown. For their insight and ambition, they are honored and respected, yet often feared, for they are the first to step where others dare not and the ones who decide what is worth taking.<br>Level 3: Discovery Domain Spells<br>Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Discovery Domain Spells table, you thereafter always have the listed spells prepared.<br>Discovery Domain Spells<br>Cleric Level<br>Spells<br>3<br>Augury, Expeditious Retreat, Fog Cloud,<br>Pass Without Trace<br>5<br>Clairvoyance, Haste<br>7<br>Control Water, Locate Creature<br>9<br>Commune, Passwall<br>Level 3: Expert Mariner<br>You are trained for long travel, navigation, and fighting across coasts, rivers, and open water.<br>Bonus Proficiencies. You gain proficiency with Martial<br>Weapons, Cartographer’s Tools, and Navigator’s Tools.<br>Eye of the Navigator. When someone makes a History,<br>Survival, or Perception check to locate or learn where a place is, you can choose to give them a +5 bonus to their roll. You can use this feature a number of times equal to your Wisdom Modifier, and you regain all expended uses when you finish a Long Rest<br>Powerful Swimmer. You have a Swim Speed equal to your Speed, and you can hold your breath for twice as long as normal.<br>Level 3: Channel Divinity: Drowned Breath<br>When you hit a creature with a melee attack, you can expend a use of your Channel Divinity. The target takes an additional 1d8 Necrotic damage and makes a Constitution saving throw against your spell save DC. On a failure, the target becomes cursed for 1 minute and cannot regain Hit Points unless it’s underwater, it can only breathe underwater, and takes 1d8 Necrotic damage at the start of each of its turns outside the water from suffocation. A creature that is Immune to the Exhaustion condition does not take this damage.<br>Level 6: Drowning Grip<br>You can now activate your Drowned Breath by expending a use of Channel Divinity when a creature fails a saving throw against one of your spells.<br>In addition, a creature affected by Drowned Breath cannot cast spells requiring a Verbal component.<br>Level 17: Surveyor of the Depths<br>You gain the ability to breathe underwater, and your<br>Swim Speed doubles.<br>You always have the Tsunami spell prepared. You can also expend a use of Channel Divinity to cast it without expending a spell slot.<br>Aldyhn grants wisdom, Vani grants courage, and Thonir grants storms. The trick is knowing which blessing you’ve received.<br>—Cranhath Antonsson, Grimfolk Jarl</p>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "44",
+      "rules": "2024"
+    },
+    "identifier": "lyonesse-discovery-domain",
+    "classIdentifier": "cleric",
+    "advancement": [
+      {
+        "_id": "e8da6575da835ee0",
+        "type": "Trait",
+        "level": 3,
+        "title": "Владения",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "weapon:mar",
+            "tool:art:cartographer",
+            "tool:navg"
+          ],
+          "choices": []
+        },
+        "value": {}
+      },
+      {
+        "_id": "799616ff2c0f6d58",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.cd90b424c0b2e768",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.4e4287a873b0bebf",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.c1b0d185208b6695",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "2334d0ff8cde5999",
+        "type": "ItemGrant",
+        "level": 6,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.93a273b209b88cfe",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "6d27a593f24f24d0",
+        "type": "ItemGrant",
+        "level": 17,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.ba5860ae8e484953",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "3b6c2df9fccc8f0c",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Заклинания",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplAugury0000",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplExpeditiou",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFogCloud00",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplPasswithou",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [
+              "wis"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {}
+      },
+      {
+        "_id": "4ca75242e40ef7d9",
+        "type": "ItemGrant",
+        "level": 5,
+        "title": "Заклинания",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplClairvoyan",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplHaste00000",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [
+              "wis"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {}
+      },
+      {
+        "_id": "cf3f3e7a79ec7fb4",
+        "type": "ItemGrant",
+        "level": 7,
+        "title": "Заклинания",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplControlWat",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplLocateCrea",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [
+              "wis"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {}
+      },
+      {
+        "_id": "9e8b7b43dc516ff9",
+        "type": "ItemGrant",
+        "level": 9,
+        "title": "Заклинания",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplCommune000",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplPasswall00",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [
+              "wis"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {}
+      },
+      {
+        "_id": "498462590c26924b",
+        "type": "ItemGrant",
+        "level": 17,
+        "title": "Заклинания",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplTsunami000",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [
+              "wis"
+            ],
+            "method": "spell",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {}
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Discovery Domain",
+      "spellList": {
+        "3": [
+          "Augury",
+          "Expeditious Retreat",
+          "Fog Cloud",
+          "Pass without Trace"
+        ],
+        "5": [
+          "Clairvoyance",
+          "Haste"
+        ],
+        "7": [
+          "Control Water",
+          "Locate Creature"
+        ],
+        "9": [
+          "Commune",
+          "Passwall"
+        ],
+        "17": [
+          "Tsunami"
+        ]
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "e5f4588df3b37105",
+  "sort": 0,
+  "_key": "!items!375864ebc7951b27"
+}

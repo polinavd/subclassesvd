@@ -1,0 +1,89 @@
+{
+  "_id": "c7bb5f78a3dc29d9",
+  "name": "Colossus of the Ironwood",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-the-ironwood-colossus-of-the-ironwood",
+    "description": {
+      "value": "<p><b>The Ironwood · уровень 14</b></p><p>While wearing your Ironwood Armor, you can use a<br>Bonus Action to transform into a Large size, bark-covered humanoid if you are in a space large enough. This transformation lasts for 10 minutes, or until you end it early as a Bonus Action, or if you die. You have the following benefits while transformed:<br>• You gain Temporary Hit Points equal to five times your<br>Warlock level.<br>• You have Advantage on attack rolls that you make with<br>Simple and Martial weapons.<br>• When you hit a creature with a weapon attack, that attack deals an extra 3d6 Force damage. You can deal this extra damage no more than once on each turn.<br>You must finish a Long Rest to use this feature again. You may also regain its use by expending the use of one of your Mystic Arcanum (no action required).</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Активация размера, временных HP и эффекта — через макрос управления. Урон 3d6 добавляется отдельной кнопкой не чаще раза за ход; восстановление Mystic Arcanum — вручную.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "54",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "The Ironwood 14",
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {
+      "a161968d11f7229c": {
+        "_id": "a161968d11f7229c",
+        "type": "damage",
+        "name": "Extra Force damage",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "3d6"
+              },
+              "types": [
+                "force"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ],
+          "onSave": "none",
+          "includeBase": false
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "The Ironwood",
+      "feature": "Colossus of the Ironwood",
+      "class": "warlock",
+      "level": 14,
+      "notes": [
+        "Активация размера, временных HP и эффекта — через макрос управления. Урон 3d6 добавляется отдельной кнопкой не чаще раза за ход; восстановление Mystic Arcanum — вручную."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "d64d34d188a6eeab",
+  "sort": 140000,
+  "_key": "!items!c7bb5f78a3dc29d9"
+}

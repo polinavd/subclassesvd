@@ -1,0 +1,68 @@
+{
+  "_id": "c19ab18c1064a9ae",
+  "name": "Seal-Skin Reliquary",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-selkie-warden-seal-skin-reliquary",
+    "description": {
+      "value": "<p><b>Selkie Warden · уровень 3</b></p><p>You possess a supernatural bond to a selkie’s skin, carried on your person. You gain a Swim Speed equal to your<br>Speed and can breathe underwater.</p>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "56",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Selkie Warden 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [
+    {
+      "_id": "9454b3ff33709967",
+      "name": "Swim speed",
+      "img": "icons/svg/book.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.attributes.movement.swim",
+          "mode": 0,
+          "value": "gl-swim:1",
+          "priority": 20
+        }
+      ],
+      "statuses": [],
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true
+        }
+      },
+      "duration": {},
+      "_key": "!items.effects!c19ab18c1064a9ae.9454b3ff33709967"
+    }
+  ],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Selkie Warden",
+      "feature": "Seal-Skin Reliquary",
+      "class": "ranger",
+      "level": 3,
+      "notes": []
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "41003cfc479a6160",
+  "sort": 30000,
+  "_key": "!items!c19ab18c1064a9ae"
+}

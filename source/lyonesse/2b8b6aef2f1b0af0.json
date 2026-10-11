@@ -1,0 +1,46 @@
+{
+  "_id": "2b8b6aef2f1b0af0",
+  "name": "Reckoning of Choice",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-path-of-the-provoked-reckoning-of-choice",
+    "description": {
+      "value": "<p><b>Path of the Provoked · уровень 14</b></p><p>When you enter your Rage, you choose one Reckoning of<br>Choice feature. This is in addition to both a Strength of<br>One option and a Dominant of Will option. You benefit from all three options until your Rage ends.<br>Stoic Reckoning. When you use Reckless Attack, you gain Resistance to one damage type of your choice until the start of your next turn, and you are immune to the<br>Stunned condition until the start of your next turn.<br>Wrathful Reckoning. If you use Reckless Attack or<br>Brutal Strike and miss, you can take a Bonus Action to make another melee attack with a weapon or Unarmed<br>Strike with the same weapon or Unarmed Strike against the same target.<br>Wild Reckoning. While you are raging, you can use your Action to make a single melee weapon attack against a creature you can see within your reach. On a hit, the attack deals maximum damage, and the target must make a Constitution saving throw against a DC equal to 8 + your Proficiency Bonus + your Strength modifier. On a failed save, the target is Stunned for 1 minute. At the end of each of its turns, the target can make another Constitution saving throw, ending the Stunned condition on itself on a success.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Выбор варианта ярости и соответствующие эффекты — в макросе управления.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "40",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Path of the Provoked 14",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Path of the Provoked",
+      "feature": "Reckoning of Choice",
+      "class": "barbarian",
+      "level": 14,
+      "notes": [
+        "Выбор варианта ярости и соответствующие эффекты — в макросе управления."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "67fbf9f5f0606cca",
+  "sort": 140000,
+  "_key": "!items!2b8b6aef2f1b0af0"
+}

@@ -1,0 +1,46 @@
+{
+  "_id": "869b3c5a20a1cacd",
+  "name": "Amulet of Binding",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-spellbinder-amulet-of-binding",
+    "description": {
+      "value": "<p><b>Spellbinder · уровень 3</b></p><p>Upon choosing this subclass, you create an Amulet of<br>Binding. It is a relic that imprisons the essences of your summoned Vassals when they are not active. When you cast a Summon spell from the Wizard spell list, the creature emerges from the amulet, and when the spell ends, the creature’s essence is forcibly drawn back into it. If your amulet is destroyed (AC 17, 30 hit points, immune to Psychic and Poison damage), you cannot summon your Vassals again until you complete a special 8-hour ritual and expend 250 GP worth of rare metals to forge a new one.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "64",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Spellbinder 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Spellbinder",
+      "feature": "Amulet of Binding",
+      "class": "wizard",
+      "level": 3,
+      "notes": [
+        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "07dd67ea748f54e0",
+  "sort": 30000,
+  "_key": "!items!869b3c5a20a1cacd"
+}

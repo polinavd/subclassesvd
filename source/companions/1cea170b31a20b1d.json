@@ -1,0 +1,382 @@
+{
+  "_id": "1cea170b31a20b1d",
+  "name": "Juvenile Black Dragon",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 17,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 14,
+        "proficient": 1
+      },
+      "con": {
+        "value": 17,
+        "proficient": 0
+      },
+      "int": {
+        "value": 14,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 11,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 15,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 15
+      },
+      "hp": {
+        "value": 68,
+        "max": 68,
+        "temp": 0
+      },
+      "movement": {
+        "walk": 30,
+        "fly": 60,
+        "swim": 30,
+        "units": "ft"
+      },
+      "senses": {
+        "units": "ft",
+        "blindsight": 30,
+        "darkvision": 90
+      }
+    },
+    "details": {
+      "type": {
+        "value": "dragon"
+      },
+      "cr": 4,
+      "biography": {
+        "value": "<p>Circle of the Wurm form. Prepare through the subclass macro to apply level restrictions and scaling, then use the system’s Wild Shape transformation.</p>"
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [
+          "acid"
+        ]
+      },
+      "languages": {
+        "value": [
+          "common",
+          "draconic"
+        ]
+      }
+    },
+    "skills": {
+      "per": {
+        "value": 2
+      },
+      "ste": {
+        "value": 1
+      }
+    }
+  },
+  "items": [
+    {
+      "_id": "a4fed6a40b9f9829",
+      "name": "Amphibious",
+      "type": "feat",
+      "img": "icons/svg/sword.svg",
+      "flags": {
+        "grimnir-lyonesse": {
+          "templateItem": true
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Can breathe air and water.</p>"
+        },
+        "type": {
+          "value": "monster"
+        },
+        "activities": {}
+      },
+      "effects": [],
+      "_key": "!actors.items!1cea170b31a20b1d.a4fed6a40b9f9829"
+    },
+    {
+      "_id": "a51b32e2d9822a9b",
+      "name": "Multiattack",
+      "type": "feat",
+      "img": "icons/svg/sword.svg",
+      "flags": {
+        "grimnir-lyonesse": {
+          "templateItem": true
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Make one Bite and one Pounce attack.</p>"
+        },
+        "type": {
+          "value": "monster"
+        },
+        "activities": {}
+      },
+      "effects": [],
+      "_key": "!actors.items!1cea170b31a20b1d.a51b32e2d9822a9b"
+    },
+    {
+      "_id": "a12fd109b65739e4",
+      "name": "Bite",
+      "type": "feat",
+      "img": "icons/svg/sword.svg",
+      "flags": {
+        "grimnir-lyonesse": {
+          "templateItem": true
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p></p>"
+        },
+        "type": {
+          "value": "monster"
+        },
+        "activities": {
+          "af9e61f322cce341": {
+            "_id": "af9e61f322cce341",
+            "name": "Bite",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "spellSlot": false,
+              "targets": []
+            },
+            "range": {
+              "units": "ft",
+              "value": "5"
+            },
+            "target": {
+              "affects": {
+                "type": "creature",
+                "count": "1"
+              }
+            },
+            "damage": {
+              "parts": [
+                {
+                  "custom": {
+                    "enabled": true,
+                    "formula": "2d8 + 3"
+                  },
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "includeBase": false,
+              "onSave": "none"
+            },
+            "attack": {
+              "flat": true,
+              "bonus": "5",
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            }
+          }
+        }
+      },
+      "effects": [],
+      "_key": "!actors.items!1cea170b31a20b1d.a12fd109b65739e4"
+    },
+    {
+      "_id": "cd7e5d35c8b7d801",
+      "name": "Pounce",
+      "type": "feat",
+      "img": "icons/svg/sword.svg",
+      "flags": {
+        "grimnir-lyonesse": {
+          "templateItem": true
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Target is knocked Prone if Medium or smaller (Hatchling) / Large or smaller (Juvenile).</p>"
+        },
+        "type": {
+          "value": "monster"
+        },
+        "activities": {
+          "da5e09e68c83a070": {
+            "_id": "da5e09e68c83a070",
+            "name": "Pounce",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "spellSlot": false,
+              "targets": []
+            },
+            "range": {
+              "units": "ft",
+              "value": "5"
+            },
+            "target": {
+              "affects": {
+                "type": "creature",
+                "count": "1"
+              }
+            },
+            "damage": {
+              "parts": [
+                {
+                  "custom": {
+                    "enabled": true,
+                    "formula": "2d6 + 3"
+                  },
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ],
+              "includeBase": false,
+              "onSave": "none"
+            },
+            "attack": {
+              "flat": true,
+              "bonus": "5",
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            }
+          }
+        }
+      },
+      "effects": [],
+      "_key": "!actors.items!1cea170b31a20b1d.cd7e5d35c8b7d801"
+    },
+    {
+      "_id": "26e03c1c6fa01c3b",
+      "name": "Acid Breath",
+      "type": "feat",
+      "img": "icons/svg/sword.svg",
+      "flags": {
+        "grimnir-lyonesse": {
+          "templateItem": true
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Constitution save; half damage on success. 15 ft long, 5 ft wide line. One use per day.</p>"
+        },
+        "type": {
+          "value": "monster"
+        },
+        "activities": {
+          "84be2d13ced6927b": {
+            "_id": "84be2d13ced6927b",
+            "name": "Acid Breath",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "spellSlot": false,
+              "targets": [
+                {
+                  "type": "itemUses",
+                  "target": "",
+                  "value": "1"
+                }
+              ]
+            },
+            "range": {
+              "units": "ft",
+              "value": "5"
+            },
+            "target": {
+              "template": {
+                "type": "line",
+                "size": "15",
+                "width": "5",
+                "units": "ft"
+              },
+              "affects": {
+                "type": "creature",
+                "count": ""
+              }
+            },
+            "damage": {
+              "parts": [
+                {
+                  "custom": {
+                    "enabled": true,
+                    "formula": "7d8"
+                  },
+                  "types": [
+                    "acid"
+                  ]
+                }
+              ],
+              "includeBase": false,
+              "onSave": "half"
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "13"
+              }
+            }
+          }
+        },
+        "uses": {
+          "max": "1",
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "lr",
+              "type": "recoverAll"
+            }
+          ]
+        }
+      },
+      "effects": [],
+      "_key": "!actors.items!1cea170b31a20b1d.26e03c1c6fa01c3b"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "template": "juvenile"
+    }
+  },
+  "prototypeToken": {
+    "name": "Juvenile Black Dragon",
+    "actorLink": true,
+    "width": 2,
+    "height": 2,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!1cea170b31a20b1d"
+}

@@ -1,0 +1,262 @@
+{
+  "_id": "ed13daffd640d09a",
+  "name": "Primal Protection",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-circle-of-the-devourer-primal-protection",
+    "description": {
+      "value": "<p><b>Circle of the Devourer · уровень 3</b></p><p>The primal spirits exert their powers to protect you. If you are hit by an attack, you may use a Reaction to roll on the<br>Primal Protection table to determine a defensive effect.<br>You can use this feature a number of times equal to your Wisdom Modifier, and you regain all expended uses when you finish a Short or Long Rest.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>После определения результата активировать только выпавший эффект. С 14 уровня выбирать без 1d6, расход остаётся 1. Конец следующего хода и отталкивание — вручную.</li></ul><h3>Primal Protection Table</h3><p>Primal Protection<br>1d6<br>Effect<br>1–2<br>Protruding Spines. Jagged spines burst from<br>your body. Each creature within 5 feet of you<br>takes 2d4 plus your Wisdom modifier Piercing<br>damage and is pushed 5 feet away from you. The<br>spines then retract.<br>3–4<br>Bulbous Shell. Your skin hardens into a thick,<br>mottled shell. You gain a +3 bonus to AC until the<br>end of your next turn. If this increased AC would<br>cause the triggering attack to miss you, it does.<br>5<br>Abyssal Glare. Your eyes become glowing purple<br>orbs until the end of your next turn. Whenever<br>a creature deals damage to you, including the<br>triggering attack, it takes Psychic damage equal to<br>twice your Wisdom modifier.<br>6<br>Aberrant Flesh. Your flesh warps and knits itself<br>back together. You regain 2d4 plus your Wisdom<br>Modifier Hit Points immediately after taking the<br>triggering damage.<br></p>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "40",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Circle of the Devourer 3",
+    "uses": {
+      "max": "max(0,@abilities.wis.mod)",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {
+      "c2f3503f23586855": {
+        "_id": "c2f3503f23586855",
+        "type": "utility",
+        "name": "Определить защиту",
+        "activation": {
+          "type": "reaction",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "roll": {
+          "formula": "1d6",
+          "name": "Определить защиту",
+          "visible": true,
+          "prompt": false
+        }
+      },
+      "1d97665913d45a3d": {
+        "_id": "1d97665913d45a3d",
+        "type": "damage",
+        "name": "Protruding Spines",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "range": {
+          "value": "5",
+          "units": "ft"
+        },
+        "target": {
+          "affects": {
+            "type": "creature",
+            "count": "1"
+          },
+          "template": {
+            "type": ""
+          }
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "2d4 + @abilities.wis.mod"
+              },
+              "types": [
+                "piercing"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ],
+          "onSave": "none",
+          "includeBase": false
+        }
+      },
+      "d8f609344005016e": {
+        "_id": "d8f609344005016e",
+        "type": "heal",
+        "name": "Aberrant Flesh",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "healing": {
+          "custom": {
+            "enabled": true,
+            "formula": "2d4 + @abilities.wis.mod"
+          },
+          "types": [
+            "healing"
+          ],
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "target": {
+          "affects": {
+            "type": "self"
+          },
+          "template": {
+            "type": ""
+          }
+        }
+      },
+      "3759837027237bfa": {
+        "_id": "3759837027237bfa",
+        "type": "utility",
+        "name": "Bulbous Shell",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [
+          {
+            "_id": "d9efa4398db2100b"
+          }
+        ],
+        "description": {
+          "chatFlavor": ""
+        },
+        "target": {
+          "affects": {
+            "type": "self"
+          },
+          "template": {
+            "type": ""
+          }
+        }
+      },
+      "91081fd9b7745397": {
+        "_id": "91081fd9b7745397",
+        "type": "damage",
+        "name": "Abyssal Glare",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "2 * @abilities.wis.mod"
+              },
+              "types": [
+                "psychic"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ],
+          "onSave": "none",
+          "includeBase": false
+        }
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "d9efa4398db2100b",
+      "name": "Bulbous Shell: +3 AC",
+      "img": "icons/svg/book.svg",
+      "transfer": false,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.attributes.ac.bonus",
+          "mode": 2,
+          "value": "3",
+          "priority": 20
+        }
+      ],
+      "statuses": [],
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true
+        }
+      },
+      "duration": {
+        "seconds": 12
+      },
+      "_key": "!items.effects!ed13daffd640d09a.d9efa4398db2100b"
+    }
+  ],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Circle of the Devourer",
+      "feature": "Primal Protection",
+      "class": "druid",
+      "level": 3,
+      "notes": [
+        "После определения результата активировать только выпавший эффект. С 14 уровня выбирать без 1d6, расход остаётся 1. Конец следующего хода и отталкивание — вручную."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "cdafd80b70bcfbb0",
+  "sort": 30000,
+  "_key": "!items!ed13daffd640d09a"
+}

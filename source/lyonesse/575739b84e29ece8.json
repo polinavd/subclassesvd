@@ -1,0 +1,97 @@
+{
+  "_id": "575739b84e29ece8",
+  "name": "Greater Avatar",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-the-archangel-greater-avatar",
+    "description": {
+      "value": "<p><b>The Archangel · уровень 10</b></p><p>While in your Avatar of the Archangel form you gain Resistance to Psychic damage, and you are Immune to being<br>Charmed or Frightened.<br>Divine Fury. Whenever you succeed on a Wisdom saving throw, you can choose one creature you can see within<br>30 feet. That creature takes Radiant damage equal to 2d8<br>+ your Charisma modifier.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Только в Avatar после успешного Wis save. Защиты формы применяет макрос.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "62",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "The Archangel 10",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "7787974ca8e5d8b1": {
+        "_id": "7787974ca8e5d8b1",
+        "type": "damage",
+        "name": "Divine Fury",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "range": {
+          "value": "30",
+          "units": "ft"
+        },
+        "target": {
+          "affects": {
+            "type": "creature",
+            "count": "1"
+          },
+          "template": {
+            "type": ""
+          }
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "2d8 + @abilities.cha.mod"
+              },
+              "types": [
+                "radiant"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ],
+          "onSave": "none",
+          "includeBase": false
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "The Archangel",
+      "feature": "Greater Avatar",
+      "class": "warlock",
+      "level": 10,
+      "notes": [
+        "Только в Avatar после успешного Wis save. Защиты формы применяет макрос."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "38aa6694fe4ed7c9",
+  "sort": 100000,
+  "_key": "!items!575739b84e29ece8"
+}

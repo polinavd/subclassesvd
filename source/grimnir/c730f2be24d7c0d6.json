@@ -1,0 +1,46 @@
+{
+  "_id": "c730f2be24d7c0d6",
+  "name": "Bonus Proficiencies",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-college-of-the-seers-bonus-proficiencies",
+    "description": {
+      "value": "<p><b>College of the Seers · уровень 3</b></p><p>You gain proficiency with Martial Weapons and Training with Medium Armor. You also gain a skill of your choice.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "36",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "College of the Seers 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "College of the Seers",
+      "feature": "Bonus Proficiencies",
+      "class": "bard",
+      "level": 3,
+      "notes": [
+        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "08cc7d033b762c1f",
+  "sort": 30000,
+  "_key": "!items!c730f2be24d7c0d6"
+}

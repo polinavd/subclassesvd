@@ -1,0 +1,113 @@
+{
+  "_id": "a645c6fb256a2bde",
+  "name": "Resonant Body",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-knight-of-the-sacred-word-resonant-body",
+    "description": {
+      "value": "<p><b>Knight of the Sacred Word · уровень 6</b></p><p>You master your breath and body, allowing your voice to shape your own form.<br>Steadfast Voice. When you fail a saving throw, you can spend 1 Focus Point to add your Martial Arts die to the roll, potentially turning failure into success.<br>Purifying Breath. At the start of your turn, you can spend 1 Focus Point to end one of the following conditions on yourself: Paralyzed or Stunned.<br>Striking Word. When you use Voice of Authority, you can deal extra Force damage equal to one roll of your<br>Martial Arts die if the target fails its saving throw.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Purifying Breath — макрос управления в начале хода.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "52",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Knight of the Sacred Word 6",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "ac6e4940b7de3b19": {
+        "_id": "ac6e4940b7de3b19",
+        "type": "utility",
+        "name": "Steadfast Voice",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:monks-focus",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "roll": {
+          "formula": "@scale.monk.die",
+          "name": "Steadfast Voice",
+          "visible": true,
+          "prompt": false
+        }
+      },
+      "0588dbd4f7fd49e0": {
+        "_id": "0588dbd4f7fd49e0",
+        "type": "damage",
+        "name": "Striking Word",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@scale.monk.die"
+              },
+              "types": [
+                "force"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ],
+          "onSave": "none",
+          "includeBase": false
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Knight of the Sacred Word",
+      "feature": "Resonant Body",
+      "class": "monk",
+      "level": 6,
+      "notes": [
+        "Purifying Breath — макрос управления в начале хода."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "47f143ead77b6269",
+  "sort": 60000,
+  "_key": "!items!a645c6fb256a2bde"
+}

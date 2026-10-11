@@ -1,0 +1,126 @@
+{
+  "_id": "5e2e983aa0187357",
+  "name": "Knight of the Sacred Word",
+  "type": "subclass",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": {
+      "value": "<p><b>2024 · Lyonesse</b></p><p>Перетащите подкласс на персонажа с соответствующим базовым классом. Для форм и спутников используйте макрос «Управление подклассом». Ограничения указаны в каждой способности.</p><p>Monk<br>Knight of the Sacred Word<br>You are a Knight of the Sacred Word, an ascetic warrior sworn to defend the College of the Voice. You reject armor and worldly titles, relying instead on speed, discipline, and the perfection of body and voice. You serve no crown. Your duty is to protect the Voices and their teachings wherever they are threatened.<br>Knights of the Sacred Word are not bound to kingdoms. When rulers defy the Maker’s law or seek to silence the College, the Order acts without hesitation. Through relentless training, you have learned to shape your body and voice into a unified force. Your words carry power.<br>Level 3: Voice of Authority<br>Your voice carries force that can command the body as surely as your strikes.<br>Once per turn, when you hit a creature with a Monk weapon or an Unarmed Strike, you can expend 1 Focus<br>Point to issue a single-word command as part of the attack. The target must succeed on a Wisdom saving throw or suffer one of the following effects of your choice until the start of your next turn:<br>Halt. The creature’s Speed becomes 0.<br>Silence. The creature cannot speak or cast spells with<br>Verbal components.<br>Yield. The creature has Disadvantage on attack rolls.<br>Level 3: Cantor’s Discipline<br>Your training within the College sharpens both mind and perception.<br>You gain proficiency in Insight and Religion. If you already have proficiency in either skill, you may choose any skill from the Monk skill list instead.<br>Level 6: Resonant Body<br>You master your breath and body, allowing your voice to shape your own form.<br>Steadfast Voice. When you fail a saving throw, you can spend 1 Focus Point to add your Martial Arts die to the roll, potentially turning failure into success.<br>Purifying Breath. At the start of your turn, you can spend 1 Focus Point to end one of the following conditions on yourself: Paralyzed or Stunned.<br>Striking Word. When you use Voice of Authority, you can deal extra Force damage equal to one roll of your<br>Martial Arts die if the target fails its saving throw.<br>Level 11: Lingering Word<br>Your mastery allows your voice to persist within the mind, compelling obedience beyond the moment of command.<br>When a creature fails its saving throw against your<br>Voice of Authority, you can spend 1 Focus Point at the start of your next turn to extend the command’s duration to 1 minute. You must choose the same effect you imposed with Voice of Authority. After the end of your next turn, the target can repeat the save at the end of each of its turns, ending the effect on a success.<br>Level 17: Sacred Word Incarnate<br>You have become an instrument of the Maker’s truth.<br>Your voice no longer requires effort. It simply is.<br>Word of Judgment. When you use Voice of Authority, you can affect an additional creature of your choice within 30 feet that can hear you. It must make a separate<br>Wisdom saving throw.<br>Irresistible Cadence. Once per turn when a creature succeeds on its saving throw against your Stunning Strike or Voice of Authority, you can spend 2 Focus Points to force it to reroll the d20. It must use the new result.<br>I asked a Knight of the Sacred Word what he did.<br>He said, ‘I kick ass for the Maker’.<br>—Clemsy, Otherling Pilgrim</p>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "52",
+      "rules": "2024"
+    },
+    "identifier": "lyonesse-knight-of-the-sacred-word",
+    "classIdentifier": "monk",
+    "advancement": [
+      {
+        "_id": "0f029da0a90a97f9",
+        "type": "Trait",
+        "level": 3,
+        "title": "Владения",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": true,
+          "grants": [
+            "skills:ins",
+            "skills:rel"
+          ],
+          "choices": []
+        },
+        "value": {}
+      },
+      {
+        "_id": "3033515a70f1130e",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.cb38221b214c11b2",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.b835712fb7ca7161",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "ac87514910174c7d",
+        "type": "ItemGrant",
+        "level": 6,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.a645c6fb256a2bde",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "1bb44f1c8a740490",
+        "type": "ItemGrant",
+        "level": 11,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.49c86b5efd030e97",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "4774d58cf11625c5",
+        "type": "ItemGrant",
+        "level": 17,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.175153c1094c06af",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Knight of the Sacred Word",
+      "spellList": {}
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "47f143ead77b6269",
+  "sort": 0,
+  "_key": "!items!5e2e983aa0187357"
+}

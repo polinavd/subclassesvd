@@ -1,0 +1,64 @@
+{
+  "_id": "c6a12eb65ca6fbf4",
+  "name": "Rampage",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-marauder-rampage",
+    "description": {
+      "value": "<p><b>Marauder · уровень 10</b></p><p>Whenever you or an ally within 10 feet of you reduces a creature to 0 Hit Points with an attack, that creature can take a Bonus Action before the end of the current turn to move up to half its Speed and make one attack.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>После подходящего убийства вручную переместить получателя и бросить его оружие.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "42",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Marauder 10",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "0b94172b0d8c2bfb": {
+        "_id": "0b94172b0d8c2bfb",
+        "type": "utility",
+        "name": "Rampage",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Marauder",
+      "feature": "Rampage",
+      "class": "fighter",
+      "level": 10,
+      "notes": [
+        "После подходящего убийства вручную переместить получателя и бросить его оружие."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "8873c3624dd55b20",
+  "sort": 100000,
+  "_key": "!items!c6a12eb65ca6fbf4"
+}

@@ -1,0 +1,46 @@
+{
+  "_id": "fe912d43e27ee53b",
+  "name": "Enhanced Senses",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-circle-of-the-devourer-enhanced-senses",
+    "description": {
+      "value": "<p><b>Circle of the Devourer · уровень 10</b></p><p>You may use a Bonus Action to gain an additional sense.<br>You may only have one of the following active at one time:<br>• You gain Darkvision out to a range of 120 feet.<br>• You gain Blindsight out to a range of 10 feet.<br>• You gain Tremorsense out to a range of 30 feet.<br>This feature ends if you have the Unconscious condition.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Выбор одного чувства, замена и снятие при Unconscious — макрос управления.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "40",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Circle of the Devourer 10",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Circle of the Devourer",
+      "feature": "Enhanced Senses",
+      "class": "druid",
+      "level": 10,
+      "notes": [
+        "Выбор одного чувства, замена и снятие при Unconscious — макрос управления."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "cdafd80b70bcfbb0",
+  "sort": 100000,
+  "_key": "!items!fe912d43e27ee53b"
+}

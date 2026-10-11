@@ -1,0 +1,46 @@
+{
+  "_id": "f12fea597b076acc",
+  "name": "Binding Savant",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-spellbinder-binding-savant",
+    "description": {
+      "value": "<p><b>Spellbinder · уровень 3</b></p><p>Choose one Wizard or Druid Summon spell that has the word Summon in its name, which must be no higher than level 2, and add it to your spellbook for free.<br>In addition, whenever you gain access to a new level of spell slots in this class, you can add up to two spells from the Wizard or Druid spell lists that have “Summon” in their name (in any combination) to your spellbook for free. The chosen spells must be of a level for which you have spell slots and will appear in future spellbooks you own automatically.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "64",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Spellbinder 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Spellbinder",
+      "feature": "Binding Savant",
+      "class": "wizard",
+      "level": 3,
+      "notes": [
+        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "07dd67ea748f54e0",
+  "sort": 30000,
+  "_key": "!items!f12fea597b076acc"
+}

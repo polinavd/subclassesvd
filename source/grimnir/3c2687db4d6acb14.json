@@ -1,0 +1,46 @@
+{
+  "_id": "3c2687db4d6acb14",
+  "name": "Spellcasting",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-true-believer-spellcasting",
+    "description": {
+      "value": "<p><b>True Believer · уровень 3</b></p><p>You gain the ability to cast spells from the Cleric list.<br>Cantrips. You know three cantrips of your choice from the Cleric spell list.<br>Spell Slots. The True Believer Spellcasting table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a<br>Long Rest.<br>Prepared Spells of Level 1+. You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose three level 1 spells from the Cleric spell list. The number of spells on your list increases as you gain Rogue levels, as shown in the<br>Prepared Spells column of the True Believer Spellcasting table. Whenever that number increases, choose additional spells from the Cleric spell list until the number of spells on your list matches the number on the table.<br>The chosen spells must be of a level for which you have spell slots.<br>Changing Your Prepared Spells. Whenever you gain a Rogue level, you can replace one spell on your list with another Cleric spells for which you have spell slots.<br>Spellcasting Ability. Intelligence or Wisdom (your choice) is your spellcasting ability for your Cleric spells.<br>Spellcasting Focus. You can use a Holy Symbol as a<br>Spellcasting Focus for your Cleric spells.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Прогрессия слотов third включена; по умолчанию Wisdom. Intelligence можно выбрать макросом. 3 кантрипа и подготовленные Cleric spells выбираются вручную.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "50",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "True Believer 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "True Believer",
+      "feature": "Spellcasting",
+      "class": "rogue",
+      "level": 3,
+      "notes": [
+        "Прогрессия слотов third включена; по умолчанию Wisdom. Intelligence можно выбрать макросом. 3 кантрипа и подготовленные Cleric spells выбираются вручную."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "4abb7a3dcaaf0cac",
+  "sort": 30000,
+  "_key": "!items!3c2687db4d6acb14"
+}

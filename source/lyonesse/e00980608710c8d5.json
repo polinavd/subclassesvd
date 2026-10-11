@@ -1,0 +1,273 @@
+{
+  "_id": "e00980608710c8d5",
+  "name": "The Archangel",
+  "type": "subclass",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": {
+      "value": "<p><b>2024 · Lyonesse</b></p><p>Перетащите подкласс на персонажа с соответствующим базовым классом. Для форм и спутников используйте макрос «Управление подклассом». Ограничения указаны в каждой способности.</p><p>Warlock<br>Patron: The Archangel<br>You have sworn yourself to the Archangel, a radiant incarnation of the Seven Heavens. Where the balance of the mortal world fractures beneath corruption or unbound chaos, the Archangel descends through chosen vessels to strike without mercy.<br>Its light does not comfort. It condemns. In dreams, you walk the endless steps of heaven as a towering, faceless figure wreathed in blinding radiance watches in silence. You feel its purpose more than hear its voice. Destroy what must not endure. End what has escaped judgment.<br>Whether you accepted this pact in devotion or defiance matters little. The Archangel does not bargain. It appoints. You are now its instrument, bearing a fragment of heaven’s wrath into a world that has long deserved it.<br>Level 3: Holy Warrior<br>You have Armor Training in Medium Armor and Shields.<br>Level 3: Archangel’s Spells<br>The Archangel grants you spells that punish the wicked and scour corruption with holy fire. You always have these spells prepared, and they do not count against your number of spells known.<br>Archangel Spells<br>Warlock Level<br>Spells<br>3<br>Wrathful Smite, Sanctuary, Flame Blade,<br>Zone of Truth<br>5<br>Spirit Guardians, Fear<br>7<br>Wall of Fire, Banishment<br>9<br>Banishing Smite, Dispel Evil and Good<br>Level 3: Avatar of the Archangel<br>When evil falls or allies perish, heaven’s judgment pours through you.<br>When a creature you can see within 60 feet is reduced to 0 Hit Points, you may use your Reaction to call down divine fire upon an enemy within range. That creature takes Radiant damage equal to your Charisma modifier + your Warlock level. In addition, you assume your Avatar of the Archangel form.<br>Avatar of the Archangel. You gain Temporary Hit<br>Points equal to twice your Warlock level. While you have these Temporary Hit Points, divine radiance wreathes your body, eyes open all over your armor, and your presence feels unmistakably otherworldly. While this form is active:<br>• You shed Bright Light in a 10-foot radius and Dim<br>Light for another 10 feet.<br>• Your attacks deal an additional 1d8 Radiant damage.<br>• Your vision is unimpeded by magical Darkness.<br>Once you use this feature, you can’t use it again until you finish a Short or Long Rest.<br>Level 6: Chains of Penitence<br>While in your Avatar of the Archangel form, when you hit a creature with an attack, you can force it to make a<br>Strength saving throw against your spell save DC. On a failure, it is Restrained until the end of your next turn as spectral chains lash around it.<br>You can use this feature a number of times equal to your Charisma modifier (minimum of once).<br>Level 10: Greater Avatar<br>While in your Avatar of the Archangel form you gain Resistance to Psychic damage, and you are Immune to being<br>Charmed or Frightened.<br>Divine Fury. Whenever you succeed on a Wisdom saving throw, you can choose one creature you can see within<br>30 feet. That creature takes Radiant damage equal to 2d8<br>+ your Charisma modifier.<br>Level 14: Final Avatar<br>You fully embody heaven’s executioner, becoming the<br>Archangel’s perfected vessel. While in your Avatar of the<br>Archangel form, you gain the following benefits:<br>• You shed Bright Light in a 30-foot radius and Dim<br>Light for another 60 feet.<br>• You have Resistance to all damage except Force.<br>• When you hit a creature with an attack, you can teleport up to 30 feet to an unoccupied space you can see.<br>• You always know the direction and distance to any creature you have damaged since the start of this transformation.<br>You can now expend a Pact Magic spell slot (no action required) to restore your use of Avatar of the Archangel.<br>Protectors of the Voice<br>Many Warlocks sworn to the Archangel serve the College of the Voice. Chosen as vessels of heaven’s judgment, they bind chivalric oaths to divine wrath, serving as protectors when faith in the Maker is threatened.<br>New Eldritch Invocation<br>Options<br>Pact of the Charger<br>You learn the Find Steed spell and can cast it as a Magic action without expending a spell slot.<br>Investment of the Charger<br>Prerequisite: Level 9+ Warlock, Pact of the Charger Invocation<br>When you cast Find Steed, you infuse the summoned steed with a measure of your eldritch power, granting the creature the following benefits:<br>Charging Attack. As a Bonus Action, you can command the steed to take the Attack action.<br>Charge. When you command your steed to take the<br>Dash action, it also gains the benefit of the Dodge action. While it is moving with its Dash action, you also gain the benefit of the Dodge action.<br>Your Save DC. If the steed forces a creature to make a saving throw, it uses your spell save DC.<br>Resistance. When the steed takes damage, you can take a<br>Reaction to grant it Resistance against that damage.</p>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "62",
+      "rules": "2024"
+    },
+    "identifier": "lyonesse-the-archangel",
+    "classIdentifier": "warlock",
+    "advancement": [
+      {
+        "_id": "5c090f1a89a6fe86",
+        "type": "Trait",
+        "level": 3,
+        "title": "Владения",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "armor:med",
+            "armor:shl"
+          ],
+          "choices": []
+        },
+        "value": {}
+      },
+      {
+        "_id": "41440906b85b58bf",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.dcec27e13aa5e491",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.ccbd6411687c1c89",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.68ce5d92858594a3",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "b05b9c1100941a01",
+        "type": "ItemGrant",
+        "level": 6,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.8d0b919b3d8cc798",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "119d48fd5cecd7b4",
+        "type": "ItemGrant",
+        "level": 10,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.575739b84e29ece8",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "9befee877219626e",
+        "type": "ItemGrant",
+        "level": 14,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.f1c65317f69451c9",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "4bfb96f9c31a61b3",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Заклинания",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbSanctuary0000",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFlameBlade",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplZoneofTrut",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [
+              "cha"
+            ],
+            "method": "pact",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {}
+      },
+      {
+        "_id": "65781d422f3ede36",
+        "type": "ItemGrant",
+        "level": 5,
+        "title": "Заклинания",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplSpiritGuar",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplFear000000",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [
+              "cha"
+            ],
+            "method": "pact",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {}
+      },
+      {
+        "_id": "2f882e4dfa8335dc",
+        "type": "ItemGrant",
+        "level": 7,
+        "title": "Заклинания",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplWallofFire",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplBanishment",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [
+              "cha"
+            ],
+            "method": "pact",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {}
+      },
+      {
+        "_id": "10450879037f8375",
+        "type": "ItemGrant",
+        "level": 9,
+        "title": "Заклинания",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.spells24.Item.phbsplDispelEvil",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [
+              "cha"
+            ],
+            "method": "pact",
+            "prepared": 2,
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {}
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "The Archangel",
+      "spellList": {
+        "3": [
+          "Wrathful Smite",
+          "Sanctuary",
+          "Flame Blade",
+          "Zone of Truth"
+        ],
+        "5": [
+          "Spirit Guardians",
+          "Fear"
+        ],
+        "7": [
+          "Wall of Fire",
+          "Banishment"
+        ],
+        "9": [
+          "Banishing Smite",
+          "Dispel Evil and Good"
+        ]
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "38aa6694fe4ed7c9",
+  "sort": 0,
+  "_key": "!items!e00980608710c8d5"
+}

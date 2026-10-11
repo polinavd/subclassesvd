@@ -1,0 +1,75 @@
+{
+  "_id": "a947119d4736ff39",
+  "name": "Spellbinding",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-spellbinder-spellbinding",
+    "description": {
+      "value": "<p><b>Spellbinder · уровень 6</b></p><p>You may cast Magic Circle as a Ritual once per day.<br>Your influence over your Vassals deepens. You can summon your Vassal into a Magic Circle you have cast and when you do so, it gains the ability to cast the corresponding spells as shown on the Spellbinding table without expending a spell slot or requiring material components. When it does so, the Vassal reduces its maximum Hit Points by 5 plus 5 times the level of the spell.<br>The Vassal cannot cast a spell that is of a higher level than your highest level spell slot.<br>Spellbinding<br>Vassal<br>Spells Available to Vassal<br>All<br>Augury, Clairvoyance, Divination, Dream<br>Aberration Only<br>Hallucinatory Terrain<br>Dragon Only<br>Circle of Power<br>Fiend Only<br>Teleportation Circle<br>Undead Only<br>Speak with Dead</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Выдача заклинаний вассалу и снижение его максимума HP — вручную. 1/day интерпретировано как Long Rest; можно изменить в счётчике.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "64",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Spellbinder 6",
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {
+      "ba5030a933c8df68": {
+        "_id": "ba5030a933c8df68",
+        "type": "utility",
+        "name": "Magic Circle (ritual)",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Spellbinder",
+      "feature": "Spellbinding",
+      "class": "wizard",
+      "level": 6,
+      "notes": [
+        "Выдача заклинаний вассалу и снижение его максимума HP — вручную. 1/day интерпретировано как Long Rest; можно изменить в счётчике."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "07dd67ea748f54e0",
+  "sort": 60000,
+  "_key": "!items!a947119d4736ff39"
+}

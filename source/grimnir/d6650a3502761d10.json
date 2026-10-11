@@ -1,0 +1,105 @@
+{
+  "_id": "d6650a3502761d10",
+  "name": "Expert Mariner",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-discovery-domain-expert-mariner",
+    "description": {
+      "value": "<p><b>Discovery Domain · уровень 3</b></p><p>You are trained for long travel, navigation, and fighting across coasts, rivers, and open water.<br>Bonus Proficiencies. You gain proficiency with Martial<br>Weapons, Cartographer’s Tools, and Navigator’s Tools.<br>Eye of the Navigator. When someone makes a History,<br>Survival, or Perception check to locate or learn where a place is, you can choose to give them a +5 bonus to their roll. You can use this feature a number of times equal to your Wisdom Modifier, and you regain all expended uses when you finish a Long Rest<br>Powerful Swimmer. You have a Swim Speed equal to your Speed, and you can hold your breath for twice as long as normal.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Бонус +5 применить к подходящей проверке после активации.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "38",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Discovery Domain 3",
+    "uses": {
+      "max": "max(0,@abilities.wis.mod)",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {
+      "0d1122aeb83b5696": {
+        "_id": "0d1122aeb83b5696",
+        "type": "utility",
+        "name": "Eye of the Navigator: +5",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "roll": {
+          "formula": "5",
+          "name": "Eye of the Navigator: +5",
+          "visible": true,
+          "prompt": false
+        }
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "0126450f180ee8c5",
+      "name": "Swim speed",
+      "img": "icons/svg/book.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.attributes.movement.swim",
+          "mode": 0,
+          "value": "gl-swim:1",
+          "priority": 20
+        }
+      ],
+      "statuses": [],
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true
+        }
+      },
+      "duration": {},
+      "_key": "!items.effects!d6650a3502761d10.0126450f180ee8c5"
+    }
+  ],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Discovery Domain",
+      "feature": "Expert Mariner",
+      "class": "cleric",
+      "level": 3,
+      "notes": [
+        "Бонус +5 применить к подходящей проверке после активации."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "25c7aea27071b194",
+  "sort": 30000,
+  "_key": "!items!d6650a3502761d10"
+}

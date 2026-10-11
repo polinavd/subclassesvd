@@ -1,0 +1,46 @@
+{
+  "_id": "f8adcbb01aa8cc4b",
+  "name": "Primal Expertise",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-circle-of-the-devourer-primal-expertise",
+    "description": {
+      "value": "<p><b>Circle of the Devourer · уровень 14</b></p><p>When you use Primal Protection, you choose the effect instead of rolling.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "40",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Circle of the Devourer 14",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Circle of the Devourer",
+      "feature": "Primal Expertise",
+      "class": "druid",
+      "level": 14,
+      "notes": [
+        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "cdafd80b70bcfbb0",
+  "sort": 140000,
+  "_key": "!items!f8adcbb01aa8cc4b"
+}

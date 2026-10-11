@@ -1,0 +1,181 @@
+{
+  "_id": "e2efc49fb8f75f6a",
+  "name": "Channel Divinity: Drowned Breath",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-discovery-domain-channel-divinity-drowned-breath",
+    "description": {
+      "value": "<p><b>Discovery Domain · уровень 3</b></p><p>When you hit a creature with a melee attack, you can expend a use of your Channel Divinity. The target takes an additional 1d8 Necrotic damage and makes a Constitution saving throw against your spell save DC. On a failure, the target becomes cursed for 1 minute and cannot regain Hit Points unless it’s underwater, it can only breathe underwater, and takes 1d8 Necrotic damage at the start of each of its turns outside the water from suffocation. A creature that is Immune to the Exhaustion condition does not take this damage.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Урон при попадании и спасбросок разделены: успешный спасбросок не отменяет первый 1d8. Вода, иммунитет к истощению, лечение и вербальные компоненты проверяются вручную.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "38",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Discovery Domain 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "ea09642d3d4d1cf2": {
+        "_id": "ea09642d3d4d1cf2",
+        "type": "damage",
+        "name": "Дополнительный урон при попадании",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:channel-divinity",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "1d8"
+              },
+              "types": [
+                "necrotic"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ],
+          "onSave": "none",
+          "includeBase": false
+        }
+      },
+      "caba391b4e04207f": {
+        "_id": "caba391b4e04207f",
+        "type": "save",
+        "name": "Спасбросок против проклятия",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [
+          {
+            "_id": "379f71e0bbb14938"
+          }
+        ],
+        "description": {
+          "chatFlavor": ""
+        },
+        "damage": {
+          "parts": [],
+          "onSave": "none",
+          "includeBase": false
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        }
+      },
+      "3d5a4fc32c5d57e1": {
+        "_id": "3d5a4fc32c5d57e1",
+        "type": "damage",
+        "name": "Начало хода вне воды",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "1d8"
+              },
+              "types": [
+                "necrotic"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ],
+          "onSave": "none",
+          "includeBase": false
+        }
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "379f71e0bbb14938",
+      "name": "Drowned Breath — cursed",
+      "img": "icons/svg/book.svg",
+      "transfer": false,
+      "disabled": false,
+      "changes": [],
+      "statuses": [],
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true
+        }
+      },
+      "duration": {
+        "seconds": 60
+      },
+      "_key": "!items.effects!e2efc49fb8f75f6a.379f71e0bbb14938"
+    }
+  ],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Discovery Domain",
+      "feature": "Channel Divinity: Drowned Breath",
+      "class": "cleric",
+      "level": 3,
+      "notes": [
+        "Урон при попадании и спасбросок разделены: успешный спасбросок не отменяет первый 1d8. Вода, иммунитет к истощению, лечение и вербальные компоненты проверяются вручную."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "25c7aea27071b194",
+  "sort": 30000,
+  "_key": "!items!e2efc49fb8f75f6a"
+}

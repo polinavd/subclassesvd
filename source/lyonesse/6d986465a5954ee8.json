@@ -1,0 +1,149 @@
+{
+  "_id": "6d986465a5954ee8",
+  "name": "Outlaw",
+  "type": "subclass",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": {
+      "value": "<p><b>2024 · Lyonesse</b></p><p>Перетащите подкласс на персонажа с соответствующим базовым классом. Для форм и спутников используйте макрос «Управление подклассом». Ограничения указаны в каждой способности.</p><p>Rogue<br>Outlaw<br>Not all Rogues skulk in the shadows of cities. In Lyonesse, some take to the deep forests and tangled greenways, striking from hidden paths to defy cruel lords and protect the helpless. These Outlaws are folk heroes to commoners and hunted criminals to nobility.<br>Whether driven by vengeance or compassion, Outlaws steal not for greed, but to redress the balance of a broken world.<br>Level 3: Woodland Ambusher<br>During the first round of combat, if you have the Invisible condition when you take the Attack action using a ranged weapon, you can attack twice instead of once.<br>Level 3: Outlaw’s Craft<br>You gain the following benefits:<br>Woodsman. You gain Proficiency in the Survival skill, the Disguise Kit tool, and Martial Ranged weapons with the Heavy property. In addition, you gain a Disguise Kit and a Longbow.<br>Improved Hunting Traps. Any Hunting Trap that you set uses your Cunning Strike DC instead of the DCs listed (minimum DC of 13).<br>Swift Snare. When you roll Initiative, you can immediately place a Hunting Trap (if you have one in your possession) in an empty space within 15 feet of you (no action required).<br>Thornweald outlaws rob the rich, avoid the poor, and occasionally steal from the Fey. That’s usually their last mistake.<br>—Clemsy, Otherling Pilgrim<br>Level 9: Fleet of the Weald<br>You move through the wild as if it were your home.<br>Swift Passage. Difficult Terrain doesn’t cost you extra movement.<br>Climber. You gain a Climb Speed equal to your Speed.<br>Powerful Shot. When you use Steady Aim using a<br>Ranged weapon with the Heavy property, you may add an additional 1d6 to your Sneak Attack damage.<br>Level 13: Trick Shot<br>You gain the following Cunning Strike options.<br>Bullseye (Cost: 2d6). Immediately after the attack, you can make a ranged attack against the same target with<br>Advantage.<br>Twinned Shot (Cost: 2d6). Immediately after the attack, you can make a ranged attack against a different target.<br>Mark (Cost: 4d6). Until the start of your next turn, all attacks from your allies have Advantage on attack rolls against the target.<br>Level 17: Legend of the Weald<br>Your deeds inspire allies and terrify oppressors.<br>Quick Shot. If you take damage, you may use your<br>Reaction to make a ranged attack against the source of the damage. Once you do so, you can’t use this feature again until you finish a Short or Long Rest.</p>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "58",
+      "rules": "2024"
+    },
+    "identifier": "lyonesse-outlaw",
+    "classIdentifier": "rogue",
+    "advancement": [
+      {
+        "_id": "4982c215bebcaa8f",
+        "type": "Trait",
+        "level": 3,
+        "title": "Владения",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:sur",
+            "tool:disg",
+            "weapon:mar:longbow",
+            "weapon:mar:heavycrossbow"
+          ],
+          "choices": []
+        },
+        "value": {}
+      },
+      {
+        "_id": "2e73d2daef4b75c4",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.e449603af5ef6509",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.2b56f4585c5e31a7",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "f85b5a4e8f39b50a",
+        "type": "ItemGrant",
+        "level": 9,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.f8c7b28f81527854",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "c61ab10417e30924",
+        "type": "ItemGrant",
+        "level": 13,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.b7616a3fc3a13646",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "ee1e1e8f921c926a",
+        "type": "ItemGrant",
+        "level": 17,
+        "title": "Способности",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.42d0944e382ee4bd",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      },
+      {
+        "_id": "9f268914b954e4d1",
+        "type": "ItemGrant",
+        "level": 3,
+        "title": "Outlaw Equipment",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e.equipment24.Item.phbwepLongbow000",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e.equipment24.Item.phbtulDisguiseKi",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {}
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Outlaw",
+      "spellList": {}
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "6548f4d360a0e760",
+  "sort": 0,
+  "_key": "!items!6d986465a5954ee8"
+}

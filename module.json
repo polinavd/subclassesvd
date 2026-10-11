@@ -1,0 +1,82 @@
+{
+  "id": "grimnir-lyonesse",
+  "title": "Grimnir & Lyonesse — Subclasses (2024)",
+  "description": "24 subclass entries with level advancement, activities, resources, effects and companion helpers. English rules; Russian setup and automation notes. Target: Foundry 13 / D&D5e 5.2.3. Experimental on Foundry 14.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.351",
+    "maximum": "14"
+  },
+  "authors": [
+    {
+      "name": "Personal campaign conversion"
+    }
+  ],
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "5.2.3",
+          "maximum": "5.9.99"
+        }
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "grimnir",
+      "label": "Гримнир — подклассы и фичи",
+      "path": "packs/grimnir",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "lyonesse",
+      "label": "Лайонисс — подклассы и фичи",
+      "path": "packs/lyonesse",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "companions",
+      "label": "Гримнир / Лайонисс — спутники и формы",
+      "path": "packs/companions",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "macros",
+      "label": "Гримнир / Лайонисс — управление и проверка",
+      "path": "packs/macros",
+      "type": "Macro",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "url": "https://github.com/polinavd/subclassesvd",
+  "manifest": "https://raw.githubusercontent.com/polinavd/subclassesvd/main/module.json",
+  "download": "https://raw.githubusercontent.com/polinavd/subclassesvd/main/dist/grimnir-lyonesse.zip",
+  "bugs": "https://github.com/polinavd/subclassesvd/issues",
+  "readme": "https://raw.githubusercontent.com/polinavd/subclassesvd/main/README-RU.md"
+}

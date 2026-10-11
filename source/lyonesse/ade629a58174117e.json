@@ -1,0 +1,116 @@
+{
+  "_id": "ade629a58174117e",
+  "name": "Step Between Moments",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-wyrd-sorcery-step-between-moments",
+    "description": {
+      "value": "<p><b>Wyrd Sorcery · уровень 14</b></p><p>When you use Wyrd Time, you gain the following benefits while it is in effect:<br>• When you cast a spell that effects other creatures, if the spell requires a saving throw, all targets have Disadvantage on that saving throw. Wyrd Time still ends immediately.<br>• When you fail a Saving Throw you can spend 4 Sorcery<br>Points to succeed instead.<br>• At the start of your turn, you can spend 1 Sorcery<br>Point to gain True Sight out to 30 feet until the end of your turn.<br>• You may spend 2 Sorcery Points when you cast Modify<br>Memory. When you do this the creature has Disadvantage on its saving throw and casting the spell doesn’t end Wyrd Time.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Условные эффекты и конец хода — вручную.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "60",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Wyrd Sorcery 14",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "7a8229b79baab49e": {
+        "_id": "7a8229b79baab49e",
+        "type": "utility",
+        "name": "Успешный спасбросок вместо провала",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:font-of-magic",
+              "value": "4"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        }
+      },
+      "6dcc385ecb48ba2e": {
+        "_id": "6dcc385ecb48ba2e",
+        "type": "utility",
+        "name": "True Sight",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:font-of-magic",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        }
+      },
+      "f29a8ab178bbbe40": {
+        "_id": "f29a8ab178bbbe40",
+        "type": "utility",
+        "name": "Modify Memory в Wyrd Time",
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "feat:font-of-magic",
+              "value": "2"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Wyrd Sorcery",
+      "feature": "Step Between Moments",
+      "class": "sorcerer",
+      "level": 14,
+      "notes": [
+        "Условные эффекты и конец хода — вручную."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "b7ea24026d36df87",
+  "sort": 140000,
+  "_key": "!items!ade629a58174117e"
+}

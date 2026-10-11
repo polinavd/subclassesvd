@@ -1,0 +1,206 @@
+{
+  "_id": "ae5bbae6af78227e",
+  "name": "Grimnir Wolf",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 16,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 15,
+        "proficient": 0
+      },
+      "con": {
+        "value": 15,
+        "proficient": 0
+      },
+      "int": {
+        "value": 8,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 12,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 9,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 14
+      },
+      "hp": {
+        "value": 30,
+        "max": 30,
+        "temp": 0
+      },
+      "movement": {
+        "walk": 50,
+        "units": "ft"
+      },
+      "senses": {
+        "units": "ft"
+      }
+    },
+    "details": {
+      "type": {
+        "value": "beast"
+      },
+      "cr": 1,
+      "biography": {
+        "value": "<p>Базовая карточка. Макрос «Управление подклассом» рассчитывает AC, HP, бонус атаки и Primal Bond по владельцу. В книге Passive Perception 14 при Perception +3: расхождение сохранено в примечании, система рассчитывает пассивное значение из навыка.</p>"
+      }
+    },
+    "traits": {
+      "size": "lg"
+    },
+    "skills": {
+      "per": {
+        "value": 1
+      },
+      "ste": {
+        "value": 1
+      }
+    }
+  },
+  "items": [
+    {
+      "_id": "ce4cf8892ea501d8",
+      "name": "Pack Tactics",
+      "type": "feat",
+      "img": "icons/svg/sword.svg",
+      "flags": {
+        "grimnir-lyonesse": {
+          "templateItem": true
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Advantage on an attack if an ally is within 5 ft of the target and is not Incapacitated.</p>"
+        },
+        "type": {
+          "value": "monster"
+        },
+        "activities": {}
+      },
+      "effects": [],
+      "_key": "!actors.items!ae5bbae6af78227e.ce4cf8892ea501d8"
+    },
+    {
+      "_id": "d0ab40ebac6985eb",
+      "name": "Primal Bond",
+      "type": "feat",
+      "img": "icons/svg/sword.svg",
+      "flags": {
+        "grimnir-lyonesse": {
+          "templateItem": true
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Add the rider’s proficiency bonus to every ability check and saving throw. Configured by companion macro.</p>"
+        },
+        "type": {
+          "value": "monster"
+        },
+        "activities": {}
+      },
+      "effects": [],
+      "_key": "!actors.items!ae5bbae6af78227e.d0ab40ebac6985eb"
+    },
+    {
+      "_id": "a12fd109b65739e4",
+      "name": "Bite",
+      "type": "feat",
+      "img": "icons/svg/sword.svg",
+      "flags": {
+        "grimnir-lyonesse": {
+          "templateItem": true
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>If the target is Medium or smaller it is knocked Prone.</p>"
+        },
+        "type": {
+          "value": "monster"
+        },
+        "activities": {
+          "af9e61f322cce341": {
+            "_id": "af9e61f322cce341",
+            "name": "Bite",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "spellSlot": false,
+              "targets": []
+            },
+            "range": {
+              "units": "ft",
+              "value": "5"
+            },
+            "target": {
+              "affects": {
+                "type": "creature",
+                "count": "1"
+              }
+            },
+            "damage": {
+              "parts": [
+                {
+                  "custom": {
+                    "enabled": true,
+                    "formula": "1d6 + 3"
+                  },
+                  "types": [
+                    "piercing"
+                  ]
+                }
+              ],
+              "includeBase": false,
+              "onSave": "none"
+            },
+            "attack": {
+              "flat": true,
+              "bonus": "4",
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            }
+          }
+        }
+      },
+      "effects": [],
+      "_key": "!actors.items!ae5bbae6af78227e.a12fd109b65739e4"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "template": "wolf"
+    }
+  },
+  "prototypeToken": {
+    "name": "Grimnir Wolf",
+    "actorLink": true,
+    "width": 2,
+    "height": 2,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!ae5bbae6af78227e"
+}

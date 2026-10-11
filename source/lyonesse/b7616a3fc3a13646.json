@@ -1,0 +1,46 @@
+{
+  "_id": "b7616a3fc3a13646",
+  "name": "Trick Shot",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-outlaw-trick-shot",
+    "description": {
+      "value": "<p><b>Outlaw · уровень 13</b></p><p>You gain the following Cunning Strike options.<br>Bullseye (Cost: 2d6). Immediately after the attack, you can make a ranged attack against the same target with<br>Advantage.<br>Twinned Shot (Cost: 2d6). Immediately after the attack, you can make a ranged attack against a different target.<br>Mark (Cost: 4d6). Until the start of your next turn, all attacks from your allies have Advantage on attack rolls against the target.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "58",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Outlaw 13",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Outlaw",
+      "feature": "Trick Shot",
+      "class": "rogue",
+      "level": 13,
+      "notes": [
+        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "6548f4d360a0e760",
+  "sort": 130000,
+  "_key": "!items!b7616a3fc3a13646"
+}

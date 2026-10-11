@@ -1,0 +1,46 @@
+{
+  "_id": "51cdedfaf5b2e337",
+  "name": "Selkie Warden Spells",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-selkie-warden-selkie-warden-spells",
+    "description": {
+      "value": "<p><b>Selkie Warden · уровень 3</b></p><p>When you reach a Ranger level specified in the Selkie<br>Warden Spells table, you thereafter always have the listed spells prepared.<br>Selkie Warden Spells<br>Ranger Level<br>Spells<br>3<br>Create or Destroy Water<br>5<br>Hold Person<br>9<br>Water Breathing<br>13<br>Control Water<br>17<br>Cone of Cold</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "56",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Selkie Warden 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Selkie Warden",
+      "feature": "Selkie Warden Spells",
+      "class": "ranger",
+      "level": 3,
+      "notes": [
+        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "41003cfc479a6160",
+  "sort": 30000,
+  "_key": "!items!51cdedfaf5b2e337"
+}

@@ -1,0 +1,46 @@
+{
+  "_id": "fae5d337d50f8f00",
+  "name": "Oath Spells",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-oath-of-saints-oath-spells",
+    "description": {
+      "value": "<p><b>Oath of Saints · уровень 3</b></p><p>You gain Oath Spells at the listed levels and always have them prepared.<br>Oath Spells<br>Paladin Level<br>Spells<br>3<br>Bless, Compelled Duel<br>5<br>Prayer of Healing, Zone of Truth<br>9<br>Remove Curse, Revivify<br>13<br>Banishment, Guardian of Faith<br>17<br>Commune, Dispel Evil and Good</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "54",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Oath of Saints 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Oath of Saints",
+      "feature": "Oath Spells",
+      "class": "paladin",
+      "level": 3,
+      "notes": [
+        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "7a918a48d1938fb1",
+  "sort": 30000,
+  "_key": "!items!fae5d337d50f8f00"
+}

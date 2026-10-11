@@ -1,0 +1,75 @@
+{
+  "_id": "8d2dfbd6a6734dc3",
+  "name": "Unholy Contracts",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "lyonesse-spellbinder-unholy-contracts",
+    "description": {
+      "value": "<p><b>Spellbinder · уровень 10</b></p><p>You can cast the Planar Binding spell as a Ritual once and regain the ability to do so when you finish a Long Rest.<br>If the target of your Planar Binding is your Vassal, the casting time is reduced to 10 minutes. While your Vassal is controlled by your Planar Binding spell, you do not need to Concentrate on the Vassal’s Summon spell. You are unable to cast another Planar Binding spell while your<br>Vassal is bound.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Выбор цели, отмена концентрации и блок нового Planar Binding — вручную.</li></ul>"
+    },
+    "source": {
+      "custom": "Legends of the Round Table: Chivalric Handbook",
+      "page": "64",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Spellbinder 10",
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {
+      "a9b2f73e51e67921": {
+        "_id": "a9b2f73e51e67921",
+        "type": "utility",
+        "name": "Planar Binding (ritual)",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1"
+            }
+          ]
+        },
+        "effects": [],
+        "description": {
+          "chatFlavor": ""
+        }
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Spellbinder",
+      "feature": "Unholy Contracts",
+      "class": "wizard",
+      "level": 10,
+      "notes": [
+        "Выбор цели, отмена концентрации и блок нового Planar Binding — вручную."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "07dd67ea748f54e0",
+  "sort": 100000,
+  "_key": "!items!8d2dfbd6a6734dc3"
+}

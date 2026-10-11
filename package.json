@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --check scripts/main.mjs && node tests/runtime.mjs && node tests/packs.mjs",
+    "package": "npm run build && npm test && python3 tools/package.py",
+    "check:archive": "python3 tools/package.py --check"
+  },
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "3.0.5"
+  },
+  "name": "grimnir-lyonesse",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=22.16.0"
+  }
+}

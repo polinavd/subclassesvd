@@ -1,0 +1,46 @@
+{
+  "_id": "1c6f5ba824e64e1a",
+  "name": "Core Intention",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-cohesion-of-the-primal-core-intention",
+    "description": {
+      "value": "<p><b>Cohesion of the Primal · уровень 3</b></p><p>Dreamer. As a Bonus Action, you replace one prepared spell with another spell of the same level or lower from your spellbook. You can use this feature a number of times equal to your Intelligence modifier (minimum once), regaining all uses on a Long Rest.<br>Seeker. As a Magic Action, you expend a spell slot to sense the direction of every creature with the Spellcasting or Innate Spellcasting trait within 1 mile of you for 2 hours. Once you use this feature, you cannot do so again until you finish a Long Rest.<br>You gain Expertise in Investigation.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Dreamer и Seeker имеют раздельные ресурсы в макросе управления; не активируйте оба направления.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "56",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Cohesion of the Primal 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Cohesion of the Primal",
+      "feature": "Core Intention",
+      "class": "wizard",
+      "level": 3,
+      "notes": [
+        "Dreamer и Seeker имеют раздельные ресурсы в макросе управления; не активируйте оба направления."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "ff1c1188f5b8ad9f",
+  "sort": 30000,
+  "_key": "!items!1c6f5ba824e64e1a"
+}

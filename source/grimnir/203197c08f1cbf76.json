@@ -1,0 +1,46 @@
+{
+  "_id": "203197c08f1cbf76",
+  "name": "Primal Ink",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-cohesion-of-the-primal-primal-ink",
+    "description": {
+      "value": "<p><b>Cohesion of the Primal · уровень 3</b></p><p>Your body is your spellbook. You are proficient with<br>Calligrapher’s Supplies and inscribe your spells as shifting tattoos across your skin. Copying a spell into your tattoos takes twice as long but costs half as much gold as copying into a spellbook. Your tattoo-spellbook cannot be destroyed while you live. Your tattoos do not count as a spellcasting focus.<br>During a Long Rest, your tattoos rearrange, allowing you to choose which spells to prepare. You can surface unprepared tattoos visibly to allow copying or transcription.<br>You must have an Arcane Focus to prepare spells.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Пассивное/сюжетное правило: описание сохранено; применение по тексту.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "56",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Cohesion of the Primal 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Cohesion of the Primal",
+      "feature": "Primal Ink",
+      "class": "wizard",
+      "level": 3,
+      "notes": [
+        "Пассивное/сюжетное правило: описание сохранено; применение по тексту."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "ff1c1188f5b8ad9f",
+  "sort": 30000,
+  "_key": "!items!203197c08f1cbf76"
+}

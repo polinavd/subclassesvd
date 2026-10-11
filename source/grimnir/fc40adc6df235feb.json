@@ -1,0 +1,46 @@
+{
+  "_id": "fc40adc6df235feb",
+  "name": "Armor of the Ironwood",
+  "type": "feat",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "identifier": "grimnir-the-ironwood-armor-of-the-ironwood",
+    "description": {
+      "value": "<p><b>The Ironwood · уровень 6</b></p><p>During a Long or Short Rest, you can grow a suit of living armor called Ironwood Armor, using your Heartseed. Only you can wear this armor, and you have the training to use it. If you grow another Ironwood Armor, the previous one vanishes. While wearing this armor, you have Training with Shields.<br>Choose one of the following forms each time you grow the armor:<br>Mantle of Leaves. You have Advantage on Dexterity<br>(Stealth) checks. Your Speed increases by an additional<br>5 feet.<br>Unbreakable Branches. Attack rolls against you can’t score Critical Hits.</p><hr><p><b>Автоматизация / ограничения:</b></p><ul><li>Макрос выбора брони: AC 10+Dex+Cha, resistance bludgeoning, владение щитами и выбранная форма. Снять эффект при снятии брони.</li></ul>"
+    },
+    "source": {
+      "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
+      "page": "54",
+      "rules": "2024"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "The Ironwood 6",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "The Ironwood",
+      "feature": "Armor of the Ironwood",
+      "class": "warlock",
+      "level": 6,
+      "notes": [
+        "Макрос выбора брони: AC 10+Dex+Cha, resistance bludgeoning, владение щитами и выбранная форма. Снять эффект при снятии брони."
+      ]
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "d64d34d188a6eeab",
+  "sort": 60000,
+  "_key": "!items!fc40adc6df235feb"
+}
