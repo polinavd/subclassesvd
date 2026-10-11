@@ -56,7 +56,7 @@
       "feature": "Companions from the Before",
       "class": "sorcerer",
       "level": 3,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.a090bd83ac9ff740",

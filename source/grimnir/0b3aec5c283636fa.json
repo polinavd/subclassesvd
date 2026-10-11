@@ -70,7 +70,7 @@
       "feature": "Breaker’s Charge",
       "class": "fighter",
       "level": 7,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.0495ad17895b0406",

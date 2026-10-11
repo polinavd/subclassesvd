@@ -1,4 +1,4 @@
-const ID='grimnir-lyonesse',VERSION='0.2.0';
+const ID='grimnir-lyonesse',VERSION='0.3.0';
 const actorLocks=new Map(),timers=new Map(),attackOptions=new Map();
 const clone=x=>foundry.utils.deepClone(x);
 const flag=(i,k)=>i.getFlag?.(ID,k)??i.flags?.[ID]?.[k];
@@ -7,14 +7,19 @@ const owner=a=>a?.isOwner&&(game.users.activeGM?game.users.activeGM.id===game.us
 const classLevel=(a,c)=>Number(a.classes?.[c]?.system.levels??0);
 const sourceId=i=>i.getFlag?.('dnd5e','sourceId')??i.flags?.dnd5e?.sourceId;
 async function choose(title,options){if(!options.length)throw Error('Нет подходящих карточек.');return foundry.applications.api.DialogV2.wait({window:{title},content:`<select name="choice">${options.map(([v,n])=>`<option value="${String(v).replace(/"/g,'&quot;')}">${String(n).replace(/[<>]/g,'')}</option>`).join('')}</select>`,buttons:[{action:'ok',label:'Выбрать',default:true,callback:(_e,b)=>b.form.elements.choice.value},{action:'cancel',label:'Отмена',callback:()=>null}],rejectClose:false});}
-async function spend(i,n=1){if(!i)throw Error('Не найден ресурс.');const uses=i.system.uses;const available=Number(uses.value??Number(uses.max??0)-Number(uses.spent??0));if(available<n)throw Error(`Недостаточно использований: ${i.name}`);await i.update({'system.uses.spent':Number(uses.spent??0)+n});}
+async function spend(i,n=1){if(!i)throw Error('Не найден ресурс.');const uses=i.system.uses;const available=game.modules.get(ID).api.usesFor?.(i).value??Number(uses.value??Number(uses.max??0)-Number(uses.spent??0));if(available<n)throw Error(`Недостаточно использований: ${i.name}`);await i.update({'system.uses.spent':Number(uses.spent??0)+n});}
 function parent(a,item){return list(a.items).find(i=>i.system.identifier===flag(item,'parentIdentifier'));}
 function templateUuid(i){return `Compendium.${ID}.${flag(i,'setting')}.Item.${i._id??i.id}`;}
 async function patchCard(item,template){
  const s=template.system??{};const updates={img:template.img,'system.description':clone(s.description),...('activities' in s?{'system.activities':clone(s.activities)}:{}),[`flags.${ID}`]:{...clone(item.flags?.[ID]??{}),...clone(template.flags[ID])}};
+ const existingEffects=list(item.effects);
+ const supplied=template.effects??[];
+ updates.effects=supplied.map(e=>{const old=existingEffects.find(x=>(x.id??x._id)===e._id||flag(x,'key')&&flag(x,'key')===e.flags?.[ID]?.key);return {...clone(e),...(old?{_id:old.id??old._id,disabled:old.disabled,duration:clone(old.duration??{}),flags:{...clone(e.flags),[ID]:{...clone(e.flags?.[ID]),...clone(old.flags?.[ID])}}}:{})};});
+ updates.effects.push(...existingEffects.filter(e=>!e.flags?.[ID]&&!supplied.some(s=>s._id===(e.id??e._id))).map(e=>e.toObject?.()??clone(e)));
  if(item.type==='spell')for(const k of ['ability','sourceClass','method','prepared','properties','activation','duration','materials'])if(k in s)updates[`system.${k}`]=clone(s[k]);
  if(item.type==='weapon')for(const k of ['damage','range','type','proficient','properties'])if(k in s)updates[`system.${k}`]=clone(s[k]);
  if(s.uses?.max!==undefined){updates['system.uses.max']=s.uses.max;updates['system.uses.recovery']=clone(s.uses.recovery??[]);}
+ if(flag(item,'feature')==='Core Intention'&&flag(item.actor,'intention')){updates['system.uses.max']=flag(item.actor,'intention')==='dreamer'?'max(1,@abilities.int.mod)':'1';updates['system.uses.recovery']=[{period:'lr',type:'recoverAll'}];}
  if(['feat','subclass'].includes(item.type)&&s.advancement){
   const values=new Map(list(item.system.advancement).map(x=>[x._id??x.id,x.value]));
   updates['system.advancement']=s.advancement.map(x=>({...clone(x),value:clone(values.get(x._id)??x.value??{})}));
@@ -66,6 +71,8 @@ async function syncActor(a){
     }if(changed)await spell.update({[`system.activities.${ac.id??ac._id}.profiles`]:profiles});
    }
   }
+  await game.modules.get(ID).api.syncResources?.(a);
+  await game.modules.get(ID).api.syncEffects?.(a);
   return added;
  })();actorLocks.set(a.uuid,promise);try{return await promise;}finally{actorLocks.delete(a.uuid);}
 }
@@ -80,6 +87,7 @@ Hooks.on('deleteItem',async item=>{
 });
 Hooks.once('ready',async()=>{for(const a of game.actors)if(owner(a))await syncActor(a).catch(e=>console.error(ID,e));});
 async function ownEffect(a,key,name,changes,seconds){
+ if(game.modules.get(ID).api.setEffect)return game.modules.get(ID).api.setEffect(a,key,name,changes,seconds);
  const old=list(a.effects).filter(e=>flag(e,'key')===key).map(e=>e.id);if(old.length)await a.deleteEmbeddedDocuments('ActiveEffect',old);
  return a.createEmbeddedDocuments('ActiveEffect',[{name,img:`modules/${ID}/assets/icons/lorc-rune-stone.svg`,transfer:false,changes,flags:{[ID]:{key,managed:true}},duration:seconds?{seconds,startTime:game.time.worldTime}:{}}]);
 }
@@ -89,28 +97,39 @@ async function weaponAttack(a,item){
  const options=[];
  for(const i of items)for(const ac of list(i.system.activities)){
   if(ac.type!=='attack')continue;if(names&&!names.includes(i.name))continue;
-  if(flag(i,'requiresForm')==='primal-arm'&&(!list(a.effects).some(e=>flag(e,'key')==='primal-arm')||flag(a,'primalArm')!==i.name))continue;
+  if(flag(i,'requiresForm')==='primal-arm'&&(!hasEffect(a,'primal-arm')||flag(a,'primalArm')!==i.name))continue;
   if(kind&&kind!=='any'&&ac.attack?.type?.value!==kind)continue;
   options.push([ac.uuid,`${i.name}${ac.name&&ac.name!==i.name?' — '+ac.name:''}`]);
  }
  const selected=await choose(item.name,options);if(!selected)return;
  const ac=await fromUuid(selected);if(!ac)throw Error('Атака недоступна.');
  const p=parent(a,item);if(flag(item,'spendParent'))await spend(p);
- attackOptions.set(`${a.uuid}.${ac.item.id}`,{advantage:Boolean(flag(item,'advantage')),maximize:Boolean(flag(item,'maximize'))});
- try{
-  const rolls=await ac.rollAttack({rolls:[{options:{advantage:Boolean(flag(item,'advantage'))}}]});
-  if(!rolls?.length){if(flag(item,'spendParent'))await p.update({'system.uses.spent':Math.max(0,p.system.uses.spent-1)});return;}
-  const critical=rolls.some(r=>r.isCritical);
-  return await ac.rollDamage({isCritical:critical});
- }finally{attackOptions.delete(`${a.uuid}.${ac.item.id}`);}
+ const used=await rollOwnedAttack(a,ac,{advantage:Boolean(flag(item,'advantage')),maximize:Boolean(flag(item,'maximize'))});
+ if(!used&&flag(item,'spendParent'))await p.update({'system.uses.spent':Math.max(0,p.system.uses.spent-1)});
+ return used;
 }
+async function rollOwnedAttack(a,ac,options={}){
+ const key=`${a.uuid}.${ac.item?.id}`;attackOptions.set(key,options);
+ try{
+  if(game.modules.get('midi-qol')?.active&&globalThis.MidiQOL?.completeActivityUse){
+   const workflow=await MidiQOL.completeActivityUse(ac.uuid,{grimnirCards:true,midiOptions:{advantage:options.advantage,workflowOptions:{autoRollAttack:true,autoRollDamage:'onHit'}}});
+   return Boolean(workflow&&!workflow.aborted&&(workflow.attackRoll||workflow.attackRolls?.length));
+  }
+  const rolls=await ac.rollAttack({rolls:[{options:{...(options.advantage?{advantage:true}:{})}}]});
+  if(!rolls?.length)return false;if(rolls.some(r=>r.isSuccess!==false))await ac.rollDamage({isCritical:rolls.some(r=>r.isCritical)});return true;
+ }finally{attackOptions.delete(key);}
+}
+Hooks.on('dnd5e.preRollAttackV2',config=>{
+ const ac=config.subject,o=ac?.actor&&attackOptions.get(`${ac.actor.uuid}.${ac.item.id}`);
+ if(o?.advantage)for(const r of config.rolls??[]){r.options??={};r.options.advantage=true;}
+});
 Hooks.on('dnd5e.postDamageRollConfiguration',(rolls,config)=>{
  const ac=config.subject,o=ac?.actor&&attackOptions.get(`${ac.actor.uuid}.${ac.item.id}`);
  if(o?.maximize)for(const r of rolls){const evaluate=r.evaluate.bind(r);r.evaluate=options=>evaluate({...options,maximize:true});}
 });
 async function primalArm(a,item){
  const name=await choose('Primal Arm',[['Bone Club','Bone Club'],['Bladed Claw','Bladed Claw'],['Poisonous Barbs','Poisonous Barbs'],['off','Завершить']]);if(!name)return;
- if(name==='off'){const ids=list(a.effects).filter(e=>flag(e,'key')==='primal-arm').map(e=>e.id);if(ids.length)await a.deleteEmbeddedDocuments('ActiveEffect',ids);return;}
+ if(name==='off'){if(game.modules.get(ID).api.endEffect)await game.modules.get(ID).api.endEffect(a,'primal-arm');else{const ids=list(a.effects).filter(e=>flag(e,'key')==='primal-arm').map(e=>e.id);if(ids.length)await a.deleteEmbeddedDocuments('ActiveEffect',ids);}return;}
  const ws=list(a.items).find(i=>i.system.identifier==='wild-shape');await spend(ws);await a.setFlag(ID,'primalArm',name);await ownEffect(a,'primal-arm','Primal Arm — '+name,[],3600);
  await a.updateEmbeddedDocuments('Item',list(a.items).filter(i=>flag(i,'requiresForm')==='primal-arm').map(i=>({_id:i.id,'system.equipped':i.name===name})));
 }
@@ -122,7 +141,7 @@ async function shove(a,item){const targets=Array.from(game.user.targets??[]);con
  for(const token of targets){const target=token.actor;const ability=await choose(`${target.name} — Saving Throw`,[['str','Strength'],['dex','Dexterity']]);if(!ability)return;const rolls=await target.rollSavingThrow({ability,target:dc,disadvantage:shield||target.statuses.has('prone')});const r=Array.isArray(rolls)?rolls[0]:rolls;if(r&&r.total<dc&&mode==='prone'&&target.isOwner)await target.toggleStatusEffect('prone',{active:true});}
 }
 async function geyser(a,item){
- if(!list(a.effects).some(e=>flag(e,'key')==='selkie-release'))throw Error('Сначала используйте Selkie’s Release.');
+ if(!hasEffect(a,'selkie-release'))throw Error('Сначала используйте Selkie’s Release.');
  const data={name:item.name,type:'feat',system:{activities:{glGeyserTemplate:{_id:'glGeyserTemplate',type:'utility',target:{template:{type:'line',size:'50',width:'5',units:'ft'}}}}}};
  const faux=new CONFIG.Item.documentClass(data,{parent:a});const cls=game.dnd5e?.canvas?.AbilityTemplate??dnd5e.canvas.AbilityTemplate;const activity=list(faux.system.activities)[0];const t=cls.fromActivity(activity);if(!t)return;
  t.document.updateSource({flags:{[ID]:{geyser:true,master:a.uuid}}});const placed=await t.drawPreview();
@@ -161,11 +180,27 @@ async function primevalCall(a,item){
 }
 async function release(a,item){await spend(parent(a,item));return game.modules.get(ID).api.useAction(a,'release');}
 const special={weaponAttack,primalArm,vitality,shove,geyser,chooseSummonSpell,vassalSpells,masterChains,primevalCall,release,companionCommand};
+function hasEffect(a,key){return Boolean(game.modules.get(ID).api.effect?.(a,key)??list(a.effects).find(e=>!e.disabled&&!e.isSuppressed&&flag(e,'key')===key));}
+async function attackAction(a,item){
+ const kind=flag(item,'extraAttack');
+ if(kind==='Primal Arm'&&!hasEffect(a,'primal-arm'))throw Error('Сначала выберите форму Primal Arm.');
+ if(kind==='Woodland Ambusher'&&(!a.statuses.has('invisible')||game.combat?.round!==1))throw Error('Woodland Ambusher доступен в первом раунде при Invisible.');
+ const weapons=list(a.items).filter(i=>i.type==='weapon'&&flag(i,'requiresForm')!=='primal-arm');
+ const options=[];for(const w of weapons)for(const ac of list(w.system.activities))if(ac.type==='attack'&&(kind!=='Woodland Ambusher'||ac.attack?.type?.value==='ranged'))options.push([ac.uuid,w.name]);
+ const uuid=await choose(item.name,options);if(!uuid)return;const ac=await fromUuid(uuid);if(!ac)throw Error('Атака недоступна.');
+ const count=kind==='Woodland Ambusher'?2:list(a.items).some(i=>i.system.identifier==='extra-attack'||/^extra-attack-/.test(i.system.identifier))?(classLevel(a,'fighter')>=20?4:classLevel(a,'fighter')>=11?3:2):1;
+ for(let n=0;n<count;n++)if(!await rollOwnedAttack(a,ac))return;
+ if(kind==='Primal Arm'){
+  const weapon=list(a.items).find(i=>flag(i,'requiresForm')==='primal-arm'&&i.name===flag(a,'primalArm'));
+  const extra=list(weapon?.system.activities).find(x=>x.type==='attack');if(!extra)throw Error('Не найдено оружие Primal Arm.');await rollOwnedAttack(a,extra);
+ }
+}
+special.attackAction=attackAction;
 const useLocks=new Set();
 async function execute(a,item,command){if(useLocks.has(a.uuid))return;useLocks.add(a.uuid);try{return await(special[command]?special[command](a,item):game.modules.get(ID).api.useAction(a,command));}finally{useLocks.delete(a.uuid);}}
 Hooks.on('dnd5e.preUseActivity',(activity,usage={})=>{if(usage.grimnirCards)return;
  const i=activity.item,a=i.actor,command=flag(i,'execute');
- if(flag(i,'requiresForm')==='primal-arm'&&(!list(a?.effects).some(e=>flag(e,'key')==='primal-arm')||flag(a,'primalArm')!==i.name)){ui.notifications.warn('Выберите это оружие через Primal Arm.');return false;}
+ if(flag(i,'requiresForm')==='primal-arm'&&(!hasEffect(a,'primal-arm')||flag(a,'primalArm')!==i.name)){ui.notifications.warn('Выберите это оружие через Primal Arm.');return false;}
  if(flag(i,'vassalCost')&&Number(a.system.attributes.hp.max)<=flag(i,'vassalCost')){ui.notifications.warn('Недостаточно максимума HP.');return false;}
  if(!command)return;
  if(!a?.isOwner)return false;

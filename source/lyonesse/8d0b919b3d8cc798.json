@@ -72,7 +72,7 @@
       "feature": "Chains of Penitence",
       "class": "warlock",
       "level": 6,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.0df36b8af8d93599",

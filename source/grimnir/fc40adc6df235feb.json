@@ -43,7 +43,114 @@
       }
     ]
   },
-  "effects": [],
+  "effects": [
+    {
+      "_id": "c5bb060ac1e2d88d",
+      "name": "Ironwood Armor — Mantle of Leaves",
+      "img": "modules/grimnir-lyonesse/assets/icons/delapouite-tree-door.svg",
+      "transfer": true,
+      "disabled": true,
+      "changes": [
+        {
+          "key": "system.attributes.ac.calc",
+          "mode": 5,
+          "value": "custom",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.ac.formula",
+          "mode": 5,
+          "value": "10 + @abilities.dex.mod + @abilities.cha.mod",
+          "priority": 20
+        },
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "bludgeoning",
+          "priority": 20
+        },
+        {
+          "key": "system.traits.armorProf.value",
+          "mode": 2,
+          "value": "shl",
+          "priority": 20
+        },
+        {
+          "key": "system.skills.ste.roll.mode",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.movement.walk",
+          "mode": 2,
+          "value": "5",
+          "priority": 20
+        }
+      ],
+      "statuses": [],
+      "duration": {},
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true,
+          "preset": true,
+          "key": "iron-armor-leaves",
+          "group": "iron-armor"
+        }
+      },
+      "_key": "!items.effects!fc40adc6df235feb.c5bb060ac1e2d88d"
+    },
+    {
+      "_id": "460740ebeb7245d6",
+      "name": "Ironwood Armor — Unbreakable Branches",
+      "img": "modules/grimnir-lyonesse/assets/icons/delapouite-tree-door.svg",
+      "transfer": true,
+      "disabled": true,
+      "changes": [
+        {
+          "key": "system.attributes.ac.calc",
+          "mode": 5,
+          "value": "custom",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.ac.formula",
+          "mode": 5,
+          "value": "10 + @abilities.dex.mod + @abilities.cha.mod",
+          "priority": 20
+        },
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "bludgeoning",
+          "priority": 20
+        },
+        {
+          "key": "system.traits.armorProf.value",
+          "mode": 2,
+          "value": "shl",
+          "priority": 20
+        },
+        {
+          "key": "flags.grimnir-lyonesse.noCritical",
+          "mode": 5,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "statuses": [],
+      "duration": {},
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true,
+          "preset": true,
+          "key": "iron-armor-branches",
+          "group": "iron-armor"
+        }
+      },
+      "_key": "!items.effects!fc40adc6df235feb.460740ebeb7245d6"
+    }
+  ],
   "flags": {
     "grimnir-lyonesse": {
       "setting": "grimnir",
@@ -51,7 +158,7 @@
       "feature": "Armor of the Ironwood",
       "class": "warlock",
       "level": 6,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.76226260fc886a41",

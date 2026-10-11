@@ -6,7 +6,8 @@
   "img": "modules/grimnir-lyonesse/assets/icons/lorc-wolf-head.svg",
   "flags": {
     "grimnir-lyonesse": {
-      "template": "bestial-land"
+      "template": "bestial-land",
+      "version": "0.3.0"
     }
   },
   "effects": [],

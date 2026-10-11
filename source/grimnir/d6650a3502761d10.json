@@ -80,7 +80,7 @@
       "feature": "Expert Mariner",
       "class": "cleric",
       "level": 3,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.8db8b029dba92d80",

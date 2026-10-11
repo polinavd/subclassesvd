@@ -56,7 +56,8 @@
       "parentFeature": "e2634260a51266df",
       "parentIdentifier": "grimnir-way-of-the-wanderer-world-thread-mastery",
       "level": 17,
-      "version": "0.2.0"
+      "version": "0.3.0",
+      "resourceIdentifier": "monks-focus"
     }
   },
   "_key": "!items!bf9f2e5b77e46ea8"

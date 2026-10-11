@@ -60,7 +60,7 @@
       "feature": "Justice Delivered",
       "class": "paladin",
       "level": 20,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.497d5c1e49a9121c",

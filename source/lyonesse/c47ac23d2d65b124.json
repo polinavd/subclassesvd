@@ -48,7 +48,27 @@
       }
     }
   },
-  "effects": [],
+  "effects": [
+    {
+      "_id": "65732ce6be8dfcd3",
+      "name": "Selkie’s Release",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-water-splash.svg",
+      "transfer": true,
+      "disabled": true,
+      "changes": [],
+      "statuses": [],
+      "duration": {},
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true,
+          "preset": true,
+          "key": "selkie-release",
+          "endConcentration": true
+        }
+      },
+      "_key": "!items.effects!c47ac23d2d65b124.65732ce6be8dfcd3"
+    }
+  ],
   "flags": {
     "grimnir-lyonesse": {
       "setting": "lyonesse",
@@ -56,8 +76,9 @@
       "parentFeature": "e0560957f8c7c40a",
       "parentIdentifier": "lyonesse-selkie-warden-selkie-s-release",
       "level": 15,
-      "version": "0.2.0",
-      "execute": "release"
+      "version": "0.3.0",
+      "execute": "release",
+      "resourceIdentifier": "lyonesse-selkie-warden-selkie-s-release"
     }
   },
   "_key": "!items!c47ac23d2d65b124"

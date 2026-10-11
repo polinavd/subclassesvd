@@ -60,7 +60,7 @@
       "feature": "Avatar of the Archangel",
       "class": "warlock",
       "level": 3,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.bcca08f6cda21026",

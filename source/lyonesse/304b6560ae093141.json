@@ -39,7 +39,34 @@
       }
     }
   },
-  "effects": [],
+  "effects": [
+    {
+      "_id": "d4f1ad1e5a1f0db6",
+      "name": "Slip the Skin",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-water-splash.svg",
+      "transfer": true,
+      "disabled": true,
+      "changes": [
+        {
+          "key": "system.abilities.dex.save.roll.mode",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "statuses": [],
+      "duration": {},
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true,
+          "preset": true,
+          "key": "slip-skin",
+          "seconds": 60
+        }
+      },
+      "_key": "!items.effects!304b6560ae093141.d4f1ad1e5a1f0db6"
+    }
+  ],
   "flags": {
     "grimnir-lyonesse": {
       "setting": "lyonesse",
@@ -47,8 +74,9 @@
       "parentFeature": "e4329ec05ab61bff",
       "parentIdentifier": "lyonesse-selkie-warden-slip-the-skin",
       "level": 3,
-      "version": "0.2.0",
-      "execute": "slip"
+      "version": "0.3.0",
+      "execute": "slip",
+      "resourceIdentifier": "lyonesse-selkie-warden-slip-the-skin"
     }
   },
   "_key": "!items!304b6560ae093141"

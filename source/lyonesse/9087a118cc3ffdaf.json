@@ -76,7 +76,8 @@
       "parentFeature": "c1b0d185208b6695",
       "parentIdentifier": "lyonesse-discovery-domain-channel-divinity-drowned-breath",
       "level": 3,
-      "version": "0.2.0"
+      "version": "0.3.0",
+      "resourceIdentifier": "channel-divinity"
     }
   },
   "_key": "!items!9087a118cc3ffdaf"

@@ -47,8 +47,9 @@
       "parentFeature": "a645c6fb256a2bde",
       "parentIdentifier": "lyonesse-knight-of-the-sacred-word-resonant-body",
       "level": 6,
-      "version": "0.2.0",
-      "execute": "resonant"
+      "version": "0.3.0",
+      "execute": "resonant",
+      "resourceIdentifier": "monks-focus"
     }
   },
   "_key": "!items!d89841bd11f0ec60"

@@ -1,0 +1,56 @@
+{
+  "_id": "b95a35c21df17dd3",
+  "name": "Attack — Primal Arm",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/lorc-claw-slashes.svg",
+  "folder": "cdafd80b70bcfbb0",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "grimnir-circle-of-the-devourer-primal-arm-primal-arm-additional-attack-action",
+    "description": {
+      "value": "<p>As a Bonus Action, you can expend one use of Wild Shape to transform one of your arms. This transformation lasts for 1 hour, or until you dismiss it as a Bonus Action. Choose one of the following natural weapons. Each is treated as a Simple weapon with which you are proficient. You use your Wisdom modifier for its attack and damage rolls.</p><p><strong>Bone Club.</strong> Melee Attack Roll: Reach 5 ft. Hit: 1d8 plus Wisdom modifier Bludgeoning damage. The target must make a Strength saving throw against your spell save DC. On a failed save, the target is Knocked Prone.</p><p><strong>Bladed Claw.</strong> Melee Attack Roll: Reach 5 ft. Hit: 2d6 plus Wisdom modifier Slashing damage.</p><p><strong>Poisonous Barbs.</strong> Ranged Attack Roll: Range 30/60 ft. Hit: 1d8 plus Wisdom modifier Piercing damage. The target must make a Constitution saving throw against your spell save DC. On a failed save, the target is Poisoned until the end of its next turn. A creature Poisoned in this way cannot regain Hit Points. When you take the Attack Action, you can make one additional attack with your Primal Arm weapon.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Circle of the Devourer 6",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "169bb7c4ea607e9c": {
+        "_id": "169bb7c4ea607e9c",
+        "name": "Attack — Primal Arm",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/lorc-claw-slashes.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "grimnir",
+      "subclass": "Circle of the Devourer",
+      "parentFeature": "97b94437a23c53a9",
+      "parentIdentifier": "grimnir-circle-of-the-devourer-primal-arm",
+      "level": 6,
+      "version": "0.3.0",
+      "execute": "attackAction",
+      "extraAttack": "Primal Arm"
+    }
+  },
+  "_key": "!items!b95a35c21df17dd3"
+}

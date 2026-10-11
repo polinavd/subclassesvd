@@ -256,8 +256,9 @@
       "setting": "lyonesse",
       "subclass": "Discovery Domain",
       "level": 17,
-      "version": "0.2.0",
-      "grantVariant": "Channel Divinity"
+      "version": "0.3.0",
+      "grantVariant": "Channel Divinity",
+      "resourceIdentifier": "channel-divinity"
     }
   },
   "sort": 100037,

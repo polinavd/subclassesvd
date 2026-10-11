@@ -56,7 +56,8 @@
       "parentFeature": "49c86b5efd030e97",
       "parentIdentifier": "lyonesse-knight-of-the-sacred-word-lingering-word",
       "level": 11,
-      "version": "0.2.0"
+      "version": "0.3.0",
+      "resourceIdentifier": "monks-focus"
     }
   },
   "_key": "!items!367bafb0d37e755a"

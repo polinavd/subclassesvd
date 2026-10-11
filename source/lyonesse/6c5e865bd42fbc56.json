@@ -50,7 +50,7 @@
       "parentFeature": "3a02396d49ee18ab",
       "parentIdentifier": "lyonesse-marauder-rampage",
       "level": 10,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "execute": "weaponAttack"
     }
   },

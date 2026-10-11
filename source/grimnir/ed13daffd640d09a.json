@@ -64,33 +64,7 @@
       }
     ]
   },
-  "effects": [
-    {
-      "_id": "d9efa4398db2100b",
-      "name": "Bulbous Shell: +3 AC",
-      "img": "modules/grimnir-lyonesse/assets/icons/lorc-spiked-armor.svg",
-      "transfer": false,
-      "disabled": false,
-      "changes": [
-        {
-          "key": "system.attributes.ac.bonus",
-          "mode": 2,
-          "value": "3",
-          "priority": 20
-        }
-      ],
-      "statuses": [],
-      "flags": {
-        "grimnir-lyonesse": {
-          "managed": true
-        }
-      },
-      "duration": {
-        "seconds": 12
-      },
-      "_key": "!items.effects!ed13daffd640d09a.d9efa4398db2100b"
-    }
-  ],
+  "effects": [],
   "flags": {
     "grimnir-lyonesse": {
       "setting": "grimnir",
@@ -98,7 +72,7 @@
       "feature": "Primal Protection",
       "class": "druid",
       "level": 3,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.b2011e60b417172f",

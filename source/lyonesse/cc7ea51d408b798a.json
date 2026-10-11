@@ -1,0 +1,58 @@
+{
+  "_id": "cc7ea51d408b798a",
+  "name": "Attack — Woodland Ambusher",
+  "type": "feat",
+  "img": "modules/grimnir-lyonesse/assets/icons/delapouite-bow-arrow.svg",
+  "folder": "6548f4d360a0e760",
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "identifier": "lyonesse-outlaw-woodland-ambusher-woodland-ambusher-additional-attack-action",
+    "description": {
+      "value": "<p>During the first round of combat, if you have the Invisible condition when you take the Attack action using a ranged weapon, you can attack twice instead of once.</p>"
+    },
+    "type": {
+      "value": "class"
+    },
+    "requirements": "Outlaw 3",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "7fd905f409e76389": {
+        "_id": "7fd905f409e76389",
+        "name": "Attack — Woodland Ambusher",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": []
+        },
+        "effects": [],
+        "img": "modules/grimnir-lyonesse/assets/icons/delapouite-bow-arrow.svg"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {
+    "grimnir-lyonesse": {
+      "setting": "lyonesse",
+      "subclass": "Outlaw",
+      "parentFeature": "e449603af5ef6509",
+      "parentIdentifier": "lyonesse-outlaw-woodland-ambusher",
+      "level": 3,
+      "version": "0.3.0",
+      "execute": "attackAction",
+      "advantage": false,
+      "spendParent": false,
+      "extraAttack": "Woodland Ambusher"
+    }
+  },
+  "_key": "!items!cc7ea51d408b798a"
+}

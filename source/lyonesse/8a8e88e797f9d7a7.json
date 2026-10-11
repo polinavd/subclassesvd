@@ -47,8 +47,9 @@
       "parentFeature": "8ed5e926dc40a813",
       "parentIdentifier": "lyonesse-college-of-the-voice-eparch",
       "level": 6,
-      "version": "0.2.0",
-      "execute": "purify"
+      "version": "0.3.0",
+      "execute": "purify",
+      "resourceIdentifier": "bardic-inspiration"
     }
   },
   "_key": "!items!8a8e88e797f9d7a7"

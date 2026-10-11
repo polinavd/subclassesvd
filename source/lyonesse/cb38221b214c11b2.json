@@ -127,7 +127,7 @@
       "disabled": false,
       "changes": [
         {
-          "key": "flags.midi-qol.disadvantage.attack.all",
+          "key": "flags.grimnir-lyonesse.disadvantageAttack",
           "mode": 5,
           "value": "1",
           "priority": 20
@@ -152,7 +152,7 @@
       "feature": "Voice of Authority",
       "class": "monk",
       "level": 3,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.9c6810d93ecf51f2",

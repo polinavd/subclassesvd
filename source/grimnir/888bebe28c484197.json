@@ -62,7 +62,8 @@
       "parentFeature": "6d316cc98ce88fcb",
       "parentIdentifier": "grimnir-oath-of-the-slain-a-glorious-sacrifice",
       "level": 15,
-      "version": "0.2.0"
+      "version": "0.3.0",
+      "resourceIdentifier": "grimnir-oath-of-the-slain-a-glorious-sacrifice"
     }
   },
   "_key": "!items!888bebe28c484197"

@@ -62,7 +62,8 @@
       "parentFeature": "298ced45475e2875",
       "parentIdentifier": "lyonesse-college-of-the-voice-domain-verse",
       "level": 3,
-      "version": "0.2.0"
+      "version": "0.3.0",
+      "resourceIdentifier": "bardic-inspiration"
     }
   },
   "_key": "!items!484e64826a01b142"

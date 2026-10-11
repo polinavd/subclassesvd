@@ -39,7 +39,52 @@
       }
     }
   },
-  "effects": [],
+  "effects": [
+    {
+      "_id": "622384cec19d0c62",
+      "name": "Avatar of the Archangel",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-angel-wings.svg",
+      "transfer": true,
+      "disabled": true,
+      "changes": [
+        {
+          "key": "system.bonuses.mwak.damage",
+          "mode": 2,
+          "value": "1d8[radiant]",
+          "priority": 20
+        },
+        {
+          "key": "system.bonuses.rwak.damage",
+          "mode": 2,
+          "value": "1d8[radiant]",
+          "priority": 20
+        },
+        {
+          "key": "system.bonuses.msak.damage",
+          "mode": 2,
+          "value": "1d8[radiant]",
+          "priority": 20
+        },
+        {
+          "key": "system.bonuses.rsak.damage",
+          "mode": 2,
+          "value": "1d8[radiant]",
+          "priority": 20
+        }
+      ],
+      "statuses": [],
+      "duration": {},
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true,
+          "preset": true,
+          "key": "avatar",
+          "endNoTemp": true
+        }
+      },
+      "_key": "!items.effects!0286fa14b87d74c1.622384cec19d0c62"
+    }
+  ],
   "flags": {
     "grimnir-lyonesse": {
       "setting": "lyonesse",
@@ -47,8 +92,9 @@
       "parentFeature": "68ce5d92858594a3",
       "parentIdentifier": "lyonesse-the-archangel-avatar-of-the-archangel",
       "level": 3,
-      "version": "0.2.0",
-      "execute": "avatar"
+      "version": "0.3.0",
+      "execute": "avatar",
+      "resourceIdentifier": "lyonesse-the-archangel-avatar-of-the-archangel"
     }
   },
   "_key": "!items!0286fa14b87d74c1"

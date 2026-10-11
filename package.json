@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "build": "node build.mjs",
-    "test": "node --check scripts/main.mjs && node --check scripts/cards.mjs && node tests/runtime.mjs && node tests/cards.mjs && node tests/packs.mjs",
+    "test": "node --check scripts/main.mjs && node --check scripts/cards.mjs && node --check scripts/mechanics.mjs && node tests/mechanics.mjs && node tests/runtime.mjs && node tests/cards.mjs && node tests/packs.mjs",
     "package": "npm run build && npm test && python3 tools/package.py",
     "check:archive": "python3 tools/package.py --check"
   },
@@ -11,7 +11,7 @@
     "@foundryvtt/foundryvtt-cli": "3.0.5"
   },
   "name": "grimnir-lyonesse",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "engines": {
     "node": ">=22.16.0"
   }

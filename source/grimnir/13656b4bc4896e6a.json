@@ -39,7 +39,34 @@
       }
     }
   },
-  "effects": [],
+  "effects": [
+    {
+      "_id": "e1ce32404b46e509",
+      "name": "Colossus of the Ironwood",
+      "img": "modules/grimnir-lyonesse/assets/icons/cathelineau-tree-face.svg",
+      "transfer": true,
+      "disabled": true,
+      "changes": [
+        {
+          "key": "system.traits.size",
+          "mode": 5,
+          "value": "lg",
+          "priority": 20
+        }
+      ],
+      "statuses": [],
+      "duration": {},
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true,
+          "preset": true,
+          "key": "colossus",
+          "seconds": 600
+        }
+      },
+      "_key": "!items.effects!13656b4bc4896e6a.e1ce32404b46e509"
+    }
+  ],
   "flags": {
     "grimnir-lyonesse": {
       "setting": "grimnir",
@@ -47,8 +74,9 @@
       "parentFeature": "c7bb5f78a3dc29d9",
       "parentIdentifier": "grimnir-the-ironwood-colossus-of-the-ironwood",
       "level": 14,
-      "version": "0.2.0",
-      "execute": "colossus"
+      "version": "0.3.0",
+      "execute": "colossus",
+      "resourceIdentifier": "grimnir-the-ironwood-colossus-of-the-ironwood"
     }
   },
   "_key": "!items!13656b4bc4896e6a"

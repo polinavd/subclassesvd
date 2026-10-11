@@ -6,7 +6,8 @@
   "img": "modules/grimnir-lyonesse/assets/icons/delapouite-eagle-head.svg",
   "flags": {
     "grimnir-lyonesse": {
-      "template": "bestial-air"
+      "template": "bestial-air",
+      "version": "0.3.0"
     }
   },
   "effects": [],

@@ -51,7 +51,7 @@
       "feature": "Enhanced Rampage",
       "class": "fighter",
       "level": 15,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.0347d82c47020e36",

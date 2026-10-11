@@ -55,7 +55,7 @@
       "feature": "Archimandrite",
       "class": "bard",
       "level": 14,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.e79992dd83beeb63",

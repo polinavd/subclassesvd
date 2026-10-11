@@ -51,7 +51,7 @@
       "feature": "Binding Savant",
       "class": "wizard",
       "level": 3,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.5126a13d1dd663cd",

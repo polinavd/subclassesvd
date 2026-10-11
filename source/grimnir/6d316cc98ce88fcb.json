@@ -56,7 +56,7 @@
       "feature": "A Glorious Sacrifice",
       "class": "paladin",
       "level": 15,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.888bebe28c484197",

@@ -51,7 +51,7 @@
       "feature": "Arcane Intentions",
       "class": "wizard",
       "level": 3,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.d6c51ae439eee3c0",

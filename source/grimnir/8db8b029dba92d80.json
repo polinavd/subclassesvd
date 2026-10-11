@@ -62,7 +62,8 @@
       "parentFeature": "d6650a3502761d10",
       "parentIdentifier": "grimnir-discovery-domain-expert-mariner",
       "level": 3,
-      "version": "0.2.0"
+      "version": "0.3.0",
+      "resourceIdentifier": "grimnir-discovery-domain-expert-mariner"
     }
   },
   "_key": "!items!8db8b029dba92d80"

@@ -87,7 +87,7 @@
       "feature": "Selkie’s Release",
       "class": "ranger",
       "level": 15,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.c47ac23d2d65b124",

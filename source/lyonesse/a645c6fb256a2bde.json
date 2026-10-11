@@ -59,7 +59,7 @@
       "feature": "Resonant Body",
       "class": "monk",
       "level": 6,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.33ee85240268b12f",

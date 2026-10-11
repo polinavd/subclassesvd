@@ -124,7 +124,8 @@
       "parentFeature": "cb38221b214c11b2",
       "parentIdentifier": "lyonesse-knight-of-the-sacred-word-voice-of-authority",
       "level": 3,
-      "version": "0.2.0"
+      "version": "0.3.0",
+      "resourceIdentifier": "monks-focus"
     }
   },
   "_key": "!items!9c6810d93ecf51f2"

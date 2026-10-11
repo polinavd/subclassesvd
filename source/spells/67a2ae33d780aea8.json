@@ -185,9 +185,10 @@
       "feature": null,
       "class": "sorcerer",
       "level": 14,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "parentFeature": "ade629a58174117e",
-      "parentIdentifier": "lyonesse-wyrd-sorcery-step-between-moments"
+      "parentIdentifier": "lyonesse-wyrd-sorcery-step-between-moments",
+      "resourceIdentifier": "font-of-magic"
     }
   },
   "_key": "!items!67a2ae33d780aea8"

@@ -56,7 +56,7 @@
       "feature": "Scholar of the Wyrd",
       "class": "sorcerer",
       "level": 3,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.c370d282d985cceb",

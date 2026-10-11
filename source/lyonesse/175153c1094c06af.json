@@ -51,7 +51,7 @@
       "feature": "Sacred Word Incarnate",
       "class": "monk",
       "level": 17,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.b8251d60cc74b416",

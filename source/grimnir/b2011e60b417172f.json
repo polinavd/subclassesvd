@@ -62,7 +62,8 @@
       "parentFeature": "ed13daffd640d09a",
       "parentIdentifier": "grimnir-circle-of-the-devourer-primal-protection",
       "level": 3,
-      "version": "0.2.0"
+      "version": "0.3.0",
+      "resourceIdentifier": "grimnir-circle-of-the-devourer-primal-protection"
     }
   },
   "_key": "!items!b2011e60b417172f"

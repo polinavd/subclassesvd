@@ -39,7 +39,33 @@
       }
     }
   },
-  "effects": [],
+  "effects": [
+    {
+      "_id": "c9661b0c4bd91d41",
+      "name": "Consecrated Plate",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-holy-grail.svg",
+      "transfer": true,
+      "disabled": true,
+      "changes": [
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "necrotic",
+          "priority": 20
+        }
+      ],
+      "statuses": [],
+      "duration": {},
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true,
+          "preset": true,
+          "key": "saint-plate"
+        }
+      },
+      "_key": "!items.effects!7ba347201b3b54be.c9661b0c4bd91d41"
+    }
+  ],
   "flags": {
     "grimnir-lyonesse": {
       "setting": "lyonesse",
@@ -47,7 +73,7 @@
       "parentFeature": "3db353c575e26455",
       "parentIdentifier": "lyonesse-oath-of-saints-sevenfold-path",
       "level": 15,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "execute": "plate"
     }
   },

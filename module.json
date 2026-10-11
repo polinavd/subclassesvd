@@ -2,7 +2,7 @@
   "id": "grimnir-lyonesse",
   "title": "Grimnir & Lyonesse — Subclasses (2024)",
   "description": "Grimnir and Lyonesse subclasses, features, attacks, spells and companions for D&D5e (2024).",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "compatibility": {
     "minimum": "13",
     "verified": "13.351",
@@ -15,7 +15,8 @@
   ],
   "esmodules": [
     "scripts/main.mjs",
-    "scripts/cards.mjs"
+    "scripts/cards.mjs",
+    "scripts/mechanics.mjs"
   ],
   "relationships": {
     "systems": [

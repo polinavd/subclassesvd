@@ -98,7 +98,8 @@
       "parentFeature": "47bac1ec2d481b2f",
       "parentIdentifier": "grimnir-the-ironwood-tree-passage",
       "level": 10,
-      "version": "0.2.0"
+      "version": "0.3.0",
+      "resourceIdentifier": "grimnir-the-ironwood-tree-passage"
     }
   },
   "_key": "!items!01fff7e207c7fdf7"

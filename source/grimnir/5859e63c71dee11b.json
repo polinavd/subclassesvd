@@ -59,8 +59,8 @@
       "_id": "d9efa4398db2100b",
       "name": "Bulbous Shell: +3 AC",
       "img": "modules/grimnir-lyonesse/assets/icons/lorc-spiked-armor.svg",
-      "transfer": false,
-      "disabled": false,
+      "transfer": true,
+      "disabled": true,
       "changes": [
         {
           "key": "system.attributes.ac.bonus",
@@ -72,7 +72,11 @@
       "statuses": [],
       "flags": {
         "grimnir-lyonesse": {
-          "managed": true
+          "managed": true,
+          "preset": true,
+          "key": "bulbous-shell",
+          "activateOnUse": true,
+          "endNextTurn": true
         }
       },
       "duration": {
@@ -88,7 +92,7 @@
       "parentFeature": "ed13daffd640d09a",
       "parentIdentifier": "grimnir-circle-of-the-devourer-primal-protection",
       "level": 3,
-      "version": "0.2.0"
+      "version": "0.3.0"
     }
   },
   "_key": "!items!5859e63c71dee11b"

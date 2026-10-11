@@ -7,7 +7,9 @@ const feature = (a,n) => a.items.find(i => i.getFlag(ID,'feature') === n);
 const has = (a,n) => Boolean(feature(a,n));
 const change = (key,mode,value) => ({key,mode,value:String(value),priority:20});
 const stat = (a,k) => a.getFlag(ID,k);
-const primary = () => game.users.activeGM?.id === game.user.id;
+const primary = () => !game.users.activeGM || game.users.activeGM.id === game.user.id;
+const allEffects = a => game.modules.get(ID).api?.effects?.(a) ?? [...a.effects,...Array.from(a.items).flatMap(i=>Array.from(i.effects??[]))];
+const activeEffect = (a,key) => allEffects(a).find(e=>!e.disabled&&!e.isSuppressed&&e.getFlag(ID,'key')===key);
 function actor() { const a = canvas?.tokens?.controlled?.[0]?.actor ?? game.user.character; if (!a?.isOwner) throw Error('Выделите свой токен или назначьте персонажа пользователю.'); return a; }
 async function choose(title,options,help='') {
  if (!options.length) return null;
@@ -19,14 +21,15 @@ async function number(title,min,max,initial=min) {
 }
 async function chat(a,title,text) { if(/вручную|макрос|Midi|карточк|кнопк|флаг|не выда|систем|Штатн|штатн/.test(text))text=''; return ChatMessage.create({speaker:ChatMessage.getSpeaker({actor:a}),content:`<h3>${esc(title)}</h3><p>${text}</p>`}); }
 function resource(a,ident) { return a.items.find(i=>i.type==='feat' && i.system.identifier===ident); }
-function available(i) { return Number(i?.system.uses?.value ?? (Number(i?.system.uses?.max ?? 0)-Number(i?.system.uses?.spent??0))); }
+function available(i) { return game.modules.get(ID).api?.usesFor?.(i).value ?? Number(i?.system.uses?.value ?? (Number(i?.system.uses?.max ?? 0)-Number(i?.system.uses?.spent??0))); }
 async function spend(i,n=1) {
  if(!i)throw Error('Не найден ресурс способности.');
  if(available(i)<n)throw Error(`Недостаточно использований: ${i.name}.`);
  await i.update({'system.uses.spent':Number(i.system.uses.spent??0)+n});
 }
-async function remove(a,key) { const ids=a.effects.filter(e=>e.getFlag(ID,'key')===key).map(e=>e.id);if(ids.length)await a.deleteEmbeddedDocuments('ActiveEffect',ids); }
+async function remove(a,key) { if(game.modules.get(ID).api?.endEffect)return game.modules.get(ID).api.endEffect(a,key);const ids=a.effects.filter(e=>e.getFlag(ID,'key')===key).map(e=>e.id);if(ids.length)await a.deleteEmbeddedDocuments('ActiveEffect',ids); }
 async function apply(a,key,name,changes=[],seconds=null,flags={},statuses=[]) {
+ if(game.modules.get(ID).api?.setEffect)return game.modules.get(ID).api.setEffect(a,key,name,changes,seconds,flags,statuses);
  await remove(a,key);
  const e={name,img:feature(a,name)?.img??'modules/grimnir-lyonesse/assets/icons/lorc-rune-stone.svg',origin:feature(a,flags.feature)?.uuid??a.uuid,transfer:false,disabled:false,changes,statuses,flags:{[ID]:{managed:true,key,...flags}},duration:{}};
  if(seconds)e.duration={seconds,startTime:game.time.worldTime};
@@ -34,7 +37,12 @@ async function apply(a,key,name,changes=[],seconds=null,flags={},statuses=[]) {
 }
 async function tempHP(a,n) {if(n>Number(a.system.attributes.hp.temp??0))await a.update({'system.attributes.hp.temp':n});}
 async function roll(a,formula,label) {const r=await new Roll(formula,a.getRollData()).evaluate();await r.toMessage({speaker:ChatMessage.getSpeaker({actor:a}),flavor:label});return r;}
-function midi(a,key,value=1){return change('flags.midi-qol.'+key,5,value);}
+function midi(a,key,value=1){
+ if(key.startsWith('advantage.skill.'))return change('system.skills.'+key.split('.').at(-1)+'.roll.mode',2,1);
+ if(key.startsWith('advantage.ability.save.'))return change('system.abilities.'+key.split('.').at(-1)+'.save.roll.mode',2,1);
+ if(key==='advantage.concentration')return change('system.attributes.concentration.roll.mode',2,1);
+ return change('flags.'+ID+'.'+({'grants.disadvantage.attack.all':'grantsAttackDisadvantage','grants.fail.critical.all':'noCritical'}[key]??key),5,value);
+}
 function skillOptions(){return Object.entries(CONFIG.DND5E.skills).map(([k,v])=>[k,game.i18n.localize(v.label)]);}
 async function temporarySkill(a,expert=false) {
  const sk=await choose(expert?'Ancient Memory — Expertise':'Hymnal Memory — Proficiency',skillOptions());if(!sk)return;
@@ -54,14 +62,15 @@ async function senses(a) {
 }
 async function ironArmor(a) {
  const form=await choose('Ironwood Armor',[['leaves','Mantle of Leaves'],['branches','Unbreakable Branches'],['off','Снять броню']]);if(!form)return;
- if(form==='off')return remove(a,'iron-armor');
+ if(form==='off'){await remove(a,'iron-armor-leaves');await remove(a,'iron-armor-branches');return remove(a,'iron-armor');}
+ await remove(a,'iron-armor');await remove(a,form==='leaves'?'iron-armor-branches':'iron-armor-leaves');
  const ch=[change('system.attributes.ac.calc',5,'custom'),change('system.attributes.ac.formula',5,'10 + @abilities.dex.mod + @abilities.cha.mod'),change('system.traits.dr.value',2,'bludgeoning'),change('system.traits.armorProf.value',2,'shl')];
  if(form==='leaves')ch.push(midi(a,'advantage.skill.ste'),change('system.attributes.movement.walk',2,5));
  else ch.push(midi(a,'grants.fail.critical.all'));
- await apply(a,'iron-armor','Ironwood Armor: '+form,ch);
+ await apply(a,'iron-armor-'+form,'Ironwood Armor: '+form,ch);
 }
 async function colossus(a) {
- if(!a.effects.some(e=>e.getFlag(ID,'key')==='iron-armor'))throw Error('Сначала используйте Ironwood Armor.');
+ if(!activeEffect(a,'iron-armor')&&!activeEffect(a,'iron-armor-leaves')&&!activeEffect(a,'iron-armor-branches'))throw Error('Сначала используйте Ironwood Armor.');
  await spend(feature(a,'Colossus of the Ironwood'));
  await apply(a,'colossus','Colossus of the Ironwood',[change('system.traits.size',5,'lg')],600);
  await tempHP(a,5*level(a,'warlock'));
@@ -70,7 +79,7 @@ async function colossus(a) {
 async function slip(a) {
  await spend(feature(a,'Slip the Skin'));
  const ch=[midi(a,'advantage.ability.save.dex')];
- if(a.effects.some(e=>e.getFlag(ID,'key')==='selkie-release'))for(const s of ['grappled','prone','restrained'])ch.push(change('system.traits.ci.value',2,s));
+ if(activeEffect(a,'selkie-release'))for(const s of ['grappled','prone','restrained'])ch.push(change('system.traits.ci.value',2,s));
  await apply(a,'slip-skin','Slip the Skin',ch,60);
  await chat(a,'Slip the Skin','Преимущество Dex saves включено (Midi-QOL). Помеха opportunity attacks и особенности перемещения — по тексту.');
 }
@@ -79,35 +88,36 @@ async function avatar(a) {
  const ch=['mwak','rwak','msak','rsak'].map(t=>change(`system.bonuses.${t}.damage`,2,'1d8[radiant]'));
  if(lv>=10){ch.push(change('system.traits.dr.value',2,'psychic'));for(const s of ['charmed','frightened'])ch.push(change('system.traits.ci.value',2,s));}
  if(lv>=14)for(const t of Object.keys(CONFIG.DND5E.damageTypes).filter(x=>x!=='force'))ch.push(change('system.traits.dr.value',2,t));
- await apply(a,'avatar','Avatar of the Archangel',ch,null,{endNoTemp:true});await tempHP(a,2*lv);
+ await tempHP(a,2*lv);await apply(a,'avatar','Avatar of the Archangel',ch,null,{endNoTemp:true});
  await chat(a,'Avatar of the Archangel','Форма включена; урон Divine Fire — отдельной кнопкой. Свет токена и видимость в магической тьме выставьте вручную. При потере всех временных HP эффект снимается. Если заменяете их другим источником, завершите форму вручную.');
 }
 async function wyrd(a) {
  const f=feature(a,'Wyrd Time');
  if(available(f)>0)await spend(f);else await spend(resource(a,'font-of-magic'),5);
- const ch=[change('system.attributes.movement.walk',1,2),change('system.attributes.movement.fly',1,2),change('system.attributes.movement.swim',1,2),change('system.attributes.movement.climb',1,2),change('system.attributes.movement.burrow',1,2),midi(a,'grants.disadvantage.attack.all'),midi(a,'advantage.ability.save.all')];
+ const ch=[change('system.attributes.movement.walk',1,2),change('system.attributes.movement.fly',1,2),change('system.attributes.movement.swim',1,2),change('system.attributes.movement.climb',1,2),change('system.attributes.movement.burrow',1,2),midi(a,'grants.disadvantage.attack.all'),...['str','dex','con','int','wis','cha'].map(k=>change('system.abilities.'+k+'.save.roll.mode',2,1))];
  await apply(a,'wyrd-time','Wyrd Time',ch,Math.max(0,mod(a,'cha'))*6,{endConditions:['grappled','incapacitated','prone','paralyzed','petrified','restrained','stunned','unconscious']});
  await chat(a,'Wyrd Time','Скорость и защиты включены. Завершите форму через макрос сразу после воздействия на другого. Возможные Help/Hide/Utilize не выдаются как дополнительная отдельная Action.');
 }
-async function extendWyrd(a){const e=a.effects.find(e=>e.getFlag(ID,'key')==='wyrd-time');if(!e)throw Error('Wyrd Time не активно.');await spend(resource(a,'font-of-magic'),1);await e.update({'duration.seconds':Number(e.duration.seconds??0)+6});}
+async function extendWyrd(a){const e=activeEffect(a,'wyrd-time');if(!e)throw Error('Wyrd Time не активно.');await spend(resource(a,'font-of-magic'),1);await e.update({'duration.seconds':Number(e.duration.seconds??0)+6});}
 async function plate(a){
  const type=await choose('Consecrated Plate — physical resistance',[['bludgeoning','Bludgeoning'],['piercing','Piercing'],['slashing','Slashing'],['off','Снять']],'Только при надетой освящённой Half Plate / Plate.');if(!type)return;if(type==='off')return remove(a,'saint-plate');
- const ch=[change('system.traits.dr.value',2,'necrotic'),change('system.traits.dr.value',2,type)];if(level(a,'paladin')>=20)ch.push(change('system.attributes.ac.bonus',2,2));
- await apply(a,'saint-plate','Consecrated Plate',ch);
+ const armors=Array.from(a.items).filter(i=>i.type==='equipment'&&['halfplate','plate'].includes(i.system.type?.baseItem));if(!armors.length)throw Error('Добавьте Half Plate или Plate Armor в снаряжение.');
+ const armorId=await choose('Consecrated Plate',armors.map(i=>[i.id,i.name]));if(!armorId)return;
+ const ch=[change('system.traits.dr.value',2,'necrotic'),change('system.traits.dr.value',2,type)];if(has(a,'Saints that Came Before'))ch.push(change('system.attributes.ac.bonus',2,2));
+ await apply(a,'saint-plate','Consecrated Plate',ch,null,{armorId,wanted:true});await game.modules.get(ID).api.syncEffects?.(a);
 }
 async function virtues(a){
  const opts=[['charity','Charity'],['faith','Faith'],['honor','Honor'],['hope','Hope'],['humility','Humility'],['prudence','Prudence']];const selected=[];
  for(let i=0;i<3;i++){const x=await choose(`Добродетель ${i+1}/3`,opts.filter(([k])=>!selected.includes(k)));if(!x)return;selected.push(x);}
- const ch=[];if(selected.includes('faith'))ch.push(midi(a,'advantage.concentration'));if(selected.includes('humility'))ch.push(midi(a,'advantage.ability.save.cha'));if(selected.includes('prudence'))ch.push(midi(a,'advantage.ability.save.wis'));
- const e=await apply(a,'virtues','Shield of Seven Virtues: '+selected.join(', '),ch);
- await auraFlags(e,a);
- await chat(a,'Seven Virtues','Выбор сохранён. Charity, Hope и Honor зависят от HP/соседства/реакций: применяйте вручную. Остальные передаются союзникам при включённом Active Auras.');
+ const e=await apply(a,'virtues','Shield of Seven Virtues: '+selected.join(', '),[],null,{virtues:selected});
+ await game.modules.get(ID).api.syncScene?.();
+ await chat(a,'Seven Virtues','Выбраны добродетели: '+selected.join(', ')+'.');
 }
 async function auraFlags(e,a){
  if(!game.modules.get('ActiveAuras')?.active){ui.notifications.warn('Аура применена к владельцу.');return;}
  await e.update({'flags.ActiveAuras':{isAura:true,aura:'Allies',radius:level(a,'paladin')>=18?'30':'10',alignment:'',type:'',ignoreSelf:false,height:false,hidden:false,displayTemp:false,hostile:false,onlyOnce:false}});
 }
-async function executionAura(a){const e=await apply(a,'execution-aura','Aura of the Executioner',['mwak','rwak','msak','rsak'].map(t=>change(`system.bonuses.${t}.attack`,2,1)));await auraFlags(e,a);}
+async function executionAura(a){const e=await apply(a,'execution-aura','Aura of the Executioner',['mwak','rwak','msak','rsak'].map(t=>change(`system.bonuses.${t}.attack`,2,1)));await game.modules.get(ID).api.syncScene?.();}
 async function fate(a){
  const prev=stat(a,'fateStyle');let opts=['order','balance','mayhem'];
  if(prev==='balance')opts=['order','mayhem'];else if(prev)opts=[prev,'balance'];
@@ -122,19 +132,25 @@ async function fate(a){
  }
  await chat(a,'Path of Fate',`Выбран ${style}. Применено собственное сопротивление/движение с 11 уровня. Аура критов союзников, погода, альтернативный тип урона и условные бонусы Mayhem — вручную. Смена через World-Thread Mastery требует отдельно потратить 1 Focus.`);
 }
-async function rage(a){
- const phase=await choose('Path of the Provoked',[['start','Выбрать эффекты после начала Rage'],['nearby','Указать число врагов в пределах 5 ft'],['end','Завершить: снять эффекты/сбросить очки']]);if(!phase)return;
+async function rage(a,presetPhase){
+ const phase=presetPhase??await choose('Path of the Provoked',[['start','Начать Rage и выбрать эффекты'],['nearby','Указать число врагов в пределах 5 ft'],['end','Завершить: снять эффекты/сбросить очки']]);if(!phase)return;
  if(phase==='nearby'){const n=await number('Враги в пределах 5 ft',0,30);if(n!==null)await a.setFlag(ID,'nearbyEnemies',n);return;}
- if(phase==='end'){await remove(a,'provoked');await a.setFlag(ID,'provokedPoints',0);return;}
+ if(phase==='end'){await remove(a,'provoked');const r=resource(a,'rage');for(const e of r?.effects??[])if(e.transfer&&!e.disabled)await e.update({disabled:true},{grimnirCards:true});await a.setFlag(ID,'provokedPoints',0);return;}
  const chosen={};for(const [lv,key] of [[3,'strength'],[6,'dominance'],[14,'reckoning']])if(level(a,'barbarian')>=lv){chosen[key]=await choose(key,[['stoic','Stoic'],['wrathful','Wrathful'],['wild','Wild']]);if(!chosen[key])return;}
+ const base=resource(a,'rage');if(!base)throw Error('Добавьте Rage базового класса варвара.');
+ if(!Array.from(base.effects??[]).some(e=>e.transfer&&!e.disabled&&!e.isSuppressed)){
+  const ac=Array.from(base.system.activities??[]).find(x=>x.type==='utility');if(!ac)throw Error('У Rage отсутствует действие.');
+  const used=await ac.use({grimnirCards:true});if(!used)return;
+  for(const e of base.effects??[])if(e.transfer)await e.update({disabled:false,'duration.startTime':game.time.worldTime},{grimnirCards:true});
+ }
  const ch=[];if(chosen.dominance==='wrathful')ch.push(change('system.skills.itm.value',4,2));
  if(chosen.dominance==='stoic')await chat(a,'Stoic Dominance','Преимущество только против Charmed/Frightened: включайте в соответствующем спасброске.');
- await apply(a,'provoked','Provoked Rage: '+Object.values(chosen).join(' / '),ch,600,{choices:chosen});await a.setFlag(ID,'provokedPoints',0);
+ await apply(a,'provoked','Provoked Rage: '+Object.values(chosen).join(' / '),ch,600,{choices:chosen});await a.setFlag(ID,'provokedPoints',0);for(const i of a.items.filter(i=>i.getFlag(ID,'pointPool')))await i.update({'system.uses.spent':level(a,'barbarian')>=16?4:level(a,'barbarian')>=9?3:2},{grimnirCards:true});
  await chat(a,'Provoked Rage','Rage активируйте штатной способностью класса. Условные реакции и Reckoning — по тексту. После раннего окончания Rage снимите эффект этим макросом.');
 }
 async function provokedPoints(a){
  const current=Number(stat(a,'provokedPoints')??0);const max=level(a,'barbarian')>=16?4:level(a,'barbarian')>=9?3:2;
- const n=await number('Provoked Points — реакция +1 / расход при попадании',0,max,current);if(n!==null)await a.setFlag(ID,'provokedPoints',n);
+ const pool=a.items.find(i=>i.getFlag(ID,'pointPool'));const n=await number('Provoked Points — реакция +1 / расход при попадании',0,max,pool?available(pool):current);if(n!==null){await a.setFlag(ID,'provokedPoints',n);for(const i of a.items.filter(i=>i.getFlag(ID,'pointPool')))await i.update({'system.uses.spent':max-n},{grimnirCards:true});}
 }
 async function glimpse(a){const r=await roll(a,'3d20','Glimpse the Future');const values=r.dice[0].results.map(x=>x.result);await a.setFlag(ID,'glimpse',values);await chat(a,'Glimpse',values.join(', ')+'. Результаты заменяют инициативу по правилам способности; при выходе из боя очистите запись.');}
 async function bestow(a){const opts=['clumsy','feeble','slow'];if(level(a,'bard')>=6)opts.push('bold','sturdy');const fate=await choose('Bestow Fate — после расхода Inspiration и провала Charisma save',opts.map(x=>[x,x]));if(!fate)return;
@@ -163,7 +179,7 @@ async function bind(a){
  await chat(a,'Blood Binding','Максимум HP снижен, бонус к урону вассала добавлен. Слот расходуется при Summon. При завершении концентрации нажмите «Завершить Blood Binding». При Planar Binding сначала сверьте текст исключения.');
 }
 async function unbind(a){const u=stat(a,'vassal');if(u){const v=await fromUuid(u);if(v?.isOwner)await remove(v,'vassal-bonus-'+a.id);}await remove(a,'blood-binding');await a.unsetFlag(ID,'vassal');}
-async function endEffect(a){const opts=a.effects.filter(e=>e.getFlag(ID,'managed')).map(e=>[e.id,e.name]);const x=await choose('Завершить эффект',opts);if(x)await a.deleteEmbeddedDocuments('ActiveEffect',[x]);}
+async function endEffect(a){const opts=allEffects(a).filter(e=>!e.disabled&&e.getFlag(ID,'managed')).map(e=>[e.id,e.name]);const x=await choose('Завершить эффект',opts);if(x){const e=allEffects(a).find(e=>e.id===x);if(e?.getFlag(ID,'key'))await remove(a,e.getFlag(ID,'key'));}}
 async function companion(a,kind){
  if(!game.user.can('ACTOR_CREATE'))throw Error('Создание спутника требует права Create Actor; выполните от ведущей.');
  const pack=game.packs.get(`${ID}.companions`);const docs=await pack.getDocuments();let template;
@@ -216,7 +232,7 @@ async function companion(a,kind){
  if(kind==='dragon')await chat(a,'Dragon form','Создана карточка формы. Перетащите её на лист персонажа и выберите штатный Wild Shape: так сохраняются правила Wild Shape 2024. Расход Wild Shape — штатной кнопкой класса.');
  else await chat(a,'Спутник','Карточка готова в Actors. Перетащите на сцену. Срок призыва, команды, условные черты и совместные эффекты проверяйте по описанию.');
 }
-function actionHandlers(){return {end:endEffect,rage,points:provokedPoints,senses,armor:ironArmor,colossus,slip,avatar,wyrd,extend:extendWyrd,plate,virtues,execution:executionAura,fate,glimpse,bestow,intention,luck:pushLuck,bind,unbind,skill:x=>temporarySkill(x),expert:x=>temporarySkill(x,true),purify:x=>purify(x,'eparch'),voice:x=>purify(x,'archimandrite'),resonant:x=>purify(x,'resonant'),wolf:x=>companion(x,'wolf'),soul:x=>companion(x,'soul'),dragon:x=>companion(x,'dragon'),core:x=>spend(feature(x,'Core Intention')),release:x=>apply(x,'selkie-release','Selkie’s Release',[],null,{endConcentration:true}),ability:async x=>{const v=await choose('True Believer — spellcasting ability',[['int','Intelligence'],['wis','Wisdom']]);if(v){const i=x.items.find(i=>i.type==='subclass'&&i.getFlag(ID,'subclass')==='True Believer');await i.update({'system.spellcasting.ability':v});for(const spell of x.items.filter(s=>s.type==='spell'&&s.system.sourceClass==='rogue'))await spell.update({'system.ability':v});const wrath=feature(x,'Wrath of Divinity');if(wrath)for(const card of x.items.filter(s=>s.id===wrath.id||s.getFlag(ID,'parentIdentifier')===wrath.system.identifier)){const u={};for(const ac of card.system.activities??[])if(ac.type==='save')u[`system.activities.${ac.id}.save.dc.calculation`]=v;if(Object.keys(u).length)await card.update(u);}}}};}
+function actionHandlers(){return {end:endEffect,rage,rageStart:x=>rage(x,'start'),points:provokedPoints,senses,armor:ironArmor,colossus,slip,avatar,wyrd,extend:extendWyrd,plate,virtues,execution:executionAura,fate,glimpse,bestow,intention,luck:pushLuck,bind,unbind,skill:x=>temporarySkill(x),expert:x=>temporarySkill(x,true),purify:x=>purify(x,'eparch'),voice:x=>purify(x,'archimandrite'),resonant:x=>purify(x,'resonant'),wolf:x=>companion(x,'wolf'),soul:x=>companion(x,'soul'),dragon:x=>companion(x,'dragon'),core:x=>spend(feature(x,'Core Intention')),release:x=>apply(x,'selkie-release','Selkie’s Release',[],null,{endConcentration:true}),ability:async x=>{const v=await choose('True Believer — spellcasting ability',[['int','Intelligence'],['wis','Wisdom']]);if(v){const i=x.items.find(i=>i.type==='subclass'&&i.getFlag(ID,'subclass')==='True Believer');await i.update({'system.spellcasting.ability':v});for(const spell of x.items.filter(s=>s.type==='spell'&&s.system.sourceClass==='rogue'))await spell.update({'system.ability':v});const wrath=feature(x,'Wrath of Divinity');if(wrath)for(const card of x.items.filter(s=>s.id===wrath.id||s.getFlag(ID,'parentIdentifier')===wrath.system.identifier)){const u={};for(const ac of card.system.activities??[])if(ac.type==='save')u[`system.activities.${ac.id}.save.dc.calculation`]=v;if(Object.keys(u).length)await card.update(u);}}}};}
 const busy = new Set();
 async function manage(){let a,locked=false;try{
  a=actor();if(busy.has(a.uuid))return;busy.add(a.uuid);locked=true;
@@ -253,19 +269,19 @@ Hooks.on('dnd5e.preRollAttackV2',config=>{
  if(has(a,'Strength of One') && ac.attack?.type.value==='melee' && ac.attack?.type.classification!=='spell'){
   const n=Number(stat(a,'nearbyEnemies')??0);threshold=level(a,'barbarian')>=10 && n>=3?17:n>=2?18:19;
  }
- const fate=a.effects.find(e=>e.getFlag(ID,'key')==='fate-style')?.getFlag(ID,'fateStyle');
+ const fate=activeEffect(a,'fate-style')?.getFlag(ID,'fateStyle');
  if(fate==='order' && (ac.item?.system.properties?.has('fin')||ac.attack?.type.classification==='unarmed'))threshold=Math.min(threshold,18);
- for(const r of config.rolls??[]) {r.options??={};if(a.effects.some(e=>e.getFlag(ID,'key')==='colossus') && ['simpleM','simpleR','martialM','martialR'].includes(ac.item?.system.type?.value))r.options.advantage=true;r.options.criticalSuccess=Math.min(r.options.criticalSuccess??20,threshold);}
+ for(const r of config.rolls??[]) {r.options??={};if(activeEffect(a,'colossus') && ['simpleM','simpleR','martialM','martialR'].includes(ac.item?.system.type?.value))r.options.advantage=true;r.options.criticalSuccess=Math.min(r.options.criticalSuccess??20,threshold);}
 });
 async function cleanup(a){
  if(!primary())return;
- const gone=a.effects.filter(e=>{const f=e.flags[ID];if(!f?.managed)return false;
+ const gone=allEffects(a).filter(e=>{const f=e.flags[ID];if(!f?.managed||e.disabled||e.isSuppressed)return false;
   return (f.endNoTemp && !a.system.attributes.hp.temp)||(f.endUnconscious&&a.statuses.has('unconscious'))||(f.endConditions?.some(x=>a.statuses.has(x)))||(e.duration.seconds!==undefined && e.duration.remaining<=0);
- }).map(e=>e.id);if(gone.length)await a.deleteEmbeddedDocuments('ActiveEffect',gone);
+ });for(const e of gone){if(e.getFlag(ID,'preset'))await e.update({disabled:true});else await e.delete();}
 }
 Hooks.on('updateActor',(a)=>{cleanup(a).catch(console.error);});
 Hooks.on('createActiveEffect',e=>{if(e.parent?.documentName==='Actor')cleanup(e.parent).catch(console.error);});
 Hooks.on('updateWorldTime',()=>{if(primary())for(const a of game.actors)cleanup(a).catch(console.error);});
 Hooks.on('updateCombat',()=>{if(primary())for(const c of game.combat?.combatants??[])if(c.actor)cleanup(c.actor).catch(console.error);});
 Hooks.on('dnd5e.restCompleted',async(a,data)=>{if(!a.isOwner)return;const ids=a.effects.filter(e=>e.getFlag(ID,'rest')==='lr'&&data.longRest).map(e=>e.id);if(ids.length)await a.deleteEmbeddedDocuments('ActiveEffect',ids);});
-Hooks.on('dnd5e.endConcentration',async(a)=>{if(primary()&&a.effects.some(e=>e.getFlag(ID,'key')==='selkie-release')){await remove(a,'selkie-release');await remove(a,'slip-skin');}});
+Hooks.on('dnd5e.endConcentration',async(a)=>{if(primary()&&activeEffect(a,'selkie-release')){await remove(a,'selkie-release');await remove(a,'slip-skin');}});

@@ -47,7 +47,7 @@
       "parentFeature": "a947119d4736ff39",
       "parentIdentifier": "lyonesse-spellbinder-spellbinding",
       "level": 6,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "execute": "vassalSpells"
     }
   },

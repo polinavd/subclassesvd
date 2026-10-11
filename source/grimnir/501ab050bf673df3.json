@@ -56,7 +56,8 @@
       "parentFeature": "281dd5a14f21592d",
       "parentIdentifier": "grimnir-misplaced-soul-dreams-made-real",
       "level": 18,
-      "version": "0.2.0"
+      "version": "0.3.0",
+      "resourceIdentifier": "font-of-magic"
     }
   },
   "_key": "!items!501ab050bf673df3"

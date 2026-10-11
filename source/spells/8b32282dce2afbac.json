@@ -147,8 +147,9 @@
       "setting": "lyonesse",
       "subclass": "Spellbinder",
       "level": 6,
-      "version": "0.2.0",
-      "grantVariant": "Spellbinding Ritual"
+      "version": "0.3.0",
+      "grantVariant": "Spellbinding Ritual",
+      "resourceIdentifier": "lyonesse-spellbinder-spellbinding"
     }
   },
   "_key": "!items!8b32282dce2afbac"

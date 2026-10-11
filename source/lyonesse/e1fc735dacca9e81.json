@@ -55,7 +55,7 @@
       "feature": "Blood Binding",
       "class": "wizard",
       "level": 3,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.ba94f94c052f8875",

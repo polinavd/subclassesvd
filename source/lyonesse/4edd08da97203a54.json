@@ -56,7 +56,8 @@
       "parentFeature": "ade629a58174117e",
       "parentIdentifier": "lyonesse-wyrd-sorcery-step-between-moments",
       "level": 14,
-      "version": "0.2.0"
+      "version": "0.3.0",
+      "resourceIdentifier": "font-of-magic"
     }
   },
   "_key": "!items!4edd08da97203a54"

@@ -110,7 +110,7 @@
       "feature": "Circle of the Wurm Spells",
       "class": "druid",
       "level": 3,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.spells.Item.cad04cc3e683f282",

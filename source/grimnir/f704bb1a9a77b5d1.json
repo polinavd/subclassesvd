@@ -56,10 +56,11 @@
       "parentFeature": "2451b9d2ef380a10",
       "parentIdentifier": "grimnir-misplaced-soul-soul-bound-commands",
       "level": 6,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "execute": "companionCommand",
       "companionActivity": "Thrash",
-      "companionCost": 1
+      "companionCost": 1,
+      "resourceIdentifier": "font-of-magic"
     }
   },
   "_key": "!items!f704bb1a9a77b5d1"

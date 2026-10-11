@@ -1606,7 +1606,8 @@
   "folder": null,
   "flags": {
     "grimnir-lyonesse": {
-      "template": "chain-devil"
+      "template": "chain-devil",
+      "version": "0.3.0"
     }
   },
   "sort": 225000,

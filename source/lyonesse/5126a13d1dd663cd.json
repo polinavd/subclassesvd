@@ -47,7 +47,7 @@
       "parentFeature": "f12fea597b076acc",
       "parentIdentifier": "lyonesse-spellbinder-binding-savant",
       "level": 3,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "execute": "chooseSummonSpell"
     }
   },

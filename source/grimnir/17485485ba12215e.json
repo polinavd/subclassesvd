@@ -47,7 +47,7 @@
       "parentFeature": "8200d76cf9ec45a9",
       "parentIdentifier": "grimnir-oath-of-the-slain-justice-delivered",
       "level": 20,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "execute": "weaponAttack",
       "weaponKind": "melee",
       "advantage": true

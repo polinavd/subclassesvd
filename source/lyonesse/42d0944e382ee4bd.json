@@ -56,7 +56,7 @@
       "feature": "Legend of the Weald",
       "class": "rogue",
       "level": 17,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.7840a316de00de43",

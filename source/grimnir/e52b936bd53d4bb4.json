@@ -79,7 +79,7 @@
       "feature": "Surveyor of the Depths",
       "class": "cleric",
       "level": 17,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.spells.Item.dc73a7bfe4bfebc2",

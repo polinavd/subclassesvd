@@ -139,7 +139,7 @@
       "feature": "Oath Spells",
       "class": "paladin",
       "level": 3,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.spells.Item.ee18cfec5edaa7ad",

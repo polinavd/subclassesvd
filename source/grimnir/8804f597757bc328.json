@@ -126,7 +126,7 @@
       "feature": "Expanded Spell List",
       "class": "warlock",
       "level": 3,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.spells.Item.e0366831c95504f9",

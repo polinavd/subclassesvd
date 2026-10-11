@@ -53,7 +53,27 @@
       }
     }
   },
-  "effects": [],
+  "effects": [
+    {
+      "_id": "7dae5df94cfd35be",
+      "name": "Primal Arm",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-claw-slashes.svg",
+      "transfer": true,
+      "disabled": true,
+      "changes": [],
+      "statuses": [],
+      "duration": {},
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true,
+          "preset": true,
+          "key": "primal-arm",
+          "seconds": 3600
+        }
+      },
+      "_key": "!items.effects!114541e364cceb6a.7dae5df94cfd35be"
+    }
+  ],
   "flags": {
     "grimnir-lyonesse": {
       "setting": "grimnir",
@@ -61,8 +81,9 @@
       "parentFeature": "97b94437a23c53a9",
       "parentIdentifier": "grimnir-circle-of-the-devourer-primal-arm",
       "level": 6,
-      "version": "0.2.0",
-      "execute": "primalArm"
+      "version": "0.3.0",
+      "execute": "primalArm",
+      "resourceIdentifier": "wild-shape"
     }
   },
   "_key": "!items!114541e364cceb6a"

@@ -39,7 +39,26 @@
       }
     }
   },
-  "effects": [],
+  "effects": [
+    {
+      "_id": "eea9a486da3c2091",
+      "name": "Shield of the Seven Virtues",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-holy-grail.svg",
+      "transfer": true,
+      "disabled": true,
+      "changes": [],
+      "statuses": [],
+      "duration": {},
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true,
+          "preset": true,
+          "key": "virtues"
+        }
+      },
+      "_key": "!items.effects!740865f8f5d96f13.eea9a486da3c2091"
+    }
+  ],
   "flags": {
     "grimnir-lyonesse": {
       "setting": "lyonesse",
@@ -47,7 +66,7 @@
       "parentFeature": "3db353c575e26455",
       "parentIdentifier": "lyonesse-oath-of-saints-sevenfold-path",
       "level": 15,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "execute": "virtues"
     }
   },

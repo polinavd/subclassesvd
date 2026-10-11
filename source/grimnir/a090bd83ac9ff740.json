@@ -47,8 +47,9 @@
       "parentFeature": "8136d89434045e8d",
       "parentIdentifier": "grimnir-misplaced-soul-companions-from-the-before",
       "level": 3,
-      "version": "0.2.0",
-      "execute": "soul"
+      "version": "0.3.0",
+      "execute": "soul",
+      "resourceIdentifier": "grimnir-misplaced-soul-companions-from-the-before"
     }
   },
   "_key": "!items!a090bd83ac9ff740"

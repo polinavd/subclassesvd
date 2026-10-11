@@ -60,7 +60,7 @@
       "feature": "Foresaying",
       "class": "wizard",
       "level": 6,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.d5d034ea5477530f",

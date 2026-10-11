@@ -366,7 +366,8 @@
   "effects": [],
   "flags": {
     "grimnir-lyonesse": {
-      "template": "juvenile"
+      "template": "juvenile",
+      "version": "0.3.0"
     }
   },
   "prototypeToken": {

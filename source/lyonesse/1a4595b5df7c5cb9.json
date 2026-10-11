@@ -62,7 +62,8 @@
       "parentFeature": "4e4287a873b0bebf",
       "parentIdentifier": "lyonesse-discovery-domain-expert-mariner",
       "level": 3,
-      "version": "0.2.0"
+      "version": "0.3.0",
+      "resourceIdentifier": "lyonesse-discovery-domain-expert-mariner"
     }
   },
   "_key": "!items!1a4595b5df7c5cb9"

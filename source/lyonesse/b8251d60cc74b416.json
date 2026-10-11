@@ -56,7 +56,8 @@
       "parentFeature": "175153c1094c06af",
       "parentIdentifier": "lyonesse-knight-of-the-sacred-word-sacred-word-incarnate",
       "level": 17,
-      "version": "0.2.0"
+      "version": "0.3.0",
+      "resourceIdentifier": "monks-focus"
     }
   },
   "_key": "!items!b8251d60cc74b416"

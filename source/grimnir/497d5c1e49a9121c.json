@@ -61,7 +61,8 @@
       "parentFeature": "8200d76cf9ec45a9",
       "parentIdentifier": "grimnir-oath-of-the-slain-justice-delivered",
       "level": 20,
-      "version": "0.2.0"
+      "version": "0.3.0",
+      "resourceIdentifier": "grimnir-oath-of-the-slain-justice-delivered"
     }
   },
   "_key": "!items!497d5c1e49a9121c"

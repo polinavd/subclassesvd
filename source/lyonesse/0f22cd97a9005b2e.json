@@ -51,7 +51,7 @@
       "feature": "End the Threat",
       "class": "fighter",
       "level": 18,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.3c96ce6477783416",

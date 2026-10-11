@@ -92,7 +92,7 @@
       "feature": "Forked Destiny",
       "class": "monk",
       "level": 6,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.c3261cf0e1fedb3f",

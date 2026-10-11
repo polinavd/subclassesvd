@@ -55,7 +55,7 @@
       "feature": "Master of Time",
       "class": "sorcerer",
       "level": 18,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.spells.Item.9dadc159323a2ea8",

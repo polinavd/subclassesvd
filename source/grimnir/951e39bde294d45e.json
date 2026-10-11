@@ -50,7 +50,7 @@
       "parentFeature": "3a16603e853f6f8f",
       "parentIdentifier": "grimnir-misplaced-soul-act-as-one",
       "level": 3,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "execute": "companionCommand",
       "companionActivity": null,
       "companionCost": 0

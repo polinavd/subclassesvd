@@ -51,7 +51,7 @@
       "feature": "Rampage",
       "class": "fighter",
       "level": 10,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.d9662e35163d74e7",

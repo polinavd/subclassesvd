@@ -78,7 +78,7 @@
       "feature": "Channel Divinity: Drowned Breath",
       "class": "cleric",
       "level": 3,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.9087a118cc3ffdaf",

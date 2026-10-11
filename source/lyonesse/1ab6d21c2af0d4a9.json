@@ -55,7 +55,7 @@
       "feature": "Glimpse the Future",
       "class": "sorcerer",
       "level": 3,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.5f044132751934ff",

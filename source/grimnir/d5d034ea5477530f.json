@@ -56,7 +56,8 @@
       "parentFeature": "8a145192da0c03d8",
       "parentIdentifier": "grimnir-cohesion-of-the-primal-foresaying",
       "level": 6,
-      "version": "0.2.0"
+      "version": "0.3.0",
+      "resourceIdentifier": "grimnir-cohesion-of-the-primal-foresaying"
     }
   },
   "_key": "!items!d5d034ea5477530f"

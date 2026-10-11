@@ -55,7 +55,7 @@
       "feature": "Judgment of the Anointed",
       "class": "paladin",
       "level": 7,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.f7ae1970cb2664dd",

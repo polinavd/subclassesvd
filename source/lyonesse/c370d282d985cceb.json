@@ -62,7 +62,8 @@
       "parentFeature": "aba918ded4029687",
       "parentIdentifier": "lyonesse-wyrd-sorcery-scholar-of-the-wyrd",
       "level": 3,
-      "version": "0.2.0"
+      "version": "0.3.0",
+      "resourceIdentifier": "lyonesse-wyrd-sorcery-scholar-of-the-wyrd"
     }
   },
   "_key": "!items!c370d282d985cceb"

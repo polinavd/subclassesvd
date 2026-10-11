@@ -69,7 +69,8 @@
       "parentFeature": "0f22cd97a9005b2e",
       "parentIdentifier": "lyonesse-marauder-end-the-threat",
       "level": 18,
-      "version": "0.2.0"
+      "version": "0.3.0",
+      "resourceIdentifier": "second-wind"
     }
   },
   "_key": "!items!3c96ce6477783416"

@@ -126,7 +126,7 @@
       "feature": "Wyrd Spells",
       "class": "sorcerer",
       "level": 3,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.spells.Item.16b934f074d95baa",

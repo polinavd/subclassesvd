@@ -51,7 +51,7 @@
       "feature": "Dragon Soul",
       "class": "druid",
       "level": 3,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.757643065d9e4e57",

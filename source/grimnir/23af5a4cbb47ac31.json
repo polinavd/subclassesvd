@@ -56,7 +56,8 @@
       "parentFeature": "9d3c13f390307514",
       "parentIdentifier": "grimnir-oath-of-the-slain-channel-divinity",
       "level": 3,
-      "version": "0.2.0"
+      "version": "0.3.0",
+      "resourceIdentifier": "channel-divinity"
     }
   },
   "_key": "!items!23af5a4cbb47ac31"

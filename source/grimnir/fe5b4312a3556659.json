@@ -43,7 +43,51 @@
       }
     ]
   },
-  "effects": [],
+  "effects": [
+    {
+      "_id": "a404b2598fb91040",
+      "name": "Aura of the Executioner",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-sword-array.svg",
+      "transfer": true,
+      "disabled": false,
+      "changes": [
+        {
+          "key": "system.bonuses.mwak.attack",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.bonuses.rwak.attack",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.bonuses.msak.attack",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.bonuses.rsak.attack",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "statuses": [],
+      "duration": {},
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true,
+          "preset": true,
+          "key": "execution-aura"
+        }
+      },
+      "_key": "!items.effects!fe5b4312a3556659.a404b2598fb91040"
+    }
+  ],
   "flags": {
     "grimnir-lyonesse": {
       "setting": "grimnir",
@@ -51,7 +95,7 @@
       "feature": "Aura of the Executioner",
       "class": "paladin",
       "level": 7,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.0e5e824909916b53",

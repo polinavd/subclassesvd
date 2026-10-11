@@ -98,8 +98,9 @@
       "setting": "lyonesse",
       "subclass": "Oath of Saints",
       "level": 3,
-      "version": "0.2.0",
-      "grantVariant": "Saintly Challenge"
+      "version": "0.3.0",
+      "grantVariant": "Saintly Challenge",
+      "resourceIdentifier": "lyonesse-oath-of-saints-saintly-challenge"
     }
   },
   "img": "modules/grimnir-lyonesse/assets/icons/lorc-sword-clash.svg"

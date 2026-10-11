@@ -56,7 +56,8 @@
       "parentFeature": "71e8e8310afbd0bb",
       "parentIdentifier": "grimnir-cohesion-of-the-primal-turn-of-fate",
       "level": 10,
-      "version": "0.2.0"
+      "version": "0.3.0",
+      "resourceIdentifier": "grimnir-cohesion-of-the-primal-turn-of-fate"
     }
   },
   "_key": "!items!d1292c307f567971"

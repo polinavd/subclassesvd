@@ -56,7 +56,8 @@
       "parentFeature": "b873bf13945a4033",
       "parentIdentifier": "grimnir-way-of-the-wanderer-path-of-fate",
       "level": 3,
-      "version": "0.2.0"
+      "version": "0.3.0",
+      "resourceIdentifier": "grimnir-way-of-the-wanderer-path-of-fate"
     }
   },
   "_key": "!items!135b6830f57cce5f"

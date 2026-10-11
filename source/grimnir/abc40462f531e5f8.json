@@ -76,7 +76,8 @@
       "parentFeature": "e2efc49fb8f75f6a",
       "parentIdentifier": "grimnir-discovery-domain-channel-divinity-drowned-breath",
       "level": 3,
-      "version": "0.2.0"
+      "version": "0.3.0",
+      "resourceIdentifier": "channel-divinity"
     }
   },
   "_key": "!items!abc40462f531e5f8"

@@ -276,7 +276,8 @@
   "effects": [],
   "flags": {
     "grimnir-lyonesse": {
-      "template": "soul"
+      "template": "soul",
+      "version": "0.3.0"
     }
   },
   "prototypeToken": {

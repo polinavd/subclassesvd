@@ -1343,7 +1343,8 @@
   "folder": null,
   "flags": {
     "grimnir-lyonesse": {
-      "template": "bone-devil"
+      "template": "bone-devil",
+      "version": "0.3.0"
     }
   },
   "sort": 112500,

@@ -47,7 +47,7 @@
       "parentFeature": "b7616a3fc3a13646",
       "parentIdentifier": "lyonesse-outlaw-trick-shot",
       "level": 13,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "execute": "weaponAttack",
       "weaponKind": "ranged",
       "advantage": true,

@@ -51,7 +51,7 @@
       "feature": "Greater Avatar",
       "class": "warlock",
       "level": 10,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.4f59e14aa44f343f",

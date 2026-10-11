@@ -60,7 +60,7 @@
       "feature": "Wyrd Time",
       "class": "sorcerer",
       "level": 6,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.ab6bd8e0a4184434",

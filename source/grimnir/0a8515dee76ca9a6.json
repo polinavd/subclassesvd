@@ -51,7 +51,7 @@
       "feature": "Potent Fate",
       "class": "bard",
       "level": 14,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.6060b58c3823034f",

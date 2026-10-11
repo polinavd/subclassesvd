@@ -108,7 +108,8 @@
       "parentFeature": "0b3aec5c283636fa",
       "parentIdentifier": "grimnir-marauder-breaker-s-charge",
       "level": 7,
-      "version": "0.2.0"
+      "version": "0.3.0",
+      "resourceIdentifier": "second-wind"
     }
   },
   "_key": "!items!0495ad17895b0406"

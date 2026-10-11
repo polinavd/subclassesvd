@@ -6,7 +6,7 @@
   "system": {
     "identifier": "grimnir-circle-of-the-devourer-primal-arm",
     "description": {
-      "value": "<p>As a Bonus Action, you can expend one use of Wild Shape to transform one of your arms. This transformation lasts for 1 hour, or until you dismiss it as a Bonus Action. Choose one of the following natural weapons. Each is treated as a Simple weapon with which you are proficient. You use your Wisdom modifier for its attack and damage rolls.</p><p><strong>Bone Club.</strong> Melee Attack Roll: Reach 5 ft. Hit: 1d8 plus Wisdom modifier Bludgeoning damage. The target must make a Strength saving throw against your spell save DC. On a failed save, the target is Knocked Prone.</p><p><strong>Bladed Claw.</strong> Melee Attack Roll: Reach 5 ft. Hit: 2d6 plus Wisdom modifier Slashing damage.</p><p><strong>Poisonous Barbs.</strong> Ranged Attack Roll: Range 30/60 ft. Hit: 1d8 plus Wisdom modifier Piercing damage. The target must make a Constitution saving throw against your spell save DC. On a failed save, the target is Poisoned until the end of its next turn. A creature Poisoned in this way cannot regain Hit Points. When you take the Attack Action, you can make one additional attack with your Primal Arm weapon.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.114541e364cceb6a]{Primal Arm — Transform}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.bdf71d6dfb71613b]{Bone Club: save}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.a4df47338fec03f8]{Poisonous Barbs: save}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.9f97a6a7857cf3b7]{Bone Club}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.5d42e747f1bc4a55]{Bladed Claw}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.8e516c0db4dfe835]{Poisonous Barbs}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.efe76abe87aac610]{Primal Arm — Additional Attack}</li></ul>"
+      "value": "<p>As a Bonus Action, you can expend one use of Wild Shape to transform one of your arms. This transformation lasts for 1 hour, or until you dismiss it as a Bonus Action. Choose one of the following natural weapons. Each is treated as a Simple weapon with which you are proficient. You use your Wisdom modifier for its attack and damage rolls.</p><p><strong>Bone Club.</strong> Melee Attack Roll: Reach 5 ft. Hit: 1d8 plus Wisdom modifier Bludgeoning damage. The target must make a Strength saving throw against your spell save DC. On a failed save, the target is Knocked Prone.</p><p><strong>Bladed Claw.</strong> Melee Attack Roll: Reach 5 ft. Hit: 2d6 plus Wisdom modifier Slashing damage.</p><p><strong>Poisonous Barbs.</strong> Ranged Attack Roll: Range 30/60 ft. Hit: 1d8 plus Wisdom modifier Piercing damage. The target must make a Constitution saving throw against your spell save DC. On a failed save, the target is Poisoned until the end of its next turn. A creature Poisoned in this way cannot regain Hit Points. When you take the Attack Action, you can make one additional attack with your Primal Arm weapon.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.114541e364cceb6a]{Primal Arm — Transform}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.bdf71d6dfb71613b]{Bone Club: save}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.a4df47338fec03f8]{Poisonous Barbs: save}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.9f97a6a7857cf3b7]{Bone Club}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.5d42e747f1bc4a55]{Bladed Claw}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.8e516c0db4dfe835]{Poisonous Barbs}</li><li>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.efe76abe87aac610]{Primal Arm — Additional Attack}</li></ul><p>@UUID[Compendium.grimnir-lyonesse.grimnir.Item.b95a35c21df17dd3]{Attack — Primal Arm}</p>"
     },
     "source": {
       "custom": "Raiders of the Serpent Sea: Heroes’ Handbook",
@@ -57,6 +57,10 @@
             },
             {
               "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.efe76abe87aac610",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.b95a35c21df17dd3",
               "optional": false
             }
           ],
@@ -114,7 +118,7 @@
       "feature": "Primal Arm",
       "class": "druid",
       "level": 6,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.114541e364cceb6a",
@@ -142,6 +146,10 @@
         },
         {
           "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.efe76abe87aac610",
+          "level": 6
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.b95a35c21df17dd3",
           "level": 6
         }
       ]

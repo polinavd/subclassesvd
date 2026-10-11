@@ -47,8 +47,9 @@
       "parentFeature": "a08995fe190f137b",
       "parentIdentifier": "lyonesse-wyrd-sorcery-wyrd-time",
       "level": 6,
-      "version": "0.2.0",
-      "execute": "extend"
+      "version": "0.3.0",
+      "execute": "extend",
+      "resourceIdentifier": "font-of-magic"
     }
   },
   "_key": "!items!a6674bfdf52fb775"

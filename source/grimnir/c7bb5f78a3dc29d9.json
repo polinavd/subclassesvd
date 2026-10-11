@@ -60,7 +60,7 @@
       "feature": "Colossus of the Ironwood",
       "class": "warlock",
       "level": 14,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.5b3d43c17ea4b446",

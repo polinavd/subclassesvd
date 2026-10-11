@@ -39,7 +39,99 @@
       }
     }
   },
-  "effects": [],
+  "effects": [
+    {
+      "_id": "e19ea3a4a83ac61b",
+      "name": "Wyrd Time",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-hourglass.svg",
+      "transfer": true,
+      "disabled": true,
+      "changes": [
+        {
+          "key": "system.attributes.movement.walk",
+          "mode": 1,
+          "value": "2",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.movement.fly",
+          "mode": 1,
+          "value": "2",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.movement.swim",
+          "mode": 1,
+          "value": "2",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.movement.climb",
+          "mode": 1,
+          "value": "2",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.movement.burrow",
+          "mode": 1,
+          "value": "2",
+          "priority": 20
+        },
+        {
+          "key": "system.abilities.str.save.roll.mode",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.abilities.dex.save.roll.mode",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.abilities.con.save.roll.mode",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.abilities.int.save.roll.mode",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.abilities.wis.save.roll.mode",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "system.abilities.cha.save.roll.mode",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "flags.grimnir-lyonesse.grantsAttackDisadvantage",
+          "mode": 5,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "statuses": [],
+      "duration": {},
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true,
+          "preset": true,
+          "key": "wyrd-time"
+        }
+      },
+      "_key": "!items.effects!ab6bd8e0a4184434.e19ea3a4a83ac61b"
+    }
+  ],
   "flags": {
     "grimnir-lyonesse": {
       "setting": "lyonesse",
@@ -47,8 +139,9 @@
       "parentFeature": "a08995fe190f137b",
       "parentIdentifier": "lyonesse-wyrd-sorcery-wyrd-time",
       "level": 6,
-      "version": "0.2.0",
-      "execute": "wyrd"
+      "version": "0.3.0",
+      "execute": "wyrd",
+      "resourceIdentifier": "lyonesse-wyrd-sorcery-wyrd-time"
     }
   },
   "_key": "!items!ab6bd8e0a4184434"

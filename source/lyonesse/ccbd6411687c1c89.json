@@ -126,7 +126,7 @@
       "feature": "Archangel’s Spells",
       "class": "warlock",
       "level": 3,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.spells.Item.581a1ef1bcef1ad3",

@@ -51,7 +51,7 @@
       "feature": "Stand Unbound",
       "class": "barbarian",
       "level": 10,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.a705ba09019aa1a6",

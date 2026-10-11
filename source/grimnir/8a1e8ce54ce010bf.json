@@ -51,7 +51,7 @@
       "feature": "Bestow Fate",
       "class": "bard",
       "level": 3,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.8004b167f57610a0",

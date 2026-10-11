@@ -6,7 +6,7 @@
   "system": {
     "identifier": "lyonesse-outlaw-woodland-ambusher",
     "description": {
-      "value": "<p>During the first round of combat, if you have the Invisible condition when you take the Attack action using a ranged weapon, you can attack twice instead of once.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.b79e4a5141d39673]{Woodland Ambusher — Additional Attack}</li></ul>"
+      "value": "<p>During the first round of combat, if you have the Invisible condition when you take the Attack action using a ranged weapon, you can attack twice instead of once.</p><ul><li>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.b79e4a5141d39673]{Woodland Ambusher — Additional Attack}</li></ul><p>@UUID[Compendium.grimnir-lyonesse.lyonesse.Item.cc7ea51d408b798a]{Attack — Woodland Ambusher}</p>"
     },
     "source": {
       "custom": "Legends of the Round Table: Chivalric Handbook",
@@ -34,6 +34,10 @@
             {
               "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.b79e4a5141d39673",
               "optional": false
+            },
+            {
+              "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.cc7ea51d408b798a",
+              "optional": false
             }
           ],
           "optional": false,
@@ -51,10 +55,14 @@
       "feature": "Woodland Ambusher",
       "class": "rogue",
       "level": 3,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.b79e4a5141d39673",
+          "level": 3
+        },
+        {
+          "uuid": "Compendium.grimnir-lyonesse.lyonesse.Item.cc7ea51d408b798a",
           "level": 3
         }
       ]

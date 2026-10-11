@@ -47,7 +47,7 @@
       "parentFeature": "2b8b6aef2f1b0af0",
       "parentIdentifier": "lyonesse-path-of-the-provoked-reckoning-of-choice",
       "level": 14,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "execute": "weaponAttack",
       "weaponKind": "melee"
     }

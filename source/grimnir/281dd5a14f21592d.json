@@ -59,7 +59,7 @@
       "feature": "Dreams Made Real",
       "class": "sorcerer",
       "level": 18,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.827f4befc82803c9",

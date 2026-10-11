@@ -75,7 +75,8 @@
       "parentFeature": "86f007c93ffff8ad",
       "parentIdentifier": "grimnir-way-of-the-wanderer-forked-destiny",
       "level": 6,
-      "version": "0.2.0"
+      "version": "0.3.0",
+      "resourceIdentifier": "monks-focus"
     }
   },
   "_key": "!items!42221d227c0bd947"

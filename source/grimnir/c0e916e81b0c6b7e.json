@@ -47,7 +47,26 @@
       }
     ]
   },
-  "effects": [],
+  "effects": [
+    {
+      "_id": "3276b9ebbf3bb664",
+      "name": "Provoked Rage",
+      "img": "modules/grimnir-lyonesse/assets/icons/lorc-mailed-fist.svg",
+      "transfer": true,
+      "disabled": true,
+      "changes": [],
+      "statuses": [],
+      "duration": {},
+      "flags": {
+        "grimnir-lyonesse": {
+          "managed": true,
+          "preset": true,
+          "key": "provoked"
+        }
+      },
+      "_key": "!items.effects!c0e916e81b0c6b7e.3276b9ebbf3bb664"
+    }
+  ],
   "flags": {
     "grimnir-lyonesse": {
       "setting": "grimnir",
@@ -55,7 +74,7 @@
       "feature": "Strength of One",
       "class": "barbarian",
       "level": 3,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.d09e0f2ef09860ba",

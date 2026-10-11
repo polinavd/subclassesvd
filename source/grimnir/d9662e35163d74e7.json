@@ -50,7 +50,7 @@
       "parentFeature": "c6a12eb65ca6fbf4",
       "parentIdentifier": "grimnir-marauder-rampage",
       "level": 10,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "execute": "weaponAttack"
     }
   },

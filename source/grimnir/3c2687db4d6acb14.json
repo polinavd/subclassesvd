@@ -197,7 +197,7 @@
       "feature": "Spellcasting",
       "class": "rogue",
       "level": 3,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.20b8ab9a4094bdf7",

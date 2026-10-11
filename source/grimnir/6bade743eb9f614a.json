@@ -85,7 +85,7 @@
       "feature": "Wrath of Divinity",
       "class": "rogue",
       "level": 13,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.ee2319d46c2aa8a1",

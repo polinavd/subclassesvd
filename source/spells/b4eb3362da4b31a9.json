@@ -188,8 +188,9 @@
       "setting": "lyonesse",
       "subclass": "Spellbinder",
       "level": 10,
-      "version": "0.2.0",
-      "grantVariant": "Unholy Contracts Ritual"
+      "version": "0.3.0",
+      "grantVariant": "Unholy Contracts Ritual",
+      "resourceIdentifier": "lyonesse-spellbinder-unholy-contracts"
     }
   },
   "_key": "!items!b4eb3362da4b31a9"

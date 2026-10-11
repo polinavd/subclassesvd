@@ -55,7 +55,7 @@
       "feature": "Soul Bound Commands",
       "class": "sorcerer",
       "level": 6,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.f704bb1a9a77b5d1",

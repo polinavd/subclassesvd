@@ -17,8 +17,8 @@
     },
     "requirements": "Path of the Provoked 3",
     "uses": {
-      "max": "",
-      "spent": 0,
+      "max": "@scale.barbarian.rage-damage",
+      "spent": 2,
       "recovery": []
     },
     "activities": {
@@ -47,8 +47,9 @@
       "parentFeature": "e6745422b3700dbd",
       "parentIdentifier": "lyonesse-path-of-the-provoked-strength-of-one",
       "level": 3,
-      "version": "0.2.0",
-      "execute": "points"
+      "version": "0.3.0",
+      "execute": "points",
+      "pointPool": true
     }
   },
   "_key": "!items!becb4f67b338cd4c"

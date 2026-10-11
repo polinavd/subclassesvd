@@ -47,8 +47,9 @@
       "parentFeature": "e6745422b3700dbd",
       "parentIdentifier": "lyonesse-path-of-the-provoked-strength-of-one",
       "level": 3,
-      "version": "0.2.0",
-      "execute": "rage"
+      "version": "0.3.0",
+      "execute": "rage",
+      "resourceIdentifier": "rage"
     }
   },
   "_key": "!items!5e4cb07af690249d"

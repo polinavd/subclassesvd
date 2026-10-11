@@ -47,7 +47,7 @@
       "parentFeature": "3c2687db4d6acb14",
       "parentIdentifier": "grimnir-true-believer-spellcasting",
       "level": 3,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "execute": "ability"
     }
   },

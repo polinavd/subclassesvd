@@ -60,7 +60,7 @@
       "feature": "Turn of Fate",
       "class": "wizard",
       "level": 10,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.0780716918f8a307",

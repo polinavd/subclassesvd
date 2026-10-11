@@ -75,7 +75,7 @@
       "disabled": false,
       "changes": [
         {
-          "key": "flags.midi-qol.disadvantage.attack.all",
+          "key": "flags.grimnir-lyonesse.disadvantageAttack",
           "mode": 5,
           "value": "1",
           "priority": 20
@@ -100,7 +100,8 @@
       "parentFeature": "cb38221b214c11b2",
       "parentIdentifier": "lyonesse-knight-of-the-sacred-word-voice-of-authority",
       "level": 3,
-      "version": "0.2.0"
+      "version": "0.3.0",
+      "resourceIdentifier": "monks-focus"
     }
   },
   "_key": "!items!d97b8c06fa05e422"

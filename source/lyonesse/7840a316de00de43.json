@@ -47,11 +47,12 @@
       "parentFeature": "42d0944e382ee4bd",
       "parentIdentifier": "lyonesse-outlaw-legend-of-the-weald",
       "level": 17,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "execute": "weaponAttack",
       "weaponKind": "ranged",
       "advantage": false,
-      "spendParent": true
+      "spendParent": true,
+      "resourceIdentifier": "lyonesse-outlaw-legend-of-the-weald"
     }
   },
   "_key": "!items!7840a316de00de43"

@@ -6,7 +6,8 @@
   "img": "modules/grimnir-lyonesse/assets/icons/delapouite-fish-monster.svg",
   "flags": {
     "grimnir-lyonesse": {
-      "template": "bestial-water"
+      "template": "bestial-water",
+      "version": "0.3.0"
     }
   },
   "effects": [],

@@ -47,8 +47,9 @@
       "parentFeature": "c0e916e81b0c6b7e",
       "parentIdentifier": "grimnir-path-of-the-provoked-strength-of-one",
       "level": 3,
-      "version": "0.2.0",
-      "execute": "rage"
+      "version": "0.3.0",
+      "execute": "rage",
+      "resourceIdentifier": "rage"
     }
   },
   "_key": "!items!d09e0f2ef09860ba"

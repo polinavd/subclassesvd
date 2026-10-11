@@ -76,7 +76,8 @@
       "parentFeature": "6bade743eb9f614a",
       "parentIdentifier": "grimnir-true-believer-wrath-of-divinity",
       "level": 13,
-      "version": "0.2.0"
+      "version": "0.3.0",
+      "resourceIdentifier": "grimnir-true-believer-wrath-of-divinity"
     }
   },
   "_key": "!items!ee2319d46c2aa8a1"

@@ -51,7 +51,7 @@
       "feature": "Break the Line",
       "class": "fighter",
       "level": 3,
-      "version": "0.2.0",
+      "version": "0.3.0",
       "children": [
         {
           "uuid": "Compendium.grimnir-lyonesse.grimnir.Item.44b7963cf447c2f3",
